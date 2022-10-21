@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-ingreso.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Registro de Ingreso de Pacientes</title>
+  </head>
+  <body>
+    <!--MENU RESPONSIVE-->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!--ICONO-->
+          <a class="navbar-brand text-white" href="#">
+            <i class="bi bi-wifi"></i>
+            <span>ENFERMERIA CONECTADA</span>
+          </a>
+          <!--BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+           <!--ELEMENTOS DEL MENU COLLAPSABLE-->   
+           <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+              <ul class="navbar-nav ms-auto p-auto">
+                <li class="nav-item px-2">
+                  <a class="nav-link active text-white" href="#datos-personales">Datos Personales</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link active text-white" href="#preingreso">Pre-Ingreso</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link active text-white" href="#utip-ucim">Utip/Ucim</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link active text-white" href="#fecha-egreso">Egreso</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link active text-white" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item  px-2">
+                 <a class="nav-link text-white" href="../../index.html">Inicio</a>
+                 </li>
+              </ul>
+           </div>   
+            
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="container-xl mx-6 my-5 container-lg container-md container-sm container-form"
+      >
+        <div id="datos-personales" class="text-center col-12 py-2 mb-4 conteiner-titulo">
+          <h1 class="titulo col-12 pt-1">Registro de Ingreso de Pacientes</h1>
+        </div>
+        <form class="container px-3 text-center">
+          <div  class="row container-datosinputs">
+            <div class="col-12">
+              <h3
+                class="subtitulo pl-3 text-sm-center text-lg-start text-xl-start text-xxl-start mb-3"
+              >
+                Datos del Paciente
+              </h3>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="floatingnombre"
+                placeholder="Nombres"
+              />
+              <label for="floatingnombre" class="text-center">Nombres</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="floatingapellido"
+                placeholder="Apellidos"
+              />
+              <label for="floatingapellido" class="text-center"
+                >Apellidos</label
+              >
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="text"
+                inputmode="tel"
+                minlength="1"
+                maxlength="10"
+                class="form-control"
+                id="floatingDNI"
+                placeholder="DNI"
+              />
+              <label for="floatingDNI" class="text-center">DNI</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <select
+                class="form-select text-center"
+                id="genero-flotante"
+                aria-label="Floating label select example"
+              >
+                <option selected>(elija una opción)</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+              </select>
+              <label for="genero-flotante" class="text-center">Genero</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <select
+                class="form-select text-center"
+                id="edad"
+                aria-label="Floating label select example"
+              >
+                <option selected>(Elija una opción)</option>
+                <option value="1">- de 1 año</option>
+                <option value="2">1 año</option>
+                <option value="3">2 años</option>
+                <option value="4">3 años</option>
+                <option value="5">4 años</option>
+                <option value="6">5 años</option>
+                <option value="7">6 años</option>
+                <option value="8">7 años</option>
+                <option value="9">8 años</option>
+                <option value="10">9 años</option>
+                <option value="11">10 años</option>
+                <option value="12">11 años</option>
+                <option value="13">12 años</option>
+                <option value="14">13 años</option>
+                <option value="15">14 años</option>
+                <option value="16">15 años</option>
+                <option value="17">+ 15 años</option>
+              </select>
+              <label for="motivo-flotante" class="text-center">Edad</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="floatingpeso"
+                placeholder="Peso"
+              />
+              <label for="floatingpeso" class="text-center">Peso</label>
+              <p class="edad-p text-start mt-2">
+                Puede escribir los kilos y gramos ej: 10, 680 kg.
+              </p>
+            </div>
+
+            <!--DATOS DEL INGRESO-->
+            <div class="col-12">
+              <h3 
+                class="subtitulo pl-3 text-sm-center text-lg-start text-xl-start text-xxl-start mb-3"
+              >
+                Datos de Ingreso
+              </h3>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <select
+                class="form-select text-center"
+                id="cama-flotante"
+                aria-label="Floating label select example"
+              >
+                <option selected>(elija una opción)</option>
+                <option value="1">Cama 1</option>
+                <option value="2">Cama 2</option>
+                <option value="3">Cama 3</option>
+                <option value="4">Cama 4</option>
+                <option value="5">Cama 5</option>
+                <option value="6">Cama 6</option>
+                <option value="7">Cama 7</option>
+                <option value="8">Cama 8</option>
+                <option value="9">Cama 9</option>
+                <option value="10">Cama 10</option>
+              </select>
+              <label for="cama-flotante" class="text-center">N° de Cama</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3 text-center"
+            >
+              <input
+                type="date"
+                class="form-control text-center"
+                id="fecha-flotante"
+              />
+              <label for="fecha-flotante" class="text-center">Fecha</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="time"
+                class="form-control text-center"
+                id="hora-flotante"
+              />
+              <label for="hora-flotante" class="text-center">Hora</label>
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="diagnostico-flotante"
+                placeholder="Diagnostico"
+              />
+              <label for="diagnostico-flotante" class="text-center"
+                >Diagnostico Medico</label
+              >
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <select
+                class="form-select text-center"
+                id="motivo-flotante"
+                aria-label="Floating label select example"
+              >
+                <option selected>(elija una opción)</option>
+                <option value="1">Respiratorio</option>
+                <option value="2">Cardioaco</option>
+                <option value="3">gastrico</option>
+                <option value="4">Neurologico</option>
+                <option value="5">Nefrologico</option>
+                <option value="6">Sistemico</option>
+                <option value="7">Oncologico</option>
+                <option value="8">Politraumatismo</option>
+                <option value="9">Quirurgico</option>
+                <option value="10">Quemaduras</option>
+              </select>
+              <label for="motivo-flotante" class="text-center"
+                >Motivo de Ingreso</label
+              >
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <select
+                class="form-select text-center"
+                id="procedencia-flotante"
+                aria-label="Floating label select example"
+              >
+                <option selected>(elija una opción)</option>
+                <option value="1">Internado</option>
+                <option value="3">Guardia</option>
+                <option value="4">Oncologia</option>
+                <option value="5">Cirugia</option>
+                <option value="6">Otras Instituciones Medicas</option>
+                <option value="7">Otros</option>
+              </select>
+              <label for="procedencia-flotante" class="text-center"
+                >Lugar de Procedencia</label
+              >
+            </div>
+            <div
+              class="form-floating col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-3"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="cuales1-flotante"
+                placeholder="Nombres"
+              />
+              <label for="cuales1-flotante" class="text-center">¿Cuales?</label>
+              <p class="text-start">
+                si eligio otros u otras inst. especificar cual.
+              </p>
+            </div>
+
+            <!--PROCEDIMIENTOS EN EL PRE-INGRESO-->
+            <div id="preingreso" class="col-12">
+              <h3
+                class="subtitulo pl-3 text-sm-center text-lg-start text-xl-start text-xxl-start mb-3"
+              >
+                Procedimientos en el Pre-Ingreso
+              </h3>
+            </div>
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <p class="text-start">
+                ¿Él paciente ingreso al servicio con procedimientos ya
+                realizados?
+              </p>
+            </div>
+
+            <!--CHECKS SI Y NO-->
+            <div class="container-fluid mx-3 col-xxl-6">
+              <div
+                class="form-check col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 text-start mx-2"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-si"
+                />
+                <label class="form-check-label" for="check-si"> Si </label>
+              </div>
+              <div
+                class="form-check col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 text-start mb-3 mx-2"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-no"
+                />
+                <label class="form-check-label" for="check-no"> No </label>
+              </div>
+            </div>
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6"
+            >
+              <p class="text-start">
+                Si marco la opción Si, complete las siguientes opciones de
+                pre-ingreso
+              </p>
+            </div>
+
+            <!--OXIGENOTERAPIA PRE-INGRESO-->
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3"
+            >
+              <h2 class="mini-titulo pl-3 text-start">Oxigenoterapia</h2>
+            </div>
+            <!--CONTENEDOR DE LOS CHECKS DE OXIGENOTERAPIA-->
+            <div class="container-fluid row mx-3">
+              <!--CHECKBOX DE OXIGENOTERAPIA-->
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sin"
+                />
+                <label class="form-check-label" for="check-sin">
+                  Sin Oxigenoterapia
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-narinas"
+                />
+                <label class="form-check-label" for="check-narinas">
+                  Narinas
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-mascara"
+                />
+                <label class="form-check-label" for="check-mascara">
+                  Mascara Común
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-reservorio"
+                />
+                <label class="form-check-label" for="check-reservorio">
+                  Mascara con Reservorio
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-oaf"
+                />
+                <label class="form-check-label" for="check-oaf"> OAF </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-bpap"
+                />
+                <label class="form-check-label" for="check-bpap"> BPAP </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-vni"
+                />
+                <label class="form-check-label" for="check-vni"> VNI </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start mb-3 my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-bavm"
+                />
+                <label class="form-check-label" for="check-avm"> AVM </label>
+              </div>
+            </div>
+
+            <!--ACCESOS VENOSOS-->
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3"
+            >
+              <h2 class="mini-titulo pl-3 text-start">Accesos Venosos</h2>
+            </div>
+            <!--CONTENEDOR DE LOS CHECKBOX-->
+            <div class="container-fluid row mx-3">
+              <!--CHECKBOX DE ACCESOS VENOSOS-->
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-cvp"
+                />
+                <label class="form-check-label" for="check-cvp"> CVP </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-picc"
+                />
+                <label class="form-check-label" for="check-picc"> PICC </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-cvc"
+                />
+                <label class="form-check-label" for="check-cvc"> CVC </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-flebo"
+                />
+                <label class="form-check-label" for="check-flebo">
+                  Flebotomia
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-ca"
+                />
+                <label class="form-check-label" for="check-ca">
+                  Cateter Arterial
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-io"
+                />
+                <label class="form-check-label" for="check-io">
+                  Intra Osea
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-co"
+                />
+                <label class="form-check-label" for="check-co">
+                  Cateter Oncologico
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-otrovenosos"
+                />
+                <label class="form-check-label" for="check-otrovenoso">
+                  Otros
+                </label>
+              </div>
+            </div>
+            <!--BOTON DE OTROS DE ACCESOS VENOSOS-->
+            <div
+              class="form-floating col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-4"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="cateter-otro1"
+                placeholder="Nombres"
+              />
+              <label for="cateter-otro1" class="text-center">¿Cual?</label>
+              <p class="text-start">si eligio otros, especifique cual.</p>
+            </div>
+
+            <!--PROCEDIMIENTOS INVASIVOS EN PRE-INGRESO-->
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3"
+            >
+              <h2 class="mini-titulo pl-3 text-start">
+                Procedimientos Invasivos
+              </h2>
+            </div>
+            <!--CONTENEDOR DE LOS CHECKBOX-->
+            <div class="container-fluid row mx-3">
+              <!--CHECKBOX DE PROCEDIMIENTOS INVASIVOS-->
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sng"
+                />
+                <label class="form-check-label" for="check-sng"> SNG </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sog"
+                />
+                <label class="form-check-label" for="check-sog"> SOG </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-botong"
+                />
+                <label class="form-check-label" for="check-botong">
+                  Botón Gastrico
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sondav"
+                />
+                <label class="form-check-label" for="check-sondav">
+                  Sondaje Vesical
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sondai"
+                />
+                <label class="form-check-label" for="check-sondai">
+                  Sondaje Intermitente
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-drenajep"
+                />
+                <label class="form-check-label" for="check-drenajep">
+                  Drenaje Pleural
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-puncionl"
+                />
+                <label class="form-check-label" for="check-puncionl">
+                  Punción Lumbar
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-intubacione"
+                />
+                <label class="form-check-label" for="check-intubacione">
+                  Intubación Endotraqueal
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-intracraneal"
+                />
+                <label class="form-check-label" for="check-intracraneal">
+                  Presión Intracraneal
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-drenajev"
+                />
+                <label class="form-check-label" for="check-drenajev">
+                  Drenaje Ventricular
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-peritoneal"
+                />
+                <label class="form-check-label" for="check-peritoneal">
+                  Cateter Peritoneal
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-otrosinvasivos"
+                />
+                <label class="form-check-label" for="check-otrosinvasivos">
+                  Otros
+                </label>
+              </div>
+            </div>
+
+            <!--BOTON DE OTROS DE PROCEDIMIENTOS INVASIVOS-->
+            <div 
+              class="form-floating col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-4"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="procedimiento-otro1"
+                placeholder="Nombres"
+              />
+              <label for="procedimiento-otro1" class="text-center"
+                >¿Cual?</label
+              >
+              <p class="text-start">si eligio otros, especifique cual.</p>
+            </div>
+
+            <!--PROCEDIMIENTOS EN UTIP/UCIM-->
+            <div id="utip-ucim" class="col-12">
+              <h3
+                class="subtitulo pl-3 text-sm-center text-lg-start text-xl-start text-xxl-start mb-3"
+              >
+                Procedimientos en UTIP/UCIM
+              </h3>
+            </div>
+
+              <!--OXIGENOTERAPIA INGRESO-->
+              <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3"
+            >
+              <h2 class="mini-titulo pl-3 text-start">Oxigenoterapia</h2>
+            </div>
+            <!--CONTENEDOR DE LOS CHECKS DE OXIGENOTERAPIA-->
+            <div class="container-fluid row mx-3">
+              <!--CHECKBOX DE OXIGENOTERAPIA-->
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sin2"
+                />
+                <label class="form-check-label" for="check-sin2">
+                  Sin Oxigenoterapia
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-narinas2"
+                />
+                <label class="form-check-label" for="check-narinas2">
+                  Narinas
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-mascara2"
+                />
+                <label class="form-check-label" for="check-mascara2">
+                  Mascara Común
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-reservorio2"
+                />
+                <label class="form-check-label" for="check-reservorio2">
+                  Mascara con Reservorio
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-oaf2"
+                />
+                <label class="form-check-label" for="check-oaf2"> OAF </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-bpap2"
+                />
+                <label class="form-check-label" for="check-bpap2"> BPAP </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-vni2"
+                />
+                <label class="form-check-label" for="check-vni2"> VNI </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start mb-3 my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-avm2"
+                />
+                <label class="form-check-label" for="check-avm2"> AVM </label>
+              </div>
+            </div>
+
+            <!--ACCESOS VENOSOS-->
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3"
+            >
+              <h2 class="mini-titulo pl-3 text-start">Accesos Venosos</h2>
+            </div>
+            <!--CONTENEDOR DE LOS CHECKBOX-->
+            <div class="container-fluid row mx-3">
+              <!--CHECKBOX DE ACCESOS VENOSOS-->
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-cvp2"
+                />
+                <label class="form-check-label" for="check-cvp2"> CVP </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-picc2"
+                />
+                <label class="form-check-label" for="check-picc2"> PICC </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-cvc2"
+                />
+                <label class="form-check-label" for="check-cvc2"> CVC </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-flebo2"
+                />
+                <label class="form-check-label" for="check-flebo2">
+                  Flebotomia
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-ca2"
+                />
+                <label class="form-check-label" for="check-ca2">
+                  Cateter Arterial
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-io2"
+                />
+                <label class="form-check-label" for="check-io2">
+                  Intra Osea
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-co2"
+                />
+                <label class="form-check-label" for="check-co2">
+                  Cateter Oncologico
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-otrovenosos2"
+                />
+                <label class="form-check-label" for="check-otrovenoso2">
+                  Otros
+                </label>
+              </div>
+            </div>
+            <!--BOTON DE OTROS DE ACCESOS VENOSOS-->
+            <div
+              class="form-floating col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-4"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="cateter-otro2"
+                placeholder="Nombres"
+              />
+              <label for="cateter-otro2" class="text-center">¿Cual?</label>
+              <p class="text-start">si eligio otros, especifique cual.</p>
+            </div>
+
+            <!--PROCEDIMIENTOS INVASIVOS EN PRE-INGRESO-->
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3"
+            >
+              <h2 class="mini-titulo pl-3 text-start">
+                Procedimientos Invasivos
+              </h2>
+            </div>
+            <!--CONTENEDOR DE LOS CHECKBOX-->
+            <div class="container-fluid row mx-3">
+              <!--CHECKBOX DE PROCEDIMIENTOS INVASIVOS-->
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sng2"
+                />
+                <label class="form-check-label" for="check-sng2"> SNG </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sog2"
+                />
+                <label class="form-check-label" for="check-sog2"> SOG </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-botong2"
+                />
+                <label class="form-check-label" for="check-botong2">
+                  Botón Gastrico
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sondav2"
+                />
+                <label class="form-check-label" for="check-sondav2">
+                  Sondaje Vesical
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-sondai2"
+                />
+                <label class="form-check-label" for="check-sondai2">
+                  Sondaje Intermitente
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-drenajep2"
+                />
+                <label class="form-check-label" for="check-drenajep2">
+                  Drenaje Pleural
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-puncionl2"
+                />
+                <label class="form-check-label" for="check-puncionl2">
+                  Punción Lumbar
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-intubacione2"
+                />
+                <label class="form-check-label" for="check-intubacione2">
+                  Intubación Endotraqueal
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-intracraneal2"
+                />
+                <label class="form-check-label" for="check-intracraneal2">
+                  Presión Intracraneal
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-drenajev2"
+                />
+                <label class="form-check-label" for="check-drenajev2">
+                  Drenaje Ventricular
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-peritoneal2"
+                />
+                <label class="form-check-label" for="check-peritoneal2">
+                  Cateter Peritoneal
+                </label>
+              </div>
+              <div
+                class="form-check col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-start my-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-otrosinvasivos2"
+                />
+                <label class="form-check-label" for="check-otrosinvasivos2">
+                  Otros
+                </label>
+              </div>
+            </div>
+
+            <!--BOTON DE OTROS DE PROCEDIMIENTOS INVASIVOS-->
+            <div
+              class="form-floating col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 my-4"
+            >
+              <input
+                type="text"
+                class="form-control"
+                id="procedimiento-otro2"
+                placeholder="Nombres"
+              />
+              <label for="procedimiento-otro2" class="text-center"
+                >¿Cual?</label
+              >
+              <p class="text-start">si eligio otros, especifique cual.</p>
+            </div>
+            
+
+            <!--EGRESO DEL PACIENTE-->
+            <div class="col-12">
+              <h3
+                class="subtitulo pl-3 text-sm-center text-lg-start text-xl-start text-xxl-start mb-3"
+              >
+                Fecha de Egreso
+              </h3>
+            </div>
+            <div class="form-floating col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+              <input
+                type="date"
+                class="form-control text-center"
+                id="fecha-egreso"
+              />
+              <label for="fecha-egreso" class="text-center">Fecha</label>
+            </div>
+
+            <div class="form-floating col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+              <select
+                class="form-select text-center"
+                id="egreso-flotante"
+                aria-label="Floating label select example"
+              >
+                <option selected>(elija una opción)</option>
+                <option value="1">Internado</option>
+                <option value="3">Guardia</option>
+                <option value="4">Oncologia</option>
+                <option value="5">Obito</option>
+                <option value="6">Otras Instituciones Medicas</option>
+                <option value="7">Alta Domiciliaria</option>
+              </select>
+              <label for="egreso-flotante" class="text-center"
+                >Lugar de Egreso</label
+              >
+            </div>
+            <div class="col-12 my-4 text-xs-center text-sm-center text-md-end text-lg-end text-xl-end text-xxl-end">
+              <button class="boton-enviar py-3 text-white" type="submit">
+                Enviar y guardar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer id="contacto" class="container-fluid row text-center mx-auto">
+      <h3 class="text-center text-white text py-2 pb-0 mb-0">&copy; - Fernandez Lucas -</h3>
+      <h3 class="text-center text-white pt-0 mt-0">Contacto:</h3>
+      <div class="container-fluid iconos col-xs-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+        <span class="col-1  p-sm-2 p-md-2 p-lg-2 p-xl-2 p-xxl-2  m-1 ">
+          <a href="tel:+5403516207238" target="_blank"
+            ><img
+              src="ASSETS/ICONOS/telefono-inteligente (1).png"
+              alt="contacto telefonico"
+          /></a>
+        </span>
+        <span class="col-1 p-sm-2 p-md-2 p-lg-2 p-xl-2 p-xxl-2  m-1">
+          <a href="mailto:lukasfernandez22@gmail.com" target="_blank"
+            ><img
+              src="ASSETS/ICONOS/gmail-centrado.png"
+              alt="gmail" /></a
+        ></span>
+        <span class="col-1 p-sm-2 p-md-2 p-lg-2 p-xl-2 p-xxl-2 m-1">
+          <a href="https://github.com/lukasefe" target="_blank"
+            ><img src="ASSETS/ICONOS/github.png" alt="github"
+          /></a>
+        </span>
+        <span class="col-1 p-sm-2 p-md-2 p-lg-2 p-xl-2 p-xxl-2 m-1 ">
+          <a href="https://www.linkedin.com/in/lukas-efe" target="_blank"
+            ><img src="ASSETS/ICONOS/linkedin.png" alt="linkedin"
+          /></a>
+        </span>
+        <span class="col-1 p-sm-2 p-md-2 p-lg-2 p-xl-2 p-xxl-2 m-2 ">
+          <a href="https://www.facebook.com/lukas.efe" target="_blank"
+            ><img src="ASSETS/ICONOS/facebook.png" alt="Facebook" /></a
+        ></span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

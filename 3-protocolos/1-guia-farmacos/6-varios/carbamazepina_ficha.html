@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbamazepina</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-varios.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+     <!--NAVBAR MENU CON PORTADA-->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary my-1 mt-0">
+            <div class="container-fluid">
+                <!--LOGOTIPO Y NOMBRE-->
+                <a class="navbar-brand mx-auto" href="#">
+                    <i class="bi bi-wifi text-white"></i>
+                    <span class="text-white">ENFERMERIA CONECTADA</span>
+                </a>
+                  <!--BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+            <ul class="navbar-nav ms-auto p-auto">
+              <!--BOTON DROPDOWN 1 -->
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">UTIP/UCIM</a>
+                <ul class="dropdown-menu bg-secondary " aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Pase de Guardia</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Datos de Pacientes</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Politicas del servicio</a></li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 2 FORMULARIOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                  <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownformularios">
+                    <li>
+                      <a class="dropdown-item text-white" href="../../../2-formularios/1-registro-ingreso-de-pacientes/form-ingreso-pacientes.html" target="_blank">Ingreso de Pacientes</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Higiene de Manos</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!--todo: BOTON DROPDOWN 3 PROTOCOLOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                  <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="../../2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">POES</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Mantenimiento de Insumos</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Checklist</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Carteleria</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">LPP</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Escalas</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Material Bibliografico</a></li>
+                  </ul>
+                </li>
+                <!--LINK CAPACITACIONES-->
+                <li class="nav-item px-2">
+                  <a class="nav-link active text-white" href="#fecha-egreso">Capacitaciones</a>
+                </li>
+                <!--BOTON DROPDOWN 3 COMUNICADOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                  <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Comunicados</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Planilla Mensual</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Planila de rotación</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Notas de Personal</a></li>
+                  </ul>
+                </li>
+                <!--PAGINA PRINCIPAL-->
+                <li class="nav-item px-2">
+                  <a class="nav-link text-white" href="../../../index.html">Inicio</a>
+                 </li>
+                <!--LINK CONTACTO-->
+                <li class="nav-item px-2">
+                 <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+              </ul>
+           </div>
+           </div>
+        </nav>
+         <!--TEXTO DE PORTADA-->
+        <div class="container-fluid d-flex justify-content-center align-items-center flex-column border-bottom border-secondary py-2">
+          <div class="d-flex align-items-center flex-column portadita text-secondary"><h1 class="text-center text-secondary ">
+            Varios
+          </h1>
+        </div>
+        </div>
+    </header>
+     <main >
+      
+
+      <!--CONTENEDOR DE ALINEACION-->
+      <div class="container-fluid d-flex  justify-content-center align-items-center">
+
+      <!--CONTENEDOR DE FICHAS-->
+      <div  class="container-fluid container-sm bg-light  row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-3 p-0">
+
+        <!--TITULO DE FICHA-->
+        <div  class="container-fluid bg-secondary text-center text-white  col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 py-2"><h2 >Carbamazepina</h2></div>
+            
+        <!--CARUSEL DE FICHA-->
+        <div  class=" col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-3 col-xxl-4 p-0 ">
+          <img src="ASSETS/IMAGENS-AVS/aciclovir_kloviracil 500mg.jpg" class="img-fluid pb-0 mb-0 pe-sm-0 pe-md-0 pe-lg-1 pe-xl-1 pe-xxl-1">
+         </div>
+
+        <!--DATOS DE LA FICHA SUPERIOR-->
+        <div class="container-fluid bg-light col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-9 col-xxl-8 ps-0 texto-justificado">
+            <p><b>Acción Terapéutica</b><br>
+                Anticonvulsivante.<br>
+                Estructura tricíclica.<br>
+                Inhibe canales de sodio (prolonga el tiempo inactivo) voltaje y tiempo dependientes.
+            </p>
+
+            <p><b>Indicación</b><br>
+                Trastorno bipolar.<br>
+                Epilepsia.<br>
+                Neuralgia del trigémino.<br>
+                Adyuvante en el tratamiento del dolor neuropático.<br>
+                Uso en psiquiatría: estabilizador del ánimo, antirrecurrencial.
+            </p>
+
+            <p><b>Presentación</b><br>
+                <b class="text-secondary">Comprimidos: </b> 200mg.<br>
+                <b class="text-secondary">Jarabe: </b> 20mg/ml.
+            </p>
+
+            <p><b>Posología</b><br>
+                La dosis debe ser ajustada de acuerdo a la respuesta del paciente y a su dosaje sérico (rango
+                terapéutico: 4 - 12 μg/ml).<br>
+                <b>Los intervalos para comprimidos:</b> cada 8-12 hs.<br>
+                <b>Jarabe:</b> cada 6 hs.<br>
+                <b>Menores de 6 años:</b> iniciar 10-20 mg/kg/día, ir aumentando hasta 35 mg/kg/día.<br>
+                <b>6-12 años:</b> iniciar 200 mg/día, <b>dosis mantenimiento:</b> 400-800 mg.<br>
+                <b>mayores de 12 años y adultos:</b> iniciar 400 mg/día, <b>dosis mantenimiento</b> 800-1200 mg.<br>
+                <b>Dosis máxima 12-15 años:</b> 1000 mg;<br>
+                <b>Mayores 15 años:</b> 1200 mg.<br>
+                <b>Adultos:</b> 1600 mg/día.<br>
+                <b>Dolor neuropático:</b> 10 - 30 mg/kg/día,en 2 ó 3 dosis
+                 (<b>dosis máxima:</b> 800 mg/día).
+            </p>
+<!--
+            <p><b>Estabilidad</b><br>
+                Una vez abierto <b class="text-bg-danger text-white">No conservar sachet,</b> por inestabilidad microbiológica.
+           
+            </p>
+        -->            
+             <p><b>Administración</b><br>
+                <b class="text-secondary">Via Oral (VO)</b><br>
+                Administrar con alimentos para disminuir los efectos gastrointestinales.
+            </p>
+        
+            <p>
+                <b>Observaciones</b><br>
+                    Realizar hemograma y hepatograma cada 3-6 meses.<br>
+                    Claritromicina, eritromicina, isoniacida, ketoconazol, itraconazol, pueden inhibir el metabolismo hepático de la carbamacepina. La carbamacepina puede
+                    inducir el metabolismo de : ciclosporina, difenilhidantoína, teofilina, ritonavir, saquinavir, delavirdina,
+                    benzodiacepinas, etosuximida, ácido valproico, midazolam, corticosteroides y hormonas tiroideas.
+            </p>
+
+            <p>
+                 <b>Interacciones</b><br>
+                    Es inductor de CYP3 A3 y 4 por lo que disminuye niveles plasmáticos de drogas sustrato de esas
+                    isoenzimas: haloperidol, clozapina, olanzapina, risperidona, corticosteroides, otros. Las drogas que inhiben CYP3 A4
+                    pueden inhibir metabolismo de CBZ: algunos ISRS, diclofenac, eritromicina, Ac. Valproico, jugo de pomelo, otros.<br>
+                    La asociación de carbamazepina con otros inductores enzimáticos (antiepilépticos) pueden aumentar 10-11
+                    epóxido y dar signos de neurotoxicidad.<br>
+                    La carbamazepina puede ser desplazada de su unión a proteínas plasmáticas.
+            </p>
+
+            <p>
+                <b>Efectos Adversos</b><br>
+                    Somnolencia, mareos, erupciones cutáneas, alteraciones hematológicas (neutropenia), alteraciones hepáticas, diplopía, visión borrosa.
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!--BOTÓN VOLVER-->
+    <div class="d-flex align-items-center justify-content-center my-4"><a href="../guia-farmaco-terapeutica.html" class="text-decoration-none border-bottom border-top border-start border-end border-secondary p-2 rounded-4 text-secondary">Volver a Guía Fármacologica</a></div>
+
+
+     </main>
+     <footer class="container-fluid bg-secondary pb-2 mt-3">
+      <div class="container-fluid bg-secondary d-flex justify-content-center py-2">
+        <i class="bi bi-wifi text-white me-2"></i>
+        <span class="text-white">ENFERMERIA CONECTADA</span></div>
+    <div><span class="text-white">&copy;Fernandez Lucas:  </span>
+      <span class="text-white"> Lic. en Enfermeria / Web Developer</span></div>
+      <div><span class="text-white">Servicio UTIP/UCIM; </span>
+        <span class="text-white"> Hospital Infantil Municipal</span></div>
+          <div><span class="text-white">Cordoba; </span>
+            <span class="text-white"> Argentina</span>
+            <span class="text-white"> 2022</span></div>
+    </footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+   ></script>   
+</body>
+</html>

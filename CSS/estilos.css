@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.texto-portada{
+    margin-top: 0;
+    height: 400px;
+    background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.novedades{
+    border-bottom: 1px solid black;
+}
+img.imagen-novedad{
+    border-radius: 20px;
+}
+
+@media (max-width:1000px){
+    .texto-portada{
+        height: 350px;
+    }
+}
+@media (max-width:600px){
+    .texto-portada{
+        height: 250px;
+    }
+}

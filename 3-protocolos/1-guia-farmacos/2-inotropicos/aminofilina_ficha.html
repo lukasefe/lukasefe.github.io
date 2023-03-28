@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aminofilina</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-inotropico.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+     <!--NAVBAR MENU CON PORTADA-->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-danger bg-danger my-1 mt-0">
+            <div class="container-fluid">
+
+                <!--LOGOTIPO Y NOMBRE-->
+                <a class="navbar-brand mx-auto" href="#">
+                    <i class="bi bi-wifi text-white"></i>
+                    <span class="text-white">ENFERMERIA CONECTADA</span>
+                </a>
+
+                  <!--BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+            <ul class="navbar-nav ms-auto p-auto">
+              
+              <!--todo: BOTON DROPDOWN 1 -->
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">UTIP/UCIM</a>
+                <ul class="dropdown-menu bg-danger " aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Pase de Guardia</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Datos de Pacientes</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Politicas del servicio</a></li>
+                  </ul>
+                </li>
+
+                <!--todo: BOTON DROPDOWN 2 FORMULARIOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                  <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownformularios">
+                    <li>
+                      <a class="dropdown-item text-white" href="../../../2-formularios/1-registro-ingreso-de-pacientes/form-ingreso-pacientes.html" >Ingreso de Pacientes</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Higiene de Manos</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!--todo: BOTON DROPDOWN 3 PROTOCOLOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                  <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="../guia-farmaco-terapeutica.html">Guia Farmaco Terapeutica y Adm. de Medicamentos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="../../2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">POES</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Mantenimiento de Insumos</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Checklist</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Carteleria</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">LPP</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Escalas</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Material Bibliografico</a></li>
+                  </ul>
+                </li>
+
+               <!--todo:BOTON DROPDOWN 4 CAPACITACIONES -->
+               <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
+                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
+                  <li>
+                    <a class="dropdown-item text-white" href="">Capacitacion del servicio</a>
+                  </li>
+                  <li><hr class="dropdown-divider text-white"></li>
+                  <li>
+                    <a class="dropdown-item text-white" href="">cursos online</a>
+                  </li>
+                </ul>
+              </li>
+
+                <!--BOTON DROPDOWN 3 COMUNICADOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                  <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Comunicados</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Planilla Mensual</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Planila de rotación</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Notas de Personal</a></li>
+                  </ul>
+                </li>
+                <!--PAGINA PRINCIPAL-->
+                <li class="nav-item px-2">
+                  <a class="nav-link text-white" href="../../../index.html">Inicio</a>
+                 </li>
+                <!--LINK CONTACTO-->
+                <li class="nav-item px-2">
+                 <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+              </ul>
+           </div>
+           </div>
+        </nav>
+         <!--TEXTO DE PORTADA-->
+        <div class="container-fluid d-flex justify-content-center align-items-center flex-column border-bottom border-danger py-2">
+          <div class="d-flex align-items-center flex-column portadita text-primary"><h1 class="text-center text-danger ">
+            Inotropicos
+          </h1>
+        </div>
+        </div>
+    </header>
+     <main >
+      
+
+      <!--CONTENEDOR DE ALINEACION-->
+      <div class="container-fluid d-flex  justify-content-center align-items-center">
+
+      <!--CONTENEDOR DE FICHAS-->
+      <div  class="container-fluid container-sm bg-light row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-3 p-0">
+
+        <!--TITULO DE FICHA-->
+        <div  class="container-fluid bg-danger text-center text-white  col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 py-2"><h2 >Aminofilina</h2></div>
+            
+        <!--IMAGEN DE FICHA-->
+        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-3 col-xxl-4 p-0 "> <img src="#" class="img-fluid pb-0 mb-0 pe-sm-0 pe-md-0 pe-lg-0 pe-xl-0 pe-xxl-0">
+         </div>
+
+        <!--DATOS DE LA FICHA 2-->
+        <div class="container-fluid bg-light col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-9 col-xxl-8 ps-0 ps-sm-0 ps-md-0 ps-lg-2 ps-xl-2 ps-xxl-2 texto-justificado">
+            <p><b>Acción Terapeutica</b><br>
+                Aumenta la contractilidad diafragmática.</p>
+
+            <p><b>Indicación</b><br>
+                Apnea del recién nacido.
+            </p>
+
+            <p><b>Presentación</b><br>
+                Solución inyectable/ampolla de 10ml, 24mg/ml
+            </p>
+
+            <p><b>Posologia</b><br>
+                <b class="text-danger">Dosis ataque E.V.</b><br>
+                7mg/kg/dosis en 20-30 minutos.<br>
+                <b class="text-danger">Dosis mantenimiento</b><br>
+                <b>1-6 meses: </b>0,4mg/kg/hora<br>
+                <b>6-12 meses: </b>0,6 mg/kg/hora<br>
+                <b>1-9 años: </b>0,8 mg/Kg/hora<br>
+                <b>> 10 años y adultos: </b>0,7 mg/kg/hora.<br>
+                <b class="text-danger">Apnea del recién nacido</b><br>
+                <b>Dosis de carga: </b>5 mg/kg<br>
+                <b>Mantenimiento: </b>5mg/kg/día cada 12 hs (monitorear niveles
+                séricos para determinar la dosis apropiada).
+            </p>
+  
+            <p><b>Estabilidad</b><br>
+                <b class="bg-warning px-1">Proteger de la luz</b> durante su administración.
+            </p>
+
+            <p><b>Administración</b><br>
+                <b class="text-danger">IVD</b><br>
+                Administrar 25 mg/ml (Poco recomendado para pediatría).<br>
+                <b class="text-danger">IVI</b><br>
+                Diluir en SF (preferentemente)o DX 5% a una Concentración Recomendada de 1mg/ml.<br>
+                <b>Máxima concentración: </b>5 mg/ml. Infundir de 20-30 minutos.<br>
+                <b class="text-danger">IVC</b><br>
+                Diluir en SF o DX 5% a una concentración: 2mg/ml. Infundir 0,1-1mg/kg/h (según
+                edad).
+            </p>
+        
+            <p><b>Observaciones</b><br>
+                <b class="text-danger">Concentración sérica</b><br>
+                apnea primaria R.N.: 3-10 μg/ml<br>
+                Broncodilatador pico 10-15 μg/ml.<br>
+                El paciente debe estar en posición supina durante su administración
+            </p>
+
+ <!--        <p><b>Interacción</b><br>Aminofilina, teofilina, cafeína, antagonizan los efectos de la adenosina (aumentar dosis).<br>La
+                carbamazepina puede incrementar el bloqueo cardíaco.<br>La digoxina y verapamilo pueden
+                causar fibrilación ventricular
+            </p>
+ --> 
+             <p><b>Efectos Adversos</b><br>
+                Irritabilidad, inquietud, convulsiones, cefalea, insomnio, palpitaciones, hipotensión,
+                extrasístoles, hiperglucemia, dolor abdominal, vómitos.
+            </p>
+
+        </div>
+        
+      </div>
+    </div>
+
+<!--BOTÓN VOLVER-->
+<div class="d-flex align-items-center justify-content-center my-4"><a href="../guia-farmaco-terapeutica.html" class="text-decoration-none border-bottom border-top border-start border-end border-danger p-2 rounded-4 text-danger">Volver a Guía Fármacologica</a></div>
+
+     </main>
+     <footer class="container-fluid bg-danger pb-2 mt-3">
+      <div class="container-fluid bg-danger d-flex justify-content-center py-2">
+        <i class="bi bi-wifi text-white me-2"></i>
+        <span class="text-white">ENFERMERIA CONECTADA</span></div>
+    <div><span class="text-white">&copy;Fernandez Lucas:  </span>
+      <span class="text-white"> Lic. en Enfermeria / Web Developer</span></div>
+      <div><span class="text-white">Servicio UTIP/UCIM; </span>
+        <span class="text-white"> Hospital Infantil Municipal</span></div>
+          <div><span class="text-white">Cordoba; </span>
+            <span class="text-white"> Argentina</span>
+            <span class="text-white"> 2022</span></div>
+    </footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+   ></script>   
+</body>
+</html>

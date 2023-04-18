@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.texto{
+    font-size: 50px;
+}
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.borde{
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+   
+}

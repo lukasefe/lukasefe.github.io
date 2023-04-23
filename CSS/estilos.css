@@ -25,11 +25,28 @@ img.imagen-novedad{
 
 @media (max-width:1000px){
     .texto-portada{
-        height: 350px;
+        height: 250px;
+    }
+    .subtitulo{
+        text-align: center;
+        font-size: 20px;
+    }
+    .parrafo{
+        font-size: 10px;
+        text-align: justify;
     }
 }
 @media (max-width:600px){
     .texto-portada{
-        height: 250px;
+        height: 150px;
+    }
+    .subtitulo{
+        text-align: center;
+        font-size: 20px;
+    }
+    .parrafo{
+        font-size: 10px;
+        text-align: justify;
+ 
     }
 }

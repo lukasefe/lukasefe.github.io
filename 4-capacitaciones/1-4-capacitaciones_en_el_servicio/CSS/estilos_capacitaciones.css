@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.texto{
+    font-size: 30px;
+}
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.parrafo{
+    text-align: justify;
+}
+
+
+
+@media (max-width:650px){
+    .parrafo{
+       font-size: 15px;
+    }
+    .video{
+        width: 300px;
+        height: 150px;
+    }
+    
+
+}

@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.texto{
+    font-size: 40px;
+}
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.borde{
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+   
+}
+
+@media (max-width: 580px){
+    .texto{
+        font-size: 30px;
+    }
+
+ .imagen{   width: 420px;
+    height: auto;
+}
+
+
+@media(max-width: 440px){
+    .texto{
+        font-size: 30px;
+    }
+    
+    .imagen{
+        width: 350px;
+      height:auto;
+    }
+}
+
+}
+
+@media (min-width: 1000px) {
+    
+}

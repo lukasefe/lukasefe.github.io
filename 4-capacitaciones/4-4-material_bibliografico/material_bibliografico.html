@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materrial Bibliográfico</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos_bibliografias.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-dark">
+  <!--NAVBAR MENU CON PORTADA-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-1">
+            <div class="container-fluid">
+                <!--LOGOTIPO Y NOMBRE-->
+                <a class="navbar-brand mx-auto" href="#">
+                    <i class="bi bi-wifi"></i>
+                    <span>ENFERMERIA CONECTADA</span>
+                </a>
+                  <!--BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+              <ul class="navbar-nav ms-auto p-auto">
+                <!--BOTON DROPDOWN 1 -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">UTIP/UCIM</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                   <!-- <li>
+                      <a class="dropdown-item text-white" href="">Pase de Guardia</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Datos de Pacientes</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>-->
+                    <li><a class="dropdown-item text-white" href="">Politicas del servicio</a></li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 2 FORMULARIOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownformularios">
+                    <li>
+                      <a class="dropdown-item text-white" href="2-formularios/1-registro-ingreso-de-pacientes/form-ingreso-pacientes.html">Ingreso de Pacientes</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Higiene de Manos</a>
+                    </li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 3 PROTOCOLOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="3-protocolos/1-guia-farmacos/guia-farmaco-terapeutica.html">Guia Farmaco Terapeutica y Adm. de Medicamentos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="3-protocolos/2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos y POE</a>
+                    </li>
+                    <!--<li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">POE</a></li>-->
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Mantenimiento de Insumos</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Checklist</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Carteleria</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">LPP</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Escalas</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Material Bibliografico</a></li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 4 CAPACITACIONES -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html">Capacitaciones en el servicio</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">cursos online</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Investigaciones y Proyectos del servicio</a>
+                    </li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 5 COMUNICADOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Comunicados</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Planilla Mensual</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Planila de rotación</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Notas de Personal</a></li>
+                  </ul>
+                </li>
+                <!--LINK CONTACTO-->
+                <li class="nav-item px-2">
+                 <a class="nav-link text-white" href="/index.html">Inicio</a>
+                </li>
+              </ul>
+           </div>
+           </div>
+        </nav>
+    </header>
+    <main>
+      <!--SECCION POLITICAS DEL SERVICIO-->
+      <div class="container-fluid bg-light mt-4 ">
+        <h2 class="py-2 text row justify-content-center bg-light novedades">Politicas del Servicio de UTIP</h2>
+
+        <!--INTRODUCCION POLITICAS-->
+        <div class="row justify-content-center mt-3 pb-1">
+          <h2 class="border-bottom titulo">Politicas del Servicio 2023-2025</h2>
+          <p class="parrafo">
+            El presente escrito surge con la necesidad de contar con un instrumento administrativo que contenga: estructura orgánica,
+            organigrama, descripción de funciones, misión, visión y objetivos del servicio; con el fin de orientar, informar y servir
+            de apoyo al personal de enfermería para un desempeño adecuado.<br>
+            Será actualizado cada 2 años o cuando existan cambios en la estructura orgánica y/o en algún apartado específico.
+    
+          </p>
+        </div>
+        <!--Noticias 2-->
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="politicas2023">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#valores" aria-expanded="true" aria-controls="collapseOne">
+                  Manual Hemodiafiltración AMPLYA
+                </button>
+              </h2>
+              <div id="valores" class="accordion-collapse collapse" data-bs-parent="#politicas2023">
+                <div class="accordion-body text-center">
+                  <!--ACORDEON INTERNO-->
+                  <iframe id="visorpdf" class="col-12 justify-content-center align-items-center"
+                      title="Inline Frame Example"
+                      width="1000"
+                      height="500"
+                      src="ASSETS/DOCS/Manual AMPLYA.pdf">
+                  </iframe>
+                  <p>Pagina Oficial: <a href="https://centraldecontenido.medtronic.com/amplya-plataforma-multiterapeutica">Plataforma Multiterapeútica Amplya</a></p>
+                
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+    <!--PIE DE PAGINA-->
+    <footer class="container-fluid bg-dark pb-2">
+      <div class="container-fluid bg-dark d-flex justify-content-center py-2">
+        <i class="bi bi-wifi text-white me-2"></i>
+        <span class="text-white">ENFERMERIA CONECTADA</span></div>
+    <div><span class="text-white">&copy;Fernandez Lucas:  </span>
+      <span class="text-white"> Lic. en Enfermeria / Web Developer</span></div>
+      <div><span class="text-white">Servicio UTIP/UCIM; </span>
+        <span class="text-white"> Hospital Infantil Municipal</span></div>
+          <div><span class="text-white">Cordoba; </span>
+            <span class="text-white"> Argentina</span>
+            <span class="text-white"> 2022</span></div>
+    </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>   
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.novedades{
+    border-bottom: 1px solid dark;
+}
+
+.borde{
+     border: 1px solid blue;
+     box-shadow: 2px 2px 2px 2px rgba(1, 1, 112, 0.2);
+    
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+ #visorpdf{
+    border: 1px solid black;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+
+
+@media (max-width:800px){
+    .titulo{
+        text-align: center;
+    }
+
+    .parrafo{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .lista1{
+        font-size: 15px;
+    }
+
+    #visorpdf{
+        align-items: center;
+        width: 100%;
+        height: 400px;
+    }
+}

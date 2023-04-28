@@ -134,38 +134,46 @@
     <main>
       <!--SECCION POLITICAS DEL SERVICIO-->
       <div class="container-fluid bg-light mt-4 ">
-        <h2 class="py-2 text row justify-content-center bg-light novedades">Politicas del Servicio de UTIP</h2>
+        <h2 class="py-2 text row justify-content-center bg-light novedades border-bottom">Material Bibliográfico</h2>
 
         <!--INTRODUCCION POLITICAS-->
         <div class="row justify-content-center mt-3 pb-1">
-          <h2 class="border-bottom titulo">Politicas del Servicio 2023-2025</h2>
           <p class="parrafo">
-            El presente escrito surge con la necesidad de contar con un instrumento administrativo que contenga: estructura orgánica,
-            organigrama, descripción de funciones, misión, visión y objetivos del servicio; con el fin de orientar, informar y servir
-            de apoyo al personal de enfermería para un desempeño adecuado.<br>
-            Será actualizado cada 2 años o cuando existan cambios en la estructura orgánica y/o en algún apartado específico.
+            En nuestra sección de "Material Bibliográfico Disponible" encontrarás una amplia variedad de recursos y materiales 
+            para mejorar tu conocimiento y enriquecer tu formación.<br>Contamos con una amplia colección de libros, revistas, 
+            artículos y otros recursos en línea, todos ellos relacionados con el tema principal de la página web.
     
           </p>
         </div>
-        <!--Noticias 2-->
-        <div class="row justify-content-center mt-3 pb-3">
-          <div class="accordion" id="politicas2023">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#valores" aria-expanded="true" aria-controls="collapseOne">
+      
+        <div class="container-fluid text-center justify-content-center align-items-center">
+        <div class="row  justify-content-center align-items-center col-12  mt-3 pb-3 col-12">
+          <div class="accordion align-items-center" id="Hemodiafiltracion">
+            <div class="accordion-item justify-content-center">
+              <h2 class="accordion-header justify-content-center align-items-center">
+                <button id="texto" class="accordion-button collapsed text-white text-center justify-content-center text-bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#manualhemo" aria-expanded="true" aria-controls="collapseOne">
                   Manual Hemodiafiltración AMPLYA
                 </button>
               </h2>
-              <div id="valores" class="accordion-collapse collapse" data-bs-parent="#politicas2023">
-                <div class="accordion-body text-center">
+              <div id="manualhemo" class="accordion-collapse collapse" data-bs-parent="#Hemodiafiltracion">
+                <div class="accordion-body text-center col-12">
                   <!--ACORDEON INTERNO-->
-                  <iframe id="visorpdf" class="col-12 justify-content-center align-items-center"
+                  <iframe id="visorpdf" class="container-fluid col-12 justify-content-center align-items-center"
+                      allowfullscreen(true)
                       title="Inline Frame Example"
-                      width="1000"
-                      height="500"
+                      width="100%"
+                      height="500px"
                       src="ASSETS/DOCS/Manual AMPLYA.pdf">
                   </iframe>
-                  <p>Pagina Oficial: <a href="https://centraldecontenido.medtronic.com/amplya-plataforma-multiterapeutica">Plataforma Multiterapeútica Amplya</a></p>
+
+                  <div id="tarjeta" class="card" style="width: 18rem;">
+                    <img id="foto" src="ASSETS/IMAGENES/portada_manual_amplya.jpeg" class="card-fluid" width="350px" height="200px" alt="manual hemodiafiltracion AMPLYA">
+                    <div class="card-body">
+                      <a href="https://drive.google.com/file/d/1mMC9GzcD_OYoufAC8FvB8F6mSn0L3Lbb/view?usp=sharing" target="_blank" id="texto" class="btn btn-warning text-white">Abrir Documento</a>
+                    </div>
+                  </div>
+
+                  <p class="mt-2">Pagina Oficial: <a href="https://centraldecontenido.medtronic.com/amplya-plataforma-multiterapeutica">Plataforma Multiterapeútica Amplya</a></p>
                 
                 
                 </div>
@@ -197,6 +205,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </main>
 

@@ -13,6 +13,11 @@ body{
     border-bottom: 1px solid dark;
 }
 
+#texto{
+ align-items: center;
+ font-weight: bold;
+}
+
 .borde{
      border: 1px solid blue;
      box-shadow: 2px 2px 2px 2px rgba(1, 1, 112, 0.2);
@@ -28,8 +33,11 @@ body{
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 
+#tarjeta{
+    display: none;
+}
 
-@media (max-width:800px){
+@media (max-width:1000px){
     .titulo{
         text-align: center;
     }
@@ -43,8 +51,15 @@ body{
     }
 
     #visorpdf{
-        align-items: center;
-        width: 100%;
-        height: 400px;
+        display: none;
+    }
+    #tarjeta{
+        display: contents;
+        width: 450px;
+        height: auto;
+    }
+    #foto{
+        width: 400ppx;
+        height: auto;
     }
 }

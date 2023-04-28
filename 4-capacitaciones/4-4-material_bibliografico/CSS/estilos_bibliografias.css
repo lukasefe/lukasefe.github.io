@@ -62,4 +62,7 @@ body{
         width: 400ppx;
         height: auto;
     }
+    .pieletra{
+        font-size: 10px;
+    }
 }

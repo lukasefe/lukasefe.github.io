@@ -21,6 +21,13 @@ body{
 }
 img.imagen-novedad{
     border-radius: 20px;
+    width:400px;
+}
+
+.linkboton{
+    text-decoration: none;
+     color:dark;
+    font-weight: bold;
 }
 
 @media (max-width:1000px){
@@ -49,4 +56,32 @@ img.imagen-novedad{
         text-align: justify;
  
     }
+}
+
+@media (max-width: 500px){
+    .letras{
+        font-size: 10px;
+        text-align: justify;
+    }
+}
+
+
+/*MENU DESPLEGABLE DE HERRAMIENTAS*/
+
+ #menu, #menu-check{
+    display:none;
+ }
+
+ @media only screen and (max-width: 1000px){
+    #menu-check:not(:checked) ~ #herramientas{
+        display: none;
+    }
+    #menu-check:checked ~ #herramientas{
+        display: block;
+    }
+    #menu{
+        display: block;
+        color: var(co);
+    }
+
 }

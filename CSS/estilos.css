@@ -3,6 +3,20 @@ body{
     padding:0px;
 }
 
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+    padding-top: 10px;
+    font-size: 18px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+
+/**************/
+
+
 .texto-portada{
     margin-top: 0;
     height: 400px;

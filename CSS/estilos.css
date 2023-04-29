@@ -54,6 +54,27 @@ img.imagen-novedad{
     font-weight: bold;
 }
 
+/**************************/
+/*TEXTO DE PORTADA EN RESPONSIVE*/
+
+#espaciado{
+    display: none;
+}
+
+@media(max-width: 1000px){
+    #espaciado{
+        display:block;
+    }
+    #textotarjeta{
+        text-align: center;
+     
+    }
+}
+
+
+/*************************/
+
+
 @media (max-width:1000px){
     .texto-portada{
         height: 250px;

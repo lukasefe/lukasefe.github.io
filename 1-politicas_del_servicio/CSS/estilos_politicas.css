@@ -14,7 +14,37 @@ body{
 }
 
 
-/***********/
+.lista3 li{
+    list-style-type: none;
+}
+
+.listaol2{
+    list-style-type: upper-roman;
+}
+
+.listaol3{
+    list-style-type: lower-alpha;
+    
+}
+.listaol4{
+    list-style-type: disc;
+}
+
+
+
+/**************************************************************************/
+/*imagen del organigrama*/
+
+@media(min-width: 1000px){
+    img.organigrama{
+        width:1200px;
+        height:500px;
+    }
+} 
+
+
+
+/**************************************************************************/
 /*LOGO DE ENFERMERIA DEL NAV*/
 #enfconec{
     padding-top: 10px;
@@ -26,7 +56,28 @@ body{
     height: 60px;
 }
 
-/**************/
+@media (max-width: 395px){
+        #enfconec{
+            padding-top: 10px;
+            font-size: 12px;
+        }
+        #logo{
+            width: 80px;
+            height: 40px;
+        }
+    }
+@media (max-width: 285px){
+    #enfconec{
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    #logo{
+        width: 60px;
+        height: 30px;
+    }
+
+}
+/*************************************************************************/
 .borde{
      border: 1px solid black;
      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -38,16 +89,50 @@ body{
 }
 
 
+/**********************************************************************/
+/*TITULO DEL RECUADRO*/
+@media (max-width: 800px){
+    .titulo_cuadro{
+        text-align: center;
+        font-size: small;
+    }
+
+}
+
+
+/**********************************************************************/
+
+
+
 @media (max-width:800px){
     .titulo{
         text-align: center;
+        font-size: medium;
     }
 
     .parrafo{
         font-size: 10px;
         text-align: justify;
     }
+    .autores{
+        font-size: 10px;
+    }
+
     .lista1{
-        font-size: 15px;
+        font-size: 10px;
+        text-align: justify;
+    }
+    ol .listaol{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .subtitulo{
+        font-size: medium;
+        padding-right: 5px;
     }
 }
+
+
+
+
+/**************/

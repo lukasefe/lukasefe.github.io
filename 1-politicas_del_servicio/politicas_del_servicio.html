@@ -30,7 +30,7 @@
                 <!--LOGOTIPO Y NOMBRE-->
                 <a class="navbar-brand mx-auto" href="#">
                     <i class="bi"><img id="logo" src="/ASSETS/LOGO/1682678201182.png"></i>
-                    <span id="enfconec">ENFERMERIA CONECTADA</span>
+                    <span id="enfconec">ENFERMERÍA CONECTADA</span>
                 </a>
                   <!--BOTON DEL MENU-->
           <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,9 +130,9 @@
         </nav>
     </header>
     <!--MAIN DE LA PAGINA-->
-    <main>
+    <main >
       <!--SECCION POLITICAS DEL SERVICIO-->
-      <div class="container-fluid bg-light mt-4 ">
+      <div class="container-fluid bg-light mt-4">
         <h2 class="py-2 text row justify-content-center bg-light novedades">Politicas del Servicio de UTIP</h2>
 
         <!--INTRODUCCION POLITICAS-->
@@ -147,22 +147,30 @@
           </p>
         </div>
 
+        <div class="autores">
+          <p>
+            <b>AUTORES:</b><br>
+            Lic. Nicolasa González.<br>
+            Lic. Sánchez Eliana carolina<br>
+            Colaboradores: Enfermeros de Terapia Intensiva.
+          </p>
+        </div>
+
         <!--MISION-->
         <div class="row justify-content-center mt-1 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
-          <h2 class="h2 mx-4 col-12 border-bottom titulo">Misión</h2>
+          <h2 class="mx-4 col-12 border-bottom my-2 titulo_cuadro">Misión</h2>
           <div class="justify-content-start font-weight-bold">
             <p class="font-weight-bold parrafo pb-0 mb-0">
               Es un equipo que tiene como propósito fundamental proporcionar servicios basados en las ciencias del cuidado humano,
               brindando atención especializada y de alta complejidad, haciendo énfasis en la asistencia y recuperación de la salud,
               sustentados en los principios éticos de respeto, equidad y responsabilidad.
-
             </p>
           </div>
         </div>
 
          <!--VISIÓN-->
          <div class="row justify-content-center mt-3 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
-          <h2 class="h2 mx-4 col-12 border-bottomS titulo">Visión</h2>
+          <h2 class="mx-4 col-12 border-bottom my-2 titulo_cuadro">Visión</h2>
           <div class="justify-content-start font-weight-bold">
             <p class="font-weight-bold parrafo pb-0 mb-0">
               Ser un servicio de cuidados críticos de referencia y excelencia en la atención de enfermería pediátrica.
@@ -170,54 +178,863 @@
             </p>
           </div>
         </div>
-        <!--Noticias 2-->
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!--ACORDEON-->
         <div class="row justify-content-center mt-3 pb-3">
-          <div class="accordion" id="politicas2023">
+          <div class="accordion" id="politicas2023"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--VALORES Y PRINCIPIOS-->
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#valores" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#valores" aria-expanded="true" aria-controls="collapseOne">
                   Valores y principios
                 </button>
               </h2>
-              <div id="valores" class="accordion-collapse collapse show" data-bs-parent="#politicas2023">
+              <div id="valores" class="accordion-collapse collapse" data-bs-parent="#politicas2023">
                 <div class="accordion-body">
                   <!--ACORDEON INTERNO-->
                   <ul class="lista1">
-                    <li>Ética-compromiso-compresión-tolerancia.</li>
-                    <li>Solidaridad-empatía-confianza-justicia-lealtad.</li>
-                    <li>Honestidad-equidad-actitud de servicio-humildad-responsabilidad-igualdad.</li>
+                    <li>Ética, compromiso, compresión, tolerancia.</li>
+                    <li>Solidaridad, empatía, confianza, justicia, lealtad.</li>
+                    <li>Honestidad, equidad, actitud de servicio, humildad, responsabilidad e igualdad.</li>
                   </ul>
-                
-                
                 </div>
               </div>
             </div>
+            <!--------------------------------------------------------------------->
+            <!--OBJETIVO GENERAL-->
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#objgen" aria-expanded="false" aria-controls="collapseTwo">
+                  Objetivo General
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="objgen" class="accordion-collapse collapse" data-bs-parent="#politicas2023">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p class="parrafo">Desarrollar las funciones de enfermería de manera eficaz y eficiente en la Unidad de Cuidados Intensivos
+                     Pediátricos, impulsando líneas de investigación relevantes para la práctica clínica.</p>
                 </div>
               </div>
             </div>
+            <!-------------------------------------------------------------------->
+            <!--OBJETIVOS ESPECIFICOS-->
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#objesp" aria-expanded="false" aria-controls="collapseThree">
+                  Objetivos Especificos
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="objesp" class="accordion-collapse collapse" data-bs-parent="#politicas2023">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <ol class="pe-2" >
+                    <li class="listaol mb-2">
+                      Brindar atención y cuidados de enfermería con alto grado de calidad, aplicando acciones basadas 
+                      en el conocimiento científico, dirigido a la recuperación de la salud.
+                    </li>
+                    <li class="listaol mb-2">
+                      Aumentar la productividad de conocimiento científico dentro del servicio, a través de acciones 
+                      que permitan el desarrollo y crecimiento (profesional y personal) de los colaboradores.
+                    </li>
+                    <li class="listaol mb-2">
+                      Promover el desarrollo de las actividades de enfermería en un ámbito laboral propicio y adecuado.
+                    </li>
+                    <li class="listaol mb-2">
+                      Reforzar el trabajo en equipo mediante la comunicación efectiva y con las relaciones interdisciplinarias.
+                    </li>
+                    <li class="listaol mb-2">
+                      Trabajar de manera conjunta con los demás servicios y comités que se encuentran en la institución.
+                    </li>
+                    <li class="listaol mb-2">
+                      Favorecer la formación del personal de enfermería, con actitudes para la toma de decisiones, liderazgo, 
+                      comunicación y educación permanente
+                    </li>
+                    <li class="listaol mb-2">
+                      Desarrollar competencias encaminadas a la obtención de la integralidad en la atención del proceso salud-enfermedad.
+                    </li>
+                  </ol>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!------------------------------------------------------------------------------------------------>
+        <!--ORGANIGRAMA-->
+        <h3 class="subtitulo border-bottom">organigrama del servicio de UTIP</h3>
+
+        <!--FUNCION-->
+        <div class="row justify-content-center mb-3 mt-1 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
+            <img class="img-fluid organigrama" src="ASSETS/IMAGENES/organigrama.png">
+        </div>
+
+
+        <!------------------------------------------------------------------------------------------------>
+        <!--JEFE DE SECCION UCIP-->
+        <h3 class="subtitulo border-bottom">Jefe de Sección UCIP</h3>
+
+        <!--FUNCION-->
+        <div class="row justify-content-center mt-1 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
+          <h2 class="mx-4 col-12 border-bottom my-2 titulo_cuadro">Función</h2>
+          <div class="justify-content-start font-weight-bold">
+            <p class="font-weight-bold parrafo pb-0 mb-0">
+              Intervenir en el planeamiento, organización, programación, ejecución, supervisión, evaluación, control, y en todo lo 
+              referente a la administración del servicio, con el objeto de satisfacer las necesidades de cuidados específicos de los 
+              pacientes, en un marco de eficacia y eficiencia para una atención personalizada de los mismos. Utilizar herramientas 
+              administrativas, técnicas y procedimientos según normas vigentes y/o indicaciones técnicas profesionales. Ejercer su rol 
+              con un alto sentido ético-humano, trabajando en equipo, consciente de las implicaciones y responsabilidades legales de la 
+              práctica profesional.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="jefeucip"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--FUNCIONES ESPECIFICAS Y RESPONSABILIDAD-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fnesp" aria-expanded="true" aria-controls="collapseOne">
+                  Funciones Especificas y Responsabilidad
+                </button>
+              </h2>
+              <div id="fnesp" class="accordion-collapse collapse" data-bs-parent="#jefeucip">
+                <div class="accordion-body">
+                  <!--ACORDEON INTERNO-->
+                  <ol class="lista1">
+                    <li class="listaol mb-2">
+                      Participar del proceso de planeamiento de la asistencia de enfermería, observando principios científicos, 
+                      técnicos y normas de organización.
+                    </li>
+                    <li class="listaol mb-2">
+                      Proponer criterios para la dotación del recurso de enfermería y recursos materiales necesarios para la 
+                      atención de enfermería a pacientes en todas las modalidades asistenciales.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la elaboración de programas de asistencia a los pacientes y sus familias, abarcando 
+                      aspectos educativos, preventivos y curativos.
+                    </li>
+                    <li class="listaol mb-2">
+                      Desarrollar programas de educación en el servicio a fin de garantizar la máxima utilización de 
+                      conocimientos y destrezas por parte del equipo de trabajo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Evaluar periódicamente el desempeño del personal y de la asistencia prestada al paciente, teniendo en cuenta los 
+                      aspectos de:
+                      <ul class="lista3">
+                        <li><b>a) Calidad y rendimiento</b></li>
+                        <li><b>b) Conocimiento</b></li>
+                        <li><b>c) Responsabilidad</b></li>
+                        <li><b>d) Cooperación</b></li>
+                        <li><b>e) Corrección personal</b></li>
+                      </ul> 
+                    </li>
+                    <li class="listaol mb-2">
+                      Implementar un sistema de información adecuado,(google drive) sobre la producción de actividades y las normas 
+                      institucionales que afectan al área.
+                    </li>
+                    <li class="listaol mb-2">
+                      Planificar, organizar, ejecutar y evaluar los procesos asistenciales y administrativos del servicio de enfermería.
+                    </li>
+                    <li class="listaol mb-2">
+                      Elaborar, aplicar y supervisar las normas técnicas para procedimientos y cuidados de Enfermería.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en el plan operativo que dispone el departamento y la division de enfermería, 
+                      elevando informes periódicos de la realización del mismo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en programas específicos que implemente la Dirección del establecimiento.
+                    </li>
+                    <li>
+                      Participar en la elaboración de perfiles para los diferentes cargos, y en la selección del personal.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la aplicación del régimen laboral del personal a su cargo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Establecer las formas de división y coordinación del trabajo en las áreas a su cargo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Revisar los procesos administrativos y técnicos y elaborar, con la participación de los agentes involucrados, 
+                      nuevas normativas tendientes a mejorar la calidad de las prestaciones en términos de eficacia, rendimiento y 
+                      nivel de satisfacción de los usuarios.
+                    </li>
+                    <li class="listaol mb-2">
+                      Promover y realizar actividad docente y de investigación.
+                    </li>
+                    <li class="listaol mb-2">
+                      Elaborar un informe anual sobre las actividades desarrolladas, y 
+                      elevar la propuesta de futuro desarrollo del servicio, así como el listado de necesidades.
+                    </li>
+                    <li>
+                      Realizar el registro de las actividades según normas.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar del proceso de mejoramiento continuo de la calidad integrando consejos, comités y grupos de trabajo 
+                      con el objeto de identificar y tratar problemas, y proponer soluciones para los mismos.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar de Comités o Comisiones según asignación de la autoridad superior.
+                    </li>
+                    <li>
+                      Promover y participar de las actividades docentes que designe el Departamento de Enfermería o de otras disciplinas.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar y hacer participar al Profesional de enfermería a las actividades académicas programadas.
+                    </li>
+                    <li class="listaol mb-2">
+                      Liderar, promover y participar de las actividades de investigación que se desprendan del Departamento y/o división de Enfermería.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener con la División y con el personal a su cargo una relación fluida, permanente y bidireccional, de tal forma que la 
+                      información este en posesión de ambos niveles en tiempo real.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!----------------------------------------------------------------------->
+            <!--COMPETENCIAS HABILIDADES Y APTITUDES-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#compyhab" aria-expanded="false" aria-controls="collapseTwo">
+                  Competencias, Habilidades y Actitudes
+                </button>
+              </h2>
+              <div id="compyhab" class="accordion-collapse collapse" data-bs-parent="#jefeucip">
+                <div class="accordion-body"><!--CUERPO DEL ACORDEON, DONDE VA LA INFO-->
+                    <p class="lista1 mb-2"><b>PLANIFICACIÓN: </b>Capacidad para la organización sistemática de las tareas y la distribución de actividades 
+                      programadas. Visión de los tiempos, conocimiento de los equipos laborales.</p>
+                    <p class="lista1 mb-2"><b>TOLERANCIA A LA PRESIÓN: </b>Habilidad para trabajar bajo situaciones de alta complejidad y multicausales.</p>
+                    <p class="lista1 mb-2"><b>COMUNICACIÓN: </b>Habilidad de poder comunicar (escuchar y decir, leer y escribir) considerando con quien se 
+                      comunica, el contexto, la cultura organizacional, el momento y las distintas situaciones.</p>
+                    <p class="lista1 mb-2"><b>COORDINACIÓN: </b>Capacidad de concertar y ajustar tareas o funciones intra y extra servicio, en pos de un proyecto o situaciones extraordinarias.</p>
+                    <p class="lista1 mb-2"><b>SUPERVISIÓN: </b>Competencia de observación, registro, control, feedback y retroalimentación de procesos, de equipos y/o agentes en forma individual.</p>
+                    <p class="lista1 mb-2"><b>MEDIACIÓN Y NEGOCIACIÓN: </b>Capacidad para resolver situaciones a través de una escucha activa, individual y/o grupal. </p>
+                    <p class="lista1 mb-2"><b>RESPONSABILIDAD: </b>Asumir las funciones con alto grado de compromiso personal, contracción al trabajo, amplia disponibilidad y entrega.</p>
+                    <p class="lista1 mb-2"><b>LIDERAZGO: </b>Capacidad de manejo de grupo, empatía, apertura. Ser referente de todo el equipo laboral</p>
+                    <p class="lista1 mb-2"><b>DESARROLLO DE LAS HABILIDADES DE LOS TRABAJADORES A SU CARGO: </b>Incentivar al personal a su cargo a asumir compromisos, nuevos desafío, a innovar y capacitarse.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!------------------------------------------------------------------------------------------------->
+        <!--COORDINACIÓN GENERAL DE ENFERMERIA-->
+        <h3 class="subtitulo border-bottom">Coordinación General de Enfermería</h3>
+        <!--ACORDEON DE COORDINACIÓN GENERAL-->
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="coorgen"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--FUNCIONES ESPECIFICAS Y RESPONSABILIDAD-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fncoor" aria-expanded="true" aria-controls="collapseOne">
+                  Funciones
+                </button>
+              </h2>
+              <div id="fncoor" class="accordion-collapse collapse" data-bs-parent="#coorgen">
+                <div class="accordion-body">
+                  <!--ACORDEON INTERNO-->
+                  <ol class="lista1">
+                    <li class="listaol mb-2">
+                      Participar del proceso de planeamiento de la asistencia de enfermería, observando principios científicos, 
+                      técnicos y normas de organización.
+                    </li>
+                    <li class="listaol mb-2">
+                      Proponer criterios para la dotación del recurso de enfermería y recursos materiales necesarios para la 
+                      atención de enfermería a pacientes en todas las modalidades asistenciales.
+                    </li>
+                    <li class="listaol mb-2">
+                      Planificar, organizar, coordinar, controlar y evaluar las actividades del grupo de profesionales a 
+                      su cargo, en los aspectos administrativos, asistenciales y docentes.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener con el personal una relación fluida, permanente y de tal forma que la información sea efectiva.
+                    </li>
+                    <li class="listaol mb-2">
+                      Cumplir y hacer cumplir los reglamentos, manuales, normas, procedimientos y disposiciones vigentes.
+                    </li>
+                    <li class="listaol mb-2">
+                      Coordinar las actividades profesionales y optimizar la utilización de los materiales disponibles.
+                    </li>
+                    <li class="listaol mb-2">
+                      Supervisar el desempeño del personal a cargo, velando por el cumplimiento de las normas técnicas y legales para 
+                      garantizar al paciente una atención oportuna, segura, eficiente y eficaz.
+                    </li>
+                    <li class="listaol mb-2">
+                      Asegurar el cumplimiento de las normas de bioseguridad y garantizar la provisión de insumos necesarios.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la elaboración, puesta en marcha, supervisión y control de resultados de rutinas, 
+                      procedimientos, protocolos de atención de paciente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Ser nexo con el jefe de servicio para el mantener la cobertura del personal operativo ante francos compensados, 
+                      faltas justificadas, carpetas médicas, etc.
+                    </li>
+                    <li>
+                      Mantener buena comunicación y armonía, favoreciendo la organización y desarrollo del trabajo grupal.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!----------------------------------------------------------------------->
+            <!--COMPETENCIAS HABILIDADES Y APTITUDES-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#compyhabcoor" aria-expanded="false" aria-controls="collapseTwo">
+                  Competencias, Habilidades y Actitudes
+                </button>
+              </h2>
+              <div id="compyhabcoor" class="accordion-collapse collapse" data-bs-parent="#coorgen">
+                <div class="accordion-body"><!--CUERPO DEL ACORDEON, DONDE VA LA INFO-->
+                    <p class="lista1 mb-2"><b>PLANIFICACIÓN: </b>Capacidad para la organización sistemática de las tareas y la distribución de actividades 
+                      programadas. Visión de los tiempos, conocimiento de los equipos laborales.</p>
+                    <p class="lista1 mb-2"><b>TOLERANCIA A LA PRESIÓN: </b>Habilidad para trabajar bajo situaciones de alta complejidad y multicausales.</p>
+                    <p class="lista1 mb-2"><b>COMUNICACIÓN: </b>Habilidad de poder comunicar (escuchar y decir, leer y escribir) considerando con quien se 
+                      comunica, el contexto, la cultura organizacional, el momento y las distintas situaciones.</p>
+                    <p class="lista1 mb-2"><b>COORDINACIÓN: </b>Capacidad de concertar y ajustar tareas o funciones intra y extra servicio, en pos de un proyecto o situaciones extraordinarias.</p>
+                    <p class="lista1 mb-2"><b>SUPERVISIÓN: </b>Competencia de observación, registro, control, feedback y retroalimentación de procesos, de equipos y/o agentes en forma individual.</p>
+                    <p class="lista1 mb-2"><b>MEDIACIÓN Y NEGOCIACIÓN: </b>Capacidad para resolver situaciones a través de una escucha activa, individual y/o grupal. </p>
+                    <p class="lista1 mb-2"><b>RESPONSABILIDAD: </b>Asumir las funciones con alto grado de compromiso personal, contracción al trabajo, amplia disponibilidad y entrega.</p>
+                    <p class="lista1 mb-2"><b>LIDERAZGO: </b>Capacidad de manejo de grupo, empatía, apertura. Ser referente de todo el equipo laboral</p>
+                    <p class="lista1 mb-2"><b>DESARROLLO DE LAS HABILIDADES DE LOS TRABAJADORES A SU CARGO: </b>Incentivar al personal a su cargo a asumir compromisos, nuevos desafío, a innovar y capacitarse.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------->
+        <!--COORDINADOR/RA DEL TURNO-->
+        <h3 class="subtitulo border-bottom">Coordinador/ra del Turno</h3>
+
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="coordturno"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--FUNCIONES ESPECIFICAS Y RESPONSABILIDAD-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fncoturno" aria-expanded="true" aria-controls="collapseOne">
+                  Funciones
+                </button>
+              </h2>
+              <div id="fncoturno" class="accordion-collapse collapse" data-bs-parent="#fncoturno">
+                <div class="accordion-body">
+                  <!--ACORDEON INTERNO-->
+                  <ol class="lista1">
+                    <li class="listaol mb-2">
+                      Planificar, organizar, coordinar, controlar y evaluar las actividades del grupo en los 
+                      aspectos administrativos, asistenciales y docentes.
+                    </li>
+                    <li class="listaol mb-2">
+                      Cumplir y hacer cumplir los reglamentos, manuales, normas, procedimientos y disposiciones vigentes.
+                    </li>
+                    <li class="listaol mb-2">
+                      El coordinador realizara la distribución de tareas de manera justa y equitativa a todos los miembros 
+                      del grupo, será el encargado de controlar, evaluar y hacer cumplir: los protocolos del servicio, la 
+                      distribución de tareas, la atención directa al paciente, normas de bioseguridad, etc.
+                    </li>
+                    <li class="listaol mb-2">
+                      Hacer partícipes al personal de su turno de las disposiciones o lineamientos que se bajen de la jefatura.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener el pase de guardia con las novedades que surgen durante la jornada laboral a través de las 
+                      herramientas de comunicación,  que estos sean relatos concisos, precisos, para no sobrecargar de mansajes los grupos.
+                    </li>
+                    <li class="listaol mb-2">
+                      El coordinador será el responsable de transmitir en su grupo toda aquella información proveniente de los cambios 
+                      en el servicio, esta será implementada y controlada en su turno.
+                    </li>
+                    <li class="listaol mb-2">
+                      Controlar diariamente la carpeta de planificación, debido a que está sujeta a modificaciones, su organización se 
+                      programa según la necesidad del servicio y en conjunto con el departamento de enfermería para dar cobertura a todos 
+                      los servicios. (Guardia central, oncología, triage, internado, etc.), esto surge de la necesidad de recurso humano 
+                      en la institución.
+                    </li>
+                    <li class="listaol mb-2">
+                      El coordinador estará en constante comunicación con el coordinador general  y/ o jefe del servicio, 
+                      por medio de reuniones programadas mensualmente.
+                    </li>
+                    <li class="listaol mb-2">
+                      El coordinador será capaz de mantener un ambiente de trabajo armonioso, justo y seguro dentro del grupo de trabajo. 
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------->
+        <!--PERSONAL DE ENFERMERIA-->
+        <h3 class="subtitulo border-bottom">Personal de Enfermeria</h3>
+
+        <!--FUNCION ASISTENCIAL-->
+        <div class="row justify-content-center mt-1 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
+          <h4 class="mx-4 col-12 border-bottom my-2 titulo_cuadro">Función Asistencial</h4>
+          <div class="justify-content-start font-weight-bold">
+            <p class="font-weight-bold parrafo pb-0 mb-0">
+              El profesional ha adquirido competencia científico técnica de alto nivel para cuidar y recuperar la salud del 
+              paciente pediátrico enfermo, mediante una firme actitud humanística, ética y de responsabilidad legal. Cuenta 
+              con autoridad para tomar decisiones y profundos conocimientos profesionales en las áreas biológicas, psicosociales 
+              y del entorno; y habilidades teórico prácticas en las técnicas específicas y de alta complejidad del ejercicio de 
+              la profesión, sustentado en la lógica del método científico profesional de enfermería.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="personal1"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--FUNCIONES ASISTENCIALES-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fnasistencial" aria-expanded="true" aria-controls="collapseOne">
+                  Funciones Asistenciales
+                </button>
+              </h2>
+              <div id="fnasistencial" class="accordion-collapse collapse" data-bs-parent="#personal1">
+                <div class="accordion-body">
+                  <!--ACORDEON INTERNO-->
+                  <ol class="lista1">
+                    <li class="listaol mb-2">
+                      Ejercer las funciones de prevención, recuperación y rehabilitación de la salud, dentro 
+                      de los límites de competencia según incumbencias habilitantes.
+                    </li>
+                    <li class="listaol mb-2">
+                      Proporcionar cuidados de enfermería a todos los pacientes que le sean asignados.
+                    </li>
+                    <li class="listaol mb-2">
+                      Receptar y coordinar con enfermería de internado, guardia, quirófano u oncología el ingreso y egreso del paciente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Asumir en la admisión la responsabilidad del primer contacto de enfermería con el paciente, evaluando su estado 
+                      general y planearla atención de enfermería a brindar a fin de asegurar una atención individualizada, integral, continua y 
+                      eficaz.
+                    </li>
+                    <li class="listaol mb-2">
+                      Registro y apertura de la hoja de enfermería, constatando monitoreo de signos vitales, ingreso y egreso, valores del 
+                      respirador. Etc.Mantener limpios y ordenados todos los equipos y elementos que se encuentran en el entorno del paciente y 
+                      de su sector de trabajo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener limpios y ordenados todos los equipos y elementos que se encuentran en el entorno del 
+                      paciente y de su sector de trabajo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Observar, controlar, registrar, interpretar e informar a quien corresponda los signos y síntomas de los pacientes a su 
+                      cargo manteniendo los registros actualizados y con la evolución correspondiente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Brindar información a los padres sobre horarios de visita, normas de bioseguridad, entre otras.
+                    </li>
+                    <li class="listaol mb-2">
+                      Negarse a realizar o colaborar en la ejecución de prácticas que entren en conflicto con sus convicciones morales o éticas, 
+                      siempre que de ello no resulte un daño inmediato o mediato en el paciente sometido a esa práctica.
+                    </li>
+                    <li class="listaol mb-2">
+                      Revisar la carpeta de indicaciones médicas una vez por turno, informando modificaciones que se hayan realizado durante el turno.
+                    </li>
+                    <li class="listaol mb-2">
+                      Ejecutar, según indicación médica, la administración de medicamentos y tratamiento prescripto.
+                    </li>
+                    <li class="listaol mb-2">
+                      Preparar, proteger y asistir al paciente, antes, durante y después de procedimientos, diagnósticos y tratamientos, 
+                      administrando la terapéutica prescripta.
+                    </li>
+                    <li class="listaol mb-2">
+                      Coordinar y evaluar la aplicación de normas y técnicas establecidas para la realización de procedimientos dentro del servicio de UCIP.
+                    </li>
+                    <li class="listaol mb-2">
+                      Realizar cuidados y controles que exijan dominios de las técnicas y procedimientos específicos de enfermería.
+                    </li>
+                    <li class="listaol mb-2">
+                      Atender las necesidades básicas de los pacientes internados (higiene y confort, cuidados de la piel, el arreglo de la unidad y el entorno, 
+                      la alimentación, la movilización y el control de diuresis y catarsis.).
+                    </li>
+                    <li class="listaol mb-2">
+                      Promover un entorno en el que se respeten los derechos humanos, valores, costumbres y creencias del paciente, la familia y la comunidad.
+                    </li>
+                    <li class="listaol mb-2">
+                      Demostrar valores profesionales tales como el respeto, la disponibilidad, compasión, confianza y la integridad.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener confidencial toda información personal y utilizara la discreción al compartirla.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener una relación respetuosa de cooperación con los otros profesionales de enfermería.
+                    </li>
+                    <li class="listaol mb-2">
+                      Colaboración con el equipo de salud: es la cooperación de enfermería al equipo de salud 
+                      (médicos, radiólogos, kinesiología, entre otros) en la realización de procedimientos invasivos 
+                      y no invasivos, según los requerimientos clínicos del paciente. El personal de enfermería podrá según el 
+                      código de Feppen capítulo 3, ¨podrá negarse a realizar o colaborar en la ejecución de prácticas que poseen a su 
+                      criterio un peligro para la salud del niño¨. Registrar en hoja de enfermería.
+                    </li>
+                    <li class="listaol mb-2">
+                      Mantener el orden y limpieza de la cabecera del paciente, como así también la cantidad de insumos adecuados y en manera proporcionada.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en los cambios de guardia, informando el tratamiento y los cuidados proporcionados al paciente, para conocer el estado de salud 
+                      y la evolución del paciente, así como reportar los eventos adversos.
+                    </li>
+                    <li class="listaol mb-2">
+                      El ingreso a sala y cambios de guardia serán 15 minutos antes del ingreso al horario laboral.
+                    </li>
+                    <li class="listaol mb-2">
+                      Ejecutar actividades de prevención de lesiones por presión, humedad, dermatitis de pañal, MARSI. 
+                      (rotación cada dos horas, usar almohadas en prominencias óseas, ácido graso hiperoxigenado (linovera), 
+                      kurapel, cremas con vitamina A, etc. Mantener sabanas secas y sin arrugas, no utilizar pañales ni sabanas 
+                      como almohada).
+                    </li>
+                    <li class="listaol mb-2">
+                      Coordinar con la especialista Lic. ECCI. Esp. en Curación y prevención de Heridas, cuidados y/o modos de 
+                      curación para todos aquellos pacientes que presenten o tengan alto riesgo de contraer lesiones relacionadas a 
+                      la dependencia y otras. En ausencia de la especialista se realizara interconsulta con dermatología y cirugía 
+                      plástica si el paciente lo requiere.
+                    </li>
+                    <li class="listaol mb-2">
+                      Registrar todas aquellas lesiones en las planillas correspondientes, la recolección de datos favorece la 
+                      realización correcta de estadísticas anuales, permitiéndonos detectar y mejorar todas aquellas falencias en 
+                      los cuidados relacionados a la dependencia.
+                    </li>
+                    <li class="listaol mb-2">
+                      Realizar la preparación preoperatoria del paciente según el tipo de intervención y las normas del servicio 
+                      (baño pre quirúrgico). siendo este realizado en el horario de las seis de la mañana.
+                    </li>
+                    <li class="listaol mb-2">
+                      Decidir y ejecutar la colocación y permanencia de la sonda vesical de acuerdo a las 
+                      normas y protocolos establecidos con la enfermera ECI de la institución.
+                    </li>
+                    <li class="listaol mb-2">
+                      Controlar y realizar curación de accesos venosos centrales según normas y protocolos 
+                      establecidos con la enfermera ECI de institución y del servicio.
+                    </li>
+                    <li class="listaol mb-2">
+                      Ejecutar y evaluar la administración de nutrición enteral y parenteral.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en Reanimación Cardiopulmonar avanzada.
+                    </li>
+                    <li class="listaol mb-2">
+                      Cumplir con las prescripciones médicas indicadas solo por el medico terapista de guardia, 
+                      en caso de recibir indicaciones de otra disciplina se solicitará que previamente se le informe al médico terapista.
+                    </li>
+                    <li class="listaol mb-2">
+                      El traslado del paciente a otros servicios dentro de la institución (TAC, ecografía, electroencefalograma, etc.). 
+                      El mismo deberá ser consensuado entre el equipo médico y el enfermero a cargo.
+                    </li>
+                    <li class="listaol mb-2">
+                      La enfermera/o a cargo de un paciente terminal deberá brindar acompañamiento terapéutico adecuado a la situación, 
+                      con calidad y calidez, manteniendo el vínculo familiar.
+                    </li>
+                    <li class="listaol mb-2">
+                      Auditar la vigilancia de limpieza de superficies altamente tocadas al alta del paciente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Cumplir con las normas establecidas por el comité de seguridad de paciente, durante el ingreso, permanencia y alta del paciente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Cumplir con las normas del comité de vigilancia epidemiológica establecidas en la institución.
+                    </li>
+                    <li class="listaol mb-2">
+                      Coordinar como mínimo por turno, anualmente un monitor para  el control de higiene de manos.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la implementación de combos de medidas de dispositivos invasivos los cuales tengan altas tasas de infecciones 
+                      asociadas al cuidado de la salud y/o el comité determine implementarlos como estrategia para su mejora.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------------------------------------------------------->
+        <!--FUNCION ADMINISTRATIVA-->
+        <div class="row justify-content-center mt-1 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
+          <h4 class="mx-4 col-12 border-bottom my-2 titulo_cuadro">Función Administativa</h4>
+          <div class="justify-content-start font-weight-bold">
+            <p class="font-weight-bold parrafo pb-0 mb-0">
+              Esta etapa consiste en planear, organizar, dirigir y evaluar las actividades de enfermería como una organización 
+              dentro de la institución. Comprenden todos los procesos de toma de decisiones y distribución de la información 
+              necesaria más allá de los esquemas de coordinación e integración utilizados por la organización.<br>
+              La tarea principal de la administración consiste en hacer las cosas a través de las personas, con los mejores 
+              resultados, dirigiendo el esfuerzo de grupos organizados, todos a un mismo objetivo (Chiavenato, 1990).
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="personal2"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--FUNCIONES ASISTENCIALES-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fnadm" aria-expanded="true" aria-controls="collapseOne">
+                  Funciones Administrativas
+                </button>
+              </h2>
+              <div id="fnadm" class="accordion-collapse collapse" data-bs-parent="#personal2">
+                <div class="accordion-body">
+                  <!--ACORDEON INTERNO-->
+                  <ol class="lista1">
+                    <li class="listaol mb-2">
+                      Ejercer las funciones de prevención, recuperación y rehabilitación de la salud, dentro 
+                      de los límites de competencia según incumbencias habilitantes.
+                    </li>
+                    <li class="listaol mb-2">
+                      Será responsabilidad del enfermero/a entregar a oficina de personal sus papeles referidos a licencia anual, 
+                      licencia sanitaria, francos compensados, faltas justificadas, omisiones, licencias por examen, entre otras solicitudes.
+                    </li>
+                    <li class="listaol mb-2">
+                      Francos compensados y faltas justificadas serán otorgados en función a las camas críticas y recurso 
+                      humano disponible y teniendo en cuenta Lic. Anuales ordinarias, sanitarias, por exámenes, por capacitación, 
+                      por estudio ginecológico. Estos serán siempre consensuado con el grupo y  la coordinadora del turno, quien 
+                      informara al jefe inmediato.
+                    </li>
+                    <li class="listaol mb-2">
+                      La solicitud de licencias anuales ordinarias, Lic. Sanitarias y restos de licencias, serán consensuadas 
+                      con el grupo y la coordinadora del turno, quien a su vez comunicara al jefe del servicio, la misma, 
+                      será autorizada con previa valoración de la planilla general de planificación.
+                    </li>
+                    <li class="listaol mb-2">
+                      Los pedidos de Licencia por capacitación dentro de córdoba capital. Deberán ser solicitados con 10 días 
+                      hábiles de anticipación según disposiciones generales reglamentadas Decreto 15.795-A-82 del Digesto Municipal. 
+                      Una vez solicitada la Lic. estas deberán ser presentada ante el comité de capacitación y docencia.<br>
+                      Capacitación en el interior de la provincia, deberán ser solicitadas con 30 días de anticipación y deberán 
+                      ser presentada en el comité de capacitación y docencia.
+                    </li>
+                    <li class="listaol mb-2">
+                      Será responsabilidad del enfermero/a saber los días de licencia anual que le corresponde.
+                    </li>
+                    <li class="listaol mb-2">
+                      Es responsabilidad del enfermero/a comunicar cualquier inquietud que le surja exista con su coordinador de 
+                      turno sobre algún tema administrativo y este será el nexo de comunicación con el jefe de sección o coordinador 
+                      general que se encuentre a cargo.
+                    </li>
+                    <li class="listaol mb-2">
+                      Según la ordenanza 7244 del estatuto del personal municipal el personal debe gozar su licencia anual en 
+                      el periodo comprendido entre el 1º de julio de cada año y el 30 de junio del año siguiente.
+                    </li>
+                    <li class="listaol mb-2">
+                      La planilla de solicitud de licencia anual del personal será confeccionada y puesta en el servicio en el 
+                      mes de octubre/noviembre, indicando fecha publicación y finalización para retiro de la misma.
+                    </li>
+                    <li class="listaol mb-2">
+                      El no haber indicado la fecha de licencia anual, la misma será otorgada según la disponibilidad y necesidad del servicio.
+                    </li>
+                    <li class="listaol mb-2">
+                      La licencia anual se podrá fraccionar en dos veces según necesidad de servicio.
+                    </li>
+                    <li class="listaol mb-2">
+                      La licencia sanitaria se tomará entre el 5º y 6ª mes posterior a la finalización del primer periodo, de Lic. Anual ordinaria.
+                    </li>
+                    <li class="listaol mb-2">
+                      En cuanto al resto de licencia Y/o licencia sanitaria se usufructuaran según resoluciones dictaminadas por la 
+                      secretaria de salud y/o dirección. Los agentes contratados art 8 podrán hacer usufructo de su Lic. Anual 14 días 
+                      hábiles hasta el 31 de diciembre y/o hasta el 31 de marzo, por resolución municipal del año en curso. <b>Estas 
+                      licencias no pueden ser fraccionadas.</b> 
+                    </li>
+                    <li class="listaol mb-2">
+                      El personal monotributista gozara de Lic. Anual 15 días corridos y podrá hacer usufructo hasta el mes de diciembre.
+                    </li>
+                    <li class="listaol mb-2">
+                      <b>PERIODO CALIFICATORIO: </b>el periodo de clasificación es anual, comprende desde el 1º de octubre al 30 de septiembre del año siguiente.
+                      <ul class="listaol mb-2">
+                        <li class="listaol4 mb-2">El modo de evaluación será semestral, a los fines del proceso califica torio.</li>
+                        <li class="listaol4 mb-2">El personal que tenga menos de 12 meses de servicio efectivo a la fecha de calificación serán calificados por periodo incompleto.</li>
+                      </ul>
+                    </li>
+                    <li class="listaol mb-2">
+                      <b>CALIFICACIÓN: </b>La evaluación del desempeño es un instrumento que se utiliza para comprobar el grado de cumplimiento de los 
+                      objetivos propuestos a nivel individual. Este sistema permite una medición sistemática, objetiva e integral de la conducta 
+                      profesional y el rendimiento o el logro de resultados (lo que las personas son, hacen y logran).
+                      <ol>
+                        <li class="listaol2 mb-2">
+                          <b>Calidad y rendimiento: </b>En relación con la cantidad de trabajo realizado, se evaluarán los niveles de exactitud, eficiencia, 
+                          velocidad y eficacia.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Conocimientos: </b>Grado o dominio de la función que desempeña y de los métodos, procedimientos y medios aplicables a su trabajo.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Cooperación: </b>Predisposición para el trabajo en equipo y para responder al requerimiento de colaboración.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Responsabilidad: </b>Grado de responsabilidad evidenciado en el cumplimiento de los deberes y obligaciones 
+                          propias de su función.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Corrección personal: </b>Aspecto y cuidado de su persona; actitudes, modales y comportamiento en sus relaciones y 
+                          trato. Coordinadores del servicio de terapia intensiva será evaluado en reconocimiento a su función con los ítems. 
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Criterio e iniciativa: </b>Capacidad de análisis y discernimiento: justeza en el enfoque de problemas y situaciones; habilidad para desarrollar ideas y/o con acertado criterio propio.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Capacidad de conducir: </b>Habilidad para:
+                          <ol class="listaol3 mb-2">
+                            <li class="listaol3 mb-2">Motivar la acción de sus subordinados. </li>
+                            <li class="listaol3 mb-2">Definir y transmitir objetivos.</li>
+                            <li class="listaol3 mb-2">Obtener resultados.</li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <b>Periodo calificatorio: </b>Estatuto del personal ordenanza N° 7244 Art. 23 (calificación conceptual).
+                    </li>
+                    <li class="listaol mb-2">
+                      <b>ROTACION DE TURNO: </b>El enfermero/a ocupa el mismo puesto de trabajo, prestando sus servicios en horarios 
+                      diferentes en un periodo determinado según lo establecido por la organización el servicio.
+                      <ol>
+                        <li class="listaol2 mb-2">
+                          El sistema de rotación del personal de enfermería estará sustentado por la planificación de una 
+                          planilla cíclica que será colocada anualmente según la organización del servicio.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          Las rotaciones por el turno noche será en función de la permanencia del personal fijo de dicho turno. 
+                          Todo agente que haga usufructo de su Lic. anual ordinaria en su periodo de rotación, deberá cumplimentar 
+                          los dos meses correspondientes en el turno noche.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          Los periodos de licencia anual, sanitarias y carpetas médicas prolongadas se tendrán en cuenta para 
+                          determinar el tiempo de rotación que deberá realizar el personal.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          En el caso de no poseer ninguna licencia durante su rotación el tiempo del mismo será de dos meses, 
+                          quedando a disposición del Jefe de sección en caso de necesitar un tercer mes.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          El personal que no pueda rotar por turno noche debido a enfermedad deberá presentar una nota, adjuntando 
+                          certificado médico con fecha y firma del médico que lo indica, acompañado por la certificación de medicina 
+                          laboral de la municipalidad de Córdoba
+                        </li>
+                        <li class="listaol2 mb-2">
+                          Cobertura del personal de UCIP a otros servicios. 
+                        </li>
+                        <li class="listaol2 mb-2">
+                          <b>Capítulo 5 Art. 44 inciso d.</b> obedecer toda orden de un superior jerárquico con atribuciones y 
+                          competencias para darla, que tenga por objeto la realización de actos de servicio compatibles con la 
+                          función del agente¨. Respetar normas y protocolos, los mismos son de aplicación institucional. 
+                          El agente que sea designado para cubrir otro turno y/o servicio será designado según orden de planilla.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          El personal de reciente ingreso permanecerá en turno nocturno otorgándole un periodo de dos meses anuales 
+                          de descanso establecidos por el jefe de servicio.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          Durante las fechas especiales (navidad y año nuevo) se podrá establecer guardia mínima (siempre con el 
+                          compromiso de los integrantes que se encuentren en el grupo) dependiendo de la necesidad del servicio.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          En caso de establecer guardia mínima en fechas especiales el personal que en año anterior no trabajo, 
+                          quedará afectado en la planificación de la misma.
+                        </li>
+                        <li class="listaol2 mb-2">
+                          Si el jefe del servicio considera necesario la rotación de algún o algunos agentes fuera de su turno 
+                          habitual, (ya sea para evaluar su desempeño o reforzar conocimientos, etc.) será informado en tiempo y 
+                          forma al menos con 15 días previos.
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------->
+        <!--CAPACITACION, DOCENCIA E INVESTIGACIÓN-->
+        <h3 class="subtitulo border-bottom">Capacitación, Docencia e Investigación</h3>
+
+        <!--FUNCION ASISTENCIAL-->
+        <div class="row justify-content-center mt-1 pb-3 mx-2 mx-sm-2 mx-md-2 mx-lg-2 mx-xl-5 mx-xxl-5 bg-light borde">
+            <p class="font-weight-bold parrafo pb-0 mb-0">
+              Citando el código deontológico de Enfermería, el mismo afirma "Las enfermeras/os tienen la responsabilidad personal 
+              y rinden cuentas de la práctica ética de la enfermería y del mantenimiento de su competencia participando en el 
+              desarrollo profesional continuo y aprendizaje a lo largo de la vida. Manifestando la importancia de la capacitación 
+              continua del profesional de enfermería para así también mejorar la calidad en los cuidados brindados y generando 
+              motivación y sentido de pertenencia de las/os enfermeros que trabajan en el servicio de terapia intensiva del hospital 
+              infantil municipal. Enfermería representa un gran reto tanto en la práctica como en la capacitación, docencia e 
+              investigación, solicitando que el profesional genere una renovación constante en cuanto a: función de los cambios 
+              tecno- científicos, la bioingeniería, la biomecánica y la cibernética".
+            </p>
+        </div>
+        <div class="row justify-content-center mt-3 pb-3">
+          <div class="accordion" id="cap"><!--ID PADRE GENERAL DE LOS DEMAS ACORDEONES, SE DEBE AGREGAR EN TODOS LOS DATA-BS-PARENTS-->
+            <!----------------------------------------------------------------------->
+            <!--FUNCIONES ASISTENCIALES-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fncap" aria-expanded="true" aria-controls="collapseOne">
+                  Capacitación, Docencia e Investigación
+                </button>
+              </h2>
+              <div id="fncap" class="accordion-collapse collapse" data-bs-parent="#cap">
+                <div class="accordion-body">
+                  <!--ACORDEON INTERNO-->
+                  <ol class="lista1">
+                    <li class="listaol mb-2">
+                      Será personalmente responsable del mantenimiento de sus competencias mediante la formación continua.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la actualización y confección de los procesos operativos estandarizados que se realizan anualmente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Realizar las tareas de capacitación, docencia e investigación asignadas, que correspondan a las necesidades del servicio.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar y colaborar en la realización de capacitaciones que se realizan en el servicio anualmente.
+                    </li>
+                    <li class="listaol mb-2">
+                      Cumplir con los planes de capacitaciones que le fueran y estén programados en el servicio.
+                      <ul>
+                        <li class="listaol4 mb-2">
+                          <b>Art 44 ° inc. t) </b>participar en los cursos de capacitación que la Administración Comunal disponga, salvo causas de fuerza mayor debidamente justificada.
+                        </li>
+                        <li class="listaol4 mb-2">
+                          <b>Art 44 inc.t)- reglamentado Decreto 15975-A-82- </b>El agente no podrá negarse a participar en los cursos de capacitación, cuando estos fueren patrocinados por la Administración Municipal y se realicen dentro de la jornada habitual de trabajo de aquel.
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="listaol mb-2">
+                      La participación a la capacitación continua en el servicio será obligatorio para el personal, debiendo tener el 
+                      80% de asistencia, la misma forma parte de la evaluación anual.
+                    </li>
+                    <li class="listaol mb-2">
+                      Integrarse en procesos de capacitación permanente que le permita instrumentarse en los nuevos avances de la ciencia educativa.
+                    </li>
+                    <li class="listaol mb-2">
+                      Capacitar y enseñar al personal de reciente ingreso.
+                    </li>
+                    <li class="listaol mb-2">
+                      Actualizar y perfeccionar los conocimientos y habilidades que se requieran ante la realización de nuevos procedimientos.
+                    </li>
+                    <li class="listaol mb-2">
+                      El personal que asista a cursos, jornadas, congresos relacionados a la intervención de enfermería, deberá hacer la devolución de la misma ya sea atreves de una capacitación en servicio, video conferencia, power Point, entre otras metodología de enseñanza.
+                    </li>
+                    <li class="listaol mb-2">
+                      Capacitar a otros profesionales de enfermería que no  pertenezcan al servicio, sobre nuevas metodologías y recursos terapéuticos.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la organización, coordinación y docencia de jornadas, congresos, seminarios, y cursos que se realicen a nivel institucional.
+                    </li>
+                    <li class="listaol mb-2">
+                      Integrar y/o colaborar con el comité de docencia y demás organismos intrahospitalarias cuando sea necesario.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar en la investigación epidemiológica.
+                    </li>
+                    <li class="listaol mb-2">
+                      Participar activa e interdisciplinariamente en las actividades previstas y organizadas institucionalmente que contribuyen 
+                      a mejorar la atención del paciente.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
       </div>
     </main>
 

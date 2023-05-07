@@ -1,12 +1,9 @@
-<!--(C)ENFERMERIA CONECTADA
-  PLATAFORMA CREADA POR FERNANDEZ LUCAS EDUARDO
-  LICENCIADO EN ENFERMERIA WEB DEVELOPER
-  CONTACTO: Lukasfernandez22@gmail.com
-  tel:+54 0351 156207238
-  FECHA DE INICIO OCTUBRE 2022 VERSION ALPHA
-  VERSION BETA DICIEMBRE 2022
-  ACTUALIZACION 1.02 15/04/2023 
--->
+<!--DISEÑO DE PLATAFORMA, NOMBRE Y LOGOTIPO SON MARCAS CREADAS (ENFERMERIA CONECTADA) POR:
+   (C)FERNANDEZ LUCAS EDUARDO
+    34273259
+    LICENCIADO EN ENFERMERIA/WEB DEVELOPER
+    DESARROLLO 2022-2023
+    COMO PARTE DE UN PROYECTO PRESENTADO EN EL HOSPITAL INFANTIL MUNICIPAL DE LA CIUDAD DE CORDOBA-->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -37,7 +34,7 @@
             <div class="container-fluid">
                 <!--LOGOTIPO Y NOMBRE-->
                 <a class="navbar-brand mx-auto" href="#">
-                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/1682678201182.png"></i>
+                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png"></i>
                   <span id="enfconec">ENFERMERIA CONECTADA</span>
                 </a>
                   <!--BOTON DEL MENU-->
@@ -143,6 +140,7 @@
             <h6 class="text-decoration-underline ">Hospital Infantil Municipal</h6></div>
         </div>
     </header>
+
     <main class="text-white">
 
       <div class="mx-3">
@@ -155,26 +153,36 @@
           a información relevante y recursos valiosos para mejorar su práctica y brindar la mejor atención posible a sus pacientes.</p>
 
       </div>
-<!--
-    <div class="container-fluid row mt-3">
-        <div class=" col-2 mx-0">
-          <input type="checkbox" id="menu-check">
-          <label id="menu" for="menu-check">
-            <span id="menu-abrir">&#9776;</span>
-            <span id="menu-cerrar">X</span>
-          </label>
-          <nav id="herramientas">
+
+    
+    
+      <div class=" row mt-3 justify-content-center ps-0">
+          <!--------------------------------------------------------------------------------------------------------------------------->
+          <!--LISTA DE HERRAMIENTAS EN COMPUTADORA-->
+          <div class="col-2 ms-0 me-2" id="herramientas" >
           <h5 class="text-center">Herramientas</h5>
           <ul>
-            <li>Combo de Medidas</li>
+            <li><a class="listasss  text-white font-weight-bold" href="6-herramientas/dilucion_medicamentos/dilucion_de_medicamentos.html">Dilución de Medicamentos</a></li>
+            <li></li>
             <li></li>
           </ul>
-        </nav>
-        </div>
--->
+          </div>
+          <!--LISTA DE HERRAMIENTAS EN COMPUTADORA-->
+          <div class="dropdown col-2 mb-2" id="botonherramientas">
+            <button class="btn btn-dark dropdown-toggle col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="ASSETS/ICONOS/caja-de-herramientas.png">
+            </button>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="6-herramientas/dilucion_medicamentos/dilucion_de_medicamentos.html">Dilución de Medicamentos</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    
+
 
         <!--SECCION NOVEDADES NOTICIAS ACTUALIZACIONES-->
-        <div class="container-fluid bg-light mx-0 col-12">
+        <div class=" bg-light mx-0 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-8">
           <h2 class="py-2 text-dark novedades">Novedades</h2>
 
           <!--Noticias 1-->
@@ -223,8 +231,17 @@
             </div>
           </div>
         </div>
+<!--
+        <div class="col-2 mx-2  rounded border border-light" id="herramientas" >
+          <h5 class="text-center">Herramientas</h5>
+          <ul>
+            <li>Combo de Medidas</li>
+            <li></li>
+          </ul>
+        </div>
+    -->  
+      </div>
 
-    </div>
     </main>
 
 

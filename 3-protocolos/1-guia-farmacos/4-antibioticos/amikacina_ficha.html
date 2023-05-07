@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--DISEÑO DE PLATAFORMA, NOMBRE Y LOGOTIPO SON MARCAS CREADAS (ENFERMERIA CONECTADA) POR:
+   (C)FERNANDEZ LUCAS EDUARDO
+    34273259
+    LICENCIADO EN ENFERMERIA/WEB DEVELOPER
+    DESARROLLO 2022-2023
+    COMO PARTE DE UN PROYECTO PRESENTADO EN EL HOSPITAL INFANTIL MUNICIPAL DE LA CIUDAD DE CORDOBA-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -26,8 +32,8 @@
             <div class="container-fluid">
                 <!--LOGOTIPO Y NOMBRE-->
                 <a class="navbar-brand mx-auto" href="#">
-                    <i class="bi bi-wifi text-white"></i>
-                    <span class="text-white">ENFERMERIA CONECTADA</span>
+                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png"></i>
+                  <span id="enfconec" class="text-white">ENFERMERIA CONECTADA</span>
                 </a>
                   <!--BOTON DEL MENU-->
           <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,7 +128,7 @@
          <!--TEXTO DE PORTADA-->
         <div class="container-fluid d-flex justify-content-center align-items-center flex-column border-bottom border-primary py-2">
           <div class="d-flex align-items-center flex-column portadita text-primary"><h1 class="text-center text-primary ">
-            Antibioticos
+            Antibióticos
           </h1>
         </div>
         </div>
@@ -141,26 +147,66 @@
             
         <!--CARUSEL DE FICHA-->
         <div  class=" col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-3 col-xxl-4 p-0 ">
-          <img src="ASSETS/IMAGENS-AVS/aciclovir_kloviracil 500mg.jpg" class="img-fluid pb-0 mb-0 pe-sm-0 pe-md-0 pe-lg-1 pe-xl-1 pe-xxl-1">
+          <img src="ASSETS/IMAG-ABT/amikacina.jpeg" class="img-fluid pb-0 mb-0 pe-sm-0 pe-md-0 pe-lg-1 pe-xl-1 pe-xxl-1">
          </div>
 
         <!--DATOS DE LA FICHA SUPERIOR-->
         <div class="container-fluid bg-light col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-9 col-xxl-8 ps-0 texto-justificado">
-          <p><b>Acción Terapéutica:</b>  Antibiótico aminoglucósido.</p>
+          <p><b>Acción Terapéutica:</b> <br>
+            Antibiótico aminoglucósido.
+          </p>
 
-          <p><b>Indicación:</b> Tratamiento por infecciones por bacterias Gram Negativas resistentes a Gentamicina e infecciones microbacterianas susceptibles.</p>
-
-          <p><b>Presentación:</b> Ampolla de 500mg/2ml (250mg/ml). </p>
+          <p><b>Indicación:</b><br>
+            Tratamiento por infecciones por bacterias Gram Negativas resistentes a Gentamicina e infecciones microbacterianas susceptibles.</p>
   
-          <p><b>Posología: </b><br>15mg/kg/día cada 12-24hs;<b class="text-primary"> Dosis Máxima:</b> 1500mg/día cada 8hs.<br><b class="text-primary">Encefalitis herpética:</b> + de 12 años, 60mg/kg/día cada 8 hs. - de 12 años, 30mg/kg/día cada 8 hs.<br><b class="text-primary">Mycobacterium Avium:</b> 1,5-15mg/kg/día cada 12-24hs cada 12-24ha,<br><b class="text-primary">Mycobacterium Tuberculosis en pacientes con VIH positivos sensibles a amikacina:</b> 15-20mg/kg/día.<b class="text-primary"> Dosis Máxima:</b> 1000mg/día.<br><b class="text-primary">Micobacterias No Tuberculosas:</b> 15-30mg/kg/día divididos cada 12-24hs como parte de un régimen con múltiples fármacos.<b class="text-primary"> Dosis Máxima:</b> 1500mg/día.<br><b class="text-primary">Neonatos:</b> ver tabla en neonatos; +1000mg y +7 días (10mg/kg/dosis cada 12 hs)<br><b class="text-primary">+ de 2 meses:</b> 15mg/kg/dosis cada 24hs.</p>
+          <p><b>Posología: </b><br>
+            15mg/kg/día cada 12-24hs;<br>
+            <b> Dosis Máxima:</b> 1500mg/día cada 8hs.<br><br>
 
-          <p><b>Estabilidad: </b><b class="bg-warning  p-1"> Vial exclusivo de un solo uso!,</b> por estabilidad microbiológica se recomienda que <b class="bg-warning p-1"> una vez abierto desechar.</b></p>
+            <b class="text-primary">Encefalitis herpética</b><br>
+            <b>Mayor de 12 años:</b> 60mg/kg/día cada 8 hs.<br>
+            <b>Menor de 12 años:</b> 30mg/kg/día cada 8 hs.<br><br>
 
-          <p><b>Administración: </b><br><b class="text-primary">Concentración de la dilución:</b><br><b>Recomendada o minima en IVI:</b> 0.25-.5mg/ml, diluir en S.F. o DX5%.<br><b>Maxima en IVD:</b> 5-10mg/ml, diluir en S.F. o DX5%.<br><b class="text-primary">Velocidad de infusión:</b> Infundir en 60 minutos a 2hs.<br><b class="text-primary">IM:</b> Administración profunda directa sin diluir.</p>
+            <b class="text-primary">Mycobacterium Avium</b><br>
+             1,5-15mg/kg/día cada 12-24hs cada 12-24ha,<br><br>
+             
+             <b class="text-primary">Mycobacterium Tuberculosis en pacientes con VIH positivos sensibles a amikacina</b><br>
+              15-20mg/kg/día.<br>
+              <b> Dosis Máxima:</b> 1000mg/día.<br><br>
+              
+              <b class="text-primary">Micobacterias No Tuberculosas</b><br>
+               15-30mg/kg/día divididos cada 12-24hs como parte de un régimen con múltiples fármacos.<br>
+               <b> Dosis Máxima:</b> 1500mg/día.<br>
+               <b>Neonatos:</b> ver tabla en neonatos; +1000mg y +7 días (10mg/kg/dosis cada 12 hs)<br>
+               <b>Mayor de 2 meses:</b> 15mg/kg/dosis cada 24hs.
+            </p>
+
+          <p><b>Presentación</b> <br>
+            <b class="text-primary">Ampolla:</b> de 500mg/2ml (250mg/ml).
+          </p>
+
+          <p><b>Estabilidad</b><br>
+            <b class="bg-warning"> Vial exclusivo de un solo uso!,</b> por estabilidad microbiológica se recomienda que <b class="bg-warning"> una vez abierto desechar.</b></p>
+
+          <p><b>Administración: </b><br>
+            <b class="text-primary">IntraVenosa Directa (IVD)</b><br>
+                    No<br>
+                    <b class="text-primary">IntraVenosa Intermitente (IVI)</b><br>
+                    <b>Dilución Minima:</b> 0.25-.5mg/ml, diluir en S.F. o DX5%.<br>
+                    <b>Dilución Máxima:</b> 5-10mg/ml, diluir en S.F. o DX5%.<br>
+                    <b>Infusión:</b> en 60 minutos a 2hs.<br>
+                    <b class="text-primary">IntraMuscular (IM)</b><br>
+                    Administración profunda directa sin diluir.<br>
+                    <b class="text-primary">Vía Oral (VO)</b><br>
+                    No
+          </p>
        
          
 
-          <p><b>Observaciones:</b><br><b class="bg-primary text-white p-1">No administrar por IV directa. Administrar céfalosporinas o penicilinas 1 hora antes o despues.</b></p>
+          <p><b>Observaciones:</b><br>
+            No administrar por IV directa.<br>
+            Administrar céfalosporinas o penicilinas 1 hora antes o despues.
+          </p>
   
           <p><b>Efectos Adversos: </b><br> Ototoxicidad, nefrotoxicidad, bloqueo neuromuscular.</p>
         </div>

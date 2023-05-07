@@ -2,3 +2,26 @@
 .texto-justificado{
     text-align: justify;
 }
+
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+    padding-top: 10px;
+    font-size: 18px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+
+@media (max-width: 400px){
+    #enfconec{
+        font-size: 14px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+/**************/

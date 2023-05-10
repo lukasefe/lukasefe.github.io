@@ -18,6 +18,11 @@ body{
    
 }
 
+.spa{
+    text-align: center;
+    text-decoration: none;
+}
+
 /***********/
 /*LOGO DE ENFERMERIA DEL NAV*/
 #enfconec{
@@ -43,6 +48,10 @@ body{
 
 /*LETRA EN RESPONSIVE*/
 @media(max-width: 850px){
+    
+    .titulo-responsive{
+        font-size: 1,5rem;
+    }
     .letrares{
         font-size: 10px;
     }

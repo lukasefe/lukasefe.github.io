@@ -148,833 +148,1401 @@
             <span class="justify-content-center align-items-center texto mb-0 pb-0 titulo-responsive">Dilución de Medicamentos</span>
         </div>
 
-        <!--SECCION NOVEDADES PLANILLAS VIGENTES-->
-        <div class="container-fluid bg-light mt-4 mb-5">
-          <div class="row">
-            <div class="col-4">
-              <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link" href="#aciclovir">Aciclovir</a>
-                  <a class="nav-link" href="#amikacina">Amikacina</a>
-                  <a class="nav-link" href="#ampicilina">Ampicilina</a>
-                  <a class="nav-link" href="#ampicilina/sulbactam">Ampicilina + Sulbactam</a>
-                  <a class="nav-link" href="#anfob">Anfotericina B</a>
-                  <a class="nav-link" href="#anfolipo">Anfotericina Liposomal</a>
-                  <a class="nav-link" href="#cefalo">Cefalotina</a>
-                  <a class="nav-link" href="#cefazo">Cefazolina</a>
-                  <a class="nav-link" href="#cefta">Ceftazidima</a>
-                  <a class="nav-link" href="#ceftria">Ceftriaxona</a>
-                  <a class="nav-link" href="#cefuro">Cefuroxima</a>
-                  <a class="nav-link" href="#cipro">Ciprofloxacina</a>
-                  <a class="nav-link" href="#claritro">Claritromicina</a>
-                  <a class="nav-link" href="#clinda">Clindamicina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-                  <a class="nav-link" href="#fluco">Fluconazol</a>
-                  <a class="nav-link" href="#ganciclo">Ganciclovir</a>
-                  <a class="nav-link" href="#genta">Gentamicina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-                  <a class="nav-link" href="#colistina">Colistina</a>
-            
-                </nav>
-              </nav>
-            </div>
-          
-            <div class="col-8">
-              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-                <!---------------------------AMIKACINA----------------------------------------------------------------------->
-                <div id="aciclovir">
-                  <h4 class="text-primary text-center">Aciclovir</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                  <p class="letrares"><b class="text-primary">Comprimidos:</b> 200 mg, 400mg, 800mg.<br>
-                    <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>
-                    <b class="text-primary">Jarabe:</b> 100mg/5ml 200mg/5ml; 400mg/5ml.<br>
-                    <b class="text-primary">Oftálmico:</b> 5mg/ml.<br>
-                    <b class="text-primary">Tópico/Ünguento:</b> al 5%; 15mg, 10mg.<br>
-                    <b class="text-primary">Spray Bucal:</b> más Lidocaina 50ml.
-                  </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    <b class="bg-warning">No refrigerar por riesgo a precipitación,</b> 
-                    12hs a temperatura ambiente luego de reconstituido, desechar luego del periodo de tiempo.
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    10ml de AD (agua destilada).<br>
-                    <b>Concentración:</b> 50mg/ml.<br>
-                    <b class="text-primary">IntraVenosa Intermitente</b><br>
-                    <b>Recomendada o minima (V. Périferica):</b> 2,5-5mg/ml, diluir en S.F. o DX5%.<br>
-                    <b>Maxima (V. Central):</b> 7mg/ml, diluir en S.F. o DX5%.<br>
-                    <b>Infusión:</b> en 60 minutos.<br>
-                    <b class="text-primary">Via Oral (VO):</b><br>
-                    Disminuye la intolerancia gastrointestinal.</p>
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Riesgo de flebitis o inflamación en el sitio de punción en altas concetraciones.
-                  </p>
-                </div>
+        <div class="container-fluid bg-warning"><!--MARCO DEL CONTENEDOR FLUIDO ADAPTATIVO-->
+          <div class="row"><!--CONTENEDOR CON LA CLASE ROW PARA LAS COLUMNAS-->
+            <!--CONTENEDOR 1 PARA LA LISTA DE MEDIACMENTOS-->
+              <div class="accordion accordion-flush col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light" id="listamedicacion">
+                <h4 id="listaf">Lista de Farmacos</h4>
+                <!--MEDICACION DE LA LETRA A----------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionA" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  A
+                                </button>
+                              </h2>
+                              <div id="medicacionA" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                <div class="accordion-body">
+                                  <a class="nav-link text-primary my-2" href="#aciclovir">Aciclovir</a>
+                                  <a class="nav-link text-primary my-2" href="#amikacina">Amikacina</a>
+                                  <a class="nav-link text-primary my-2" href="#ampicilina">Ampicilina</a>
+                                  <a class="nav-link text-primary my-2" href="#ampicilina/sulbactam">Ampicilina / Sulbactam</a>
+                                  <a class="nav-link text-primary my-2" href="#anfob">Anfotericina B</a>
+                                  <a class="nav-link text-primary my-2" href="#anfolipo">Anfotericina Liposomal</a>
+                                </div>
+                              </div>
+                            </div>
+                <!--MEDIACION DE LA LETRA C------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionC" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  C
+                                </button>
+                              </h2>
+                              <div id="medicacionC" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                <div class="accordion-body">
+                                  <a class="nav-link text-primary my-2" href="#cefalo">Cefalotina</a>
+                                  <a class="nav-link text-primary my-2" href="#cefazo">Cefazolina</a>
+                                  <a class="nav-link text-primary my-2" href="#cefta">Ceftazidima</a>
+                                  <a class="nav-link text-primary my-2" href="#ceftria">Ceftriaxona</a>
+                                  <a class="nav-link text-primary my-2" href="#cefuro">Cefuroxima</a>
+                                  <a class="nav-link text-primary my-2" href="#cipro">Ciprofloxacina</a>
+                                  <a class="nav-link text-primary my-2" href="#claritro">Claritromicina</a>
+                                  <a class="nav-link text-primary my-2" href="#clinda">Clindamicina</a>
+                                  <a class="nav-link text-primary my-2" href="#colistina">Colistina</a>
+                                </div>
+                              </div>
+                            </div>
+                <!--MEDICACION DE LA LETRA F------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionF" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  F
+                                </button>
+                              </h2>
+                              <div id="medicacionF" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                <div class="accordion-body">
+                                  <a class="nav-link text-primary my-2" href="#fluco">Fluconazol</a>
+                                </div>
+                              </div>
+                            </div>
 
-                <!---------------------------AMIKACINA----------------------------------------------------------------------->
-                <div id="amikacina">
-                  <h4 class="text-primary text-center">Amikacina</h4>
-                </div>
-                <div id="item-1-1">
-                  <h5>Presentación</h5>
-                  <p class="letrares"><b class="text-primary">Ampolla</b> de 500mg/2ml (250mg/ml).</p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares"><b class="bg-warning  p-1"> Vial exclusivo de un solo uso!,
-                  </b> por estabilidad microbiológica se recomienda que <b class="bg-warning p-1"> una vez abierto desechar.</b></p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">IntraVenosa Directa (IVD)</b><br>
-                    No<br>
-                    <b class="text-primary">IntraVenosa Intermitente (IVI)</b><br>
-                    <b>Dilución Minima (V. Périferica):</b> 0.25-.5mg/ml, diluir en S.F. o DX5%.<br>
-                    <b>Dilución Máxima (V. Central):</b> 5-10mg/ml, diluir en S.F. o DX5%.<br>
-                    <b>Infusión:</b> en 60 minutos a 2hs.<br>
-                    <b class="text-primary">IntraMuscular(IM)</b><br>
-                    Administración profunda directa sin diluir.<br>
-                    <b class="text-primary">Vía Oral(VO)</b><br>
-                    No
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    No administrar por IV directa.<br>
-                    Administrar céfalosporinas o penicilinas 1 hora antes o despues.
-                  </p>
-                </div>
+                <!--MEDICACION DE LA LETRA G------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionG" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  G
+                                </button>
+                                </h2>
+                                <div id="medicacionG" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                  <div class="accordion-body">
+                                    <a class="nav-link text-primary my-2" href="#ganciclo">Ganciclovir</a>
+                                    <a class="nav-link text-primary my-2" href="#genta">Gentamicina</a>
+                                  </div>
+                                </div>
+                            </div>
 
-                <!---------------------------AMPICILINA----------------------------------------------------------------------->
-                <div id="ampicilina">
-                    <h4 class="text-primary text-center">Ampicilina</h4>
-                </div>
-                <div>
-                   <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 500mg y 1000mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida dura <b class="bg-warning">1 hs a temperatura ambiente y 2 hs refrigerada,</b> 
-                    luego de este tiempo desechar.
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                      <b class="text-primary">Reconstitución</b><br>
-                      <b>FA de 500mg: </b>en 5ml de agua destilada, obteniendo 100mg/ml.<br>
-                      <b>FA de 1000mg: </b>en 10ml de agua destilada, obteniendo 100mg/ml.<br> 
-                      <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                      Con Solución Fisiologíca.<br>
-                      <b>Concentración Recomendada (V. Périferica):</b> 50mg/ml.<br>
-                      <b>Contración Máxima (V. Central):</b> 100mg/ml.<br>
-                      <b>Infundir:</b> entre 5-10 minutos.<br>
-                      <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                      Con Solución Fisilogíca.<br>
-                      <b>Concentración Recomendada (V. Périferica):</b> 10-20mg/ml.<br>
-                      <b>Concentración Máxima (V. Central):</b> 30mg/ml.<br>
-                      <b>Infundir:</b> entre 15-30 minutos, preparar y administrar inmediatamente.<br>
-                      <b class="text-primary">Intramuscular (IM)</b><br>
-                      <b>Reconstituir:</b> con 3,5ml de agua estéril o Lidocaina al 1%.<br>
-                      <b>Concentración:</b> 250mg/ml.
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Datos consignados en base a la ampicilina.<br>
-                    El tiempo de preparacion y administracion del medicamento no debe exceder 1 hora.<br>
-                    Observar signos anafilaxia durante los primeros minutos tras la administración.<br>
-                    No usar DX 5% acelera su hidrolisis.<br>
-                    No mezclar con soluciones que contengan aminoácidos.
-                  </p>
-                </div>
+                <!--MEDICACION DE LA LETRA I------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionI" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  I
+                                </button>
+                                </h2>
+                                <div id="medicacionI" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                  <div class="accordion-body">
+                                    <a class="nav-link text-primary my-2" href="#imipe">Imipenem</a>
+                                  </div>
+                                </div>
+                            </div>
 
-                <!---------------------------AMPICILINA + SULBACTAM----------------------------------------------------------------------->
-                <div id="ampicilina/sulbactam">
-                    <h4 class="text-primary text-center">Ampicilina + Sulbactam</h4>
-                </div>
-                <div>
-                   <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 750mg.<br>
-                      <b class="text-primary">Frasco/Ampolla:</b> 1500mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconstituida dura <b class="bg-warning">1 hs a temperatura ambiente y 2 hs refrigerada,</b> 
-                    luego de este tiempo desechar.
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                      <b class="text-primary">Reconstitución</b><br>
-                      <b>FA de 750mg: </b>en 1,6ml de agua destilada, obteniendo 250mg/ml de ampicilina.<br>
-                      <b>FA de 1500mg: </b>en 3,2ml de agua destilada, obteniendo 250mg/ml. de ampicilina<br>
-                      <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                      Con Solución Fisiologíca.<br>
-                      <b>Concentración Recomendada (V. Périferica):</b> 50mg/ml.<br>
-                      <b>Contración Máxima (V. Central):</b> 100mg/ml.<br>
-                      <b>Infundir:</b> entre 10-15 minutos.<br>
-                      <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                      Con Solución Fisilogíca.<br>
-                      <b>Concentración Recomendada (V. Périferica):</b> 10-20mg/ml.<br>
-                      <b>Concentración Máxima (V. Central):</b> 30mg/ml.<br>
-                      <b>Infundir:</b> entre 30-60 minutos, preparar y administrar inmediatamente.<br>
-                      <b class="text-primary">Intramuscular (IM)</b><br>
-                      <b>Reconstituir:</b> con 3,5ml de agua estéril o Lidocaina al 1%.<br>
-                      <b>Concentración:</b> 250mg/ml.<br>
-                      Administrar de forma lenta.
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Datos consignados en base a la ampicilina.<br>
-                    El tiempo de preparacion y administracion del medicamento no debe exceder 1 hora.<br>
-                    Observar signos anafilaxia durante los primeros minutos tras la administración.<br>
-                    No usar DX 5% acelera su hidrolisis.<br>
-                    No mezclar con soluciones que contengan aminoácidos.
-                  </p>
-                </div>
+                <!--MEDICACION DE LA LETRA M------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionM" aria-expanded="false" aria-controls="flush-collapseThree">
+                                M
+                              </button>
+                              </h2>
+                              <div id="medicacionM" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-primary my-2" href="#mero">Meropenem</a>
+                                <a class="nav-link text-primary my-2" href="#metro">Metronidazol</a>
+                              </div>
+                            </div>
+                            </div>
 
-                <!---------------------------ANFOTERICINA B----------------------------------------------------------------------->
-                <div id="anfob">
-                  <h4 class="text-primary text-center">Anfotericina B</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 50mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida dura <b class="bg-warning  p-1">24 hs a temperatura ambiente y 48hs refrigerada.</b><br>
-                  <b class="bg-warning ">Proteger de la luz.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    10ml de agua destilada.<br>
-                    <b>Concentraciòn:</b> 5mg/ml<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir con Solución Dextrosada al 5%.<br>
-                    <b>Concentración Recomendada (V. Périferica):</b> 0,1mg/ml.<br>
-                    <b>Concentración Máxima (V. Central):</b> 0,5mg/ml.<br>
-                    <b>Infundir:</b> de 4-6 horas, usar acceso exclusivo, no infundir con otras soluciones.<br>
-                    <b>Administrar:</b> en <b class="text-bg-warning">PERFUS FOTOSENSIBLE</b> e 
-                    identificar con <b class="text-bg-warning">ROTULO Y CINTA COLOR AMARILLO.</b>
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Proteger de la luz durante su conservación y administración.<br>
-                    No usar Sol. Fisiologíca.
-                  </p>
-                </div>
+                <!--MEDICACION DE LA LETRA P------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionP" aria-expanded="false" aria-controls="flush-collapseThree">
+                                P
+                              </button>
+                              </h2>
+                              <div id="medicacionP" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-primary my-2" href="#penig">Penicilina G</a>
+                                <a class="nav-link text-primary my-2" href="#pipera">Piperacilina</a>
+                                <a class="nav-link text-primary my-2" href="#ptz">Piperacilina Tazobactam</a>
+                              </div>
+                            </div>
+                            </div>
 
-                <!---------------------------ANFOTERICINA LIPOSOMAL----------------------------------------------------------------------->
-                <div id="anfolipo">
-                  <h4 class="text-primary text-center">Anfotericina Liposomal</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 50mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida dura <b class="bg-warning  p-1">24hs refrigerada.</b><br>
-                 <b class="bg-warning ">Proteger de la luz.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    10ml de agua destilada.<br>
-                    <b>Concentración: </b>4 mg/ml.<br>
-                     <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Con Solución Dextrosada al 5%.<br>
-                     <b>Concentración Recomendada (v. Périferica):</b> 0,2-0,5mg/ml.<br>
-                     <b>Concentración Máxima (v. Central):</b> 2mg/ml.<br>
-                    <b>Infundir:</b> de 60minutos a 2 horas, usar acceso exclusivo, no infundir con otras soluciones.<br>
-                    <b>Administrar:</b> en <b class="text-bg-warning">PERFUS FOTOSENSIBLE</b> e 
-                    identificar con <b class="text-bg-warning">ROTULO Y CINTA COLOR AMARILLO.</b>
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Proteger de la luz durante su conservación y administración.<br>
-                    No usar Sol. Fisiologíca; se solidifica.<br>
-                    No es necesario premedicar con difenhidramina o hidrocortisona.<br>
-                    Lavar la vía con Dx 5% antes y después de su administración.<br>
-                    No administrar con soluciones que contengan electrolitos.
-                  </p>
-                </div>
+                <!--MEDICACION DE LA LETRA R------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionR" aria-expanded="false" aria-controls="flush-collapseThree">
+                                R
+                              </button>
+                              </h2>
+                              <div id="medicacionR" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-primary my-2" href="#rifa">Rifampicina</a>
+                              </div>
+                            </div>
+                            </div>
 
-                 <!---------------------------CEFALOTINA----------------------------------------------------------------------->
-                 <div id="cefalo">
-                  <h4 class="text-primary text-center">Cefalotina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida es estable <b class="bg-warning  p-1"> 12 hs a temperatura ambiente y 24 hs refrigerada.</b><br>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    en 10ml de agua destilada.<br>
-                    <b>Concentración: </b>100mg/ml.<br>
-                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (v. Périferica): </b>50mg/ml.<br>
-                    <b>Concentración Máxima (v. Central): </b> 100mg/ml.<br>
-                    <b>Infundir: </b>de 3-5 minutos.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (v. Périferica): </b>20mg/ml.<br>
-                    <b>Concentración Máxima (v. Central): </b> 50mg/ml.<br>
-                    <b>Infundir: </b>en 3o minutos.<br>
-                    <b class="text-primary">Intramuscular (IM)</b><br>
-                    Reconstituir en 4ml de lidocaina al 1%.<br>
-                    <b>Concentración: </b>225mg/ml.<br>
-                    No reconstituir con Sol. Fisiologica por que su administración IM es muy dolorosa.
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    El cambio de color no indica inactividad.<br>
-                    Asociada con aminoglucósidos puede aumentar riesgo de nefrotoxicidad.<br>
-                    Reacciones alérgicas, tromboflebitis , trombocitopenia, leucopenia, nefrotoxicidad.<br>
-                  </p>
-                </div>
+                <!--MEDICACION DE LA LETRA S------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionS" aria-expanded="false" aria-controls="flush-collapseThree">
+                                S
+                              </button>
+                              </h2>
+                              <div id="medicacionS" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-primary my-2" href="#tmx">Sulfametaxazol + Trimetropina</a>
+                              </div>
+                            </div>
+                            </div>
 
-                <!---------------------------CEFAZOLINA----------------------------------------------------------------------->
-                <div id="cefazo">
-                  <h4 class="text-primary text-center">Cefazolina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida es estable <b class="bg-warning  p-1"> 24hs a temperatura ambiente y 4 días refrigerada.</b><br>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    en 10ml de agua destilada.<br>
-                    <b>Concentración: </b>100mg/ml.<br>
-                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (v. Périferica): </b>50mg/ml.<br>
-                    <b>Concentración Máxima (v. Central): </b> 100mg/ml.<br>
-                    <b>Infundir: </b>de 3-5 minutos.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (v. Périferica): </b>20mg/ml.<br>
-                    <b>Concentración Máxima (v. Central): </b> 50mg/ml.<br>
-                    <b>Infundir: </b>en 3o minutos.<br>
-                    <b class="text-primary">Intramuscular (IM)</b><br>
-                    Reconstituir en 4ml de lidocaina al 1%.<br>
-                    <b>Concentración: </b>225mg/ml.<br>
-                    No reconstituir con Sol. Fisiologica por que su administración IM es muy dolorosa.
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Los niveles altos de cefazolina, particularmente en fallo renal, pueden aumentar el riesgo de
-                    crisis en pacientes epilépticos con bajo umbral.<br>
-                    Asociada con aminoglucósidos puede aumentar riesgo de nefrotoxicidad.<br>
-                    Reacciones alérgicas, tromboflebitis , trombocitopenia, leucopenia, nefrotoxicidad.<br>
-                  </p>
-                </div>
-
-                 <!---------------------------CEFTAZIDIMA----------------------------------------------------------------------->
-                 <div id="cefta">
-                  <h4 class="text-primary text-center">Ceftazidima</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida es estable <b class="bg-warning  p-1">8 hs a temperatura ambiente y 24 hs refrigerada.</b><br>
-                    Reconsituido con lidocaina tiene una estabilidad de <b class="text-bg-warning">6hs a temperatura ambiente.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    en 10ml de agua destilada.<br>
-                    <b>Concentración: </b>100mg/ml.<br>
-                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>40mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b> 100mg/ml.<br>
-                    <b>Infundir: </b>de 3-5 minutos.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>20mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b> 40mg/ml.<br>
-                    <b>Infundir: </b>entre 15-3o minutos.<br>
-                    <b class="text-primary">Intramuscular (IM)</b><br>
-                    Reconstituir en 2,5ml de lidocaina al 1%.<br>
-                    <b>Concentración: </b>280mg/ml.<br>
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    El uso prolongado de ceftazidima puede provocar el sobrecrecimiento de microorganismos no
-                    sensibles (Entercocci, Candida spp).<br>
-                    Precaución en pacientes con antecedentes de enfermedad gastrointestinal, especialmente colitis.<br>
-                    Las soluciones pueden adquirir un color amarillento, no afecta su potencia.<br>
-                    El F/A reconstituido puede contener burbujas de dióxido de carbono, que deben eliminarse por completo antes de la
-                    administración.<br>
-                    Probenecid disminuye la excreción renal. Con aminoglucósidos incrementan el potencial de nefrotoxicidad.
-                  </p>
-                </div>
-
-                <!---------------------------CEFTRIAXONA----------------------------------------------------------------------->
-                <div id="ceftria">
-                  <h4 class="text-primary text-center">Ceftriaxona</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida es estable <b class="bg-warning  p-1">6 hs a temperatura ambiente y 24 hs refrigerada.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    en 10ml de agua destilada.<br>
-                    <b>Concentración: </b>100mg/ml.<br>
-                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>40mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b> 100mg/ml.<br>
-                    <b>Infundir: </b>de 3-5 minutos.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>20mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b> 40mg/ml.<br>
-                    <b>Infundir: </b>en 3o minutos.<br>
-                    <b class="text-primary">Intramuscular (IM)</b><br>
-                    Reconstituir en 2,5ml de lidocaina al 1%.<br>
-                    <b>Concentración: </b>280mg/ml.<br>
-                    Inyectar en un musculo grande de forma lenta.
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    No administrar ceftriaxona simultáneamente (y dentro de las 48 h de intervalo) 
-                    con soluciones intravenosas que contienen calcio.<br>
-                    Dolor en el sitio de inyección.<br>
-                    Probenecid disminuye la excreción renal. Con aminoglucósidos incrementan el potencial de nefrotoxicidad.
-                  </p>
-                </div>
-
-                <!---------------------------CEFUROXIMA----------------------------------------------------------------------->
-                <div id="cefuro">
-                  <h4 class="text-primary text-center">Cefuroxima</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> 750mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituida es estable <b class="bg-warning  p-1">5 hs a temperatura ambiente y 48 hs refrigerada.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    en 6 ml de agua destilada.<br>
-                    <b>Concentración: </b>116mg/ml. El resultado de la reconstitución se incrementa por el valor del desplazamiento del fármaco.<br>
-                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>30mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b> 50mg/ml.<br>
-                    <b>En pacientes con restricción hidrica: </b> 100mg/ml.<br>
-                    <b>Infundir: </b>de 3-5 minutos.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>10-15mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b> 30mg/ml.<br>
-                    <b>En pacientes con restricción hidrica: </b> 100mg/ml.<br>
-                    <b>Infundir: </b>en 3o-60 minutos.<br>
-                    <b class="text-primary">Intramuscular (IM)</b><br>
-                    Reconstituir en 3ml de Agua Destilada.<br>
-                    <b>Concentración: </b>216mg/ml.<br>
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    No se recomienda como antibiótico de elección en S.N.C. por fallo de tratamiento.<br>
-                    Ajustar dosis en insuficiencia renal.<br>
-                    El cambio de color del vial reconstituido no implica inestabilidad.<br>
-                    Probenecid disminuye la excreción renal. Con aminoglucósidos incrementan el potencial de nefrotoxicidad.
-                  </p>
-                </div>
-
-                <!---------------------------CIPROFLOXACINA----------------------------------------------------------------------->
-                <div id="cipro">
-                  <h4 class="text-primary text-center">Ciprofloxacina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Sachet:</b> de 200mg.<br>
-                      <b class="text-primary">Comprimidos:</b> de 500mg.<br>
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Proteger de la luz al sachet o jeringa <b class="bg-warning  p-1">baja fotosensiblidad,</b> el perfus no requiere protección.<br>
-                    Una vez abierto, <b class="bg-warning mb-1 p-1">si el sachet es rígido desechar, por inestabilidad microbiana; si es Flex conservar 24hs.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    No requiere.<br>
-                    <b>Concentración: </b>2mg/ml.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    En dosis bajas se puede diluir en DX5% o SF a una concentración de 1mg/ml.<br>
-                    <b>Infundir (V. Périferica y Central): </b>en 60 minutos.<br>
-                    <b class="text-primary">Vía Oral (VO)</b><br>
-                    Administrar 2hs después de las comidas, preferentemente en ayunas.<br>
-                    Ingerir los comprimidos enteros sin masticar y con un vaso de agua, adicionar varios vasos de agua a lo largo del día.<br>
-                  </p>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Se aconseja su uso en pediatría sólo en situaciones especiales.<br>
-                    Administrar lejos de las comidas.<br> 
-                    Los antiácidos (que contengan calcio, magnesio o aluminio) y el sucralfato 
-                    disminuyen la absorción de la ciprofloxacina si se lo administra concomitantemente.<br>
-                    Aumenta riesgo de nefrotoxicidad con ciclosporina.
-                  </p>
-                </div>
-
-                <!---------------------------CLARITROMICINA----------------------------------------------------------------------->
-                <div id="claritro">
-                  <h4 class="text-primary text-center">Claritromicina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>
-                      <b class="text-primary">Comprimidos:</b> de 250mg.<br> 
-                      <b class="text-primary">Suspensión:</b> de 25mg/ml.<br>  
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconsituido el FA, es estable <b class="bg-warning  p-1">24 hs a temperatura ambiente y 48 hs refrigerada.</b><br>
-                    La suspensión una vez diluida tiene una caducidad de <b class="bg-warning  p-1">14 días, NO REFRIGERAR.</b><br>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    en 10 ml de agua destilada.<br>
-                    <b>Concentración: </b>50 mg/ml.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración (V. Périferica y Central): </b> 2mg/ml.<br>
-                    <b>Infundir: </b>en 60 minutos.<br>
-                    <b class="text-primary">Vía Oral (VO)</b><br>
-                    Administrar con alimentos.<br>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Precipita con otros solventes.
-                  </p>
-                </div>
-
-                <!---------------------------CLINDAMICINA----------------------------------------------------------------------->
-                <div id="clinda">
-                  <h4 class="text-primary text-center">Clindamicina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> de 600mg/4ml (150mg/ml).<br>
-                      <b class="text-primary">Capsulas:</b> de 300mg.<br> 
-                      <b class="text-primary">Solución preparado magistral:</b> de 100mg/ml.<br> 
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    El vial una vez abierto <b class="bg-warning  p-1">desechar por inestabilidad microbiológica.</b><br>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    No requiere.<br>
-                    <b>Concentración: </b>150 mg/ml.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>6 mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b>12 mg/ml<br>
-                    <b>Infundir: </b>en 30-60 minutos.<br>
-                    <b class="text-primary">Intramuscular (IM)</b>
-                    No se recomienda la Administración de más de 600 mg.
-                    <b class="text-primary">Vía Oral (VO)</b><br>
-                    Administrar con un vaso de agua para prevenir la irritación esofágica.<br>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Kaolina disminuye la absorción de la clindamicina.<br>
-                    Los bloqueantes musculares, baclofeno y diazepam aumenta la frecuencia y la duración de la parálisis respiratoria.<br>
-                    Eritromicina produce antagonismo.
-                  </p>
-                </div>
-
-                <!---------------------------COLISTINA----------------------------------------------------------------------->
-                <div id="colistina">
-                  <h4 class="text-primary text-center">Colistina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> de 100 mg.<br>  
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    El vial una vez reconstituido es estable <b class="bg-warning  p-1">72hs a T° ambiente o refrigerado.</b><br>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    Con el solvente de 2ml.<br>
-                    <b>Concentración: </b>50 mg/ml.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    Diluir en DX 5% o SOL. F.<br>
-                    <b>Concentración Final (V. Périferica y Central): </b>2 mg/ml.<br>
-                    <b>Infundir: </b>en 30 minutos.<br>
-                    <b class="text-primary">Intravenosa Continua (IVC)</b><br>
-                    Administrar la mitad de la dosis total diaria durante 3-5minutos.<br>
-                    La segunda mitad de la dosis diluida en dext 5% o Solución fisiológica durante 22 o 23hs, 
-                    comenzando 1-2hs después de la dosis inicial.<br>
-                    <b class="text-primary">Intramuscular (IM)</b>
-                    En pacientes con función renal normal la dosis es de 2,5-5mg/kg/día, dividida en 2 a 4 administraciones.
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    En las formas de administración IV O IM ajustar dosis en pacientes con insuficiencia renal.
-                  </p>
-                </div>
-
-                <!---------------------------FLUCONAZOL----------------------------------------------------------------------->
-                <div id="fluco">
-                  <h4 class="text-primary text-center">Fluconazol</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Sachet:</b> de 200mg/100ml.<br>  
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Si el sachet es <b class="bg-warning  p-1">FLEX 24hs a T° ambiente.</b> Si el sachet es rigido, desechar.
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    No requiere.<br>
-                    <b>Concentración: </b>2 mg/ml.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    <b>Concentración Final (V. Périferica y Central): </b>2 mg/ml.<br>
-                    <b>Infundir: </b>en 60 minutos.<br>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    En dosis mayores a 6mg infundir en 2hs.
-                  </p>
-                </div>
-
-                <!---------------------------GANCICLOVIR----------------------------------------------------------------------->
-                <div id="ganciclo">
-                  <h4 class="text-primary text-center">Ganciclovir</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>  
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez reconstituido <b class="bg-warning  p-1">12hs a T° ambiente.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    10ml de Agua Destilada.<br>
-                    <b>Concentración: </b>50 mg/ml.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    <b>Diluir en:</b> DX 5% o S.F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>5 mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b>10 mg/ml.<br>
-                    <b>Infundir: </b>en 60 minutos a 2hs.<br>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Por sus propiedades cancerigenas, debe prepararse bajo flujo laminar.
-                  </p>
-                </div>
-
-                <!---------------------------GENTAMICINA----------------------------------------------------------------------->
-                <div id="genta">
-                  <h4 class="text-primary text-center">Gentamicina</h4>
-                </div>
-                <div>
-                  <h5>Presentación</h5>
-                    <p class="letrares">
-                      <b class="text-primary">Ampolla:</b> de 80mg.<br>  
-                    </p>
-                </div>
-                <div>
-                  <h5>Estabilidad</h5>
-                  <p class="letrares">
-                    Una vez abierto el vial <b class="bg-warning  p-1">desechar luego de su uso.</b>
-                  </p>
-                </div>
-                <div>
-                  <h5>Administración</h5>
-                  <p class="letrares">
-                    <b class="text-primary">Reconstitución</b><br>
-                    no requiere.<br>
-                    <b>Concentración: </b>40 mg/ml.<br>
-                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
-                    <b>Diluir en:</b> DX 5% o S.F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>10 mg/ml PRP.<br>
-                    <b>Concentración Máxima (V. Central): </b>10 mg/ml PRP.<br>
-                    <b>Infundir: </b>en 15 minutos.<br>
-                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
-                    <b>Diluir en:</b> DX 5% o S.F.<br>
-                    <b>Concentración Recomendada (V. Périferica): </b>3 mg/ml.<br>
-                    <b>Concentración Máxima (V. Central): </b>10 mg/ml.<br>
-                    <b>Infundir: </b>en 30-60 minutos.<br>
-                </div>
-                <div class="border-bottom border-primary">
-                  <h5>Observaciones</h5>
-                  <p class="letrares">
-                    Su administración IVD es POCO RECOMENDADO para pediatría (PRP).
-                    
-                  </p>
-                </div>
-             
+                <!--MEDICACION DE LA LETRA V------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionV" aria-expanded="false" aria-controls="flush-collapseThree">
+                                V
+                              </button>
+                              </h2>
+                              <div id="medicacionV" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-primary my-2" href="#vanco">Vancomicina</a>
+                              </div>
+                            </div>
+                            </div>
+                
               </div>
+
+            <!--------------------------------------------------------------------------------------------------------------------------->
+            <div class="bg-primary col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bg-light"><!--CONTENEDOR 2 PARA LOS MEDIACMENTOS-->
+               <!---------------------------AACICLOVIR----------------------------------------------------------------------->
+               <div id="aciclovir">
+                <h4 class="text-primary text-center">Aciclovir</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                <p class="letrares"><b class="text-primary">Comprimidos:</b> 200 mg, 400mg, 800mg.<br>
+                  <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>
+                  <b class="text-primary">Jarabe:</b> 100mg/5ml 200mg/5ml; 400mg/5ml.<br>
+                  <b class="text-primary">Oftálmico:</b> 5mg/ml.<br>
+                  <b class="text-primary">Tópico/Ünguento:</b> al 5%; 15mg, 10mg.<br>
+                  <b class="text-primary">Spray Bucal:</b> más Lidocaina 50ml.
+                </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  <b class="bg-warning">No refrigerar por riesgo a precipitación,</b> 
+                  12hs a temperatura ambiente luego de reconstituido, desechar luego del periodo de tiempo.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  10ml de AD (agua destilada).<br>
+                  <b>Concentración:</b> 50mg/ml.<br>
+                  <b class="text-primary">IntraVenosa Intermitente</b><br>
+                  <b>Recomendada o minima (V. Périferica):</b> 2,5-5mg/ml, diluir en S.F. o DX5%.<br>
+                  <b>Maxima (V. Central):</b> 7mg/ml, diluir en S.F. o DX5%.<br>
+                  <b>Infusión:</b> en 60 minutos.<br>
+                  <b class="text-primary">Via Oral (VO):</b><br>
+                  Disminuye la intolerancia gastrointestinal.</p>
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Riesgo de flebitis o inflamación en el sitio de punción en altas concetraciones.
+                </p>
+                <div class="text-center row">
+                  <span class=""><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------AMIKACINA----------------------------------------------------------------------->
+              <div id="amikacina">
+                <h4 class="text-primary text-center">Amikacina</h4>
+              </div>
+              <div id="item-1-1">
+                <h5>Presentación</h5>
+                <p class="letrares"><b class="text-primary">Ampolla</b> de 500mg/2ml (250mg/ml).</p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares"><b class="bg-warning  p-1"> Vial exclusivo de un solo uso!,
+                </b> por estabilidad microbiológica se recomienda que <b class="bg-warning p-1"> una vez abierto desechar.</b></p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">IntraVenosa Directa (IVD)</b><br>
+                  No<br>
+                  <b class="text-primary">IntraVenosa Intermitente (IVI)</b><br>
+                  <b>Dilución Minima (V. Périferica):</b> 0.25-.5mg/ml, diluir en S.F. o DX5%.<br>
+                  <b>Dilución Máxima (V. Central):</b> 5-10mg/ml, diluir en S.F. o DX5%.<br>
+                  <b>Infusión:</b> en 60 minutos a 2hs.<br>
+                  <b class="text-primary">IntraMuscular(IM)</b><br>
+                  Administración profunda directa sin diluir.<br>
+                  <b class="text-primary">Vía Oral(VO)</b><br>
+                  No
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  No administrar por IV directa.<br>
+                  Administrar céfalosporinas o penicilinas 1 hora antes o despues.
+                </p>
+                <div class="text-center row">
+                  <span class=""><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------AMPICILINA----------------------------------------------------------------------->
+              <div id="ampicilina">
+                  <h4 class="text-primary text-center">Ampicilina</h4>
+              </div>
+              <div>
+                 <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 500mg y 1000mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida dura <b class="bg-warning">1 hs a temperatura ambiente y 2 hs refrigerada,</b> 
+                  luego de este tiempo desechar.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                    <b class="text-primary">Reconstitución</b><br>
+                    <b>FA de 500mg: </b>en 5ml de agua destilada, obteniendo 100mg/ml.<br>
+                    <b>FA de 1000mg: </b>en 10ml de agua destilada, obteniendo 100mg/ml.<br> 
+                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                    Con Solución Fisiologíca.<br>
+                    <b>Concentración Recomendada (V. Périferica):</b> 50mg/ml.<br>
+                    <b>Contración Máxima (V. Central):</b> 100mg/ml.<br>
+                    <b>Infundir:</b> entre 5-10 minutos.<br>
+                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                    Con Solución Fisilogíca.<br>
+                    <b>Concentración Recomendada (V. Périferica):</b> 10-20mg/ml.<br>
+                    <b>Concentración Máxima (V. Central):</b> 30mg/ml.<br>
+                    <b>Infundir:</b> entre 15-30 minutos, preparar y administrar inmediatamente.<br>
+                    <b class="text-primary">Intramuscular (IM)</b><br>
+                    <b>Reconstituir:</b> con 3,5ml de agua estéril o Lidocaina al 1%.<br>
+                    <b>Concentración:</b> 250mg/ml.
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Datos consignados en base a la ampicilina.<br>
+                  El tiempo de preparacion y administracion del medicamento no debe exceder 1 hora.<br>
+                  Observar signos anafilaxia durante los primeros minutos tras la administración.<br>
+                  No usar DX 5% acelera su hidrolisis.<br>
+                  No mezclar con soluciones que contengan aminoácidos.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------AMPICILINA + SULBACTAM----------------------------------------------------------------------->
+              <div id="ampicilina/sulbactam">
+                  <h4 class="text-primary text-center">Ampicilina + Sulbactam</h4>
+              </div>
+              <div>
+                 <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 750mg.<br>
+                    <b class="text-primary">Frasco/Ampolla:</b> 1500mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituida dura <b class="bg-warning">1 hs a temperatura ambiente y 2 hs refrigerada,</b> 
+                  luego de este tiempo desechar.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                    <b class="text-primary">Reconstitución</b><br>
+                    <b>FA de 750mg: </b>en 1,6ml de agua destilada, obteniendo 250mg/ml de ampicilina.<br>
+                    <b>FA de 1500mg: </b>en 3,2ml de agua destilada, obteniendo 250mg/ml. de ampicilina<br>
+                    <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                    Con Solución Fisiologíca.<br>
+                    <b>Concentración Recomendada (V. Périferica):</b> 50mg/ml.<br>
+                    <b>Contración Máxima (V. Central):</b> 100mg/ml.<br>
+                    <b>Infundir:</b> entre 10-15 minutos.<br>
+                    <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                    Con Solución Fisilogíca.<br>
+                    <b>Concentración Recomendada (V. Périferica):</b> 10-20mg/ml.<br>
+                    <b>Concentración Máxima (V. Central):</b> 30mg/ml.<br>
+                    <b>Infundir:</b> entre 30-60 minutos, preparar y administrar inmediatamente.<br>
+                    <b class="text-primary">Intramuscular (IM)</b><br>
+                    <b>Reconstituir:</b> con 3,5ml de agua estéril o Lidocaina al 1%.<br>
+                    <b>Concentración:</b> 250mg/ml.<br>
+                    Administrar de forma lenta.
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Datos consignados en base a la ampicilina.<br>
+                  El tiempo de preparacion y administracion del medicamento no debe exceder 1 hora.<br>
+                  Observar signos anafilaxia durante los primeros minutos tras la administración.<br>
+                  No usar DX 5% acelera su hidrolisis.<br>
+                  No mezclar con soluciones que contengan aminoácidos.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------ANFOTERICINA B----------------------------------------------------------------------->
+              <div id="anfob">
+                <h4 class="text-primary text-center">Anfotericina B</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 50mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida dura <b class="bg-warning  p-1">24 hs a temperatura ambiente y 48hs refrigerada.</b><br>
+                <b class="bg-warning ">Proteger de la luz.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  10ml de agua destilada.<br>
+                  <b>Concentraciòn:</b> 5mg/ml<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir con Solución Dextrosada al 5%.<br>
+                  <b>Concentración Recomendada (V. Périferica):</b> 0,1mg/ml.<br>
+                  <b>Concentración Máxima (V. Central):</b> 0,5mg/ml.<br>
+                  <b>Infundir:</b> de 4-6 horas, usar acceso exclusivo, no infundir con otras soluciones.<br>
+                  <b>Administrar:</b> en <b class="text-bg-warning">PERFUS FOTOSENSIBLE</b> e 
+                  identificar con <b class="text-bg-warning">ROTULO Y CINTA COLOR AMARILLO.</b>
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Proteger de la luz durante su conservación y administración.<br>
+                  No usar Sol. Fisiologíca.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------ANFOTERICINA LIPOSOMAL----------------------------------------------------------------------->
+              <div id="anfolipo">
+                <h4 class="text-primary text-center">Anfotericina Liposomal</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 50mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida dura <b class="bg-warning  p-1">24hs refrigerada.</b><br>
+               <b class="bg-warning ">Proteger de la luz.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  10ml de agua destilada.<br>
+                  <b>Concentración: </b>4 mg/ml.<br>
+                   <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Con Solución Dextrosada al 5%.<br>
+                   <b>Concentración Recomendada (v. Périferica):</b> 0,2-0,5mg/ml.<br>
+                   <b>Concentración Máxima (v. Central):</b> 2mg/ml.<br>
+                  <b>Infundir:</b> de 60minutos a 2 horas, usar acceso exclusivo, no infundir con otras soluciones.<br>
+                  <b>Administrar:</b> en <b class="text-bg-warning">PERFUS FOTOSENSIBLE</b> e 
+                  identificar con <b class="text-bg-warning">ROTULO Y CINTA COLOR AMARILLO.</b>
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Proteger de la luz durante su conservación y administración.<br>
+                  No usar Sol. Fisiologíca; se solidifica.<br>
+                  No es necesario premedicar con difenhidramina o hidrocortisona.<br>
+                  Lavar la vía con Dx 5% antes y después de su administración.<br>
+                  No administrar con soluciones que contengan electrolitos.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------CEFALOTINA----------------------------------------------------------------------->
+               <div id="cefalo">
+                <h4 class="text-primary text-center">Cefalotina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida es estable <b class="bg-warning  p-1"> 12 hs a temperatura ambiente y 24 hs refrigerada.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 10ml de agua destilada.<br>
+                  <b>Concentración: </b>100mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (v. Périferica): </b>50mg/ml.<br>
+                  <b>Concentración Máxima (v. Central): </b> 100mg/ml.<br>
+                  <b>Infundir: </b>de 3-5 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (v. Périferica): </b>20mg/ml.<br>
+                  <b>Concentración Máxima (v. Central): </b> 50mg/ml.<br>
+                  <b>Infundir: </b>en 3o minutos.<br>
+                  <b class="text-primary">Intramuscular (IM)</b><br>
+                  Reconstituir en 4ml de lidocaina al 1%.<br>
+                  <b>Concentración: </b>225mg/ml.<br>
+                  No reconstituir con Sol. Fisiologica por que su administración IM es muy dolorosa.
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  El cambio de color no indica inactividad.<br>
+                  Asociada con aminoglucósidos puede aumentar riesgo de nefrotoxicidad.<br>
+                  Reacciones alérgicas, tromboflebitis , trombocitopenia, leucopenia, nefrotoxicidad.<br>
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CEFAZOLINA----------------------------------------------------------------------->
+              <div id="cefazo">
+                <h4 class="text-primary text-center">Cefazolina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida es estable <b class="bg-warning  p-1"> 24hs a temperatura ambiente y 4 días refrigerada.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 10ml de agua destilada.<br>
+                  <b>Concentración: </b>100mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (v. Périferica): </b>50mg/ml.<br>
+                  <b>Concentración Máxima (v. Central): </b> 100mg/ml.<br>
+                  <b>Infundir: </b>de 3-5 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (v. Périferica): </b>20mg/ml.<br>
+                  <b>Concentración Máxima (v. Central): </b> 50mg/ml.<br>
+                  <b>Infundir: </b>en 3o minutos.<br>
+                  <b class="text-primary">Intramuscular (IM)</b><br>
+                  Reconstituir en 4ml de lidocaina al 1%.<br>
+                  <b>Concentración: </b>225mg/ml.<br>
+                  No reconstituir con Sol. Fisiologica por que su administración IM es muy dolorosa.
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Los niveles altos de cefazolina, particularmente en fallo renal, pueden aumentar el riesgo de
+                  crisis en pacientes epilépticos con bajo umbral.<br>
+                  Asociada con aminoglucósidos puede aumentar riesgo de nefrotoxicidad.<br>
+                  Reacciones alérgicas, tromboflebitis , trombocitopenia, leucopenia, nefrotoxicidad.<br>
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------CEFTAZIDIMA----------------------------------------------------------------------->
+               <div id="cefta">
+                <h4 class="text-primary text-center">Ceftazidima</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida es estable <b class="bg-warning  p-1">8 hs a temperatura ambiente y 24 hs refrigerada.</b><br>
+                  Reconsituido con lidocaina tiene una estabilidad de <b class="text-bg-warning">6hs a temperatura ambiente.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 10ml de agua destilada.<br>
+                  <b>Concentración: </b>100mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>40mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b> 100mg/ml.<br>
+                  <b>Infundir: </b>de 3-5 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>20mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b> 40mg/ml.<br>
+                  <b>Infundir: </b>entre 15-3o minutos.<br>
+                  <b class="text-primary">Intramuscular (IM)</b><br>
+                  Reconstituir en 2,5ml de lidocaina al 1%.<br>
+                  <b>Concentración: </b>280mg/ml.<br>
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  El uso prolongado de ceftazidima puede provocar el sobrecrecimiento de microorganismos no
+                  sensibles (Entercocci, Candida spp).<br>
+                  Precaución en pacientes con antecedentes de enfermedad gastrointestinal, especialmente colitis.<br>
+                  Las soluciones pueden adquirir un color amarillento, no afecta su potencia.<br>
+                  El F/A reconstituido puede contener burbujas de dióxido de carbono, que deben eliminarse por completo antes de la
+                  administración.<br>
+                  Probenecid disminuye la excreción renal. Con aminoglucósidos incrementan el potencial de nefrotoxicidad.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CEFTRIAXONA----------------------------------------------------------------------->
+              <div id="ceftria">
+                <h4 class="text-primary text-center">Ceftriaxona</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 1000mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida es estable <b class="bg-warning  p-1">6 hs a temperatura ambiente y 24 hs refrigerada.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 10ml de agua destilada.<br>
+                  <b>Concentración: </b>100mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>40mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b> 100mg/ml.<br>
+                  <b>Infundir: </b>de 3-5 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>20mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b> 40mg/ml.<br>
+                  <b>Infundir: </b>en 3o minutos.<br>
+                  <b class="text-primary">Intramuscular (IM)</b><br>
+                  Reconstituir en 2,5ml de lidocaina al 1%.<br>
+                  <b>Concentración: </b>280mg/ml.<br>
+                  Inyectar en un musculo grande de forma lenta.
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  No administrar ceftriaxona simultáneamente (y dentro de las 48 h de intervalo) 
+                  con soluciones intravenosas que contienen calcio.<br>
+                  Dolor en el sitio de inyección.<br>
+                  Probenecid disminuye la excreción renal. Con aminoglucósidos incrementan el potencial de nefrotoxicidad.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CEFUROXIMA----------------------------------------------------------------------->
+              <div id="cefuro">
+                <h4 class="text-primary text-center">Cefuroxima</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> 750mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituida es estable <b class="bg-warning  p-1">5 hs a temperatura ambiente y 48 hs refrigerada.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 6 ml de agua destilada.<br>
+                  <b>Concentración: </b>116mg/ml. El resultado de la reconstitución se incrementa por el valor del desplazamiento del fármaco.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>30mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b> 50mg/ml.<br>
+                  <b>En pacientes con restricción hidrica: </b> 100mg/ml.<br>
+                  <b>Infundir: </b>de 3-5 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>10-15mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b> 30mg/ml.<br>
+                  <b>En pacientes con restricción hidrica: </b> 100mg/ml.<br>
+                  <b>Infundir: </b>en 3o-60 minutos.<br>
+                  <b class="text-primary">Intramuscular (IM)</b><br>
+                  Reconstituir en 3ml de Agua Destilada.<br>
+                  <b>Concentración: </b>216mg/ml.<br>
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  No se recomienda como antibiótico de elección en S.N.C. por fallo de tratamiento.<br>
+                  Ajustar dosis en insuficiencia renal.<br>
+                  El cambio de color del vial reconstituido no implica inestabilidad.<br>
+                  Probenecid disminuye la excreción renal. Con aminoglucósidos incrementan el potencial de nefrotoxicidad.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CIPROFLOXACINA----------------------------------------------------------------------->
+              <div id="cipro">
+                <h4 class="text-primary text-center">Ciprofloxacina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Sachet:</b> de 200mg.<br>
+                    <b class="text-primary">Comprimidos:</b> de 500mg.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Proteger de la luz al sachet o jeringa <b class="bg-warning  p-1">baja fotosensiblidad,</b> el perfus no requiere protección.<br>
+                  Una vez abierto, <b class="bg-warning mb-1 p-1">si el sachet es rígido desechar, por inestabilidad microbiana; si es Flex conservar 24hs.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  No requiere.<br>
+                  <b>Concentración: </b>2mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  En dosis bajas se puede diluir en DX5% o SF a una concentración de 1mg/ml.<br>
+                  <b>Infundir (V. Périferica y Central): </b>en 60 minutos.<br>
+                  <b class="text-primary">Vía Oral (VO)</b><br>
+                  Administrar 2hs después de las comidas, preferentemente en ayunas.<br>
+                  Ingerir los comprimidos enteros sin masticar y con un vaso de agua, adicionar varios vasos de agua a lo largo del día.<br>
+                </p>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Se aconseja su uso en pediatría sólo en situaciones especiales.<br>
+                  Administrar lejos de las comidas.<br> 
+                  Los antiácidos (que contengan calcio, magnesio o aluminio) y el sucralfato 
+                  disminuyen la absorción de la ciprofloxacina si se lo administra concomitantemente.<br>
+                  Aumenta riesgo de nefrotoxicidad con ciclosporina.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CLARITROMICINA----------------------------------------------------------------------->
+              <div id="claritro">
+                <h4 class="text-primary text-center">Claritromicina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>
+                    <b class="text-primary">Comprimidos:</b> de 250mg.<br> 
+                    <b class="text-primary">Suspensión:</b> de 25mg/ml.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconsituido el FA, es estable <b class="bg-warning  p-1">24 hs a temperatura ambiente y 48 hs refrigerada.</b><br>
+                  La suspensión una vez diluida tiene una caducidad de <b class="bg-warning  p-1">14 días, NO REFRIGERAR.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 10 ml de agua destilada.<br>
+                  <b>Concentración: </b>50 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración (V. Périferica y Central): </b> 2mg/ml.<br>
+                  <b>Infundir: </b>en 60 minutos.<br>
+                  <b class="text-primary">Vía Oral (VO)</b><br>
+                  Administrar con alimentos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Precipita con otros solventes.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CLINDAMICINA----------------------------------------------------------------------->
+              <div id="clinda">
+                <h4 class="text-primary text-center">Clindamicina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 600mg/4ml (150mg/ml).<br>
+                    <b class="text-primary">Capsulas:</b> de 300mg.<br> 
+                    <b class="text-primary">Solución preparado magistral:</b> de 100mg/ml.<br> 
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  El vial una vez abierto <b class="bg-warning  p-1">desechar por inestabilidad microbiológica.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  No requiere.<br>
+                  <b>Concentración: </b>150 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>6 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>12 mg/ml<br>
+                  <b>Infundir: </b>en 30-60 minutos.<br>
+                  <b class="text-primary">Intramuscular (IM)</b>
+                  No se recomienda la Administración de más de 600 mg.
+                  <b class="text-primary">Vía Oral (VO)</b><br>
+                  Administrar con un vaso de agua para prevenir la irritación esofágica.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Kaolina disminuye la absorción de la clindamicina.<br>
+                  Los bloqueantes musculares, baclofeno y diazepam aumenta la frecuencia y la duración de la parálisis respiratoria.<br>
+                  Eritromicina produce antagonismo.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------COLISTINA----------------------------------------------------------------------->
+              <div id="colistina">
+                <h4 class="text-primary text-center">Colistina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 100 mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  El vial una vez reconstituido es estable <b class="bg-warning  p-1">72hs a T° ambiente o refrigerado.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  Con el solvente de 2ml.<br>
+                  <b>Concentración: </b>50 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  Diluir en DX 5% o SOL. F.<br>
+                  <b>Concentración Final (V. Périferica y Central): </b>2 mg/ml.<br>
+                  <b>Infundir: </b>en 30 minutos.<br>
+                  <b class="text-primary">Intravenosa Continua (IVC)</b><br>
+                  Administrar la mitad de la dosis total diaria durante 3-5minutos.<br>
+                  La segunda mitad de la dosis diluida en dext 5% o Solución fisiológica durante 22 o 23hs, 
+                  comenzando 1-2hs después de la dosis inicial.<br>
+                  <b class="text-primary">Intramuscular (IM)</b>
+                  En pacientes con función renal normal la dosis es de 2,5-5mg/kg/día, dividida en 2 a 4 administraciones.
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  En las formas de administración IV O IM ajustar dosis en pacientes con insuficiencia renal.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------FLUCONAZOL----------------------------------------------------------------------->
+              <div id="fluco">
+                <h4 class="text-primary text-center">Fluconazol</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Sachet:</b> de 200mg/100ml.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Si el sachet es <b class="bg-warning  p-1">FLEX 24hs a T° ambiente.</b> Si el sachet es rigido, desechar.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  No requiere.<br>
+                  <b>Concentración: </b>2 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Concentración Final (V. Périferica y Central): </b>2 mg/ml.<br>
+                  <b>Infundir: </b>en 60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  En dosis mayores a 6mg infundir en 2hs.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------GANCICLOVIR----------------------------------------------------------------------->
+              <div id="ganciclo">
+                <h4 class="text-primary text-center">Ganciclovir</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituido <b class="bg-warning  p-1">12hs a T° ambiente.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  10ml de Agua Destilada.<br>
+                  <b>Concentración: </b>50 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b> DX 5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>5 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>10 mg/ml.<br>
+                  <b>Infundir: </b>en 60 minutos a 2hs.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Por sus propiedades cancerigenas, debe prepararse bajo flujo laminar.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------GENTAMICINA----------------------------------------------------------------------->
+              <div id="genta">
+                <h4 class="text-primary text-center">Gentamicina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Ampolla:</b> de 80mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez abierto el vial <b class="bg-warning  p-1">desechar luego de su uso.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  no requiere.<br>
+                  <b>Concentración: </b>40 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  <b>Diluir en:</b> DX 5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>10 mg/ml PRP.<br>
+                  <b>Concentración Máxima (V. Central): </b>10 mg/ml PRP.<br>
+                  <b>Infundir: </b>en 15 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b> DX 5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>3 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>10 mg/ml.<br>
+                  <b>Infundir: </b>en 30-60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Su administración IVD es POCO RECOMENDADO para pediatría (PRP).
+                  
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------IMIPENEM----------------------------------------------------------------------->
+              <div id="imipe">
+                <h4 class="text-primary text-center">Imipenem</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez Reconstituido tiene una durabilidad de <b class="bg-warning  p-1">10 hs a T° ambiente y 48hs refrigerado.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  10 ml de S.F.<br>
+                  <b>Concentración: </b>50 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  <b>Su administración IVD es POCO RECOMENDADO para pediatría (PRP).</b><br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b> DX 5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>5 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>7 mg/ml en pacientes con restricción hidrica.<br>
+                  <b>Infundir: </b>Dosis menores a 500mg en 30 minutos; Dosis mayores a 500mg en 60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  El tiempo de preparación y administración no debe exceder las 2hs.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------MEROPENEM----------------------------------------------------------------------->
+              <div id="mero">
+                <h4 class="text-primary text-center">Meropenem</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 500mg y de 1000mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez Reconstituido tiene una durabilidad de <b class="bg-warning  p-1">8 hs a T° ambiente y 24hs refrigerado.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  <b>Frasco/Ampolla de 500mg: </b>en 10 ml de S.F.<br>
+                  <b>Frasco/Ampolla de 1000mg: </b>en 20 ml de S.F.<br>
+                  <b>Concentración: </b>50 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  <b>Diluir en:</b> S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>50 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>50 mg/ml.<br>
+                  <b>Infusión: </b> en 5 minutos.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b> DX 5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>2,5-10 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>50 mg/ml.<br>
+                  <b>Infundir: </b> en 15-30 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                Puede ir infundido en 2hs, mejora su actividad antimicrobiana.<br>
+                no usar DX5%.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------METRONIDAZOL----------------------------------------------------------------------->
+              <div id="metro">
+                <h4 class="text-primary text-center">Metronidazol</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Sachet:</b> de 500mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  si el sachet es <b class="bg-warning  p-1">FLEX 24hs refrigerado y si es rigido desechar luego de su uso.</b><br>
+                  <b class="bg-warning  p-1">PROTEGER DE LA LUZ.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  No requiere.<br>
+                  <b>Concentración: </b>5 mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b> DX 5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>5 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>5 mg/ml.<br>
+                  <b>Infundir: </b> entre 30-60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------PENICILINA G----------------------------------------------------------------------->
+               <div id="penig">
+                <h4 class="text-primary text-center">Penicilina G</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 1M y de 3M.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituido tiene una durabilidad de <b class="bg-warning  p-1">6hs a T° ambiente.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  <b>Frasco/Ampolla de 1M: </b> 4,5ml de Agua Destilada.<br>
+                  <b>Frasco/Ampolla de 3M: </b> 9ml de Agua Destilada.<br>
+                  <b>Concentración: </b>FA de 1M: 200.000ui y el FA de 3M: 300.00ui.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b>S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>10.000 a 30.000 ui/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>50.000ui/ml.<br>
+                  <b>Infundir: </b> entre 60 minutos a 2hs.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                No usar DX5%.<br>
+                Se recomienda usar y desechar.
+                <p class="letrares">
+                
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------PIPERACILINA----------------------------------------------------------------------->
+              <div id="pipera">
+                <h4 class="text-primary text-center">Piperacilina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 2-4gr.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituido tiene una durabilidad de <b class="bg-warning  p-1">24hs a T° ambiente y 48hs refrigerado.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  <b>Frasco/Ampolla de 2g: </b> 10ml de Agua Destilada.<br>
+                  <b>Frasco/Ampolla de 4g: </b> 20ml de Agua Destilada.<br>
+                  <b>Concentración: </b> 200mg/ml.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  <b>Su administración IVD es POCO RECOMENDADO para pediatría (PRP).</b><br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b>DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>10mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>20mg/ml.<br>
+                  <b>Infundir: </b> entre 20-30 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                Administrar  por separado, en 1 hs lejos de aminoglucósidos.
+                <p class="letrares">
+                
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------PIPERACILINA TAZOBACTAM----------------------------------------------------------------------->
+               <div id="ptz">
+                <h4 class="text-primary text-center">Piperacilina Tazobactam</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 4,5gr.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituido tiene una durabilidad de <b class="bg-warning  p-1">24hs a T° ambiente y 48hs refrigerado.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  20ml de Agua Destilada o S.F.<br>
+                  <b>Concentración: </b> 200mg/ml de Piperacilina.<br>
+                  <b class="text-primary">Intravenosa Directa (IVD)</b><br>
+                  <b>Su administración IVD es POCO RECOMENDADO para pediatría (PRP).</b><br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b>DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>10mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>20mg/ml.<br>
+                  <b>Infundir: </b> entre 30-60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Datos consignados en base a la Piperacilina.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------RIFAMPICINA----------------------------------------------------------------------->
+               <div id="rifa">
+                <h4 class="text-primary text-center">Rifampicina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 600mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituido tiene una durabilidad de <b class="bg-warning  p-1">24hs a T° ambiente.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  10ml de Agua Destilada.<br>
+                  <b>Concentración: </b> 60mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b>DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>menos de 6mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>6mg/ml.<br>
+                  <b>Infundir: </b> entre 30 minutos a 3 hs.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  El diluido precipita luego de 3 hs.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------SULFAMETAXAZOL + TRIMETROPRIM----------------------------------------------------------------------->
+              <div id="tmx">
+                <h4 class="text-primary text-center">Sulfametaxazol + Trimetroprima</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Ampolla:</b> de 80mg de TMP + 400mg de SMX/5ml.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez utlizado <b class="bg-warning  p-1">desechar.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  No requiere.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b>DX5%.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>0,6mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>1mg/ml.<br>
+                  <b>Pacientes con RH: </b> 1,6mg/ml.<br>
+                  <b>Infundir: </b> entre 30-60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Datos consignados en base a la Trimetropina.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------VANCOMICINA----------------------------------------------------------------------->
+              <div id="vanco">
+                <h4 class="text-primary text-center">Vancomicina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-primary">Frasco/Ampolla:</b> de 500mg.<br>  
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituido tiene una durabilidad de <b class="bg-warning  p-1">4días refrigerado.</b><br>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-primary">Reconstitución</b><br>
+                  en 10ml de Agua Destilada.<br>
+                  <b>Concentración: </b> 50mg/ml.<br>
+                  <b class="text-primary">Intravenosa Intermitente (IVI)</b><br>
+                  <b>Diluir en:</b>DX5%.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>2,5mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>5mg/ml.<br>
+                  <b>Pacientes con RH: </b> 1,6mg/ml.<br>
+                  <b>Infundir: </b> en 60 minutos.<br>
+              </div>
+              <div class="border-bottom border-primary">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Requiere pre-medicación de difenhidramina o hidrocortisona.<br>
+                  administrar de forma lenta.<br>
+                  Puede ser infundido en 3hs, mejora la activación antimicrobiana.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+
+
             </div>
+
           </div>
-            
-  
+
+
         </div>
-
-
                 
     </main>
-
-
 
 
     <!--PIE DE PAGINA-->
@@ -988,7 +1556,7 @@
         <span class="text-white"> Hospital Infantil Municipal</span></div>
           <div><span class="text-white">Cordoba; </span>
             <span class="text-white"> Argentina</span>
-            <span class="text-white"> 2022</span></div>
+            <span class="text-white"> 2022-2023</span></div>
     </footer>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

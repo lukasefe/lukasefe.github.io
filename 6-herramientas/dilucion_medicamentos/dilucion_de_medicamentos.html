@@ -151,7 +151,7 @@
         <div class="container-fluid bg-warning"><!--MARCO DEL CONTENEDOR FLUIDO ADAPTATIVO-->
           <div class="row"><!--CONTENEDOR CON LA CLASE ROW PARA LAS COLUMNAS-->
             <!--CONTENEDOR 1 PARA LA LISTA DE MEDIACMENTOS-->
-              <div class="accordion accordion-flush col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light" id="listamedicacion">
+              <div class="accordion accordion-flush col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light" id="listamedicacion">
                 <h4 id="listaf">Lista de Farmacos</h4>
                 <!--MEDICACION DE LA LETRA A----------------------------------------------------------------------------------->
                             <div class="accordion-item">
@@ -163,7 +163,10 @@
                               <div id="medicacionA" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
                                 <div class="accordion-body">
                                   <a class="nav-link text-primary my-2" href="#aciclovir">Aciclovir</a>
+                                  <a class="nav-link text-danger my-2" href="#adeno">Adenosina</a>
                                   <a class="nav-link text-primary my-2" href="#amikacina">Amikacina</a>
+                                  <a class="nav-link text-danger my-2" href="#amino">Aminofilina</a>
+                                  <a class="nav-link text-danger my-2" href="#amioda">Amiodarona</a>
                                   <a class="nav-link text-primary my-2" href="#ampicilina">Ampicilina</a>
                                   <a class="nav-link text-primary my-2" href="#ampicilina/sulbactam">Ampicilina / Sulbactam</a>
                                   <a class="nav-link text-primary my-2" href="#anfob">Anfotericina B</a>
@@ -171,6 +174,7 @@
                                 </div>
                               </div>
                             </div>
+
                 <!--MEDIACION DE LA LETRA C------------------------------------------------------------------------------------->
                             <div class="accordion-item">
                               <h2 class="accordion-header">
@@ -188,10 +192,28 @@
                                   <a class="nav-link text-primary my-2" href="#cipro">Ciprofloxacina</a>
                                   <a class="nav-link text-primary my-2" href="#claritro">Claritromicina</a>
                                   <a class="nav-link text-primary my-2" href="#clinda">Clindamicina</a>
+                                  <a class="nav-link text-success my-2" href="#clorpro">Clorpromazina</a>
                                   <a class="nav-link text-primary my-2" href="#colistina">Colistina</a>
                                 </div>
                               </div>
                             </div>
+
+                <!--MEDIACION DE LA LETRA D------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionD" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  D
+                                </button>
+                              </h2>
+                              <div id="medicacionD" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                <div class="accordion-body">
+                                  <a class="nav-link text-secondary my-2" href="#desmo">Desmopresina</a>
+                                  <a class="nav-link text-secondary my-2" href="#dexa">Dexametasona</a>
+                                  <a class="nav-link text-danger my-2" href="#digo">Digoxina</a>
+                                </div>
+                              </div>
+                            </div>
+
                 <!--MEDICACION DE LA LETRA F------------------------------------------------------------------------------------->
                             <div class="accordion-item">
                               <h2 class="accordion-header">
@@ -311,7 +333,7 @@
               </div>
 
             <!--------------------------------------------------------------------------------------------------------------------------->
-            <div class="bg-primary col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bg-light"><!--CONTENEDOR 2 PARA LOS MEDIACMENTOS-->
+            <div class="bg-primary col-7 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bg-light"><!--CONTENEDOR 2 PARA LOS MEDIACMENTOS-->
                <!---------------------------AACICLOVIR----------------------------------------------------------------------->
                <div id="aciclovir">
                 <h4 class="text-primary text-center">Aciclovir</h4>
@@ -347,13 +369,56 @@
                   Disminuye la intolerancia gastrointestinal.</p>
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Riesgo de flebitis o inflamación en el sitio de punción en altas concetraciones.
                 </p>
                 <div class="text-center row">
-                  <span class=""><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                  <span class=""><a class="spa" href="/3-protocolos/1-guia-farmacos/5-antivirales/aciclovir-ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------ADENOSINA----------------------------------------------------------------------->
+               <div id="adeno">
+                <h4 class="text-danger text-center">Adenosina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                <p class="letrares">
+                  <b class="text-danger">Sol. Inyectable/Ampolla: </b>6mg/2ml.
+                </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  <b class="bg-warning px-1">No refrigerar</b> una vez diluido debido a que puede precipitar.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  Administrar por vía periférica o central. Utilizar una vía venosa lo más
+                  cercana posible al corazón.<br>
+                  <b class="text-danger">IntraVenosa Directa (IVD)</b><br>
+                  <b>Para dosis menores de 600 ug (0.2ml)</b> realizar una dilución con SF a una<br>
+                  <b>Concentración Recomendada: </b> de 1-2mg/ml.<br>
+                  <b>Para dosis mayores</b><br>
+                  <b>Máxima Concentración:</b> 3mg/ml.<br>
+                  <b>Infundir: </b>Se debe administrar de manera rápida de 1 a 2 segundos y lavar inmediatamente con 5-10 ml de solución fisiológica.<br>
+                  <b class="text-danger">IntraVenosa Intermitente (IVI)</b><br>
+                  Contraindicado, se inactiva al ponerse en contacto con los glóbulos rojos.
+                </p>
+              </div>
+              <div class="border-bottom border-danger mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Una vez reconstituida y preparada la solución, administrar inmediatamente.<br>
+                  Uso exclusivamente hospitalario, ya que debe disponerse de monitorización
+                  electrocardiográfica y reanimación cardiorrespiratoria.
+                </p>
+                <div class="text-center row">
+                  <span><a class="spa  text-danger" href="/3-protocolos/1-guia-farmacos/2-inotropicos/adenosina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -385,14 +450,109 @@
                   No
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   No administrar por IV directa.<br>
                   Administrar céfalosporinas o penicilinas 1 hora antes o despues.
                 </p>
                 <div class="text-center row">
-                  <span class=""><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                  <span class=""><a class="spa" href="/3-protocolos/1-guia-farmacos/4-antibioticos/amikacina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------AMINOFILINA----------------------------------------------------------------------->
+              <div id="amino">
+                <h4 class="text-danger text-center">Aminofilina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                <p class="letrares">
+                  <b class="text-danger">Solución inyectable/ampolla: </b>de 10ml, 24mg/ml.
+                </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  <b class="bg-warning px-1">Proteger de la luz</b> durante su administración.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-danger">IntraVenosa Directa (IVD)</b><br>
+                  Administrar 25 mg/ml (Poco recomendado para pediatría).<br>
+                  <b class="text-danger">IntraVenosa Intermitente (IVI)</b><br>
+                  Diluir en SF (preferentemente) o DX 5%.<br>
+                  <b>Concentración Recomendada: </b>1mg/ml.<br>
+                  <b>Máxima concentración: </b>5 mg/ml.<br>
+                  <b>Infusión:</b> de 20-30 minutos.<br>
+                  <b class="text-danger">IntraVenosa Continua (IVC)</b><br>
+                  Diluir en SF o DX 5%.<br>
+                  <b>Concentración: </b>2mg/ml.<br>
+                  <b>Infusión: </b>0,1-1mg/kg/h (según edad).
+                </p>
+              </div>
+              <div class="border-bottom border-danger mb-2">
+               <!-- <h5>Observaciones</h5>
+                <p class="letrares">
+                  Una vez reconstituida y preparada la solución, administrar inmediatamente.<br>
+                  Uso exclusivamente hospitalario, ya que debe disponerse de monitorización
+                  electrocardiográfica y reanimación cardiorrespiratoria.
+                </p>-->
+                <div class="text-center row">
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class=" spa  text-danger" href="/3-protocolos/1-guia-farmacos/2-inotropicos/aminofilina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------AMIODORONA----------------------------------------------------------------------->
+              <div id="amioda">
+                <h4 class="text-danger text-center">Amiodarona</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                <p class="letrares">
+                  <b class="text-danger">Comprimidos: </b>200mg.<br>
+                  <b class="text-danger">Solución inyectable/ampolla: </b>de 3ml, 50mg/ml.
+                </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  <b class="bg-warning px-1">Proteger de la luz</b> durante su administración, evitar el contacto con la luz solar.<br>
+                  <b class="bg-warning px-1">24hs a T° ambiente.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-danger">IntraVenosa Directa (IVD)</b><br>
+                  POCO RECOMENDADO PARA PEDÍATRIA (PRP).<br>
+                  <b class="text-danger">IntraVenosa Intermitente (IVI)</b><br>
+                  Sol. DX5%<br>
+                  <b>Dosis de carga: </b>Infundir en 30 minutos.<br>
+                  <b>Concentración Recomendada: </b>1-6mg/ml.<br>
+                  <b>Concentración Máxima: </b>6mg/ml.<br>
+                  Concentraciones mayores a 2mg/ml infundir por mas de 1hs por via central.<br>
+                  <b class="text-danger">En Emergencia</b><br>
+                  15mg/ml.<br>
+                  Infundir de 30 minutos a 2hs.<br>
+                  <b class="text-danger">IntraVenosa Continua (IVC)</b><br>
+                  continuar con 5mg/kh/hs.<br>
+                  <b class="text-danger">Via Oral</b><br>
+                  Administrar con alimentos.
+                </p>
+              </div>
+              <div class="border-bottom border-danger mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Incompatible con bicarbonato.<br>
+                  Esta droga es muy eficaz pero debe ser usada con controles seriados, por sus efectos adversos.
+                </p>
+                <div class="text-center row">
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class=" spa  text-danger" href="/3-protocolos/1-guia-farmacos/2-inotropicos/aminofilina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -434,7 +594,7 @@
                     <b>Concentración:</b> 250mg/ml.
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Datos consignados en base a la ampicilina.<br>
@@ -489,7 +649,7 @@
                     Administrar de forma lenta.
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Datos consignados en base a la ampicilina.<br>
@@ -536,7 +696,7 @@
                   identificar con <b class="text-bg-warning">ROTULO Y CINTA COLOR AMARILLO.</b>
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Proteger de la luz durante su conservación y administración.<br>
@@ -580,7 +740,7 @@
                   identificar con <b class="text-bg-warning">ROTULO Y CINTA COLOR AMARILLO.</b>
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Proteger de la luz durante su conservación y administración.<br>
@@ -633,7 +793,7 @@
                   No reconstituir con Sol. Fisiologica por que su administración IM es muy dolorosa.
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   El cambio de color no indica inactividad.<br>
@@ -684,7 +844,7 @@
                   No reconstituir con Sol. Fisiologica por que su administración IM es muy dolorosa.
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Los niveles altos de cefazolina, particularmente en fallo renal, pueden aumentar el riesgo de
@@ -736,7 +896,7 @@
                   <b>Concentración: </b>280mg/ml.<br>
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   El uso prolongado de ceftazidima puede provocar el sobrecrecimiento de microorganismos no
@@ -791,7 +951,7 @@
                   Inyectar en un musculo grande de forma lenta.
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   No administrar ceftriaxona simultáneamente (y dentro de las 48 h de intervalo) 
@@ -844,7 +1004,7 @@
                   <b>Concentración: </b>216mg/ml.<br>
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   No se recomienda como antibiótico de elección en S.N.C. por fallo de tratamiento.<br>
@@ -890,7 +1050,7 @@
                   Ingerir los comprimidos enteros sin masticar y con un vaso de agua, adicionar varios vasos de agua a lo largo del día.<br>
                 </p>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Se aconseja su uso en pediatría sólo en situaciones especiales.<br>
@@ -937,7 +1097,7 @@
                   <b class="text-primary">Vía Oral (VO)</b><br>
                   Administrar con alimentos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Precipita con otros solventes.
@@ -978,11 +1138,11 @@
                   <b>Concentración Máxima (V. Central): </b>12 mg/ml<br>
                   <b>Infundir: </b>en 30-60 minutos.<br>
                   <b class="text-primary">Intramuscular (IM)</b>
-                  No se recomienda la Administración de más de 600 mg.
+                  No se recomienda la Administración de más de 600 mg.<br>
                   <b class="text-primary">Vía Oral (VO)</b><br>
                   Administrar con un vaso de agua para prevenir la irritación esofágica.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Kaolina disminuye la absorción de la clindamicina.<br>
@@ -992,6 +1152,49 @@
                 <div class="text-center row">
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------CLORPROMAZINA----------------------------------------------------------------------->
+              <div id="clorpro">
+                <h4 class="text-success text-center">Clorpromazina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-success">Ampolla:</b> de 3ml; 25mg/ml.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  <b class="bg-warning">Ampollas de un solo uso, desechar.</b> No es necesario proteger de la luz durante su administración.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-success">IntraVenosa Directa (IVD): </b><br>
+                  POCO RECOMENDADO PARA PEDÍATRIA.<br>
+                  <b class="text-success">IntraVenosa Intermitente (IVI): </b><br>
+                  <b>Dilución:</b> En S.F. (por mayor estabilidad).<br>
+                  <b>Concentración:</b> 1mg/ml.<br>
+                  <b>Infusión:</b> en 30 minutos.<br>
+                  <b class="text-success">IntraVenosa Continua (IVC): </b><br>
+                  <b>NO.</b><br>
+                  <b class="text-success">Intra Muscular(IM):</b><br>
+                  5mg/ml.<br>
+                  <b>Dosis Máxima Diaria:</b> 40mg en menores de 5 años; 75mg/día de 5 a 12 años.
+              </div>
+              <div class="border-bottom border-primary mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Hipersensibilidad a la droga.<br>
+                  Pacientes con glaucoma de ángulo agudo, supresión de medula ósea, ni enfermedades graves de hígado o corazón.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success" href="/3-protocolos/1-guia-farmacos/1-sedoanalgesia/clorpromazina.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -1028,7 +1231,7 @@
                   <b class="text-primary">Intramuscular (IM)</b>
                   En pacientes con función renal normal la dosis es de 2,5-5mg/kg/día, dividida en 2 a 4 administraciones.
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   En las formas de administración IV O IM ajustar dosis en pacientes con insuficiencia renal.
@@ -1036,6 +1239,148 @@
                 <div class="text-center row">
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------DESMOPRESINA----------------------------------------------------------------------->
+              <div id="desmo">
+                <h4 class="text-secondary text-center">Desmopresina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">Frasco/Ampolla: </b> 4µg/ml.<br>
+                    <b class="text-secondary">Comprimidos: </b> 0,2 mg.<br>
+                    <b class="text-secondary">Sol. Nasal: </b> 0,1 mg/ml (con una cánula calibrada de 0,2 ml).<br>
+                    <b class="text-secondary">Spray Nasal: </b> 0,1 mg/ml.
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Las ampollas y solución nasal se conservan en la <b class="bg-warning">heladera entre 2-6°C.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  Debe ser indicado por especialistas.<br>
+                  <b class="text-secondary">IntraVenosa Directa (IVD)</b><br>
+                  <b>NO.</b><br>
+                  <b class="text-secondary">IntraVenosa Internmitente (IVI)</b><br>
+                  <b>Dilución:</b> en S.F.<br>
+                  <b>Concentración Recomendada: </b> En niños menores de 10kg; diluir en 10ml de S.F.<br>
+                  <b>Concentración Máxima:</b>  0,5 µg/ml.<br>
+                  <b>Infusión:</b> 15-30 minutos.<br>
+                  <b class="text-secondary">IntraVenosa Continua (IVC)</b><br>
+                  <b>NO.</b><br>
+                  <b class="text-secondary">Intra Nasal (IN)</b><br>
+                  <b>Concentración Recomendada: </b> 0,05ml/dosis.<br>
+                  <b>Concentración Máxima: </b> 0,1ml/dosis.
+              </div>
+              <div class="border-bottom border-primary mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Se administra con canula nasal calibrada de 0,2ml, se absorbe en la región nasal anterior.<br>
+                  La dosis se adecua a la respuesta clínica individual.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="/3-protocolos/1-guia-farmacos/6-varios/desmopresina.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------DEXAMETASONA----------------------------------------------------------------------->
+              <div id="dexa">
+                <h4 class="text-secondary text-center">Dexametasona</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">Frasco/Ampolla: </b> 8 mg/2 ml.<br>
+                    <b class="text-secondary">Sol. Oftálmica Estéril: </b> 0.1 %.<br>
+                    <b class="text-secondary">Sol. Nasal: </b> 0,1 mg/ml (con una cánula calibrada de 0,2 ml).<br>
+                    <b class="text-secondary">Spray Nasal: </b> 0,1 mg/ml.
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Diluida es estable <b class="bg-warning">24 sh a T° ambiente.</b><br>
+                  Ampolla de un solo uso, cualquier porsción no utilizada debe <b class="bg-warning">desecharse.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b>Concentración:</b> 4 mg/ml.<br><br>
+                <b class="text-secondary">IntraVenosa Directa (IVD)</b><br>
+                Dosis menor a 10mg.<br>
+                <b>Dilución:</b> en S.F.<br>
+                <b>Concentración:</b>  1-4mg/ml.<br>
+                <b>Infusión:</b> 5-10 minutos.<br><br>
+                <b class="text-secondary">IntraVenosa Intermitente (IVI)</b><br>
+                Dosis mayores a 10mg.<br>
+                <b>Dilución:</b> en S.F. o DX 5%<br>
+                <b>Concentración:</b>  0.1-1mg/ml.<br>
+                <b>Infusión:</b> 30-60 minutos.<br><br>
+                <b class="text-secondary">IntraVenosa Continua (IVC)</b><br>
+                <b>NO.</b><br>
+                <b class="text-secondary">Intra Muscular (IM)</b><br>
+                Si.<br><br>
+                <b class="text-secondary">Vía Oral (VO)</b><br>
+                Se puede ingerir con alimentos.<br>
+                Si se administra una vez al día (mañana). Se puede triturar, administrar 
+                inmediatamente.
+              </div>
+              <div class="border-bottom border-primary mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  No debe ser utilizada como terapia de reemplazo fisiológico. 
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="/3-protocolos/1-guia-farmacos/6-varios/dexametasona.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------DIGOXINA----------------------------------------------------------------------->
+              <div id="digo">
+                <h4 class="text-danger text-center">Digoxina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-danger">Ampolla: </b> 1 ml; 0,25 mg/ml.
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Ampolla de un solo uso, cualquier porsción no utilizada debe <b class="bg-warning">desecharse.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                <b class="text-danger">IntraVenosa Directa (IVD)</b><br>
+                <b>Dilución:</b> en S.F. 0 DX5%.<br>
+                <b>Concentración Recomendada:</b>  50 mcg/ml (0,05 mg/ml).<br>
+                <b>Concentración Máxima:</b>  100 mcg/ml (0,1 mg/ml).<br>
+                <b>Infusión:</b> 5 minutos.<br><br>
+                <b class="text-danger">IntraVenosa Intermitente (IVI)</b><br>
+                <b>NO.</b><br>
+                <b class="text-danger">IntraVenosa Continua (IVC)</b><br>
+                <b>NO.</b><br>
+              </div>
+              <div class="border-bottom border-primary mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  No administrar con preparados que contengan calcio. 
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger" href="#" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -1065,7 +1410,7 @@
                   <b>Concentración Final (V. Périferica y Central): </b>2 mg/ml.<br>
                   <b>Infundir: </b>en 60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   En dosis mayores a 6mg infundir en 2hs.
@@ -1104,7 +1449,7 @@
                   <b>Concentración Máxima (V. Central): </b>10 mg/ml.<br>
                   <b>Infundir: </b>en 60 minutos a 2hs.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Por sus propiedades cancerigenas, debe prepararse bajo flujo laminar.
@@ -1148,7 +1493,7 @@
                   <b>Concentración Máxima (V. Central): </b>10 mg/ml.<br>
                   <b>Infundir: </b>en 30-60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Su administración IVD es POCO RECOMENDADO para pediatría (PRP).
@@ -1190,7 +1535,7 @@
                   <b>Concentración Máxima (V. Central): </b>7 mg/ml en pacientes con restricción hidrica.<br>
                   <b>Infundir: </b>Dosis menores a 500mg en 30 minutos; Dosis mayores a 500mg en 60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   El tiempo de preparación y administración no debe exceder las 2hs.
@@ -1235,7 +1580,7 @@
                   <b>Concentración Máxima (V. Central): </b>50 mg/ml.<br>
                   <b>Infundir: </b> en 15-30 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                 Puede ir infundido en 2hs, mejora su actividad antimicrobiana.<br>
@@ -1276,7 +1621,7 @@
                   <b>Concentración Máxima (V. Central): </b>5 mg/ml.<br>
                   <b>Infundir: </b> entre 30-60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                 
@@ -1316,7 +1661,7 @@
                   <b>Concentración Máxima (V. Central): </b>50.000ui/ml.<br>
                   <b>Infundir: </b> entre 60 minutos a 2hs.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 No usar DX5%.<br>
                 Se recomienda usar y desechar.
@@ -1360,7 +1705,7 @@
                   <b>Concentración Máxima (V. Central): </b>20mg/ml.<br>
                   <b>Infundir: </b> entre 20-30 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 Administrar  por separado, en 1 hs lejos de aminoglucósidos.
                 <p class="letrares">
@@ -1402,7 +1747,7 @@
                   <b>Concentración Máxima (V. Central): </b>20mg/ml.<br>
                   <b>Infundir: </b> entre 30-60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Datos consignados en base a la Piperacilina.
@@ -1441,7 +1786,7 @@
                   <b>Concentración Máxima (V. Central): </b>6mg/ml.<br>
                   <b>Infundir: </b> entre 30 minutos a 3 hs.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   El diluido precipita luego de 3 hs.
@@ -1480,7 +1825,7 @@
                   <b>Pacientes con RH: </b> 1,6mg/ml.<br>
                   <b>Infundir: </b> entre 30-60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Datos consignados en base a la Trimetropina.
@@ -1520,7 +1865,7 @@
                   <b>Pacientes con RH: </b> 1,6mg/ml.<br>
                   <b>Infundir: </b> en 60 minutos.<br>
               </div>
-              <div class="border-bottom border-primary">
+              <div class="border-bottom border-primary mb-2">
                 <h5>Observaciones</h5>
                 <p class="letrares">
                   Requiere pre-medicación de difenhidramina o hidrocortisona.<br>

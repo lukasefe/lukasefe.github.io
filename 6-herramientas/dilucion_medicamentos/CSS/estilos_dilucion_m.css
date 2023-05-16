@@ -63,6 +63,12 @@ body{
         font-size: 1,5rem;
     }
     .letrares{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 428px){
+    .spa{
         font-size: 10px;
     }
 }

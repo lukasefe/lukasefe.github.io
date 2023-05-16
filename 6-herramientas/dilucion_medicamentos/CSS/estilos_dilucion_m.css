@@ -44,6 +44,16 @@ body{
     }
 }
 
+/******************/
+/*FOTO DEL MEDICACMENTO*/
+.foto{
+    width:300px;
+    height: 300px;
+}
+
+
+
+
 /**************/
 
 /*LETRA EN RESPONSIVE*/

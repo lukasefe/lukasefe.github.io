@@ -151,7 +151,7 @@
         <div class="container-fluid bg-warning"><!--MARCO DEL CONTENEDOR FLUIDO ADAPTATIVO-->
           <div class="row"><!--CONTENEDOR CON LA CLASE ROW PARA LAS COLUMNAS-->
             <!--CONTENEDOR 1 PARA LA LISTA DE MEDIACMENTOS-->
-              <div class="accordion accordion-flush col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light" id="listamedicacion">
+              <div class="accordion accordion-flush col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light" id="listamedicacion">
                 <h4 id="listaf" class="listaftitulo">Lista de Farmacos</h4>
                 <!--MEDICACION DE LA LETRA A----------------------------------------------------------------------------------->
                             <div class="accordion-item">
@@ -271,8 +271,23 @@
                                 </h2>
                                 <div id="medicacionI" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
                                   <div class="accordion-body">
-                                    <a class="nav-link text-secondary my-2" href="#ibuprofeno">Ibuprofeno</a>
+                                    <a class="nav-link text-success my-2" href="#ibuprofeno">Ibuprofeno</a>
                                     <a class="nav-link text-primary my-2" href="#imipe">Imipenem</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                <!--MEDICACION DE LA LETRA L------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionL" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  L
+                                </button>
+                                </h2>
+                                <div id="medicacionL" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                                  <div class="accordion-body">
+                                    <a class="nav-link text-secondary my-2" href="#levetiracetam">Levetiracetam</a>
+                                    <a class="nav-link text-success my-2" href="#lorazepam">Lorazepam</a>
                                   </div>
                                 </div>
                             </div>
@@ -287,6 +302,7 @@
                               <div id="medicacionM" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
                               <div class="accordion-body">
                                 <a class="nav-link text-primary my-2" href="#mero">Meropenem</a>
+                                <a class="nav-link text-secondary my-2" href="#metil">Metilprednisolona</a>
                                 <a class="nav-link text-primary my-2" href="#metro">Metronidazol</a>
                               </div>
                             </div>
@@ -353,7 +369,7 @@
               </div>
 
             <!--------------------------------------------------------------------------------------------------------------------------->
-            <div class="bg-primary col-7 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bg-light"><!--CONTENEDOR 2 PARA LOS MEDIACMENTOS-->
+            <div class="bg-primary col-12 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bg-light"><!--CONTENEDOR 2 PARA LOS MEDIACMENTOS-->
                <!---------------------------AACICLOVIR----------------------------------------------------------------------->
                <div id="aciclovir">
                 <h4 class="text-primary text-center">Aciclovir</h4>
@@ -1798,6 +1814,59 @@
                 </div>
               </div>
 
+              <!---------------------------IBUPROFENO----------------------------------------------------------------------->
+              <div id="ibuprofeno">
+                <h4 class="text-success text-center">Ibuprofeno</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-success">Ampolla:</b> de 400mg.<br>
+                    <b class="text-success">Comprimidos Recubiertos:</b> de 400mg.<br>  
+                    <b class="text-success">Suspención Oral:</b> al 2%.<br>    
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Faltan datos.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-success">Reconstitución</b><br>
+                  No Requiere.<br><br>
+                
+                  <b class="text-success">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-success">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Diluir en:</b> DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>2 mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>4 mg/ml.<br>
+                  <b>Infundir: </b>30-60 minutos.<br><br>
+
+                  <b class="text-success">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-success">Vía Oral (VO)</b><br>
+                  Administrar con alimentos.<br><br>
+
+              </div>
+              <div class="border-bottom border-success mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Oral, proporcionar con alimentos o leche para disminuir la molestia gastrointestinal.<br>
+                  Existen presentaciones comerciales con lidocaína de uso exclusivo I M.<br>
+                  La extravasación puede provocar necrosis en los tejidos.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
               <!---------------------------IMIPENEM----------------------------------------------------------------------->
               <div id="imipe">
                 <h4 class="text-primary text-center">Imipenem</h4>
@@ -1836,6 +1905,115 @@
                 <div class="text-center row">
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------LEVETIRACETAM----------------------------------------------------------------------->
+              <div id="levetiracetam">
+                <h4 class="text-secondary text-center">Levetiracetam</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">Frasco/Ampolla:</b> de 500mg/5ml (100mg/ml).<br>
+                    <b class="text-secondary">Comprimidos:</b> de 500mg y 100mg.<br>
+                    <b class="text-secondary">Suspención:</b> de 100mg/ml.<br>   
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  La suspención oral <b class="bg-warning"> un vez abierta conservar a T° ambiente por 2 meses.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-secondary">Reconstitución</b><br>
+                  No Requiere.<br><br>
+                
+                  <b class="text-secondary">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-secondary">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Diluir en:</b> DX5% o S.F.<br>
+                  <b>Diluir la dosis en 100ml: </b><br>
+                  <ul class="letrares">
+                    <li>250mg, 2,5mg/ml = 100ml.</li>
+                    <li>500mg, 5mg/ml   = 100ml.</li>
+                    <li>1000mg, 10mg/ml = 100ml.</li>
+                    <li>1500mg, 15mg/ml = 100ml.</li>
+                  </ul>
+                  <b class="letrares">Infundir: </b>en 15 minutos.<br><br>
+
+                  <b class="text-secondary letrares">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b class="letrares">NO.</b><br><br>
+
+                  <b class="text-secondary letrares">Vía Oral (VO)</b><br>
+                  <p class="letrares"> Puede ser administrado con o sin alimentos.</p>
+                </p>
+              </div>
+              <div class="border-bottom border-success mb-2">
+               <!-- <h5>Observaciones</h5>
+                <p class="letrares">
+                  Oral, proporcionar con alimentos o leche para disminuir la molestia gastrointestinal.<br>
+                  Existen presentaciones comerciales con lidocaína de uso exclusivo I M.<br>
+                  La extravasación puede provocar necrosis en los tejidos.
+                </p>-->
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------LORAZEPAM----------------------------------------------------------------------->
+              <div id="lorazepam">
+                <h4 class="text-success text-center">Lorazepam</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-success">Ampolla:</b> de 4mg/ml.<br>   
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Conservar las ampollas <b class="bg-warning">Refrigeradas.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-success">Reconstitución</b><br>
+                  No requiere.<br><br>
+                
+                  <b class="text-success">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>Diluir en:</b> DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>Igual volumen de la dosis indicada.<br>
+                  <b>Concentración Máxima (V. Central): </b>No pasar sin diluir.<br>
+                  <b>Infundir: </b>No exceder los 2mg/minuto.<br><br>
+
+                  <b class="text-success">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>No.</b><br><br>
+
+                  <b class="text-success">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>NO.</b><br><br>
+<!--
+                  <b class="text-success">Vía Oral (VO)</b><br>
+                  Administrar con alimentos.<br><br>-->
+
+              </div>
+              <div class="border-bottom border-success mb-2">
+              <!--  <h5>Observaciones</h5>
+                <p class="letrares">
+                  Oral, proporcionar con alimentos o leche para disminuir la molestia gastrointestinal.<br>
+                  Existen presentaciones comerciales con lidocaína de uso exclusivo I M.<br>
+                  La extravasación puede provocar necrosis en los tejidos.
+                </p>-->
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -1882,6 +2060,61 @@
                 <div class="text-center row">
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------METILPREDNISOLONA----------------------------------------------------------------------->
+              <div id="metil">
+                <h4 class="text-secondary text-center">Metilprednisolona</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">Ampolla Bufferizada:</b> de 500mg.<br>
+                    <b class="text-secondary">Comprimidos:</b> de 4mg, 8mg y 40mg.<br> 
+                    <b class="text-secondary">Gotas:</b> de 4mg/ml.<br>    
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez reconstituida tiene una durabilidad <b class="bg-warning">72hs a T° ambiente.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-secondary">Reconstitución</b><br>
+                  Con 5ml de Agua Destilada o el solvente del producto.<br><br>
+                
+                  <b class="text-secondary">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>Diluir en:</b> DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>62,5mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>125mg/ml.<br>
+                  <b>Infundir: </b>3-5 minutos.<br><br>
+
+                  <b class="text-secondary">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Diluir en:</b> DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>2,5mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>20mg/ml.<br>
+                  <b>Infundir: </b>30-60 minutos.<br>
+                  <b>Dosis mayores a 500mg: </b> Infundir por mas de 60 minutos.<br><br>
+
+                  <b class="text-secondary">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-secondary">Vía Oral (VO)</b><br>
+                  Administrar con alimentos, disminuye la intolerancia gastrica, se puede triturar.<br><br>
+                </p>
+              </div>
+              <div class="border-bottom border-secondary mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  Si se administra una vez al día, darlo por la mañana.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 

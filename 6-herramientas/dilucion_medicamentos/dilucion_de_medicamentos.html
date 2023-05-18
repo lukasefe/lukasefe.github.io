@@ -151,10 +151,10 @@
         <div class="container-fluid bg-warning"><!--MARCO DEL CONTENEDOR FLUIDO ADAPTATIVO-->
           <div class="row"><!--CONTENEDOR CON LA CLASE ROW PARA LAS COLUMNAS-->
             <!--CONTENEDOR 1 PARA LA LISTA DE MEDIACMENTOS-->
-              <div class="accordion accordion-flush col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light" id="listamedicacion">
-                <h4 id="listaf" class="listaftitulo">Lista de Farmacos</h4>
+              <div class="accordion accordion-flush col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 bg-light text-center" id="listamedicacion">
+                <h4 id="listaf" class="listaftitulo my-2">Lista de Farmacos</h4>
                 <!--MEDICACION DE LA LETRA A----------------------------------------------------------------------------------->
-                            <div class="accordion-item">
+                            <div class="accordion-item my">
                               <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionA" aria-expanded="false" aria-controls="flush-collapseOne">
                                   A
@@ -308,6 +308,34 @@
                             </div>
                             </div>
 
+                <!--MEDICACION DE LA LETRA N------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionN" aria-expanded="false" aria-controls="flush-collapseThree">
+                                N
+                              </button>
+                              </h2>
+                              <div id="medicacionN" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-danger my-2" href="#nitroprusiato">Nitroprusiato de Sodio</a>
+                              </div>
+                            </div>
+                            </div>
+
+                <!--MEDICACION DE LA LETRA O------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionO" aria-expanded="false" aria-controls="flush-collapseThree">
+                                O
+                              </button>
+                              </h2>
+                              <div id="medicacionO" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-secondary my-2" href="#omeprazol">Omeprazol</a>
+                              </div>
+                            </div>
+                            </div>
+
                 <!--MEDICACION DE LA LETRA P------------------------------------------------------------------------------------->
                             <div class="accordion-item">
                               <h2 class="accordion-header">
@@ -317,6 +345,7 @@
                               </h2>
                               <div id="medicacionP" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
                               <div class="accordion-body">
+                                <a class="nav-link text-success my-2" href="#paracetamol">Paracetamol</a>
                                 <a class="nav-link text-primary my-2" href="#penig">Penicilina G</a>
                                 <a class="nav-link text-primary my-2" href="#pipera">Piperacilina</a>
                                 <a class="nav-link text-primary my-2" href="#ptz">Piperacilina Tazobactam</a>
@@ -333,6 +362,7 @@
                               </h2>
                               <div id="medicacionR" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
                               <div class="accordion-body">
+                                <a class="nav-link text-secondary my-2" href="#rani">Ranitidina</a>
                                 <a class="nav-link text-primary my-2" href="#rifa">Rifampicina</a>
                               </div>
                             </div>
@@ -348,6 +378,20 @@
                               <div id="medicacionS" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
                               <div class="accordion-body">
                                 <a class="nav-link text-primary my-2" href="#tmx">Sulfametaxazol + Trimetropina</a>
+                              </div>
+                            </div>
+                            </div>
+
+                <!--MEDICACION DE LA LETRA S------------------------------------------------------------------------------------->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medicacionT" aria-expanded="false" aria-controls="flush-collapseThree">
+                                T
+                              </button>
+                              </h2>
+                              <div id="medicacionT" class="accordion-collapse collapse" data-bs-parent="#listamedicacion">
+                              <div class="accordion-body">
+                                <a class="nav-link text-success my-2" href="#tiopental">Tiopental</a>
                               </div>
                             </div>
                             </div>
@@ -370,7 +414,7 @@
 
             <!--------------------------------------------------------------------------------------------------------------------------->
             <div class="bg-primary col-12 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bg-light"><!--CONTENEDOR 2 PARA LOS MEDIACMENTOS-->
-               <!---------------------------AACICLOVIR----------------------------------------------------------------------->
+               <!---------------------------ACICLOVIR----------------------------------------------------------------------->
                <div id="aciclovir">
                 <h4 class="text-primary text-center">Aciclovir</h4>
               </div>
@@ -396,11 +440,16 @@
                 <p class="letrares">
                   <b class="text-primary">Reconstitución</b><br>
                   10ml de AD (agua destilada).<br>
-                  <b>Concentración:</b> 50mg/ml.<br>
-                  <b class="text-primary">IntraVenosa Intermitente</b><br>
+                  <b>Concentración:</b> 50mg/ml.<br><br>
+
+                  <b class="text-primary">IntraVenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-primary">IntraVenosa Intermitente (IVI)--[2° CANAL]--</b><br>
                   <b>Recomendada o minima (V. Périferica):</b> 2,5-5mg/ml, diluir en S.F. o DX5%.<br>
                   <b>Maxima (V. Central):</b> 7mg/ml, diluir en S.F. o DX5%.<br>
-                  <b>Infusión:</b> en 60 minutos.<br>
+                  <b>Infusión:</b> en 60 minutos.<br><br>
+
                   <b class="text-primary">Via Oral (VO):</b><br>
                   Disminuye la intolerancia gastrointestinal.</p>
                 </p>
@@ -411,7 +460,8 @@
                   Riesgo de flebitis o inflamación en el sitio de punción en altas concetraciones.
                 </p>
                 <div class="text-center row">
-                  <span class=""><a class="spa" href="/3-protocolos/1-guia-farmacos/5-antivirales/aciclovir-ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-primary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="/3-protocolos/1-guia-farmacos/5-antivirales/aciclovir-ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -435,14 +485,16 @@
                 <h5>Administración</h5>
                 <p class="letrares">
                   Administrar por vía periférica o central. Utilizar una vía venosa lo más
-                  cercana posible al corazón.<br>
-                  <b class="text-danger">IntraVenosa Directa (IVD)</b><br>
+                  cercana posible al corazón.<br><br>
+
+                  <b class="text-danger">IntraVenosa Directa (IVD)--[PUSH]--</b><br>
                   <b>Para dosis menores de 600 ug (0.2ml)</b> realizar una dilución con SF a una<br>
                   <b>Concentración Recomendada: </b> de 1-2mg/ml.<br>
                   <b>Para dosis mayores</b><br>
                   <b>Máxima Concentración:</b> 3mg/ml.<br>
-                  <b>Infundir: </b>Se debe administrar de manera rápida de 1 a 2 segundos y lavar inmediatamente con 5-10 ml de solución fisiológica.<br>
-                  <b class="text-danger">IntraVenosa Intermitente (IVI)</b><br>
+                  <b>Infundir: </b>Se debe administrar de manera rápida de 1 a 2 segundos y lavar inmediatamente con 5-10 ml de solución fisiológica.<br><br>
+
+                  <b class="text-danger">IntraVenosa Intermitente (IVI)--[2° CANAL]--</b><br>
                   Contraindicado, se inactiva al ponerse en contacto con los glóbulos rojos.
                 </p>
               </div>
@@ -454,7 +506,8 @@
                   electrocardiográfica y reanimación cardiorrespiratoria.
                 </p>
                 <div class="text-center row">
-                  <span><a class="spa  text-danger" href="/3-protocolos/1-guia-farmacos/2-inotropicos/adenosina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa  text-danger" href="/3-protocolos/1-guia-farmacos/2-inotropicos/adenosina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -474,16 +527,17 @@
               <div>
                 <h5>Administración</h5>
                 <p class="letrares">
-                  <b class="text-primary">IntraVenosa Directa (IVD)</b><br>
-                  No<br>
-                  <b class="text-primary">IntraVenosa Intermitente (IVI)</b><br>
-                  <b>Dilución Minima (V. Périferica):</b> 0.25-.5mg/ml, diluir en S.F. o DX5%.<br>
+                  <b class="text-primary">IntraVenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-primary">IntraVenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Dilución Minima (V. Périferica):</b> 0.25-5mg/ml, diluir en S.F. o DX5%.<br>
                   <b>Dilución Máxima (V. Central):</b> 5-10mg/ml, diluir en S.F. o DX5%.<br>
-                  <b>Infusión:</b> en 60 minutos a 2hs.<br>
-                  <b class="text-primary">IntraMuscular(IM)</b><br>
+                  <b>Infusión:</b> en 60 minutos a 2hs.<br><br>
+
+                  <b class="text-primary">IntraMuscular (IM)</b><br>
                   Administración profunda directa sin diluir.<br>
-                  <b class="text-primary">Vía Oral(VO)</b><br>
-                  No
+
                 </p>
               </div>
               <div class="border-bottom border-primary mb-2">
@@ -493,7 +547,8 @@
                   Administrar céfalosporinas o penicilinas 1 hora antes o despues.
                 </p>
                 <div class="text-center row">
-                  <span class=""><a class="spa" href="/3-protocolos/1-guia-farmacos/4-antibioticos/amikacina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa " href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="/3-protocolos/1-guia-farmacos/4-antibioticos/amikacina_ficha.html" target="_blank">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 
@@ -2158,6 +2213,158 @@
                 </div>
               </div>
 
+              <!---------------------------NITROPRUSIATO DE SODIO----------------------------------------------------------------------->
+              <div id="nitroprusiato">
+                <h4 class="text-danger text-center">Nitroprusiato de Sodio</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-danger">Ampolla:</b> de 50mg.<br>    
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Una vez abierta tiene una durabilidad <b class="bg-warning">24hs a T° ambiente y protegido de la luz.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-danger">Reconstitución</b><br>
+                  Reconstituir con el solvente del producto.<br><br>
+                
+                  <b class="text-danger">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>No.</b><br><br>
+
+                  <b class="text-danger">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>No.</b><br><br>
+
+                  <b class="text-danger">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>Dilución:</b> Se puede diluir en DX5%.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>0,2mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>1mg/ml.<br>
+                  <b>Infundir: </b>determinada por el médico.<br>
+                  <b>Perfus: </b><b class="text-danger">Utilizar perfus fotosensible.</b><br>
+
+                </p>
+              </div>
+              <div class="border-bottom border-danger mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  No utilizar otro diluyente para la reconstitución.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-danger">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------OMEPRAZOL----------------------------------------------------------------------->
+              <div id="omeprazol">
+                <h4 class="text-secondary text-center">Omeprazol</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">frasco/Ampolla:</b> de 40mg.<br>
+                    <b class="text-secondary">Comprimidos/Capsulas:</b> de 20mg y 40mg.<br>
+                    <b class="text-secondary">Formula Magistral:</b> de 2mg/ml.<br>    
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  Reconstituida con el solvente tiene una durabilidad <b class="bg-warning">4hs a T° ambiente.</b><br>
+                  Dependiendo de la solución con la que se reconstituyo y diluyo tiene una durabilidad <b class="bg-warning">con S.F. 12hs y con DX5% 6hs a T° ambiente.</b><br>
+                  La formula magistral tiene una durabilidad de <b class="bg-warning">14 dias a T° ambiente y 45 días en la heladera.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-secondary">Reconstitución</b><br>
+                  Con el solvente del producto, S.F. o DX5%.<br><br>
+                
+                  <b class="text-secondary">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>Infundir lentamente y sin diluir</b> a una velocidad de 4mg/minuto.<br><br>
+
+                  <b class="text-secondary">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Reconstituir en: </b>con 10ml de S.F. o DX5%.<br>
+                  <b>Diluir en:</b>La dosis indicada en DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>0,4mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>0,4mg/ml.<br>
+                  <b>Infundir: </b>en 30 minutos.<br><br>
+
+                  <b class="text-secondary">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>POCO RECOMENDADO EN PEDIATRÍA.</b><br><br>
+
+                  <b class="text-secondary">Vía Oral (VO)</b><br>
+                  no masticar ni aplastar los gránulos, se puede abrir la capsula y administrar el contenido con yogurth o jugo de naranjas..<br><br>
+                </p>
+              </div>
+              <div class="border-bottom border-secondary mb-2">
+          <!--      <h5>Observaciones</h5>
+                <p class="letrares">
+                  Si se administra una vez al día, darlo por la mañana.
+                </p>-->
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------PARACETAMOL----------------------------------------------------------------------->
+              <div id="paracetamol">
+                <h4 class="text-success text-center">Paracetamol</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-success">Frasco/Ampolla:</b> de 500mg/50ml (10mg/ml).<br>
+                    <b class="text-success">Comprimidos:</b> de 500mg y 1 gr.<br>     
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  <b class="bg-warning">No refrigerar, es estable 24hs a T° ambiente con puerto de inyección.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-success">Reconstitución</b><br>
+                  No requiere.<br><br>
+                
+                  <b class="text-success">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>No.</b><br><br>
+
+                  <b class="text-success">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Dilución: </b>no requiere.<br>
+                  <b>Infundir: </b>en 15-30 minutos.<br><br>
+
+                  <b class="text-success">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>NO.</b><br><br>
+<!--
+                  <b class="text-success">Vía Oral (VO)</b><br>
+                  Administrar con alimentos.<br><br>-->
+
+              </div>
+              <div class="border-bottom border-success mb-2">
+              <!--  <h5>Observaciones</h5>
+                <p class="letrares">
+                  Oral, proporcionar con alimentos o leche para disminuir la molestia gastrointestinal.<br>
+                  Existen presentaciones comerciales con lidocaína de uso exclusivo I M.<br>
+                  La extravasación puede provocar necrosis en los tejidos.
+                </p>-->
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
                <!---------------------------PENICILINA G----------------------------------------------------------------------->
                <div id="penig">
                 <h4 class="text-primary text-center">Penicilina G</h4>
@@ -2284,6 +2491,59 @@
                 </div>
               </div>
 
+              <!---------------------------RANITIDINA----------------------------------------------------------------------->
+              <div id="rani">
+                <h4 class="text-secondary text-center">Ranitidina</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">Ampolla:</b> de 50mg/5ml.<br>
+                    <b class="text-secondary">Comprimidos/Capsulas:</b> de 150mg y 300mg.<br>
+                    <b class="text-secondary">Suspención Oral:</b> de 0,84mg/100ml o 200ml.<br>    
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  No hay datos.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-secondary">Reconstitución</b><br>
+                  No requiere.<br><br>
+                
+                  <b class="text-secondary">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>Dilución: </b>S.F. o DX5%.<br>
+                  <b>Concentración: </b>2,5mg/ml.<br>
+                  <b>Infusión: </b>en 5-10 minutos (dosis menores a 10mg).<br><br>
+
+                  <b class="text-secondary">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Diluir en: </b>DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>0,5mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>2,5mg/ml.<br>
+                  <b>Infundir: </b>en 10-30 minutos.<br><br>
+
+                  <b class="text-secondary">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>NO.</b><br><br>
+
+                  <b class="text-secondary">Vía Oral (VO)</b><br>
+                  con alimentos aumenta la biodisponibilidad.<br>Si se administra en dosis única dar por la noche.<br><br>
+                </p>
+              </div>
+              <div class="border-bottom border-secondary mb-2">
+          <!--      <h5>Observaciones</h5>
+                <p class="letrares">
+                  Si se administra una vez al día, darlo por la mañana.
+                </p>-->
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
                <!---------------------------RIFAMPICINA----------------------------------------------------------------------->
                <div id="rifa">
                 <h4 class="text-primary text-center">Rifampicina</h4>
@@ -2359,6 +2619,116 @@
                 <div class="text-center row">
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa" href="#listaf">VOLVER AL INICIO</a></span>
                   <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+              <!---------------------------SULFATO DE MAGNESIO----------------------------------------------------------------------->
+              <div id="sulfatomg">
+                <h4 class="text-secondary text-center">Sulfato de Magnesio</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-secondary">Ampolla:</b> al 25%, 250mg/ml.<br>
+                    <b class="text-secondary">Solución Magistral:</b> 4 mEq/ml (1 mEq Mg = 12 mg de Mg).<br>   
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  No hay datos.
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-secondary">Reconstitución</b><br>
+                  No requiere.<br><br>
+                
+                  <b class="text-secondary">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  Solo en Arritmias.<br>
+                  <b>Diluir en: </b>DX5% o S.F.<br>
+                  <b>Concentración Recomendada: </b>200mg/ml.<br>
+                  <b>Infundir: </b>en 10-20 minutos.<br><br>
+
+                  <b class="text-secondary">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Diluir en: </b>DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>10mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>30mg/ml.<br>
+                  <b>Infundir: </b>en 30-60 minutos.<br><br>
+
+                  <b class="text-secondary">En Crisis Asmaticas--[2° CANAL]--</b><br>
+                  <b>Diluir en: </b>DX5% o S.F.<br>
+                  <b>Dosis entre 250-500mg: </b>llevar a 20ml.<br>
+                  <b>Dosis entre 501-750mg: </b>llevar a 30ml.<br>
+                  <b>Dosis entre 751-1500mg: </b>llevar a 50ml.<br>
+                  <b>Infundir: </b>en 15-30 minutos.<br><br>
+
+                  <b class="text-secondary">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>NO.</b><br><br>
+
+                </p>
+              </div>
+              <div class="border-bottom border-secondary mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  En caso de intoxicación se debe contar con una solución de calcio.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-secondary">IR A FICHA DEL MEDICAMENTO</a></span>
+                </div>
+              </div>
+
+               <!---------------------------TIOPENTAL----------------------------------------------------------------------->
+               <div id="tiopental">
+                <h4 class="text-success text-center">Tiopental</h4>
+              </div>
+              <div>
+                <h5>Presentación</h5>
+                  <p class="letrares">
+                    <b class="text-success">Frasco/Ampolla:</b> 1gr.<br>
+                  </p>
+              </div>
+              <div>
+                <h5>Estabilidad</h5>
+                <p class="letrares">
+                  una vez reconstituido es estable <b class="bg-warning">24hs a T° ambiente.</b>
+                </p>
+              </div>
+              <div>
+                <h5>Administración</h5>
+                <p class="letrares">
+                  <b class="text-success">Reconstitución</b><br>
+                  Reconstituir con 20ml de S.F.<br>
+                  <b>Concentración: </b> 50mg/ml.<br><br>
+                
+                  <b class="text-success">Intravenosa Directa (IVD)--[PUSH]--</b><br>
+                  <b>Dilución: </b>Se puede diluir en DX5% o S.F.<br>
+                  <b>Concentración Recomendada: </b>20mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>50mg/ml.<br>
+                  <b>Infundir: </b>lenta.<br><br>
+
+                  <b class="text-success">Intravenosa Intermitente (IVI)--[2° CANAL]--</b><br>
+                  <b>Dilución: </b>Se puede diluir en DX5% o S.F.<br>
+                  <b>Concentración Recomendada (V. Périferica): </b>20mg/ml.<br>
+                  <b>Concentración Máxima (V. Central): </b>25mg/ml.<br>
+                  <b>Infundir: </b>lento.<br><br>
+
+                  <b class="text-success">Intravenosa Continua (IVC)--[GOTEO]--</b><br>
+                  <b>Diluir: </b>el vial a una concentración entre 2-4mg/ml.<br>
+                  <b>Estable: </b> 24hs.
+
+                </p>
+              </div>
+              <div class="border-bottom border-success mb-2">
+                <h5>Observaciones</h5>
+                <p class="letrares">
+                  En caso de intoxicación se debe contar con una solución de calcio.
+                </p>
+                <div class="text-center row">
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success" href="#listaf">VOLVER AL INICIO</a></span>
+                  <span class="  col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"><a class="spa text-success">IR A FICHA DEL MEDICAMENTO</a></span>
                 </div>
               </div>
 

@@ -24,6 +24,18 @@ body{
     }
 }
 
+@media (max-width: 350px){
+    #enfconec{
+        font-size: 12px;
+    }
+
+    #logo{
+        width:80px;
+        height: 40px;
+    }
+
+}
+
 /**************/
 
 

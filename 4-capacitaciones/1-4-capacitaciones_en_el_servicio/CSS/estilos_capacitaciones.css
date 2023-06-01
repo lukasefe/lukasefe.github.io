@@ -16,16 +16,50 @@ body{
     text-align: justify;
 }
 
-
+@media(max-width: 800px){
+    .video{
+        width: 500px;
+        height: 300px;
+    }
+    .videogoogledrive{
+        width:500px;
+        height: 300px;
+    }
+}
 
 @media (max-width:650px){
     .parrafo{
        font-size: 15px;
     }
     .video{
+        width: 400px;
+        height: 200px;
+    }
+    .videogoogledrive{
+        width: 400px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width:496px){
+    .video{
         width: 300px;
         height: 150px;
     }
-    
+    .videogoogledrive{
+        width: 300px;
+        height: 150px;
+    }
+}
 
+@media(max-width: 420px){
+    .video{
+        width: 250px;
+        height: 150px;
+    }
+    .videogoogledrive{
+        width: 250px;
+        height: 150px;
+    }
 }

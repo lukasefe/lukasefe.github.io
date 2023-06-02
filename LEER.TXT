@@ -38,7 +38,11 @@
     19/05/2023-->se agregaron goteo de fentanilo, midazolam, morfina y ketamina a la lista de dilucion de medicamentos.
     20/05/23-->se agregaron dexmedetomidina, adrenalina, noradrenalina y propofol.
     22/05/23-->se acomodo diseño en diferentes tamaños de pantalla del index.html
-    
+  
+  ACT. 1.05.00 01/06/2023
+    AGREGADO MAS VIDEOS DE CAPACITACIÓN
+    02/06/2023
+    AGREGADO NOTICIAS E INFORMES
 
  
   DISEÑO DE PLATAFORMA, NOMBRE Y LOGOTIPO SON MARCAS CREADAS (ENFERMERIA CONECTADA) POR:

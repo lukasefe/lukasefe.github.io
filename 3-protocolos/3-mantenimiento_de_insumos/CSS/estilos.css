@@ -1,0 +1,162 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+    padding-top: 10px;
+    font-size: 18px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+
+@media (max-width: 400px){
+    #enfconec{
+        font-size: 14px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 350px){
+    #enfconec{
+        font-size: 12px;
+    }
+
+    #logo{
+        width:80px;
+        height: 40px;
+    }
+
+}
+
+/**************/
+
+
+.texto-portada{
+    margin-top: 0;
+    height: 400px;
+    background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.novedades{
+    border-bottom: 1px solid black;
+}
+img.imagen-novedad{
+    border-radius: 20px;
+    width:400px;
+}
+
+.linkboton{
+    text-decoration: none;
+     color:dark;
+    font-weight: bold;
+}
+
+/**************************/
+/*TEXTO DE PORTADA EN RESPONSIVE*/
+
+#espaciado{
+    display: none;
+}
+
+@media(max-width: 1000px){
+    #espaciado{
+        display:block;
+    }
+    #textotarjeta{
+        text-align: center;
+     
+    }
+}
+
+
+/*************************/
+
+
+@media (max-width:1000px){
+    .texto-portada{
+        height: 250px;
+    }
+    .subtitulo{
+        text-align: center;
+        font-size: 20px;
+    }
+    .parrafo{
+        font-size: 10px;
+        text-align: justify;
+    }
+    #noticias{
+        width: 100%;
+    }
+    .novedades{
+        text-align: center;
+    }
+    .letras{
+        padding-left: 1rem;
+    }
+}
+@media (max-width:600px){
+    .texto-portada{
+        height: 150px;
+    }
+    .subtitulo{
+        text-align: center;
+        font-size: 20px;
+    }
+    .parrafo{
+        font-size: 10px;
+        text-align: justify;
+ 
+    }
+}
+
+@media (max-width: 500px){
+    .letras{
+        font-size: 10px;
+        text-align: justify;
+    }
+}
+
+
+
+/*MENU DESPLEGABLE DE HERRAMIENTAS*/
+
+
+li{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.listasss{
+    text-decoration: none;
+}
+
+@media (min-width:1200px){
+    #botonherramientas{
+        display: none;
+    }
+
+}
+
+
+ @media (max-width: 1200px){
+    #herramientas{
+        display: none;
+    }
+ }
+

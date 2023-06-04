@@ -1,0 +1,319 @@
+<!--DISEÑO DE PLATAFORMA, NOMBRE Y LOGOTIPO SON MARCAS CREADAS (ENFERMERIA CONECTADA) POR:
+   (C)FERNANDEZ LUCAS EDUARDO
+    34273259
+    LICENCIADO EN ENFERMERIA/WEB DEVELOPER
+    DESARROLLO 2022-2023
+    COMO PARTE DE UN PROYECTO PRESENTADO EN EL HOSPITAL INFANTIL MUNICIPAL DE LA CIUDAD DE CORDOBA-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENFERMERIA CONECTADA-HIM</title>
+    <link rel="Shortcut icon" href="ASSETS/LOGO/logo_ec_48x48.png">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-dark">
+  <!--NAVBAR MENU CON PORTADA-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-1">
+            <div class="container-fluid">
+                <!--LOGOTIPO Y NOMBRE-->
+                <a class="navbar-brand mx-auto" href="#">
+                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png"></i>
+                  <span id="enfconec">ENFERMERÍA CONECTADA</span>
+                </a>
+                  <!--BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+              <ul class="navbar-nav ms-auto p-auto">
+                <!--------------------------------BOTON POLITICAS DEL SERVICIO---------------------->
+                <li class="nav-item px-2">
+                  <a class="nav-link active" aria-current="page" href="/1-politicas_del_servicio/politicas_del_servicio.html">Politicas del Servicio UCIP</a>
+                </li>
+                <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownformularios">
+                 <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform">Ingreso de Pacientes</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLScFLSDXokPpyrHO0aidRXgmNXntYTfrnUQ15aNF_QeRgHEJbg/viewform">Higiene de Manos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSftSggOansgGzZheReSLs-dk4WiP4Q-9PoNV2np4nVBNOsVyQ/viewform">Combo de Medidas</a>
+                    </li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 3 PROTOCOLOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="3-protocolos/1-guia-farmacos/guia-farmaco-terapeutica.html">Guia Farmaco Terapeutica y Adm. de Medicamentos</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="3-protocolos/2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos y POE</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="3-protocolos/3-mantenimiento_de_insumos/mantenimiento_de_insumos.html">Mantenimiento de Insumos</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="3-protocolos/4-checklist_y_carteleria/Checklist_carteleria.html">Checklist y Carteleria</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">LPP</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="">Escalas</a></li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 4 CAPACITACIONES -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html">Capacitaciones en el servicio</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">cursos online</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="">Investigaciones y Proyectos del servicio</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="4-capacitaciones/4-4-material_bibliografico/material_bibliografico.html">Material Bibliografico</a></li>
+                  </ul>
+                </li>
+                <!--BOTON DROPDOWN 5 COMUNICADOS -->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Comunicados</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Planilla Mensual</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="5-comunicados/3-5_planilla_rotacion/planilla_rotacion.html">Planila de rotación</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="5-comunicados/4-5_notas_personal/notas_Personal.html">Notas de Personal</a></li>
+                  </ul>
+                </li>
+                <!--LINK CONTACTO-->
+                <li class="nav-item px-2">
+                 <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+              </ul>
+           </div>
+           </div>
+        </nav>
+         <!--TEXTO DE PORTADA-->
+        <div class="container-fluid d-flex  justify-content-center align-items-center flex-column text-white-50 texto-portada">
+          <div class="d-flex align-items-center flex-column portadita text-light"><h1>UCIP</h1>
+            <h6 class="text-decoration-underline ">Hospital Infantil Municipal</h6></div>
+        </div>
+    </header>
+
+    <main class="text-white">
+
+      <div class="mx-3">
+        <h2 class="subtitulo">Enfermería Conectada</h2>
+        <p class="parrafo">Es una plataforma integral que reúne todos los conocimientos y recursos necesarios para el servicio de enfermería 
+          y por el personal de enfermeria de la UCI Pediatrica del Hospital Infantil Municipal.<br>
+          Nuestro objetivo es mejorar la calidad de atención de enfermería al 
+          proporcionar información actualizada y herramientas útiles para los profesionales de la salud. Con nuestra plataforma, 
+          los profesionales pueden acceder fácilmente 
+          a información relevante y recursos valiosos para mejorar su práctica y brindar la mejor atención posible a sus pacientes.</p>
+
+      </div>
+
+    
+    
+      <div class=" row mt-3 mx-0 justify-content-center px-3">
+          <!--------------------------------------------------------------------------------------------------------------------------->
+          <!--LISTA DE HERRAMIENTAS EN COMPUTADORA-->
+          <div class="col-3 mx-0 ps-0" id="herramientas" >
+          <h5 class="text-center">Herramientas</h5>
+          <ul>
+            <li><a class="listasss  text-white font-weight-bold" href="6-herramientas/dilucion_medicamentos/dilucion_de_medicamentos.html" target="_blank">Dilución de Medicamentos</a></li>
+            <li><a class="listasss  text-white font-weight-bold" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform" target="_blank">Ingreso de Pacientes</a></li>
+            <li></li>
+          </ul>
+
+          <h5 class="text-center">Cursos y Material Bibliográfico</h5>
+          <ul>
+           
+           <li class=""><span><img class="mx-1" src="/ASSETS/ICONOS/youtube_blanco_16px.png"></span><span><a class="listasss text-center  text-white font-weight-bold" href="https://www.youtube.com/watch?v=ZJeaXXPaSJA" target="_blank">Pre Simposio Int. de Heridas y Ostomias</a></span></li>
+          </ul>
+          </div>
+          <!--LISTA DE HERRAMIENTAS EN COMPUTADORA-->
+          <div class="dropdown-center col-3 mb-2" id="botonherramientas">
+            <button class="btn btn-dark dropdown-toggle col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="ASSETS/ICONOS/caja-de-herramientas.png">
+            </button>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="6-herramientas/dilucion_medicamentos/dilucion_de_medicamentos.html" target="_blank">Dilución de Medicamentos</a></li>
+              <li><a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform" target="_blank" >Ingreso de Pacientes</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <!--LISTA DE HERRAMIENTAS EN COMPUTADORA
+          <div class="dropdown-center col-3 mb-2" id="botonherramientas">
+            <button class="btn btn-dark dropdown-toggle col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="ASSETS/ICONOS/globo_32x32.png">
+            </button>
+            <ul class="dropdown-menu bg-dark">
+              <li><span><img class="mx-1" src="/ASSETS/ICONOS/youtube_blanco_16px.png"></span><span><a class="dropdown-item text-white" href="https://www.youtube.com/watch?v=ZJeaXXPaSJA" target="_blank">Simp. Int. de Heridas y Ostomias</a></span></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>-->
+    
+
+
+        <!--SECCION NOVEDADES NOTICIAS ACTUALIZACIONES-->
+        <div class=" bg-light mx-1 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-8">
+          <h2 class="py-2 text-dark novedades">Novedades</h2>
+
+          <!--Noticias 2-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="http://drive.google.com/uc?export=view&id=1OQMI8wCOu-2EQJbMslrq0lykgcVu5Rke">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5 class="text-primary" >02/06/2023</h5>
+              <h3 class="text-danger">Resultados CECI</h3>
+              <p class="font-weight-bold text-dark letras">Monitoreo de la Adherencia de la Higiene de Manos UTIP 2023</p>
+              <p class="font-weight-bold text-dark letras">Aportado por la Lic. Esp. Loza Flavia.</p>
+              <div class="d-flex justify-content-center align-items-center text-center">
+                <button type="button" class="btn btn-outline-danger"><a class=" text-dark linkboton" href="http://drive.google.com/uc?export=view&id=1yyY4DNuECtXWLPR7pRSV0inpWJhMlZu8" target="_blank">Presione Aqui</i></a></button>        
+              </div>
+            </div>
+          </div>
+
+          <!--Noticias 2-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="ASSETS/ICONOS/youtube_512x400px.png">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5 class="text-primary" >02/06/2023</h5>
+              <h3 class="text-danger">Curso</h3>
+              <p class="font-weight-bold text-dark letras">Pre Simposio Internacional de Heridas y Ostomias - San Nicolás de los Arroyos -01JUN23.</p>
+              <p class="font-weight-bold text-dark letras">Aportado por la Lic. Esp. Sanchez Maria Ines.</p>
+              <div class="d-flex justify-content-center align-items-center text-center">
+                <button type="button" class="btn btn-outline-danger"><a class=" text-dark linkboton" href="https://www.youtube.com/watch?v=ZJeaXXPaSJA" target="_blank">Presione Aqui</i></a></button>        
+              </div>
+            </div>
+          </div>
+
+          <!--Noticias 2-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="ASSETS/IMAGENES/aviso.jpg">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5 class="text-primary" >02/06/2023</h5>
+              <h3 class="text-danger">IMPORTANTE!!</h3>
+              <p class="font-weight-bold text-dark letras">Esta publicada la planilla mensual del mes de Junio de 2023.</p>
+              <div class="d-flex justify-content-center align-items-center text-center">
+                <button type="button" class="btn btn-outline-danger"><a class=" text-dark linkboton" href="5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Presione Aqui</i></a></button>        
+              </div>
+            </div>
+          </div>
+
+          <!--Noticias 1-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="4-capacitaciones/4-4-material_bibliografico/ASSETS/IMAGENES/portada_manual_amplya.jpeg" height="250px">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5  class="text-primary" >27/04/2023</h5>
+              <h3 class="text-danger">IMPORTANTE!!</h3>
+              <p  class="font-weight-bold text-dark letras">Ya esta disponible el manual de Hemodiafiltración de AMPLYA.<br>Ingrese en el siguiente icono</p>
+              <div class="d-flex justify-content-center align-items-center text-center">
+              <button type="button" class="btn btn-outline-danger"><a class=" text-dark linkboton" href="4-capacitaciones/4-4-material_bibliografico/material_bibliografico.html">Presione Aqui</i></a></button>        
+              </div>
+            </div>
+          </div>
+
+      <!--Noticias 2-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="ASSETS/IMAGENES/aviso.jpg">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5 class="text-primary" >28/03/2023</h5>
+              <h3 class="text-danger">IMPORTANTE!!</h3>
+              <p class="font-weight-bold text-dark letras">Esta publicada la planilla mensual del mes de Abril de 2023.</p>
+              <div class="d-flex justify-content-center align-items-center text-center">
+                <button type="button" class="btn btn-outline-danger"><a class=" text-dark linkboton" href="5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Presione Aqui</i></a></button>        
+              </div>
+            </div>
+          </div>
+
+          <!--Noticias 3-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="4-capacitaciones/1-4-capacitaciones_en_el_servicio/ASSETS/IMAGENES/2023-03-20TALLER_MANEJO DE DISPOSITIVOS.jpg">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5 class="text-primary" >20/03/2023</h5>
+              <h3 class="text-danger">TALLER!! Manejo correcto de Dispositivos <br id="espaciado">para acc. per. y apositos trans. </h3>
+              <p class="font-weight-bold text-dark letras">De manera presencial. Realizado por el laboratorio de BD y 3M</p>
+            </div>
+          </div>
+
+          <!--CONTENIDO DE NOTICIA 1-->
+          <div class="row justify-content-center mt-3 pb-3">
+            <img class="imagen-novedad  rounded col-sm-12 col-lg-4 col-xl-4 col-xxl-4" src="ASSETS/IMAGENES/recordatorio_2_800x600.jpg">
+            <div id="textotarjeta" class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4 font-weight-bold">
+              <h5 class="text-primary" >23/09/2022</h5>
+              <h3 class="text-danger">RECORDATORIO!!</h3>
+              <p class="font-weight-bold text-dark letras">Las omisiones de marcación son 1 entrada o salida por mes, 5 omisiones al año.</p>
+            </div>
+          </div>
+        </div>
+<!--
+        <div class="col-2" id="herramientas" >
+          
+        </div>-->
+   
+      </div>
+
+    </main>
+
+
+
+
+
+    <!--PIE DE PAGINA-->
+    <footer class="container-fluid bg-dark pb-2">
+      <div class="container-fluid bg-dark d-flex justify-content-center py-2">
+        <i class="bi bi-wifi text-white me-2"></i>
+        <span class="text-white">ENFERMERIA CONECTADA</span></div>
+    <div><span class="text-white">&copy;Fernandez Lucas:  </span>
+      <span class="text-white"> Lic. en Enfermeria / Web Developer</span></div>
+      <div><span class="text-white">Servicio UTIP/UCIM; </span>
+        <span class="text-white"> Hospital Infantil Municipal</span></div>
+          <div><span class="text-white">Cordoba; </span>
+            <span class="text-white"> Argentina</span>
+            <span class="text-white"> 2022</span></div>
+    </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>   
+</body>
+</html>

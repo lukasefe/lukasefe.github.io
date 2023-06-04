@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantenimeinto de Insumos</title>
+    <link rel="Shortcut icon" href="ASSETS/LOGO/logo_ec_48x48.png">
     <link rel="stylesheet" type="text/css" href="CSS/estilo-manual-procedimientos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -25,9 +26,9 @@
         <nav class="navbar navbar-expand-lg navbar-primary bg-primary ">
             <div class="container-fluid">
                 <!--LOGOTIPO Y NOMBRE-->
-                <a class="navbar-brand mx-auto" href="#">
-                    <i class="bi bi-wifi text-white"></i>
-                    <span class="text-white">ENFERMERIA CONECTADA</span>
+                <a class="navbar-brand mx-auto text-white" href="#">
+                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png"></i>
+                  <span id="enfconec">ENFERMERÍA CONECTADA</span>
                 </a>
                   <!--BOTON DEL MENU-->
           <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,32 +36,27 @@
           </button>
           <div class="collapse navbar-collapse mt-3" id="elementosmenu">
             <ul class="navbar-nav ms-auto p-auto">
-              <!--BOTON DROPDOWN 1 -->
+              <!--------------------------------BOTON POLITICAS DEL SERVICIO---------------------->
+              <li class="nav-item px-2">
+                <a class="nav-link active text-white" aria-current="page" href="/1-politicas_del_servicio/politicas_del_servicio.html">Politicas del Servicio UTIP</a>
+              </li>
+              <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
               <li class="nav-item dropdown px-2">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">UTIP/UCIM</a>
-                <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Pase de Guardia</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Datos de Pacientes</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Politicas del servicio</a></li>
-                  </ul>
-                </li>
-                <!--BOTON DROPDOWN 2 FORMULARIOS -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
                   <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownformularios">
                     <li>
-                      <a class="dropdown-item text-white" href="../../2-formularios/1-registro-ingreso-de-pacientes/form-ingreso-pacientes.html" >Ingreso de Pacientes</a>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform">Ingreso de Pacientes</a>
                     </li>
                     <li><hr class="dropdown-divider text-white"></li>
                     <li>
-                      <a class="dropdown-item text-white" href="">Higiene de Manos</a>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLScFLSDXokPpyrHO0aidRXgmNXntYTfrnUQ15aNF_QeRgHEJbg/viewform">Higiene de Manos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSftSggOansgGzZheReSLs-dk4WiP4Q-9PoNV2np4nVBNOsVyQ/viewform">Combo de Medidas</a>
                     </li>
                   </ul>
-                </li>
+              </li>
                 <!--BOTON DROPDOWN 3 PROTOCOLOS -->
                 <li class="nav-item dropdown px-2">
                   <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
@@ -125,50 +121,104 @@
         </nav>
          <!--TEXTO DE PORTADA-->
         <div class="container-fluid d-flex justify-content-center align-items-center flex-column bg-primary border-bottom border-top  border-dark">
-          <div class="d-flex align-items-center flex-column portadita "><h1 class="text-center text-white ">Mantenimiento de Insumos y Aparotologia<br>UTIP</h1>
+          <div class="d-flex align-items-center flex-column portadita "><h1 class="text-center text-white tituloprincipal">Mantenimiento de Insumos y Aparotologia</h1>
         </div>
         </div>
     </header>
     <main>
-      <!--ESPACIO DEL PDF Y RECONOCIMIENTO DEL MANUAL-->
-      <div class="conteiner-fluid row ms-4">
-          <p class="col-12">Última revisión Julio de 2017</p>
-          <ul class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4"><p><b>Elaborado por:</b>:</p>
-              <li>Lic. ECI: <b>Loza, Flavia</b></li>
-              <li>Lic. ECI: <b>Sánchez, Ines</b></li>
-          </ul>
-          <ul class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4"><p><b>Revisado por:</b>:</p>
-            <li>Jefa de enf. UCIP/Coordinadora general Lic: <b><br class="col-lg col-xl col-xxl
-              ">Gonzalez, Nicolaza</b></li>
-        </ul>
-        <ul class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4"><p><b>Autorizado por:</b>:</p>
-            <li><b>Comité de Capacitación y Docencia</b></li>
-            <li><b>Dirección Hospital Infantil Municipal</b></li>
-        </ul>
+      <!-----------------------------------RECUADROS DE LA INFORMACIÓN----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 border border-dark">
+          <p class=" justificado mt-2 text-center">
+            Esta guía nos permitirá contribuir a promover y refrozar la seguridad del paciente critico intentando minimizar, en lo posible,
+            los riesgos derivados del uso de la tecnología.
+          </p>
+         
           <!--todo:<p>Para <b>descargar</b> el manual, presione aqui. <a href="ASSETS/PDF/GUIA FARMACO TERAPEUTICA Y ADMINISTRACION DE MEDICAMENTOS-UTIPUCIM-FARMACIA-HIM-2019.pdf" target="_blank"><img src="ASSETS/ICONOS/descargar-pdf(1).png"></a></p>-->
       </div>
-      <div class="container-fluid row mx-0 bg-light">
-        <h3 class="border-bottom border-primary text-primary">Introducción</h3>
-        <p class="justificado">Este manual tiene como meta protocolizar las acciones que realiza la <b>enfermera</b> en la <b>Unidad de Cuidados Intensivos Pédiatricos</b> del <b>Hospital Infantil Municipal</b> de <b>Córdoba</b>; entendiendo que la descripción de un procedimiento no puede ser en ningun caso algo rígido e inamovible, cuando de profesionales se trata, sino una guía para la praxis-enfermera, sujeta a cuantos cambios sean necesarios a tenor de los nuevos cambios cientificos.</p>
-        <p class="justificado">Los contenidos de los procedimientos que aparecen en este manual se apoya en la enfermeria basada en la evidencia; y ah sido elaborada y consensuada por grupo de profesionales de todas las disciplinas actuantes en el área de <b>Cuidados Intensivos Pédiatricos del Hospital Infantil Municipal</b>, utilizando en todo momento una metodología cientifica y de consenso, por lo cual amerita su validez en la practica clinica y su transposición de esta a cualquier otra unidad de hospitalización; como asi tambien de orientación a las/los nuevos ingresantes al servicio.</p>
 
-        <h3 class="border-bottom border-primary text-primary">Objetivo General</h3>
-        <p class="justificado">Describir las técnicas y los procedimientos más usuales en la práctica de la <b>enfermeria</b> de <b>Cuidados Intensivos Pediátricos</b> y de tal manera aunar criterios con el equipo interdisciplinario para realizar una atención segura al paciente critico.</p>
+
+      <!-----------------------------------ESTETOSCOPIO----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 cajainfo justificado">
+        <h5 class="mt-2 tituloelemento">Estetoscopio</h5>
+        <img class="imagen mb-3 mt-3" src="http://drive.google.com/uc?export=view&id=19sA9qgfO8KDlsooYFF-mXoZ8nBsuVfs9">
+        <h6>Proceso de Desinfección al alta del paciente:</h6>
+        <ol class="listanumerica">
+          <li>Colocar desinfectante de LT8.</li>
+          <li>Posterior a la limpieza, la desinfección con alcohol al 70% diariamente.</li>
+          <li>Sumergir las olivas en alcohol al 70% durante 15 minutos.</li>
+          <li>Revisar, cambiar o desechar periodicamente membranas según disponibilidad.</li>
+        </ol>
       </div>
-      <!--CONTENEDOR DE LISTA-->
-      <div class=" d-flex justify-content-center row bg-light mb-4  mx-3">
-        <h3 class="d-flex aling-items-center justify-content-center border-bottom border-primary mb-2 text-primary">Lista de Procedimientos</h3>
-
-        <!--todo:CONTENEDOR DE LISTA A-->
-        <ul class="list-group col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-2">
-            <li class="list-group-item list-group-item-primary d-flex justify-content-center"><a href="A-procedimientos/accesos-venosos.html" class="text-decoration-none">Accesos Venosos</a></li>
-          </ul>
-        
-        <!--todo:CONTENEDOR DE LISTA C-->
-        <ul class="list-group col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-2">
-          <li class="list-group-item list-group-item-primary d-flex justify-content-center"><a href="A-procedimientos/cvp.html" class="text-decoration-none">Catetér Venoso Periférico (CVP)</a></li>
-        </ul>
-        </div>
+      <!-----------------------------------MANTA O MOTOR TERMICO----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 cajainfo justificado">
+        <h5 class="mt-2 tituloelemento">Motor Térmico</h5>
+        <img class="imagen  mb-3 mt-3" id="imagenmotort" src="http://drive.google.com/uc?export=view&id=1UfeLMKJ6vVX8nUwYyd7ZEImPAoQUKG2N">
+        <h6>Proceso de Desinfección al alta del paciente:</h6>
+        <ol class="listanumerica">
+          <li>Limpiar con nua compresa impregnada con desinfectante de LT8 al dejar de usar o al retirar de la unidad.</li>
+        </ol>
+      </div>
+      <!-----------------------------------TERMOMETRO DIGITAL----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 cajainfo justificado">
+        <h5 class="mt-2 tituloelemento">Termometro Digital</h5>
+        <img class="imagen mb-3 mt-3" src="http://drive.google.com/uc?export=view&id=1DUNhep4lc2ryFWLo9Z_G1q4om1YV58yR">
+        <h6>Proceso de Desinfección:</h6>
+        <ol class="listanumerica">
+          <li>Se limpia con una compresa impreganada en la solución desinfectante de LT8.</li>
+          <li>Retirar el remanente con un paño con alcohol al 70%.</li>
+          <li>Guardar en un lugar limpio y protegido de bacterias.</li>
+        </ol>
+      </div>
+      <!-----------------------------------TERMOMETRO RECTAL----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 cajainfo justificado">
+        <h5 class="mt-2 tituloelemento">Termometro Rectal</h5>
+        <img class="imagen mb-3 mt-3" src="http://drive.google.com/uc?export=view&id=1H_fWt5gdUBoy8Z8Q1xlMBVAK_4aH_b6_">
+        <h6>Proceso de Desinfección:</h6>
+        <ol class="listanumerica">
+          <li>Se limpia con una compresa impreganada en la solución desinfectante de LT8.</li>
+          <li>Colocar en una bacha de elementos secos.</li>
+          <li>Enviar a central de esterilización.</li>
+        </ol>
+      </div>
+      <!-----------------------------------TENSIOMETRO----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 cajainfo justificado">
+        <h5 class="mt-2 tituloelemento">Tensiómetro</h5>
+        <img class="imagen mb-3 mt-3" src="http://drive.google.com/uc?export=view&id=1H1znnPbzkkNvIP3Hs_h527-Po3GE8Goy">
+        <h6>Proceso de Desinfección:</h6>
+        <ol class="listanumerica">
+          <li>Colocar desinfectante de LT8 y dejar actuar por varios minutos.</li>
+          <li>Dejar secar.</li>
+          <li>Guardar en un lugar limpio y seco</li>
+        </ol>
+      </div>
+      <!-----------------------------------ELEMENTOS DEL VAFO----------------------------------------------------------------->
+      <div class="conteiner-fluid row mx-4 mt-3 cajainfo justificado">
+        <h5 class="mt-2 tituloelemento">VAFO</h5>
+        <img class="imagenvafo mb-3 mt-3" src="http://drive.google.com/uc?export=view&id=1JoSP7mm-8pWd0Bxc5_37qSuXegiaYkzE">
+        <h6>Proceso de Desinfección:</h6>
+        <ol class="listanumerica">
+          <li>Hacer desinfectar con Servicio de Limpieza al dejar de usar o alta del paciente.</li>
+          <li>Con un paño embebido con desinfectante LT8.</li>
+        </ol>
+        <h4 class="subtituloelementos">Elementos del VAFO</h4>
+        <h5 class="mt-2 tituloelementovafo">Silenciador</h5>
+        <img class="imagen mb-3 mt-3" src="">
+        <h6>Proceso de Desinfección:</h6>
+        <ol class="listanumerica">
+          <li>Limpiar suavemente con alcohol al 70%.</li>
+          <li>Dejar en bacha de elementos secos.</li>
+          <li>Se envía a central para ser esterilizado en oxido de etileno en pauch individual.</li>
+        </ol>
+        <h5 class="mt-2 tituloelementovafo">Bloque de Exhalación</h5>
+        <img class="imagen mb-3 mt-3" src="">
+        <h6>Proceso de Desinfección:</h6>
+        <ol class="listanumerica">
+          <li>Limpiar suavemente con alcohol al 70%.</li>
+          <li>Sumergir en alcohol al 70% por 20 minutos.</li>
+          <li>Dejar secar y luego colocar en bacha de elementos secos.</li>
+          <li>Se envía a central para ser esterilizado en oxido de etileno en pauch individual.</li>
+        </ol>
+      </div>
       
     </main>
     <footer class="container-fluid bg-primary pb-2">

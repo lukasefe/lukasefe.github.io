@@ -1,3 +1,177 @@
 .justificado{
    text-align: justify;
 }
+
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+   padding-top: 10px;
+   font-size: 18px;
+}
+#logo{
+   width: 100px;
+   height: 60px;
+}
+
+@media (max-width: 400px){
+   #enfconec{
+       font-size: 14px;
+   }
+   #logo{
+       width: 100px;
+       height: 50px;
+   }
+}
+
+@media (max-width: 350px){
+   #enfconec{
+       font-size: 12px;
+   }
+
+   #logo{
+       width:80px;
+       height: 40px;
+   }
+
+}
+
+/*********************************************************************************************************/
+@media(max-width:420px){
+   h1.tituloprincipal{
+      font-size:20px;
+   }
+}
+
+
+/*********************************************************************************************************/
+/********************RECUADRO DE LA INFORMACION***********************************************************/
+
+.cajainfo{
+   border: solid 1px black;
+}
+
+h5.tituloelemento{
+   text-align: center;
+   font-size: 30px;
+}
+
+h4.subtituloelementos{
+   text-align: center;
+   font-size: 30px;
+}
+
+h5.tituloelementovafo{
+   margin-left: 15px;
+   font-size: 30px;
+}
+
+
+img.imagen{
+   width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+img.imagenvafo{
+   width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+ol.listanumerica{
+   position: relative;
+   left: 30px;
+}
+
+/********RECUADRO RESPONSIVO*************/
+
+@media(max-width:650px){
+   .cajainfo{
+      border: none;
+   }
+   img.imagen{
+      width: 420px;
+      height: 270px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   img#imagenmotort{
+      width: 460px;
+      height: 360px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   h6{
+      position: relative;
+      left:-25px;
+   }
+   ol.listanumerica{
+      position: relative;
+      left:0px;
+   }
+}
+
+@media(max-width:500px){
+   .cajainfo{
+      border: none;
+   }
+   img.imagen{
+      width: 420px;
+      height: 270px;
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+   img#imagenmotort{
+      width: 460px;
+      height: 360px;
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+   img.imagenvafo{
+      width: 460px;
+      height: 330px;
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+   h6{
+      position: relative;
+      left:-25px;
+   }
+   ol.listanumerica{
+      position: relative;
+      left:0px;
+   }
+}
+
+/******RUPTURA 420PX******/
+@media(max-width:420px){
+   .cajainfo{
+      border: none;
+   }
+   img.imagen{
+      width: 420px;
+      height: 270px;
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+   img#imagenmotort{
+      width: 420px;
+      height: 330px;
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+   img.imagenvafo{
+      width: 420px;
+      height: 300px;
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+   h6{
+      position: relative;
+      left:-25px;
+   }
+   ol.listanumerica{
+      position: relative;
+      left:0px;
+   }
+}

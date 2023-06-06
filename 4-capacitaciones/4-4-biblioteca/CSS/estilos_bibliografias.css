@@ -1,0 +1,366 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.novedades{
+    border-bottom: 1px solid dark;
+}
+
+#texto{
+ align-items: center;
+ font-weight: bold;
+}
+
+.borde{
+     border: 1px solid blue;
+     box-shadow: 2px 2px 2px 2px rgba(1, 1, 112, 0.2);
+    
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+ #visorpdf{
+    border: 1px solid black;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+
+#tarjeta{
+    display: none;
+}
+
+@media (max-width:1000px){
+    .titulo{
+        text-align: center;
+    }
+
+    .parrafo{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .lista1{
+        font-size: 15px;
+    }
+
+    #visorpdf{
+        display: none;
+    }
+    #tarjeta{
+        display: contents;
+        width: 450px;
+        height: auto;
+    }
+    #foto{
+        width: 400ppx;
+        height: auto;
+    }
+    .pieletra{
+        font-size: 10px;
+    }
+}
+
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+    padding-top: 10px;
+    font-size: 18px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+
+@media (max-width: 400px){
+    #enfconec{
+        font-size: 14px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 350px){
+    #enfconec{
+        font-size: 12px;
+    }
+
+    #logo{
+        width:80px;
+        height: 40px;
+    }
+
+}
+
+/**************************************************************************************/
+/************CAJAS DE LA BIBLIOGRAFIA*************************************************/
+
+/***********CAJA DE LAS CARATULAS****************************************************/
+ img.caratulas{
+    width: 310px;
+ }
+
+ /***********************************RESUMEN***************************************/
+ div.contenedor{
+    border: 1px solid black;
+ }
+
+ h4.titulo_caratula{
+    font-size: 15px;
+}
+ p.abstrac{
+    font-size: 12px;
+    text-align: justify;
+ }
+
+
+ a.link{
+    text-decoration: none;
+    color: white;
+ }
+
+ a.link:hover{
+    color: black;
+ }
+
+ .pieletra{
+    font-size: 12px;
+ }
+
+ /*************RESPONSIVO*************************/
+ @media(max-width:1236px){
+
+    img.caratulas{
+        margin-left: 0%;
+        width:300px;
+        height: 290px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 0%;
+    }
+    h4.titulo_caratula{
+        font-size: 12px;
+    }
+    p.abstrac{
+        font-size: 10px;
+
+     }
+     button.botoncito{
+        font-size: 10px;
+     }
+
+     p.pieletra{
+        text-align: center;
+        font-size: 10px;
+     }
+ }
+/**********************************/
+@media(max-width:1185px){
+    img.caratulas{
+        width:290px;
+    }
+}
+
+
+ @media(max-width:1147px){
+
+    img.caratulas{
+        margin-left: 0%;
+        width:280px;
+        height: 250px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 0%;
+    }
+    h4.titulo_caratula{
+        font-size: 10px;
+    }
+    p.abstrac{
+        font-size: 10px;
+     }
+     button.botoncito{
+        font-size: 10px;
+
+     }
+     p.pieletra{
+        text-align: center;
+        font-size: 8px;
+     }
+ }
+
+ @media(max-width:1108px){
+    img.caratulas{
+
+        width: 260px;
+        height: 250px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+ }
+
+ @media(max-width:1020px){
+ 
+    img.caratulas{
+        width:240px;
+        height: 200px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    h4.titulo_caratula{
+        font-size: 10px;
+    }
+    p.abstrac{
+        font-size: 8px;
+    
+     }
+     button.botoncito{
+        font-size: 10px;
+     }
+     p.pieletra{
+        text-align: center;
+        font-size: 8px;
+     }
+/********DISMINUCION DE LA IMAGEN*******/
+ }@media(max-width:991px){
+    img.caratulas{
+        width:280px;
+        height: 220px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+ }
+    h4.titulo_caratula{
+    font-size: 14px;
+}
+    p.abstrac{
+    font-size: 12px;
+
+ }
+    button.botoncito{
+    font-size: 12px;
+ }
+    p.pieletra{
+    text-align: center;
+    font-size: 12px;
+ }
+
+ }
+
+
+ @media(max-width:907px){
+
+    img.caratulas{
+        width:260px;
+        height: 220px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+ }
+/****RANGO DE MARGIN EN EL ABSTRACT*****/
+ @media(max-width:820px){
+    img.caratulas{
+        width:240px;
+        height: 220px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+ }
+
+/*************************************/
+ @media(max-width:775px){
+ 
+    img.caratulas{
+        width:230px;
+        height: 210px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    h4.titulo_caratula{
+        font-size: 14px;
+    }
+    p.abstrac{
+        font-size: 10px;
+     }
+     button.botoncito{
+        font-size: 10px;
+     }
+     p.pieletra{
+        text-align: center;
+        font-size: 10px;
+     }
+ }
+/************RANGO DEL PADDING EN EL ABSTRACT************/
+@media(max-width:755px){
+    img.caratulas{
+        width:220px;
+        height: 200px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    h4.titulo_caratula{
+        font-size: 14px;
+    }
+    p.abstrac{
+        font-size: 10px;
+     }
+     button.botoncito{
+        font-size: 10px;
+     }
+     p.pieletra{
+        text-align: center;
+        font-size: 10px;
+     }
+ }
+
+ @media(max-width:712px){
+    img.caratulas{
+        width:200px;
+        height: 200px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    h4.titulo_caratula{
+        font-size: 14px;
+    }
+    p.abstrac{
+        font-size: 10px;
+     }
+     button.botoncito{
+        font-size: 10px;
+     }
+     p.pieletra{
+        text-align: center;
+        font-size: 10px;
+     }
+ }
+
+
+ @media(max-width: 650px){
+    div.contenedor{
+        border: none;
+    }
+
+    img.caratulas{
+        width:180px;
+        height: 180px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    p.abstrac{
+        font-size: 8px;
+        
+     }
+ }
+
+ @media(max-width:576px){
+    
+ }

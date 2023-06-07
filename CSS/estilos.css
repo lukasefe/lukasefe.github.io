@@ -160,3 +160,9 @@ li{
     }
  }
 
+/***********************LETRAS AVISO IMPORTANTE MOMENTANEO****************************************************/
+p.letras_aviso{
+    color: orangered;
+    font-weight: bolder;
+    text-align: center;
+}

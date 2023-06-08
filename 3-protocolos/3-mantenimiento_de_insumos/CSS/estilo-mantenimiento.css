@@ -101,6 +101,10 @@ ol.listanumerica{
       margin-left: auto;
       margin-right: auto;
    }
+   img.imagen_clamps{
+      width: 280px;
+      height: 140px;
+   }
    img#imagenmantat{
       width: 460px;
       height: 380px;
@@ -136,6 +140,10 @@ ol.listanumerica{
    h5.tituloelemento{
       font-size: 20px;
       text-align: center;
+   }
+   img.imagen_clamps{
+      width: 280px;
+      height: 140px;
    }
    img.imagen_visco{
       width:350px;
@@ -179,6 +187,10 @@ ol.listanumerica{
       height: 270px;
       margin-left: 0%;
       margin-right: 0%;
+   }
+   img.imagen_clamps{
+      width: 280px;
+      height: 140px;
    }
    img.imagen_visco{
       width:330px;

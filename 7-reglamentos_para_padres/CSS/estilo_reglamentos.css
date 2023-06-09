@@ -40,15 +40,18 @@ P{
 
 /****RECUADRO REGLAS PARA PADRES****/
 div.recuadro_reglas{
-    width: 400px;
+    width: 390px;
     background-color: aliceblue;
     margin-bottom: 3%;
     border-radius: 12px;
     padding-left: 0%;
     padding-right: 0%;
 }
+div.contenedor1{
+    border-bottom: 1px solid mediumpurple;
+}
 p.titulo_reglas{
-    font-size: 24px;
+    font-size: 23px;
     color:orchid;
     padding-top: 5px;
 }
@@ -74,10 +77,19 @@ p.texto_regla_1{
     padding-left: 0%;
     padding-right: 0%;
 }
+b.texto_medio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 p.nota_regla_1{
+    background-color: rgb(246, 176, 199);
     text-align: justify;
     font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid mediumpurple;
+}
+
+div.contenedor_2{
+    margin-top: 20px;
 }

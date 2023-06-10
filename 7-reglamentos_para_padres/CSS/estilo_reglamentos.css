@@ -159,3 +159,17 @@ img.icono_juguetes{
     width:300px;
     margin-bottom: 10px;
 }
+
+p.titulo_locker{
+    text-align: center;
+    font-size: 25px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+b.texto_regla_1{
+    color: brown;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 0%;
+    padding-right: 0%;
+}

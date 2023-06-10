@@ -84,6 +84,11 @@ b.texto_medio{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+b.texto_medio_3{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 p.nota_regla_1{
     background-color: rgb(246, 176, 199);
     text-align: justify;
@@ -92,7 +97,11 @@ p.nota_regla_1{
     padding-bottom: 5px;
     border: 1px solid mediumpurple;
 }
-
+b.ingreso_deber{
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 5px;
+}
 div.contenedor_2{
     margin-top: 20px;
     border-bottom: 1px solid mediumpurple;
@@ -129,4 +138,24 @@ p.regla_4{
     margin-top: 10px;
     padding-left: 4%;
     padding-right: 0%;
+}
+
+li.pedido_regla_6{
+    font-size: 14px;
+    text-align: justify;
+    color: rgb(84, 38, 177);
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+img.icono_prohibido{
+    width:70px;
+    margin-bottom: 10px;
+}
+img.icono_youtube{
+    width:100px;
+    margin-bottom: 10px;
+}
+img.icono_juguetes{
+    width:300px;
+    margin-bottom: 10px;
 }

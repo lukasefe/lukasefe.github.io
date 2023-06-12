@@ -172,4 +172,48 @@ b.texto_regla_1{
     font-size: 15px;
     padding-left: 0%;
     padding-right: 0%;
+    margin-bottom: 5px;
+}
+
+div.contenedor_9{
+    margin-top: 20px;
+    border-bottom: none;
+}
+
+@media(min-width:576px){
+        /****RECUADRO REGLAS PARA PADRES****/
+div.recuadro_reglas{
+    width: 520px;
+}
+b.ingreso_deber{
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+p.regla_notel{
+    padding-top: 6%;
+}
+p.regla_4{
+    font-size: 18px;
+    padding-left: 1%;
+}
+p.titulo_sm{
+    font-size: 20px
+}
+}
+
+@media(min-width:768px){
+    /****RECUADRO REGLAS PARA PADRES****/
+div.recuadro_reglas{
+    width: 740px;
+    background-color: aliceblue;
+    margin-bottom: 3%;
+    border-radius: 12px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+div.contenedor1{
+    margin-right: 5px;
+    border-bottom: 1px solid mediumpurple;
+}
 }

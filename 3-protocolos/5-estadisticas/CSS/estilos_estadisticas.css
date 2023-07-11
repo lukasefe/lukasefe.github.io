@@ -1,0 +1,162 @@
+body{
+    margin: 0%;
+    padding:0%;
+}
+
+main{
+    background-color: lightgrey;
+    margin:0%;
+    padding: 0%;
+}
+
+header{
+    background-color: #000000;
+}
+/************************************************************************/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+    padding-top: 10px;
+    font-size: 18px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+
+@media (max-width: 400px){
+    #enfconec{
+        font-size: 14px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 350px){
+    #enfconec{
+        font-size: 12px;
+    }
+
+    #logo{
+        width:80px;
+        height: 40px;
+    }
+
+}
+
+/***********************************************************************/
+
+/*************************IMAGEN DEL BANNER*********************/
+.caja_banner{
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 170px;
+    margin-top: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0%;
+}
+/*RESPONSIVO*/
+
+@media (max-width:500px){
+
+}
+
+@media (max-width:600px){
+    .texto-portada{
+        height: 120px;
+    }
+}
+@media (max-width:1000px){
+    .texto-portada{
+        height: 250px;
+    }
+}
+
+/***************INTRODUCCION 1********************************************/
+.introduccion_1{
+    color: #000000;
+    font-size: 70%;
+    text-align: justify;
+}
+
+summary{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section{
+    text-align: center;
+    margin-left: auto;
+}
+/*********************************************************************/
+/****************DETAILS********************************************/
+details{
+    margin-bottom: 100px;
+}
+/******************CARTA FOTOGRAFICA*************************************/
+.contenedor_caja_carta{
+    width:90%;
+    margin: 0 auto; 
+}
+
+.contenedor_imagen_carta{
+    width: 100%;
+}
+
+.imagen_carta{
+    width:100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.especial_estadisticas{
+    height: 20%;
+}
+
+.contenedor_info{
+    color: #000000;
+    background-color: aliceblue;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 5px;
+}
+
+.titulo_largo{
+    margin: 0 10px;
+}
+
+.autora{
+    font-weight: bold;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+
+.resumen{
+    font-size: 80%;
+    text-align: justify;
+    margin: 0 10px;
+}
+
+.boton{
+    background-color: brown;
+    width: 180px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/************************************************************************/

@@ -1,0 +1,276 @@
+<!--DISEÑO DE PLATAFORMA, NOMBRE Y LOGOTIPO SON MARCAS CREADAS (ENFERMERIA CONECTADA) POR:
+   (C)FERNANDEZ LUCAS EDUARDO
+    34273259
+    LICENCIADO EN ENFERMERIA/WEB DEVELOPER
+    DESARROLLO 2022-2023
+    COMO PARTE DE UN PROYECTO PRESENTADO EN EL HOSPITAL INFANTIL MUNICIPAL DE LA CIUDAD DE CORDOBA-->
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estadisticas UCIP HIM</title>
+        <link rel="Shortcut icon" href="ASSETS/LOGO/logo_ec_48x48.png">
+        <link rel="stylesheet" type="text/css" href="CSS/estilos_estadisticas.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+        
+    </head>
+    <body class="bg-dark">
+      <!--NAVBAR MENU CON PORTADA-->
+        <header >
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-1">
+                <div class="container-fluid">
+                    <!--LOGOTIPO Y NOMBRE-->
+                    <a class="navbar-brand mx-auto" href="#">
+                      <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png"></i>
+                      <span id="enfconec">ENFERMERÍA CONECTADA</span>
+                    </a>
+                      <!--BOTON DEL MENU-->
+              <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+                  <ul class="navbar-nav ms-auto p-auto">
+                    <!--------------------------------BOTON POLITICAS DEL SERVICIO---------------------->
+                    <li class="nav-item px-2">
+                      <a class="nav-link active" aria-current="page" href="/1-politicas_del_servicio/politicas_del_servicio.html">Politicas del Servicio UCIP</a>
+                    </li>
+                    <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
+                    <li class="nav-item dropdown px-2">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                      <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownformularios">
+                     <li>
+                          <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform">Ingreso de Pacientes</a>
+                        </li>
+                        <li><hr class="dropdown-divider text-white"></li>
+                        <li>
+                          <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLScFLSDXokPpyrHO0aidRXgmNXntYTfrnUQ15aNF_QeRgHEJbg/viewform">Higiene de Manos</a>
+                        </li>
+                        <li><hr class="dropdown-divider text-white"></li>
+                        <li>
+                          <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSftSggOansgGzZheReSLs-dk4WiP4Q-9PoNV2np4nVBNOsVyQ/viewform">Combo de Medidas</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!--BOTON DROPDOWN 3 PROTOCOLOS -->
+                    <li class="nav-item dropdown px-2">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                      <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                        <li>
+                          <a class="dropdown-item text-white" href="/3-protocolos/1-guia-farmacos/guia-farmaco-terapeutica.html">Guia Farmaco Terapeutica y Adm. de Medicamentos</a>
+                        </li>
+                        <li><hr class="dropdown-divider-white text-white"></li>
+                        <li>
+                          <a class="dropdown-item text-white" href="/3-protocolos/2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos y POE</a>
+                        </li>
+                        <li><hr class="dropdown-divider-white text-white"></li>
+                        <li><a class="dropdown-item text-white" href="/3-protocolos/3-mantenimiento_de_insumos/mantenimiento_de_insumos.html">Mantenimiento de Insumos</a></li>
+                        <li><hr class="dropdown-divider-white text-white"></li>
+                        <li><a class="dropdown-item text-white" href="/3-protocolos/4-checklist_y_carteleria/Checklist_carteleria.html">Checklist y Carteleria</a></li>
+                        <!--<li><hr class="dropdown-divider-white text-white"></li>-->
+                      </ul>
+                    </li>
+                    <!--BOTON DROPDOWN 4 CAPACITACIONES -->
+                    <li class="nav-item dropdown px-2">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
+                      <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                        <li>
+                          <a class="dropdown-item text-white" href="/4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html">Capacitaciones en el servicio</a>
+                        </li>
+                        <li><hr class="dropdown-divider-white text-white"></li>
+                       <!-- <li>
+                          <a class="dropdown-item text-white" href="">cursos online</a>
+                        </li>
+                        <li><hr class="dropdown-divider-white text-white"></li>-->
+                        <li><a class="dropdown-item text-white" href="/4-capacitaciones/4-4-biblioteca/biblioteca_digital.html">Biblioteca Digital</a></li>
+                      </ul>
+                    </li>
+                    <!--BOTON DROPDOWN 5 COMUNICADOS -->
+                    <li class="nav-item dropdown px-2">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                      <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                       <!-- <li>
+                          <a class="dropdown-item text-white" href="">Comunicados</a>
+                        </li>
+                        <li><hr class="dropdown-divider-white text-white"></li>-->
+                        <li>
+                          <a class="dropdown-item text-white" href="/5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Planilla Mensual</a>
+                        </li>
+                        <li><hr class="dropdown-divider-white text-white"></li>
+                        <li><a class="dropdown-item text-white" href="/5-comunicados/3-5_planilla_rotacion/planilla_rotacion.html">Planila de rotación</a></li>
+                        <li><hr class="dropdown-divider-white text-white"></li>
+                        <li><a class="dropdown-item text-white" href="/5-comunicados/4-5_notas_personal/notas_Personal.html">Notas de Personal</a></li>
+                      </ul>
+                    </li>
+                    <!--LINK CONTACTO-->
+                    <li class="nav-item px-2">
+                     <a class="nav-link text-white" href="/index.html">Inicio</a>
+                    </li>
+                  </ul>
+               </div>
+               </div>
+            </nav>
+        </header>
+    
+        <main class="text-white">
+
+          <!------------------------BANNER CON IMAGEN------------------------------------>
+          <div class=" d-flex  caja_banner">
+            <img class="banner" src="http://drive.google.com/uc?export=view&id=1GcxmV2eZ-hhvYx2gTF4E9Y59IM1kI1Hz" alt="banner estadistica en UCIP HIM">
+          </div>
+    
+          <div class="mx-3 mt-2 ">
+            <p class="parrafo introduccion_1">
+              La información sanitaria es muy importante, ya que surgen como respuesta a la necesidad
+              de establecer un sistema de evaluación y vigilancia de la salud poblacional. Esta se contituye como una herramienta para la recogida,
+               análisis, procesamiento y transmisión de la información necesaria para el buen funcionamientos y gestión de los servicio sanitarios.
+            </p>
+          </div>
+          
+          <!-------------------------------------------------AÑO 2023------------------------------------------------------->
+          <details class="mx-1 ">
+            <summary >2023</summary>
+
+            <!-------------CONTENEDOR PARA LOGRAR LA GRILLA EN PANTALLAS---------------------------------------------------->
+            <div class="grilla">
+          
+              <!-----------------------------------ESTADISTICAS DE UCIP----------------------------------------------------->
+              <section>
+                <!-------------------CARTA FOTOGRAFICA ESTADISTICAS DE UCIP----------------------->
+                <div class="contenedor_caja_carta">
+                  <div class="contenedor_imagen_carta">
+                    <img class="especial_estadisticas" src="http://drive.google.com/uc?export=view&id=1FLW-vPQy5OQtncufHEVUXwYhOYGTG9MD">
+                  </div>
+                  <div class="contenedor_info">
+                    <h5 class="titulito">Estadísticas en UCIP<br>enero-diciembre año 2022</h5>
+                    <p class="text-start autora"><abbr>Lic. Esp.</abbr> Andrada Karina</p>
+                    <p class="resumen">Las estadísticas de prestaciones son utlizadas en los servicios para 
+                      medir los rendimientos de los recursos, detectar desviaciones y tomar decisiones.<br>
+                      Para la elaboración del mismo se utilizó como fuente el registro permanente
+                      de ingresos y egresos de los pacientes del año 2022.
+                    </p>
+                    <button class="boton"><a class="link" href="http://drive.google.com/uc?export=view&id=1tEPjHWtQQifjN5nDEYi08vChloIkHSiy" target="_blank">+ INFO</a></button>
+                  </div>
+                </div>
+              </section>
+
+              <!-------------------------------MONITOREO DE HIGIENE DE MANOS JUNIO 2023------------------------------------->
+              <section>
+            <!-------------------CARTA FOTOGRAFICA----------------------->
+            <div class="contenedor_caja_carta ">
+              <div class="contenedor_imagen_carta">
+                <img class="imagen_carta" src="http://drive.google.com/uc?export=view&id=1JEyk-e-XYBT5ZJmaOlTNEm2eNz5oJPMU">
+              </div>
+              <div class="contenedor_info">
+                <h5 class="titulo_largo titulito">Resultados del monitoreo a la adherencia a la higiene de manos Junio 2023</h5>
+                <p class="text-start autora"><abbr>Lic. Esp.</abbr> Loza Flavia</p>
+                <p class="resumen">Segundo mes de monitoreo de HIGIENE DE MANOS en la UCIP, y seguimos comprometidos con esta
+                  práctica de mayor impacto para prevenir IACS.<br>
+                  Se observó a los profesionales que realizan intervenciones en la UCIP en todos los turnos de trabajo.
+                </p>
+                <button class="boton"><a class="link" href="http://drive.google.com/uc?export=view&id=1EFGC1UzheD8HQBMfMpqT1pIG_MY6XBs3" target="_blank">+ INFO</a></button>
+              </div>
+            </div>
+              </section>
+
+              <!--------------------------MONITOREO DE COMBO DE MEDIDAS E IACS JUNIO 2023----------------------------------->
+              <section>
+                <!-------------------CARTA FOTOGRAFICA---------------------------------------------------------------------->
+                <div class="contenedor_caja_carta ">
+                  <div class="contenedor_imagen_carta">
+                    <img class="imagen_carta_medidas_junio" src="http://drive.google.com/uc?export=view&id=1RStNoDc_h9c4D9aOCQJDuzOQNzJDBYEq">
+                  </div>
+                  <div class="contenedor_info">
+                    <h5 class="titulo_largo titulito">Resultados del combo de medidas de dispositivos invasivos y las tasas de IACS en UCIP Junio 2023</h5>
+                    <p class="text-start autora"><abbr>Lic. Esp.</abbr> Loza Flavia</p>
+                    <p class="resumen">SE HA DISMINUIDO LOS COMBOS DE TODOS LOS FACTORES DE RIESGO DE LA UCIP
+                      DEBEMOS VOLVER A TRABAJAR EN MEJORAR Y QUE SE AUDITE CON MAS FRECUENCIA
+                      DICHOS FACTORES DE RIESGOS
+                    </p>
+                    <button class="boton"><a class="link" href="http://drive.google.com/uc?export=view&id=1ADcNUywfpaFRu7nxD98sU2LPdJae4Qvd" target="_blank">+ INFO</a></button>
+                  </div>
+                </div>
+              </section>
+
+              <!-------------------------------MONITOREO DE HIGIENE DE MANOS MAYO 2023------------------------------------->
+              <section>
+                <!-------------------CARTA FOTOGRAFICA----------------------->
+                <div class="contenedor_caja_carta ">
+                  <div class="contenedor_imagen_carta">
+                    <img class="imagen_carta" src="http://drive.google.com/uc?export=view&id=1OQMI8wCOu-2EQJbMslrq0lykgcVu5Rke">
+                  </div>
+                  <div class="contenedor_info">
+                    <h5 class="titulo_largo titulito">Resultados del monitoreo a la adherencia a la higiene de manos Mayo 2023</h5>
+                    <p class="text-start autora"><abbr>Lic. Esp.</abbr> Loza Flavia</p>
+                    <p class="resumen">Se comenzaron con las mediciones de adherencia a la higiene de manos en la UCIP para generar mayor
+                      adherencia a esta práctica que disminuye los riesgos de infecciones asociadas al cuidado de la salud.<br>
+                      Se observó a los profesionales que realizan intervenciones en la UCIP en todos los turnos de trabajo.<br>
+                      Trabajaremos para mejorar mes a mes esta práctica
+                    </p>
+                    <button class="boton"><a class="link" href="http://drive.google.com/uc?export=view&id=1yyY4DNuECtXWLPR7pRSV0inpWJhMlZu8" target="_blank">+ INFO</a></button>
+                  </div>
+                </div>
+              </section>
+
+              <!--------------------------MONITOREO DE COMBO DE MEDIDAS E IACS MAYO 2023----------------------------------->
+              <section>
+                <!-------------------CARTA FOTOGRAFICA----------------------->
+                <div class="contenedor_caja_carta ">
+                  <div class="contenedor_imagen_carta">
+                    <img class="imagen_carta" src="http://drive.google.com/uc?export=view&id=1qPT7ob78_qEE4maa2cjPpOvPs6ruYvl4">
+                  </div>
+                  <div class="contenedor_info">
+                    <h5 class="titulo_largo titulito">Resultados del monitoreo a la adherencia a la higiene de manos Mayo 2023</h5>
+                    <p class="text-start autora"><abbr>Lic. Esp.</abbr> Loza Flavia</p>
+                    <p class="resumen">
+                      Se observa que al aumentar la tasa de adherencia a los combos
+                      de mantenimiento de cada dispositivo invasivo en los pacientes
+                      de la UCIP disminuye el riesgo de las IACS asociados a esos
+                      dispositivos.
+                    </p>
+                    <button class="boton"><a class="link" href="http://drive.google.com/uc?export=view&id=1W7IvdTLCW2-Bsvy_rx7khqfctQLqFwf4" target="_blank">+ INFO</a></button>
+                  </div>
+                </div>
+              </section>
+
+        </div>
+        </details>
+
+        <div class="divisor"></div>
+    
+        </main>
+    
+        <!--PIE DE PAGINA-->
+        <footer class="container-fluid bg-dark pb-2">
+          <div class="container-fluid bg-dark d-flex justify-content-center py-2">
+            <i class="bi bi-wifi text-white me-2"></i>
+            <span class="text-white">ENFERMERIA CONECTADA</span></div>
+        <div><span class="text-white">&copy;Fernandez Lucas:  </span>
+          <span class="text-white"> Lic. en Enfermeria / Web Developer</span></div>
+          <div><span class="text-white">Servicio UTIP/UCIM; </span>
+            <span class="text-white"> Hospital Infantil Municipal</span></div>
+              <div><span class="text-white">Cordoba; </span>
+                <span class="text-white"> Argentina</span>
+                <span class="text-white"> 2022</span></div>
+        </footer>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+      ></script>   
+    </body>
+    </html>

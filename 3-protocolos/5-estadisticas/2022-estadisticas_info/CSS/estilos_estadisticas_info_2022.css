@@ -79,7 +79,7 @@ header{
 @media (min-width:1000px){
     .caja_banner{
         height: 300px;
-        background-image: url("http://drive.google.com/uc?export=view&id=1GcxmV2eZ-hhvYx2gTF4E9Y59IM1kI1Hz");
+        background-image: url("http://drive.google.com/uc?export=view&id=18OANOajNQTyRNBEEz-vYKgvXYcRGevSr");
         background-size: cover;
     }
     .banner{
@@ -87,7 +87,90 @@ header{
     }
 }
 
+/****************portada con link de descarga************************************/
+.caja_portada{
+    width:100%;
+    text-align: center;
+}
+.portada{
+    width: 100%;
+    height: 450px;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.caja_autora{
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 15px;
+}
+.autora_karina{
+    margin: 5px 0 0 0;
+}
 
+.boton_pdf{
+    background-color: limegreen;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 5px;
+    border: none;
+}
+.link_pdf{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/***RESPONSIVO***/
+@media (min-width:500px){
+    .caja_portada{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 630px){
+    .caja_portada{
+        width: 60%;
+    }
+}
+
+@media (min-width:900px){
+    .fondoEnPc{
+        background-color: azure;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .caja_portada{
+        background-color: aliceblue;
+        width: 70%;
+        padding: 3%;
+        border: 10px solid green;
+        border-radius: 50%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .portada{
+        width: 100%;
+        height: 300px;
+        padding: 0%;
+        box-shadow: 0px 0px 5px 3px black;
+    }
+    .caja_autora{
+        font-size: 18px;
+        margin-top: 20%;
+    }
+}
+@media(min-width: 1200px){
+    .caja_portada{
+        width:50%;
+    }
+    .caja_autora{
+        font-size: 20px;
+    }
+}
 /***************INTRODUCCION 1********************************************/
 .introduccion_1{
     color: #000000;
@@ -123,6 +206,122 @@ section{
 
 
 /*********************************************************************/
+/**************************INDICE*************************************/
+.indice_pegado{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    width: 100%;
+
+}
+.indice{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.seccion_indice{
+    color: #FFFFFF;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid darkgreen;
+    background-color: limegreen;
+    width: 100%;
+    padding: 5px 0;
+}
+@media(min-width:1000px){
+    .indice{
+        display: none;
+    }
+}
+
+.caja_indice2{
+    display: none;
+}
+/*************INTRODUCCION DEL LIBRO************************************/
+.cajaDelTexto{
+    display: none;
+    color: #000000;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contencion{
+    width: 100%;
+    margin-top: 5px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.seccion{
+    color: limegreen;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid darkgreen;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+.seccion_1{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid darkgreen;
+    background-color: limegreen;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+.texto_intro{
+    color: #000000;
+    text-align: justify;
+    width: 100%;
+    padding-top:5px;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+/*RESPONSIVO*/
+
+@media(min-width:1000px){
+    .contencion{
+        display: none;
+    }
+    .modo_escritorio{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 1% 2%;
+        align-items:baseline;
+    }
+    .caja_indice2{
+        display:block;
+        position: sticky;
+        top: -1px;
+        width: 120%;
+        margin: 0 auto;
+        color: #000000;
+        padding: 15px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    .cajaDelTexto{
+        color: #000000;
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-right: 0;
+        
+    }
+    .cajaDelTexto2{
+        margin-top: 10px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+
+    }
+    .titulo_oculto{
+        border-bottom: 1px solid #000000;
+    }
+}
 
 /******************CARTA FOTOGRAFICA*************************************/
 section{

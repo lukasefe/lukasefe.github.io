@@ -322,6 +322,12 @@ section{
 .tabla_1{
     width: 100%;
 }
+.titulo_indicador{
+    color: limegreen;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
 /*RESPONSIVO*/
 
 @media(min-width:1000px){
@@ -378,7 +384,8 @@ section{
         margin-bottom: 5px;
     }
     .contenedorImgIngresos{
-        width:100%;
+        width:60%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: auto auto;
     }
@@ -390,7 +397,8 @@ section{
         z-index: 1;
     }
     .contenedortablaedad{
-        width: 100%;
+        width: 60%;
+        margin: 0 auto;
         text-align: center;
     }
     .tabla_1_3{
@@ -400,9 +408,25 @@ section{
     /*HOVER*/
     .tabla_1_1:hover{
         position: relative;
-        width: 130%;
+        width: 200%;
         border: 5px solid darkgreen;
         z-index: 13;
+    }
+    .tabla_1_2:hover{
+        position: relative;
+        margin-left: -100%;
+        width: 200%;
+        border: 5px solid darkgreen;
+        z-index: 13;
+    }
+    .tabla_1_3:hover{
+        position: relative;
+        width: 100%;
+        border: 5px solid darkgreen;
+        z-index: 13;
+    }
+    .titulo_indicador{
+        margin-left: 15px;
     }
 }
 @media(min-width:1100px){

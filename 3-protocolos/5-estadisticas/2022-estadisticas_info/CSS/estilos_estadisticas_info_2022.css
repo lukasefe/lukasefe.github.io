@@ -300,6 +300,12 @@ section{
     text-align: start;
     padding: 5px 10px;
 }
+.letra_chica{
+    font-size: 23px;
+}
+.letra_chica_1{
+    font-size: 22px;
+}
 .texto_intro{
     color: #000000;
     text-align: justify;
@@ -412,6 +418,7 @@ section{
         border: 5px solid darkgreen;
         z-index: 13;
     }
+ 
     .tabla_1_2:hover{
         position: relative;
         margin-left: -100%;

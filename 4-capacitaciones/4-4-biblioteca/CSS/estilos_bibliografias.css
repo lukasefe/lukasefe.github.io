@@ -106,6 +106,193 @@ footer{
 
 /**************************************************************************************/
 /************CAJAS DE LA BIBLIOGRAFIA*************************************************/
+/**MOBILE FISRT 420PX INICIAL Y DE AHI ESCALAR A TAMAÑOS MAS GRANDES**/
+#contenedor_inicio{
+    width:100%;
+    background-color: aliceblue;
+}
+.contenedor_letra_E{
+    width: 100%;
+    margin-bottom: 4%;
+    background-color: #FFFFFF;
+}
+.letra{
+    border: 1px solid #000000;
+    padding: 0;
+}
+.letra_marcador{
+    margin: 0;
+    padding-left: 6%;
+}
+.contenedor_informacion{
+    width: 100%;
+    margin-top: 3%;
+}
+.titulo_manual{
+    font-size: 15px;
+    text-align: center;
+}
+.contenedor_importante{
+    width: 100%;
+    text-align: center;
+}
+.portada{
+    border: 1px solid darkgreen;
+}
+.contenedor_data{
+    margin-top: 3%;
+}
+.autor{
+    text-align: start;
+    font-size: 10px;
+}
+.descripcion{
+    text-align: justify;
+    font-size: 10px;
+}
+.toque{
+    width:50%;
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+.ancla{
+    color: #FFFFFF;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.toque:hover{
+    width: 75%;
+    margin-bottom: 20px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+.ancla:hover{
+    margin: 20px 0;
+    color: #000000;
+}
+
+@media(min-width:580px){
+    .contenedor_informacion{
+        margin: 3% auto;
+        width: 100%;
+    }
+    .contenedor_importante{
+        display: grid;
+        grid-template-columns: auto auto;
+        border-bottom: 2px solid #000000;
+    }
+    .titulo_manual{
+        font-size: 20px;
+    }
+    .portada{
+        width: 150px;
+        margin-bottom: 2px;
+    }
+    .manual_Amplya{
+        width: 150px;
+        height: 95%;
+    }
+    .portada_Small{
+        height: 180px;
+    }
+    .contenedor_data{
+        margin-left: 10px;
+    }
+    .autor{
+        font-size: 15px;
+    }
+    .descripcion{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .toque{
+        width:60%;
+        margin: 10px 0;
+    }
+    .toque:hover{
+        width:35%;
+    }
+}
+
+@media(min-width: 636px){
+    .descripcion{
+        margin-bottom: 3%;
+    }
+    .toque{
+        width: 50%;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .portada{
+        width: 200px;
+        height: 95%;
+        margin-bottom: 2px;
+    }
+    .manual_Amplya{
+        width: 200px;
+        height: 95%;
+    }
+}
+@media(min-width:790px){
+    .contenedor_informacion{
+        width: 80%;
+    }
+    .toque{
+        width: 40%;
+    }
+    .portada{
+        width: 200px;
+        height: 95%;
+        margin-bottom: 2px;
+    }
+    .manual_Amplya{
+        width: 200px;
+        height: 95%;
+    }
+}
+@media(min-width:843px){
+    .toque{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1000px){
+    .grilla{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0%;
+    }
+    .contenedor_informacion{
+        width: 95%;
+    }
+    .manual_Amplya{
+        width: 200px;
+        height: 95%;
+    }
+    .portada_Small{
+        height: 240px;
+        margin-bottom: 10px;
+
+    }
+    .higiene_Portada{
+        height: 95%;
+    }
+    .toque{
+        font-size: 10px;
+    }
+}
+
+@media (min-width:1150px){
+    .portada_Small{
+        width: 200px;
+        height: 95%;
+        margin-bottom: 15px;
+    }
+}
 
 /***********CAJA DE LAS CARATULAS****************************************************/
  img.caratulas{

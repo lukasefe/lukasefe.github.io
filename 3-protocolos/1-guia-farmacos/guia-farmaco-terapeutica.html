@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Farmacologica</title>
+    <link rel="Shortcut icon" href="/ASSETS/LOGO/logo_ec_48x48.png">
     <link rel="stylesheet" type="text/css" href="CSS/estilo-guia-farmaco.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -26,7 +27,7 @@
             <div class="container-fluid">
                 <!--LOGOTIPO Y NOMBRE-->
                 <a class="navbar-brand mx-auto" href="#">
-                    <i class="bi bi-wifi text-white"></i>
+                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png"></i>
                     <span class="text-white">ENFERMERIA CONECTADA</span>
                 </a>
                   <!--BOTON DEL MENU-->
@@ -35,93 +36,74 @@
           </button>
           <div class="collapse navbar-collapse mt-3" id="elementosmenu">
             <ul class="navbar-nav ms-auto p-auto">
-              <!--BOTON DROPDOWN 1 -->
+              <!--BOTON POLITICAS DEL SERVICIO -->
+              <li class="nav-item px-2">
+                <a class="nav-link active text-white" aria-current="page" href="/1-politicas_del_servicio/politicas_del_servicio.html">Politicas del Servicio UCIP</a>
+              </li>
+              <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
               <li class="nav-item dropdown px-2">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">UTIP/UCIM</a>
-                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Pase de Guardia</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Datos de Pacientes</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Politicas del servicio</a></li>
-                  </ul>
-                </li>
-                <!--BOTON DROPDOWN 2 FORMULARIOS -->
-                <li class="nav-item dropdown px-2">
                   <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
                   <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownformularios">
-                    <li>
-                      <a class="dropdown-item text-white" href="../../2-formularios/1-registro-ingreso-de-pacientes/form-ingreso-pacientes.html" target="_blank">Ingreso de Pacientes</a>
+                 <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform">Ingreso de Pacientes</a>
                     </li>
                     <li><hr class="dropdown-divider text-white"></li>
                     <li>
-                      <a class="dropdown-item text-white" href="">Higiene de Manos</a>
-                    </li>
-                  </ul>
-                </li>
-                <!--BOTON DROPDOWN 3 PROTOCOLOS -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
-                  <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
-                    <li>
-                      <a class="dropdown-item text-white" href="../2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">POES</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Mantenimiento de Insumos</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Checklist</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Carteleria</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">LPP</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Escalas</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Material Bibliografico</a></li>
-                  </ul>
-                </li>
-                <!--todo: BOTON DROPDOWN 4 CAPACITACIONES -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
-                  <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Capacitacion del servicio</a>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLScFLSDXokPpyrHO0aidRXgmNXntYTfrnUQ15aNF_QeRgHEJbg/viewform">Higiene de Manos</a>
                     </li>
                     <li><hr class="dropdown-divider text-white"></li>
                     <li>
-                      <a class="dropdown-item text-white" href="">cursos online</a>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSftSggOansgGzZheReSLs-dk4WiP4Q-9PoNV2np4nVBNOsVyQ/viewform">Combo de Medidas</a>
                     </li>
                   </ul>
-                </li>
-                <!--todo: BOTON DROPDOWN 5 COMUNICADOS -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
-                  <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Comunicados</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li>
-                      <a class="dropdown-item text-white" href="">Planilla Mensual</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Planila de rotación</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Notas de Personal</a></li>
-                  </ul>
-                </li>
+              </li>
+              <!----------------------------BOTON DROPDOWN 3 PROTOCOLOS-------------------------->
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
+                  <li>
+                    <a class="dropdown-item text-white" href="/3-protocolos/2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos y POE</a>
+                  </li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li><a class="dropdown-item text-white" href="/3-protocolos/3-mantenimiento_de_insumos/mantenimiento_de_insumos.html">Mantenimiento de Insumos</a></li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li><a class="dropdown-item text-white" href="/3-protocolos/4-checklist_y_carteleria/Checklist_carteleria.html">Checklist y Carteleria</a></li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li><a class="dropdown-item text-white" href="/3-protocolos/5-estadisticas/5_estadisticas.html">Estadisticas</a></li>
+                </ul>
+              </li>
+              <!---------------------------BOTON DROPDOWN 4 CAPACITACIONES----------------------->
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
+                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
+                  <li>
+                    <a class="dropdown-item text-white" href="/4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html">Capacitaciones en el servicio</a>
+                  </li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li><a class="dropdown-item text-white" href="/4-capacitaciones/4-4-biblioteca/biblioteca_digital.html">Biblioteca Digital</a></li>
+                </ul>
+              </li>
+              <!---------------------------BOTON DROPDOWN 5 COMUNICADOS-------------------------->
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownprotocologos">
+                  <li>
+                    <a class="dropdown-item text-white" href="">Comunicados</a>
+                  </li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li>
+                    <a class="dropdown-item text-white" href="/5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Planilla Mensual</a>
+                  </li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li><a class="dropdown-item text-white" href="/5-comunicados/3-5_planilla_rotacion/planilla_rotacion.html">Planila de rotación</a></li>
+                  <li><hr class="dropdown-divider-white text-white"></li>
+                  <li><a class="dropdown-item text-white" href="/5-comunicados/4-5_notas_personal/notas_Personal.html">Notas de Personal</a></li>
+                </ul>
+              </li>
                 <!--PAGINA PRINCIPAL-->
                 <li class="nav-item px-2">
                   <a class="nav-link text-white" href="../../index.html">Inicio</a>
                  </li>
-                <!--LINK CONTACTO-->
-                <li class="nav-item px-2">
-                 <a class="nav-link text-white" href="#">Contacto</a>
-                </li>
               </ul>
            </div>
            </div>
@@ -151,7 +133,7 @@
       <div class=" d-flex justify-content-center row bg-light mt-4 me-2 ms-2">
         <h2 class=" d-flex justify-content-center align-items-center text-dark col-12 border-bottom ">Lista de Farmacos</h2>
         <!--LISTA DE SEDOANALGESIA-->
-        <div class="cajitas-1 col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2  bg-success text-center pt-2 mx-1 mb-3">
+        <div class="cajitas-1 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2  bg-success text-center pt-2 mx-1 mb-3">
             <div class="btn-group-lg" role="group">
               <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Sedoanalgesia
@@ -159,6 +141,7 @@
               <ul class="dropdown-menu bg-success">
                 <li><a class="dropdown-item bg-success text-white  border-bottom border-white" href="1-sedoanalgesia/acetilsalisilico.html">A. Acetilsalicilico</a></li>
                 <li><a class="dropdown-item bg-success text-white  border-bottom border-white" href="1-sedoanalgesia/atracurio_ficha.html">Atracurio</a></li>
+                <li><a class="dropdown-item bg-success text-white  border-bottom border-white" href="1-sedoanalgesia/clorpromazina.html">Clorpromazina</a></li>
                 <li><a class="dropdown-item bg-success text-white  border-bottom border-white" href="1-sedoanalgesia/dexmedetomidina-ficha.html">Dexmedetomidina</a></li>
                 <li><a class="dropdown-item bg-success text-white " href="1-sedoanalgesia/fentanilo-ficha.html">Fentanilo</a></li>
               </ul>
@@ -166,7 +149,7 @@
           
         </div>
         <!--LISTA DE INOTROPICOS-->
-        <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center bg-danger pt-2 mx-1 mb-3">
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 text-center bg-danger pt-2 mx-1 mb-3">
             <div class="btn-group-lg" role="group">
               <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Inotropicos   
@@ -185,7 +168,7 @@
             </div>
         </div>
         <!--LISTA DE DIURETICOS-->
-        <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center bg-warning pt-2 mx-1 mb-3">
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 text-center bg-warning pt-2 mx-1 mb-3">
             <div class="btn-group-lg" role="group">
               <button type="button" class="btn btn-warning text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Diureticos
@@ -199,10 +182,10 @@
             </div>
         </div>
         <!--LISTA DE ATBS-->
-        <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center bg-primary pt-2 mx-1 mb-3">
-          <div class="btn-group-lg" role="group">
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 text-center bg-primary pt-2 mx-1 mb-3">
+          <div class="btn-group-lg dropstartS" role="group">
             <button type="button" class="btn btn-primary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Antibióticos
+              Antibióticos A-C
             </button>
             <ul class="dropdown-menu bg-primary">
               <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/acido_fusidico_af_betametasona_ficha.html">Ácido Fusídico/Á. F.+Betametasona</a></li>
@@ -219,22 +202,29 @@
               <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/ceftazidima_ficha.html">Ceftazidima</a></li>
               <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/ceftriaxona_ficha.html">Ceftriaxona</a></li>
               <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/cefuroxima_ficha.html">Cefuroxima</a></li>
-              <li><a class="dropdown-item bg-primary text-white " href="4-antibioticos/cefuroxima_axetilo_ficha.html">Cefuroxima Axetilo</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/cefuroxima_axetilo_ficha.html">Cefuroxima Axetilo</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/ciprofloxacina.html">Ciprofloxacina</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/ciplofloxacina_gotas.html">Ciprofloxacina gotas</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/ciprofloxacina_dexametasona_gotas.html">Ciprofloxacina/Dexametasona gotas</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/claritromicina.html">Claritromicina</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/clevosan.html">Clevosan</a></li>
+              <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="4-antibioticos/clindamicina.html">Clindamicina</a></li>
+              <li><a class="dropdown-item bg-primary text-white " href="4-antibioticos/colistina.html">Colistina</a></li>
               <!-- <li><a class="dropdown-item bg-success text-white" href="1-sedoanalgesia/fentanilo-ficha.html">Fentanilo</a></li>-->
             </ul>
           </div>
       </div>
 
       <!--LISTA DE ANTIMICOTICOS-->
-      <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center bg-primary pt-2 mx-1 mb-3">
+      <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 text-center bg-primary pt-2 mx-1 mb-3">
         <div class="btn-group-lg" role="group">
           <button type="button" class="btn btn-primary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Antimicóticos
           </button>
           <ul class="dropdown-menu bg-primary">
             <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="7-antimicoticos/anfotericina_ficha.html">Anfotericina B</a></li>
-            <li><a class="dropdown-item bg-primary text-white" href="7-antimicoticos/anfotericina_b_liposomal_ficha.html">Anfotericina Liposomal</a></li>
-            <li><a class="dropdown-item bg-primary text-white" href=""></a></li>
+            <li><a class="dropdown-item bg-primary text-white border-bottom border-white" href="7-antimicoticos/anfotericina_b_liposomal_ficha.html">Anfotericina Liposomal</a></li>
+            <li><a class="dropdown-item bg-primary text-white" href="7-antimicoticos/clorhexidina_digluconato.html">Clorhexidina Digluconato</a></li>
             <li><a class="dropdown-item bg-primary text-white" href=""></a></li>
             <li><a class="dropdown-item bg-primary text-white" href=""></a></li>
             <li><a class="dropdown-item bg-primary text-white" href=""></a></li>
@@ -244,7 +234,7 @@
       </div>
 
       <!--LISTA DE ANTIVIRALES-->
-        <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-primary text-center pt-2 mx-1 mb-3">
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 bg-primary text-center pt-2 mx-1 mb-3">
           <div class="btn-group-lg" role="group">
             <button type="button" class="btn btn-primary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Antivirales
@@ -257,22 +247,24 @@
         </div>
 
       <!--LISTA MINERALES Y OLIGOELEMENTOS-->
-        <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-secondary text-center pt-2 px-1  mx-1 mb-3">
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 bg-secondary text-center pt-2 px-1  mx-1 mb-3">
           <div class="btn-group-lg" role="group">
             <button type="button" class="btn btn-secondary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Oligoelementos
             </button>
             <ul class="dropdown-menu bg-secondary ">
               <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="8-minerales_y_oligoelementos/calcio_carbonato_ficha.html">Calcio Carbonato</a></li>
-              <li><a class="dropdown-item bg-secondary text-white" href="8-minerales_y_oligoelementos/calcio_gluconato_ficha.html">Calcio Gluconato</a></li>
-
-      <!-- <li><a class="dropdown-item bg-success text-white" href="1-sedoanalgesia/fentanilo-ficha.html">Fentanilo</a></li>-->
+              <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="8-minerales_y_oligoelementos/calcio_gluconato_ficha.html">Calcio Gluconato</a></li>
+              <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="8-minerales_y_oligoelementos/citrato_potasio.html">Citrato de potasio</a></li>
+              <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="8-minerales_y_oligoelementos/cloruro_potasio.html">Cloruro de potasio</a></li>
+              <li><a class="dropdown-item bg-secondary text-white" href="8-minerales_y_oligoelementos/clorurada_hipertonica_20.html">Clorurada hipertonica al 20%</a></li>
+              <!-- <li><a class="dropdown-item bg-success text-white" href="1-sedoanalgesia/fentanilo-ficha.html">Fentanilo</a></li>-->
             </ul>
           </div>
         </div>
 
       <!--LISTA vitaminas-->
-      <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-secondary text-center pt-2 px-1  mx-1 mb-3">
+      <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 bg-secondary text-center pt-2 px-1  mx-1 mb-3">
         <div class="btn-group-lg" role="group">
           <button type="button" class="btn btn-secondary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Vitaminas
@@ -287,11 +279,11 @@
       </div>
 
 
-
-      <div class=" col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-secondary text-center pt-2  mb-3">
+      <!--MEDICAMENTOS VARIOS DE LA A-C-->
+      <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 bg-secondary text-center pt-2 mx-1 mb-3">
         <div class="btn-group-lg" role="group">
           <button type="button" class="btn btn-secondary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Varios
+            Varios de la A-C
           </button>
           <ul class="dropdown-menu bg-secondary ">
             <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/acenocumarol_ficha.html">Acenocumarol</a></li>
@@ -307,7 +299,39 @@
             <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/Bicarbonato_de_sodio_ficha.html">Bicarbonato de Sodio</a></li>
             <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/budesonide_ficha.html">Budesonide</a></li>
             <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/carbamazepina_ficha.html">Carbamazepina</a></li>
-            <li><a class="dropdown-item bg-secondary text-white " href="6-varios/carboximetilcelulosa_ficha.html">Carboximetilcelulosa</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/carboximetilcelulosa_ficha.html">Carboximetilcelulosa</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/ciclopentolato.html">Ciclopentolato</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/colagenasa_cloranfenicol_iruxol.html">Colagenasa + Cloranfenicol Iruxol</a></li>
+            <li><a class="dropdown-item bg-secondary text-white " href="6-varios/complejo_protrombinico.html">Complejo Protrombinico</a></li>
+            <!-- <li><a class="dropdown-item bg-success text-white" href="1-sedoanalgesia/fentanilo-ficha.html">Fentanilo</a></li>-->
+          </ul>
+        </div> 
+      </div >
+
+       <!--MEDICAMENTOS VARIOS DE LA D- -->
+       <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2 bg-secondary text-center pt-2 mx-1 mb-3">
+        <div class="btn-group-lg" role="group">
+          <button type="button" class="btn btn-secondary text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Varios de la D-
+          </button>
+          <ul class="dropdown-menu bg-secondary ">
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/desmopresina.html">Desmopresina</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/dexametasona.html">Dexametasona</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/acido_borico_hipoglos_ficha.html">Ácido Borico (Hipoglòs)</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/acido_folico_ficha.html">Ácido Folico</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/acido_tranexamico_fichas.html">Ácido Tranexamico</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/albumina_humana_ficha.html">Albumina Humana</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/allopurinol_ficha.html">Allopurinol</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/betametasona_crema_ficha.html">Betametasona Crema</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/betametasona_gentamicina_crema_ficha.html">Betametasona + Gentamicina Crema</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/betametasona_gotas_ficha.html">Betametasona Gotas</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/Bicarbonato_de_sodio_ficha.html">Bicarbonato de Sodio</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/budesonide_ficha.html">Budesonide</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/carbamazepina_ficha.html">Carbamazepina</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/carboximetilcelulosa_ficha.html">Carboximetilcelulosa</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/ciclopentolato.html">Ciclopentolato</a></li>
+            <li><a class="dropdown-item bg-secondary text-white border-bottom border-white" href="6-varios/colagenasa_cloranfenicol_iruxol.html">Colagenasa + Cloranfenicol Iruxol</a></li>
+            <li><a class="dropdown-item bg-secondary text-white " href="6-varios/complejo_protrombinico.html">Complejo Protrombinico</a></li>
             <!-- <li><a class="dropdown-item bg-success text-white" href="1-sedoanalgesia/fentanilo-ficha.html">Fentanilo</a></li>-->
           </ul>
         </div> 
@@ -320,7 +344,7 @@
 
       </div>
     </main>
-    <footer class="container-fluid bg-danger pb-2">
+    <footer class="container-fluid bg-danger pb-2" id="pie">
       <div class="container-fluid bg-danger d-flex justify-content-center py-2">
         <i class="bi bi-wifi text-white me-2"></i>
         <span class="text-white">ENFERMERIA CONECTADA</span></div>

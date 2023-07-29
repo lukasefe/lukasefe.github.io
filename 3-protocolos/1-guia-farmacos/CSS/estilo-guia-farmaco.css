@@ -3,11 +3,19 @@ body{
     padding:0px;
 }
 
+.bold{
+    font-weight: bold!important;
+}
+.bold:hover{
+    font-size: 20px;
+}
 /***********/
 /*LOGO DE ENFERMERIA DEL NAV*/
 #enfconec{
+    color: #FFFFFF;
+    font-weight: bold;
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 #logo{
     width: 100px;

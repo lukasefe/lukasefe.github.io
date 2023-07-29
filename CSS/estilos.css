@@ -3,11 +3,25 @@ body{
     padding:0px;
 }
 
+.bold{
+    font-weight: bold!important;
+}
+
+.bold:hover{
+    color: red!important;
+    font-size: 20px;
+    border: 2px solid red;
+    padding: 5px;
+    margin: 4px;
+    background-color: aliceblue!important;
+}
+
 /***********/
 /*LOGO DE ENFERMERIA DEL NAV*/
 #enfconec{
     padding-top: 10px;
     font-size: 18px;
+    font-weight: bold;
 }
 #logo{
     width: 100px;
@@ -151,6 +165,7 @@ li{
         display: none;
     }
 
+
 }
 
 
@@ -159,6 +174,7 @@ li{
         display: none;
     }
  }
+
 
 /***********************LETRAS AVISO IMPORTANTE MOMENTANEO****************************************************/
 p.letras_aviso{

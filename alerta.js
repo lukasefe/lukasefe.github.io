@@ -1,0 +1,1 @@
+window.alert("29/09/2023 - V 2.4.01: Se actualizarón datos consignados a la preparacion, administración y estabilidad de los siguientes medicamentos: FLUCONAZOL & VECURONIO.")

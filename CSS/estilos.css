@@ -227,6 +227,14 @@ date{
     }
 }
 
+.borde-marco{
+    border-radius: 19px;
+}
+
+.calesita{
+    margin-bottom: 10px;
+}
+
 /************TIRA DE FOTOS***************/
 /***SECCION 2***/
 .seccion2{

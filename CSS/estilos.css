@@ -174,7 +174,37 @@ li{
         display: none;
     }
  }
-
+/*********************************IMAGEN DE LA PROBLEMATICA***************************************************/
+@media (min-width:1200px){
+    .imagen-cambio{
+        height: 540px;
+    }
+}
+@media (min-width:1000px){
+    .imagen-cambio{
+        height: 500px;
+    }
+}
+@media (max-width:999px){
+    .imagen-cambio{
+        height: 470px;
+    }
+}
+@media (max-width:900px){
+    .imagen-cambio{
+        height: 410px;
+    }
+}
+@media (max-width:600px){
+    .imagen-cambio{
+        height: 300px;
+    }
+}
+@media (max-width:600px){
+    .imagen-cambio{
+        height: 200px;
+    }
+}
 
 /***********************LETRAS AVISO IMPORTANTE MOMENTANEO****************************************************/
 

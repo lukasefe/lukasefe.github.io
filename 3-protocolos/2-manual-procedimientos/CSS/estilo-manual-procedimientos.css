@@ -1,3 +1,66 @@
 .justificado{
    text-align: justify;
 }
+
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+   padding-top: 10px;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+}
+#logo{
+   width: 100px;
+   height: 60px;
+}
+
+@media (max-width: 400px){
+   #enfconec{
+       font-size: 14px;
+   }
+   #logo{
+       width: 100px;
+       height: 50px;
+   }
+}
+
+@media (max-width: 350px){
+   #enfconec{
+       font-size: 12px;
+   }
+
+   #logo{
+       width:80px;
+       height: 40px;
+   }
+
+}
+
+/**************/
+
+.tamaño{
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.tamaño-lista{
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.caja-listas{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+
+.text-decoration-none{
+   text-decoration: none !important;
+}
+
+@media (max-width:600px){
+   .caja-listas{
+      grid-template-columns: 1fr;
+   }
+}

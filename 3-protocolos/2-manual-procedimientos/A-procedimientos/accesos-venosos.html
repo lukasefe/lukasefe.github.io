@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesos Venosos</title>
-    <link rel="stylesheet" type="text/css" href="CSS/estilos-procedimientos.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo-manual-procedimientos.css" />
+    <link rel="Shortcut icon" href="/ASSETS/LOGO/logo_ec_48x48.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
@@ -22,116 +23,94 @@
 <body>
     <!--NAVBAR MENU CON PORTADA-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-primary bg-primary ">
-            <div class="container-fluid">
-                <!--LOGOTIPO Y NOMBRE-->
-                <a class="navbar-brand mx-auto" href="#">
-                    <i class="bi bi-wifi text-white"></i>
-                    <span class="text-white">ENFERMERIA CONECTADA</span>
-                </a>
-                  <!--BOTON DEL MENU-->
-          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mt-3" id="elementosmenu">
-            <ul class="navbar-nav ms-auto p-auto">
-              <!--BOTON DROPDOWN 1 -->
-              <li class="nav-item dropdown px-2">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">UTIP/UCIM</a>
-                <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Pase de Guardia</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Datos de Pacientes</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Politicas del servicio</a></li>
-                  </ul>
+      <nav class="navbar navbar-expand-lg navbar-primary bg-primary my-1">
+        <div class="container-fluid">
+            <!--LOGOTIPO Y NOMBRE-->
+            <a class="navbar-brand mx-auto" href="#">
+              <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png" alt="logo de enfermeria conectada"></i>
+              <span id="enfconec">ENFERMERÍA CONECTADA</span>
+            </a>
+              <!--BOTON DEL MENU-->
+      <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+          <ul class="navbar-nav ms-auto p-auto">
+            <!--------------------------------BOTON POLITICAS DEL SERVICIO---------------------->
+            <li class="nav-item px-2">
+              <a class="nav-link active text-white" aria-current="page" href="/1-politicas_del_servicio/politicas_del_servicio.html"><b>Politicas del Servicio UCIP</b></a>
+            </li>
+            <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown"><b>Formularios</b></a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownformularios">
+             <li>
+                  <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform"><b>Ingreso de Pacientes</b></a>
                 </li>
-                <!--BOTON DROPDOWN 2 FORMULARIOS -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
-                  <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownformularios">
-                    <li>
-                      <a class="dropdown-item text-white" href="../../../2-formularios/1-registro-ingreso-de-pacientes/form-ingreso-pacientes.html" >Ingreso de Pacientes</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li>
-                      <a class="dropdown-item text-white" href="">Higiene de Manos</a>
-                    </li>
-                  </ul>
+                <li><hr class="dropdown-divider text-white"></li>
+                <li>
+                  <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLScFLSDXokPpyrHO0aidRXgmNXntYTfrnUQ15aNF_QeRgHEJbg/viewform"><b>Higiene de Manos</b></a>
                 </li>
-                <!--BOTON DROPDOWN 3 PROTOCOLOS -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
-                  <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
-                    <li>
-                      <a class="dropdown-item text-white" href="../../1-guia-farmacos/guia-farmaco-terapeutica.html">Guía Fármaco Terapéutica y Adm. de Medicamentos</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">POES</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Mantenimiento de Insumos</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Checklist</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Carteleria</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">LPP</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Escalas</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Material Bibliografico</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                  </ul>
-                </li>
-
-                <!--todo:BOTON DROPDOWN 4 CAPACITACIONES -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
-                  <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Capacitacion del servicio</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li>
-                      <a class="dropdown-item text-white" href="">cursos online</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <!--BOTON DROPDOWN 5 COMUNICADOS -->
-                <li class="nav-item dropdown px-2">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
-                  <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
-                    <li>
-                      <a class="dropdown-item text-white" href="">Comunicados</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li>
-                      <a class="dropdown-item text-white" href="">Planilla Mensual</a>
-                    </li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Planila de rotación</a></li>
-                    <li><hr class="dropdown-divider text-white"></li>
-                    <li><a class="dropdown-item text-white" href="">Notas de Personal</a></li>
-                  </ul>
-                </li>
-                <!--PAGINA PRINCIPAL-->
-                <li class="nav-item px-2">
-                  <a class="nav-link text-white" href="../../../index.html">Inicio</a>
-                 </li>
-                <!--LINK CONTACTO-->
-                <li class="nav-item px-2">
-                 <a class="nav-link text-white" href="#">Contacto</a>
+                <li><hr class="dropdown-divider text-white"></li>
+                <li>
+                  <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSftSggOansgGzZheReSLs-dk4WiP4Q-9PoNV2np4nVBNOsVyQ/viewform"><b>Combo de Medidas</b></a>
                 </li>
               </ul>
-           </div>
-           </div>
-        </nav>
+            </li>
+            <!----------------------------BOTON DROPDOWN 3 PROTOCOLOS-------------------------->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown"><b>Protocolos</b></a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
+                <li>
+                  <a class="dropdown-item text-white" href="../../1-guia-farmacos/guia-farmaco-terapeutica.html"><b>Guia Farmaco Terapeutica y Adm. de Med.</b></a>
+                </li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li>
+                  <a class="dropdown-item text-white" href="../manual-procedimientos.html"><b>Manual de Procedimientos y POE</b></a>
+                </li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li><a class="dropdown-item text-white" href="../../3-mantenimiento_de_insumos/mantenimiento_de_insumos.html"><b>Mantenimiento de Insumos</b></a></li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li><a class="dropdown-item text-white" href="../../4-checklist_y_carteleria/Checklist_carteleria.html"><b>Checklist y Carteleria</b></a></li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li><a class="dropdown-item text-white" href="../../5-estadisticas/5_estadisticas.html"><b>Estadisticas</b></a></li>
+              </ul>
+            </li>
+            <!---------------------------BOTON DROPDOWN 4 CAPACITACIONES----------------------->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown"><b>Capacitaciones</b></a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
+                <li>
+                  <a class="dropdown-item text-white" href="../../../4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html"><b>Capacitaciones en el servicio</b></a>
+                </li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li><a class="dropdown-item text-white" href="../../../4-capacitaciones/4-4-biblioteca/biblioteca_digital.html"><b>Biblioteca Digital</b></a></li>
+              </ul>
+            </li>
+            <!---------------------------BOTON DROPDOWN 5 COMUNICADOS-------------------------->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown"><b>Comunicados</b></a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
+                <li>
+                  <a class="dropdown-item text-white" href="../../../5-comunicados/2-5_planilla_mensual/planilla_mensual.html"><b>Planilla Mensual</b></a>
+                </li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li><a class="dropdown-item text-white" href="../../../5-comunicados/3-5_planilla_rotacion/planilla_rotacion.html"><b>Planila de rotación</b></a></li>
+                <li><hr class="dropdown-divider-white text-white"></li>
+                <li><a class="dropdown-item text-white" href="../../../5-comunicados/4-5_notas_personal/notas_Personal.html"><b>Notas de Personal</b></a></li>
+              </ul>
+            </li>
+            <!--LINK CONTACTO-->
+            <li class="nav-item px-2">
+             <a class="nav-link text-white" href="../../../index.html"><b>Inicio</b></a>
+            </li>
+          </ul>
+       </div>
+       </div>
+      </nav>
          <!--TEXTO DE PORTADA-->
         <div class="container-fluid d-flex justify-content-center align-items-center flex-column bg-primary border-bottom border-top  border-dark">
-          <div class="d-flex align-items-center flex-column portadita "><h1 class="text-center text-white py-2">Manual de Procedimientos<br>UTIP/UCIM</h1>
+          <div class="d-flex align-items-center flex-column portadita "><h1 class="text-center text-white py-2">Proceso Operativo Estandarizado<br>UTIP/UCIM</h1>
         </div>
         </div>
     </header>

@@ -2,3 +2,23 @@
 .texto-justificado{
     text-align: justify;
 }
+/***********************************************/
+.cajaParaFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.fotos{
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px){
+    .cajaParaFotos{
+        grid-template-columns: 1fr;
+    }
+    .fotos{
+        width: 70%;
+    }
+}

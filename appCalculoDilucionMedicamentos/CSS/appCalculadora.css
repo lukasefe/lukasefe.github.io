@@ -16,8 +16,9 @@
     max-width: 100%;
 }
 
-.contenedor{
+div.contenedor{
     width: 100%;
+    height: auto;
     margin: 0 auto;
     background-color: var(--Fondo);
     border-radius: .6em;
@@ -187,7 +188,7 @@ b.tituloReconstitucion{
 /*PANTALLAS DESDE 768PX*/
 
 @media (min-width: 768px){
-    .contenedor{
+    div.contenedor{
         width: 90%;
         margin: 0 auto;
         margin-top: 10px;
@@ -202,7 +203,7 @@ b.tituloReconstitucion{
 
 /*PANTALLAS DESDE 1024PX*/
 @media (min-width: 1024px) {
-    .contenedor{
+    div.contenedor{
         width: 80%;
         margin: 0 auto;
         margin-top: 10px;
@@ -212,8 +213,8 @@ b.tituloReconstitucion{
     }
 }
 
-@media (max-width: 1440px),(min-width: 1440px){
-    .contenedor{
+@media (min-width: 1440px){
+    div.contenedor{
         width: 70%;
         margin: 0 auto;
         margin-top: 30px;

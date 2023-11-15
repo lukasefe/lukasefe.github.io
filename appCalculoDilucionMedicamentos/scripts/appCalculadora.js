@@ -31,7 +31,7 @@ formulario.addEventListener("submit", function(e){
     let AMPICILINA = "AMPICILINA";
     let ampicilina = "ampicilina";
 
-    if(nombreMedicamento === ampicilina ,Ampicilina, AMPICILINA){//AMPICILINA
+    if(nombreMedicamento === ampicilina || nombreMedicamento === Ampicilina || nombreMedicamento === AMPICILINA){//AMPICILINA
             
             dilucion1 = parseInt(dosis/50);
             console.log(dilucion1);

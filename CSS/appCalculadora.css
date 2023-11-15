@@ -1,0 +1,225 @@
+:root{
+    --Oswald:'Lato', sans-serif, 'League Spartan', sans-serif,'Oswald', sans-serif;
+    --Fondo: #318CE7;
+    --titulo: #FFFFFF;
+    --Fondo-Gris:#EEEEEE;
+    --Azul-Antibioticos: #1357a6;
+    --advertencia: #FFFF3D;
+    --verde-Calcular: #39e75f;
+    --Verde-Sedacion: #00c04b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+div.contenedor{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--Fondo);
+    border-radius: .6em;
+    font-family: var(--Oswald);
+}
+
+.titulo{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 1.3em;
+    padding: 5px 20px ;
+    font-weight: bolder;
+}
+
+#medicamentos{
+    display: grid;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.input-1{
+    margin: 0 auto;
+    position: relative;
+}
+
+.input__Medicamento{
+    width: 300px;
+    height: 40px;
+    color: var(#000000);
+    font-size: .9em;
+    font-weight: 800;
+    padding-top: 1em;
+    padding-left: .5em;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+}
+
+.input__Medicamento:not(:placeholder-shown) + .label__Medicamento, .input__Medicamento:focus + .label__Medicamento{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--Fondo);
+}
+
+.label__Medicamento{
+    font-size: 1.3em;
+    color: var(--Fondo);
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.input-2{
+    margin: 0 auto;
+    position: relative;
+}
+
+.input__Miligramos{
+    width: 300px;
+    height: 40px;
+    color: var(#000000);
+    font-size: .9em;
+    font-weight: 800;
+    padding-top: 1em;
+    padding-left: .5em;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+}
+
+.input__Miligramos:not(:placeholder-shown) + .label__Miligramos, .input__Miligramos:focus + .label__Miligramos{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--Fondo);
+}
+
+
+.label__Miligramos{
+    font-size: 1.3em;
+    color: var(--Fondo);
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.botonera{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    padding-bottom: 20px;
+    
+}
+
+button{
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 2em;
+    background-color: var(--verde-Calcular);
+    font-family: var(--Oswald);
+    font-weight: bolder;
+    color: var(--titulo);
+    border: none;
+}
+
+.boton{
+    background-color: red;
+}
+
+.resultado{
+    background-color: var(--Fondo-Gris);
+    padding: 10px 0;
+    border-top: 3px solid #000000;
+}
+
+.resp{
+    font-family: var(--Oswald);
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.infoContainer{
+    padding: 10px 10px;
+    font-family: var(--Oswald);
+}
+
+.tituloMedicamento{
+    text-align: center;
+    font-family: var(--Oswald);
+    color:var(--Azul-Antibioticos);
+    font-weight: bolder;
+}
+
+.tituloReconstitucion{
+    color: var(--Azul-Antibioticos);
+    font-weight: bold;
+    margin: 5px 0;
+}
+.tt{
+    font-size: 1.3em;
+}
+b.tituloReconstitucion{
+    color: var(--Azul-Antibioticos);
+}
+.advertencia{
+    background-color: var(--advertencia);
+    padding: 0 2px;
+}
+
+
+/*PANTALLAS DESDE 768PX*/
+
+@media (min-width: 768px){
+    div.contenedor{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+    .resultado{
+        border-radius: 0 0 .6em .6em;
+    }
+}
+
+/*PANTALLAS DESDE 1024PX*/
+@media (min-width: 1024px) {
+    div.contenedor{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+}
+
+@media (min-width: 1440px){
+    div.contenedor{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+}

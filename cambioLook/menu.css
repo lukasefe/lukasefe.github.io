@@ -1,0 +1,135 @@
+:root{
+    --blanco-gris:#F7F9F9 ;
+    --monserrat: 'Montserrat', sans-serif;
+}
+
+
+.contenido__Lateral{
+    display: none;
+}
+
+@media(max-width:900px){
+
+.contenido__Lateral{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    right: 0;
+}
+
+.icono__Hamburguesa{
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    justify-content: flex-end;
+    border: 3px solid #FFFFFF;
+    border-radius: 7px;
+    padding: 0 4px 4px 4px;
+    background-color: transparent;
+    box-shadow: 2px 2px 15px black;
+    cursor: pointer;
+}
+
+.icono__Hamburguesa:hover{
+    cursor: pointer;
+    border-color:3px solid #87CEFA ;
+}
+.lista__Oculta{
+    width:400px;
+    height: 75vh;
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: -2%;
+    background-color: #FFFFFF;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 0 10px;
+    box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4); /*SOMBRA QUE DEJA UN POCO OCULTO EL FONDO*/
+    
+}
+
+.lista__Oculta::before{
+    content: "";
+    transition-property: opacity, left, top, height;
+    transition-duration: 3s, 5s;
+}
+
+.oculta__Contenido{
+    width: 100%;
+}
+
+.icono__CerrarMenu{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    color: var(--blanco-gris);
+    font-size: 1.6em;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    position: relative;
+    top: 5px;
+    left: 78%;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+}
+
+.opciones__Ocultas{
+    margin: 10px 20px;
+    font-family: var(--monserrat);
+}
+.form__Oculto{
+    display: none;
+}
+
+.links__Menu{
+    padding: 5px 0;
+    border-bottom: 3px solid darkblue;
+}
+.links__a{
+    text-decoration: none;
+    color: hotpink;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+.sub_Linea{
+    border-bottom: 3px solid darkblue;
+}
+
+.estilo__Botones{
+    color: hotpink;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 5px 0;
+    border: none;
+    background-color: transparent;
+}
+
+}
+
+
+@media (max-width: 520px){
+    .lista__Oculta{
+        width: 450px;
+        right: -100px;
+    }
+
+    .icono__CerrarMenu{
+        left: 65%;
+    }
+}
+
+@media (max-width: 350px){
+    .lista__Oculta{
+        right: -200px;
+    }
+
+    .icono__CerrarMenu{
+        left: 55%;
+    }
+}

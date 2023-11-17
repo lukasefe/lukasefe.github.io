@@ -1,0 +1,777 @@
+:root{
+    --blanco-gris:#F7F9F9 ;
+    --monserrat: 'Montserrat', sans-serif;
+}
+*{
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.contenido__Lateral{
+    display: none;
+}
+/*         BP 280        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 280px){
+    div.contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    button.icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+
+    div.oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    div.lista__Oculta{
+        display: none;
+        width: 100%;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-bottom: 1px solid #000;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+/*         BP 360        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 360px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    button.icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    div.lista__Oculta{
+        display: none;
+        width: 280px;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0 0 0 10px;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/*         BP 375        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 375px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    .lista__Oculta{
+        display: none;
+        width: 280px;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0 0 0 10px;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/*         BP 390        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 390px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    .lista__Oculta{
+        display: none;
+        width: 280px;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0 0 0 10px;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/*         BP 414        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 414px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+    .oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    .lista__Oculta{
+        display: none;
+        width: 280px;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0 0 0 10px;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/*         BP 414        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 430px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+    .oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    .lista__Oculta{
+        display: none;
+        width: 280px;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0 0 0 10px;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/*         BP 540        ----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 540px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icono__Hamburguesa{
+        display: block;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
+        margin-left:0;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+    .oculta__Contenido{
+        width: 100%;
+    }
+    
+
+    .lista__Oculta{
+        display: none;
+        width: 280px;
+        background-color: #F1EFEF;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        margin: 0px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0 0 0 10px;
+        box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
+    }
+
+    .icono__CerrarMenu{
+        background-color: red;
+        width: 50px;
+        color: var(--blanco-gris);
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 78%;
+        border: none;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a.links__a{
+        text-decoration: none;
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+
+    .links__Menu{
+        padding: 5px 0;
+        border-bottom: 3px solid pink;
+    }
+
+    .form__Oculto{
+        display: none;
+    }    
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
+    }
+    button.estilo__Botones{
+        color: hotpink;
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 5px 0;
+        border: none;
+        background-color: transparent;
+    }
+}

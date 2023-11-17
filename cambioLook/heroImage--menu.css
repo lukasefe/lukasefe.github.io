@@ -1,0 +1,346 @@
+:root{
+    --blanco-gris:#F7F9F9 ;
+    --monserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+
+.principal{
+    display: grid;
+    grid-template-areas:
+    "nav" "nav" "nav"
+    ;
+
+}
+
+
+/*      BP  280    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:281px){
+    main.principal{
+        width: 100%;
+        
+    }
+
+    header.principal__header{
+        width: 280px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    div.principal__contenedor--logo--titulo{
+        width: 240px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+        
+    }
+    img.principal__logo{
+        width: 50px;
+        height: 40px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    span.principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    p.principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 10px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    nav.principal__Nav{
+        display: none;
+    }
+}
+
+/*      BP  360    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:361px){
+    main.principal{
+        width: 100%;
+    }
+
+    div.principal__header{
+        width: 360px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    .principal__contenedor--logo--titulo{
+        width: 300px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    .principal__logo{
+        width: 70px;
+        height: 50px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 13px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    .principal__Nav{
+        display: none;
+    }
+}
+
+/*      BP  375    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:375px){
+    .principal{
+        width: 100%;
+    }
+
+    .principal__header{
+        width: 375px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    .principal__contenedor--logo--titulo{
+        width: 300px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    .principal__logo{
+        width: 70px;
+        height: 50px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 13px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    .principal__Nav{
+        display: none;
+    }
+}
+
+/*      BP  390    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:390px){
+    .principal{
+        width: 100%;
+    }
+
+    .principal__header{
+        width: 390px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    .principal__contenedor--logo--titulo{
+        width: 300px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    .principal__logo{
+        width: 70px;
+        height: 50px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 13px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    .principal__Nav{
+        display: none;
+    }
+}
+
+/*      BP  414    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:414px){
+    .principal{
+        width: 100%;
+    }
+
+    div.principal__header{
+        width: 414px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    .principal__contenedor--logo--titulo{
+        width: 340px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    .principal__logo{
+        width: 70px;
+        height: 50px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 15px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    .principal__Nav{
+        display: none;
+    }
+}
+
+/*      BP  430    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:431px){
+    .principal{
+        width: 100%;
+    }
+
+    .principal__header{
+        width: 430px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    .principal__contenedor--logo--titulo{
+        width: 340px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    .principal__logo{
+        width: 70px;
+        height: 50px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 15px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    .principal__Nav{
+        display: none;
+    }
+}
+
+/*      BP  540    ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width:540px){
+    .principal{
+        width: 100%;
+    }
+
+    .principal__header{
+        width: 540px;
+        height: 200px;
+        background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
+        background-size:cover;
+        background-position: center;
+        grid-area: nav;
+
+    }
+    .principal__contenedor--logo--titulo{
+        width: 340px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    .principal__logo{
+        width: 70px;
+        height: 50px;
+        margin: 5px 0 5px 5px;
+        padding-top: 5px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 15px;
+        color: var(--blanco-gris);
+        padding: 5px 10px 0 10px;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+    }
+    .principal__Nav{
+        display: none;
+    }
+}

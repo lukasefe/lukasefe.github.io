@@ -240,6 +240,7 @@
         max-width: 770px;
     }
     .principal__header{
+        width: 100%;
         max-width: 768px;
         width: 100%;
     }
@@ -260,23 +261,24 @@
 
 @media(max-width: 430px){
     main.principal{
-        max-width: 430px;
+        width: 100%;
+        min-width: 400px;
 
     }
     .principal__header{
-        width: 100%;
-        max-width: 425px;
         height: 200px;
     }
     div.principal__header--contenedor{
         width: 100%;
         padding: 20px 10px 0 10px;
+        margin-left: 0;
         display: flex;
         justify-content: space-between;
     }
     .principal__contenedor--logo--titulo{
         width: 200px;
         max-width: 200px;
+        margin-left: 0px;
         align-items: center;
         justify-self: flex-start;
     }
@@ -301,6 +303,15 @@
     }
     .principal__empresa1{
         filter: drop-shadow(2px 2px 5px black);
+    }
+}
+
+@media (max-width: 300px){
+    main.principal{
+        max-width: 380px;
+    }
+    .principal__header{
+        max-width: 300px;
     }
 }
 

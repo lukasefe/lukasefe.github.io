@@ -2,11 +2,14 @@
     --blanco-gris:#F7F9F9 ;
     --monserrat: 'Montserrat', sans-serif;
 }
+*{
+    box-sizing: border-box;
+}
 
 /*         BP 280        */
 @media (max-width: 280px){
     .lista__Oculta{
-        width: 280px;
+        width: 290px;
         border: none;
     }
 }
@@ -31,6 +34,7 @@
 /*         BP 390        */
 @media (max-width: 390px){
     .lista__Oculta{
+        width: 390px;
         top: 0px;
         right: 0px;
     }
@@ -57,6 +61,24 @@
         font-size: 1.5em;
         border: 3px solid #FFFFFF;
         border-radius: 7px;
+        padding: 0 4px 4px 4px;
+        background-color: transparent;
+        box-shadow: 2px 2px 15px black;
+        cursor: pointer;
+    }
+    
+    .contenido__Lateral{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icono__Hamburguesa{
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+        border: 3px solid #FFFFFF;
+        border-radius: 7px;
         margin-right: 20px;
         padding: 0 4px 4px 4px;
         background-color: transparent;
@@ -70,7 +92,7 @@
     }
     
     .lista__Oculta{
-        display: block;
+        display: none;
         width: 300px;
         background-color: #FFFFFF;
         padding: 0px;
@@ -84,6 +106,27 @@
 
     .icono__CerrarMenu{
         left: 65%;
+    }
+
+    .form__Oculto .form-item{
+        text-decoration: none;
+        font-family: var(--monserrat);
+        color: palevioletred;
+        font-weight: bold;
+    }
+
+    .margin-ul{
+        padding-left: 0;
+    }
+
+    .border_form-item{
+        border-bottom: 1px solid salmon;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+
+    .margin-item{
+        margin-top: 20px;
     }
 }
 
@@ -144,14 +187,14 @@
 
 .icono__CerrarMenu{
     background-color: red;
-    width: 40px;
-    height: 40px;
+    width: 50px;
     color: var(--blanco-gris);
-    font-size: 1.6em;
+    font-size: 20px;
     border-radius: 10px;
     font-weight: bolder;
-    padding-top: 0px;
-    padding-bottom: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
     position: relative;
     top: 5px;
     left: 78%;
@@ -169,7 +212,7 @@
 
 .links__Menu{
     padding: 5px 0;
-    border-bottom: 3px solid darkblue;
+    border-bottom: 3px solid pink;
 }
 .links__a{
     text-decoration: none;
@@ -196,29 +239,9 @@
 
 
 @media (max-width: 430px){
-    .contenido__Lateral{
-        justify-self: flex-end;
-    }
-
-    .icono__Hamburguesa{
-        color: #FFFFFF;
-        width: 40px;
-        height: 40px;
-        font-size: 1.5em;
-        border: 3px solid #FFFFFF;
-        border-radius: 7px;
-        padding: 0 4px 4px 4px;
-        background-color: transparent;
-        box-shadow: 2px 2px 15px black;
-        cursor: pointer;
-    }
     
-    .contenido__Lateral{
-        display: flex;
-        justify-content: flex-end;
-    }
     
-    .lista__Oculta{
+   /* .lista__Oculta{
         display: block;
         width: 300px;
         background-color: #FFFFFF;
@@ -229,10 +252,12 @@
         border-left: 1px solid #000;
         border-bottom: 1px solid #000;
         box-shadow: -100px 0px 10px 600px rgba(0, 0, 0, 0.4);
-    }
+    }*/
 
-    .icono__CerrarMenu{
+  /*  .icono__CerrarMenu{
         left: 65%;
-    }
+    }*/
 }
+
+
 

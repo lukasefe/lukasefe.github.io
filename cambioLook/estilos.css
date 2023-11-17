@@ -8,12 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
 .principal{
-    max-width: 100%;
     width: 100%;
     display: grid;
     grid-template-areas:
@@ -22,9 +17,11 @@ body{
     white-space: nowrap;
 }
 
+
+
+
 .principal__header{
     margin-top: 0;
-    width: auto;
     height: 300px;
     background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
     background-size:cover;
@@ -74,7 +71,7 @@ body{
 
 .principal__nav{
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-end;
 }
@@ -186,6 +183,9 @@ body{
 }
 
 @media(max-width:900px){
+    .principal{
+        width: 890px;
+    }
     .principal__header--contenedor{
         max-width: 100%;
         width: 100%;
@@ -235,7 +235,74 @@ body{
     }
 }
 
+@media(max-width:770px){
+    main.principal{
+        max-width: 770px;
+    }
+    .principal__header{
+        max-width: 768px;
+        width: 100%;
+    }
+    div.principal__header--contenedor{
+        width: 100%;
+        padding: 20px 10px 0 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .principal__contenedor--logo--titulo{
+        width: 200px;
+        max-width: 200px;
+        margin-left: 20px;
+        align-items: center;
+        justify-self: flex-start;
+    }
+}
 
+@media(max-width: 430px){
+    main.principal{
+        max-width: 430px;
+
+    }
+    .principal__header{
+        width: 100%;
+        max-width: 425px;
+        height: 200px;
+    }
+    div.principal__header--contenedor{
+        width: 100%;
+        padding: 20px 10px 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .principal__contenedor--logo--titulo{
+        width: 200px;
+        max-width: 200px;
+        align-items: center;
+        justify-self: flex-start;
+    }
+    
+    .principal__logo{
+        max-width: 70px;
+        max-height: 70px;
+        margin: 10px 0 10px 10px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .principal__empresa{
+        font-family: var(--monserrat);
+        font-size: 15px;
+        position: relative;
+        top: .2em;
+        color: var(--blanco-gris);
+        padding: 15px 10px 5px 10px;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bolder;
+        justify-self: flex-end;
+        align-items: center;
+    }
+    .principal__empresa1{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+}
 
 /***********/
 /*LOGO DE ENFERMERIA DEL NAV*/

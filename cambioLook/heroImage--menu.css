@@ -57,7 +57,7 @@
         text-shadow: 2px 2px 5px black;
         font-weight: bolder;
     }
-    nav.principal__Nav{
+    #nav-container{
         display: none;
     }
 }

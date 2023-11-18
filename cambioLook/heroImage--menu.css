@@ -90,7 +90,7 @@
         text-shadow: 2px 2px 5px black;
         font-weight: bolder;
     }
-    .principal__Nav{
+    nav.principal__Nav{
         display: none;
     }
 }
@@ -108,7 +108,7 @@
     p.principal__empresa{
         font-size: 18px;
     }
-    .principal__Nav{
+    nav.principal__Nav{
         display: none;
     }
 }
@@ -130,7 +130,7 @@
         margin-left: 50px;
         margin-bottom: 5px;
     }
-    .principal__Nav{
+    nav.principal__Nav{
         display: none;
     }
 }

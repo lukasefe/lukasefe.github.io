@@ -40,7 +40,7 @@
     }
     
 
-    div.lista__Oculta.wv280{
+    div.lista__Oculta{
         display: none;
         width: 280px;
         background-color: #F1EFEF;
@@ -148,7 +148,7 @@
     }
     
 
-    div.lista__Oculta .wv360{
+    div.lista__Oculta{
         display: none; 
         width: 350px;
         background-color: #F1EFEF;

@@ -120,6 +120,12 @@
 }
 /*         BP 360        ----------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 360px){
+    .contenido__Lateral{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     button.icono__Hamburguesa{
         display: block;
         color: #FFFFFF;
@@ -142,8 +148,8 @@
     }
     
 
-    header.wv360{
-        display: none;
+    div.lista__Oculta .wv360{
+        display: none; 
         width: 350px;
         background-color: #F1EFEF;
         position: absolute;

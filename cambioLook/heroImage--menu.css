@@ -63,6 +63,10 @@
 }
 /*      BP  360    ----------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:360px){
+    .principal header.principal__header{
+        overflow: hidden;
+
+    }
     div.principal__contenedor--logo--titulo{
         width: 300px;
         margin-left: 0px;
@@ -94,15 +98,26 @@
 
 /*      BP  430    ----------------------------------------------------------------------------------------------------------------------*/
 @media(min-width:420px){
+    .principal header.principal__header{
+        overflow: hidden;
+
+    }
     div.principal__contenedor--logo--titulo{
         width: 350px;
     }
     p.principal__empresa{
         font-size: 18px;
     }
+    .principal__Nav{
+        display: none;
+    }
 }
 /*      BP  540    ----------------------------------------------------------------------------------------------------------------------*/
 @media(min-width:540px){
+    .principal header.principal__header{
+        overflow: hidden;
+
+    }
     div.principal__contenedor--logo--titulo{
         width: 450px;
     }

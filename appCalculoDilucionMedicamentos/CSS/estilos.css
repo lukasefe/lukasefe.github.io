@@ -1,0 +1,433 @@
+:root{
+    --Oswald:'Lato', sans-serif, 'League Spartan', sans-serif,'Oswald', sans-serif;
+    --Fondo: #318CE7;
+    --titulo: #FFFFFF;
+    --Fondo-Gris:#EEEEEE;
+    --Azul-Antibioticos: #1357a6;
+    --advertencia: #FFFF3D;
+    --verde-Calcular: #39e75f;
+    --Verde-Sedacion: #00c04b;
+    --rojo-Inotropicos: #B71C1C;
+    --gris-Tarjeta: #b5b5b5b5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--Fondo);
+    border-radius: .6em;
+    font-family: var(--Oswald);
+}
+
+.titulo{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 1.3em;
+    padding: 5px 20px ;
+    font-weight: bolder;
+}
+
+#medicamentos{
+    display: grid;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.input-1{
+    margin: 0 auto;
+    position: relative;
+}
+
+.input__Medicamento{
+    width: 300px;
+    height: 40px;
+    color: var(#000000);
+    font-size: .9em;
+    font-weight: 800;
+    padding-top: 1em;
+    padding-left: .5em;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+}
+
+.input__Medicamento:not(:placeholder-shown) + .label__Medicamento, .input__Medicamento:focus + .label__Medicamento{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--Fondo);
+}
+
+.label__Medicamento{
+    font-size: 1.3em;
+    color: var(--Fondo);
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.input-2{
+    margin: 0 auto;
+    position: relative;
+}
+
+.input__Miligramos{
+    width: 300px;
+    height: 40px;
+    color: var(#000000);
+    font-size: .9em;
+    font-weight: 800;
+    padding-top: 1em;
+    padding-left: .5em;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+}
+
+.input__Miligramos:not(:placeholder-shown) + .label__Miligramos, .input__Miligramos:focus + .label__Miligramos{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--Fondo);
+}
+
+
+.label__Miligramos{
+    font-size: 1.3em;
+    color: var(--Fondo);
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.botonera{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    padding-bottom: 20px;
+    
+}
+
+button{
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 2em;
+    background-color: var(--verde-Calcular);
+    font-family: var(--Oswald);
+    font-weight: bolder;
+    color: var(--titulo);
+    border: none;
+}
+
+.boton{
+    background-color: red;
+}
+
+.resultado{
+    background-color: var(--Fondo-Gris);
+    padding: 10px 0;
+    border-top: 3px solid #000000;
+}
+
+.resp{
+    font-family: var(--Oswald);
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.contenedor__Grilla{
+    text-align: center;
+}
+
+.nombre__Farmaco{
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 30px;
+    background-color: var(--Azul-Antibioticos);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+
+
+.contenedor__Info{
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.contenedor__Presentacion{
+    margin: 20px 10px 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.titulo__Presentacion{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--Azul-Antibioticos);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.presentacion{
+    padding: 10px;
+}
+.reconstitucion{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--Azul-Antibioticos);
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.reconstitucion__NO{
+    background-color: var(--rojo-Inotropicos);
+    color: var(--titulo);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.datos{
+    text-align: center;
+    padding: 20px 5px;
+    background-color: var(--gris-Tarjeta);
+    font-weight: bolder;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: auto;
+}
+
+.estabilidad{
+    margin: 10px 10px 0 10px;
+    font-size: 25px;
+    background-color: var(--Azul-Antibioticos);
+    color: var(--titulo);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedor__Estabilidad{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.texto__Estabilidad{
+    text-align: center;
+    background-color: var(--advertencia);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.texto__Blanco{
+    font-weight: bold;
+}
+
+.texto__Observaciones{
+    background-color: var(--gris-Tarjeta);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.texto1{
+    height: 50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 10px 10px 0px 10px;
+    text-align: start;
+}
+
+.administracion{
+    background-color: var(--Azul-Antibioticos);
+    color: var(--titulo);
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/******************************************************************************/
+/*COLOR DE LOS INOTROPICOS*/
+.nombre__Farmaco2{
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 30px;
+    background-color: var(--rojo-Inotropicos);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.titulo__Presentacion2{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--rojo-Inotropicos);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.presentacion2{
+    text-align: center;
+}
+.reconstitucion2{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--rojo-Inotropicos);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.estabilidad2{
+    margin: 10px 10px 0 10px;
+    font-size: 25px;
+    background-color: var(--rojo-Inotropicos);
+    color: var(--titulo);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.administracion2{
+    background-color: var(--rojo-Inotropicos);
+    color: var(--titulo);
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.datos__Fotosensible{
+        text-align: center;
+        padding: 20px 5px;
+        background-color: var(--advertencia);
+        font-weight: bolder;
+        border-radius: 10px;
+        margin: 10px 0;
+        height: auto;
+}
+
+
+
+
+/*
+.infoContainer{
+    padding: 10px 10px;
+    font-family: var(--Oswald);
+}
+
+.tituloMedicamento{
+    text-align: center;
+    font-family: var(--Oswald);
+    color:var(--Azul-Antibioticos);
+    font-weight: bolder;
+}
+
+.tituloReconstitucion{
+    color: var(--Azul-Antibioticos);
+    font-weight: bold;
+    margin: 5px 0;
+}
+.tt{
+    font-size: 1.3em;
+}
+b.tituloReconstitucion{
+    color: var(--Azul-Antibioticos);
+}
+.advertencia{
+    background-color: var(--advertencia);
+    padding: 0 2px;
+}
+/*COLORES DE LOS INOTROPICOS
+.tituloInotropico{
+    text-align: center;
+    font-family: var(--Oswald);
+    color:var(--rojo-Inotropicos);
+    font-weight: bolder;
+}
+.tituloReconstitucionIno{
+    color: var(--rojo-Inotropicos);
+    font-weight: bold;
+    margin: 5px 0;
+}
+/*PANTALLAS DESDE 768PX
+*/
+@media (min-width: 768px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+    .resultado{
+        border-radius: 0 0 .6em .6em;
+    }
+}
+
+/*PANTALLAS DESDE 1024PX*/
+@media (min-width: 1024px) {
+    .contenedor{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+}
+
+@media (max-width: 1440px),(min-width: 1440px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+}

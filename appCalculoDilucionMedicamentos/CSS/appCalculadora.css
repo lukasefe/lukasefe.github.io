@@ -607,35 +607,115 @@ b.tituloReconstitucion{
 }
 /*PANTALLAS DESDE 768PX
 */
-
-
-@media (max-width: 750px){
-    div.sm{
+@media screen and (max-width: 425px){
+    div.contenedor.xs{
         margin-top: 0;
         width: 100%;
-        background-color: var(--Fondo);
         font-family: var(--Oswald);
     }
     h2.titulo{
-        font-size: 1.2em;
+        font-size: 25px;
     }
-    .contenedor__Presentacion{
-        display: grid;
+    div.contenedor__Presentacion{
+        width: 95%;
         grid-template-columns: 1fr;
-        gap: 5px;
     }
-    .contenedor__Estabilidad{
-        grid-template-columns: 1fr 1fr;
+    div.contenedor__Estabilidad{
+        width: 95%;
+        grid-template-columns: 1fr;
     }
     .estabilidad,.estabilidad2,.estabilidad3,.estabilidad4,.estabilidad5{
-        font-size: 20px;
-    }
-    .texto1{
+        width:98%;
         font-size: 20px;
     }
     .administracion,.administracion2,.administracion3,.administracion4,.administracion5{
+        width: 98%;
         font-size: 20px;
     }
+
+}
+@media screen and (max-width: 650px){
+    div.contenedor.sm{
+        margin-top: 0;
+        width: 100%;
+    }
+    div.contenedor__Presentacion{
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    div.contenedor__Estabilidad{
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .estabilidad,.estabilidad2,.estabilidad3,.estabilidad4,.estabilidad5{
+        width:98%;
+        font-size: 20px;
+    }
+    .administracion,.administracion2,.administracion3,.administracion4,.administracion5{
+        width: 98%;
+        font-size: 20px;
+    }
+    
+    .texto1{
+        font-size: 20px;
+    }
+    
+    div.resultado{
+        border-radius:0%;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        background-color: var(--Fondo-Gris);
+        overflow: hidden;
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 990px){
+    div.contenedor.sm{
+        margin-top: 0;
+        width: 100%;
+    }
+    .contenedor__Presentacion{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor__Estabilidad{
+        width: 95%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .estabilidad,.estabilidad2,.estabilidad3,.estabilidad4,.estabilidad5{
+        width:98%;
+        font-size: 20px;
+    }
+    .administracion,.administracion2,.administracion3,.administracion4,.administracion5{
+        width: 98%;
+        font-size: 20px;
+    }
+    
+    .texto1{
+        font-size: 20px;
+    }
+    
     div.resultado{
         border-radius:0%;
     }
@@ -668,11 +748,14 @@ b.tituloReconstitucion{
     }
 }
 
-@media (max-width: 1020px){
+@media (min-width: 1020px){
     .ml{
         width: 90%;
         margin: 0 auto;
         margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
     }
     .titulo-m{
         width: 90%;
@@ -683,11 +766,6 @@ b.tituloReconstitucion{
         font-size: 1.3em;
         padding: 5px 20px ;
         font-weight: bolder;
-    }
-    .contenedor__Presentacion{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 5px;
     }
     .error{
         margin: 10px 20px;
@@ -723,7 +801,7 @@ b.tituloReconstitucion{
 
 
 /*PANTALLAS DESDE 1024PX*/
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
     .l{
         width: 80%;
         margin: 0 auto;

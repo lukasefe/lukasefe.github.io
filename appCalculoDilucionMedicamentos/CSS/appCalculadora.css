@@ -5,8 +5,13 @@
     --Fondo-Gris:#EEEEEE;
     --Azul-Antibioticos: #1357a6;
     --advertencia: #FFFF3D;
+    --diureticos: #effe1ee7;
     --verde-Calcular: #39e75f;
-    --Verde-Sedacion: #00c04b;
+    --sedacion:#03F934;
+    --Verde-Sedacion: #089c41;
+    --rojo-Inotropicos: #B71C1C;
+    --gris-Tarjeta: #b5b5b5b5;
+    --medicamentos-varios: #e47200;
 }
 
 *{
@@ -16,14 +21,6 @@
     max-width: 100%;
 }
 
-div.contenedor{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    background-color: var(--Fondo);
-    border-radius: .6em;
-    font-family: var(--Oswald);
-}
 
 .titulo{
     width: 90%;
@@ -118,6 +115,8 @@ div.contenedor{
 }
 
 .botonera{
+    width: 300px;
+    text-align: center;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -128,6 +127,7 @@ div.contenedor{
 
 button{
     width: 100px;
+    margin: auto 0;
     padding: 10px 20px;
     border-radius: 2em;
     background-color: var(--verde-Calcular);
@@ -136,9 +136,14 @@ button{
     color: var(--titulo);
     border: none;
 }
-
+.boton1{
+    width: 300px;
+}
 .boton{
-    background-color: red;
+    width: 300px;
+    align-items: center;
+    display: none;
+    background-color: plum;
 }
 
 .resultado{
@@ -156,6 +161,411 @@ button{
     
 }
 
+.contenedor__Grilla{
+    text-align: center;
+}
+
+.nombre__Farmaco{
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 35px;
+    background-color: var(--Azul-Antibioticos);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+
+
+.contenedor__Info{
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.contenedor__Presentacion{
+    margin: 20px 10px 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.titulo__Presentacion{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--Azul-Antibioticos);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.presentacion{
+    padding: 10px;
+}
+.reconstitucion{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--Azul-Antibioticos);
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.reconstitucion__NO{
+    background-color: var(--rojo-Inotropicos);
+    color: var(--titulo);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.datos{
+    text-align: center;
+    padding: 20px 5px;
+    background-color: var(--gris-Tarjeta);
+    font-weight: bolder;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: auto;
+}
+
+.datos__Insulina{
+    padding: 20px 5px;
+    background-color: var(--gris-Tarjeta);
+    font-weight: bolder;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: auto;
+}
+
+.lista__Insulina{
+    text-align: center;
+    list-style:none;
+}
+
+.estabilidad{
+    margin: 10px 10px 0 10px;
+    font-size: 40px;
+    color: var(--Azul-Antibioticos);
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 3px solid var(--Azul-Antibioticos);
+    text-align: center;
+}
+
+.contenedor__Estabilidad{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.texto__Estabilidad{
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--advertencia);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.texto__Blanco{
+    font-weight: bold;
+}
+
+.texto__Observaciones{
+    background-color: var(--gris-Tarjeta);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.texto1{
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    text-align: start;
+}
+
+.administracion{
+    font-family: var(--Oswald);
+    font-size: 30px;
+    color: var(--Azul-Antibioticos);
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--Azul-Antibioticos);
+}
+
+/******************************************************************************/
+/*COLOR DE LOS INOTROPICOS*/
+.nombre__Farmaco2{
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 30px;
+    background-color: var(--rojo-Inotropicos);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.titulo__Presentacion2{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--rojo-Inotropicos);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.presentacion2{
+    text-align: center;
+    padding: 20px;
+}
+.reconstitucion2{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--rojo-Inotropicos);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.estabilidad2{
+    margin: 10px 10px 0 10px;
+    font-size: 40px;
+    color: var(--rojo-Inotropicos);
+    padding: 10px 10px 10px 10px;
+    border-bottom: 3px solid var(--rojo-Inotropicos);
+    text-align: center;
+}
+
+.administracion2{
+    color: var(--rojo-Inotropicos);
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--rojo-Inotropicos);
+    font-size: 40px;
+}
+
+
+.datos__Fotosensible{
+        text-align: center;
+        padding: 20px 5px;
+        background-color: var(--advertencia);
+        font-weight: bolder;
+        border-radius: 10px;
+        margin: 10px 0;
+        height: auto;
+}
+
+/*COLOR DE LOS SEDACION*/
+.nombre__Farmaco3{
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 30px;
+    background-color: var(--Verde-Sedacion);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.titulo__Presentacion3{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--Verde-Sedacion);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.presentacion2{
+    text-align: center;
+    padding: 20px;
+}
+.reconstitucion3{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--Verde-Sedacion);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.estabilidad3{
+    margin: 10px 10px 0 10px;
+    font-size: 40px;
+    color: var(--Verde-Sedacion);
+    padding: 10px 10px 10px 10px;
+    border-bottom: 3px solid var(--Verde-Sedacion);
+    text-align: center;
+}
+
+.administracion3{
+    color: var(--Verde-Sedacion);
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--Verde-Sedacion);
+    font-size: 40px;
+}
+
+.datos__Fotosensible{
+        text-align: center;
+        padding: 20px 5px;
+        background-color: var(--advertencia);
+        font-weight: bolder;
+        border-radius: 10px;
+        margin: 10px 0;
+        height: auto;
+}
+
+/*COLOR DE LOS MEDICAMENTOS VARIOS*/
+.nombre__Farmaco4{
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 30px;
+    background-color: var(--medicamentos-varios);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.titulo__Presentacion4{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--medicamentos-varios);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.presentacion4{
+    text-align: center;
+    padding: 20px;
+}
+.reconstitucion4{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    background-color: var(--medicamentos-varios);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.estabilidad4{
+    margin: 10px 10px 0 10px;
+    font-size: 40px;
+    color: var(--medicamentos-varios);
+    padding: 10px 10px 10px 10px;
+    border-bottom: 3px solid var(--medicamentos-varios);
+    text-align: center;
+}
+
+.administracion4{
+    color: var(--medicamentos-varios);
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--medicamentos-varios);
+    font-size: 40px;
+}
+
+.datos__Fotosensible{
+        text-align: center;
+        padding: 20px 5px;
+        background-color: var(--advertencia);
+        font-weight: bolder;
+        border-radius: 10px;
+        margin: 10px 0;
+        height: auto;
+}
+
+/*COLOR DE LOS DIURETICOS*/
+.nombre__Farmaco5{
+    font-family: var(--Oswald);
+    color: black;
+    font-size: 30px;
+    background-color: var(--diureticos);
+    padding: 15px 0;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.titulo__Presentacion5{
+    color: black;
+    font-family: var(--Oswald);
+    background-color: var(--diureticos);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.presentacion5{
+    text-align: center;
+    padding: 20px;
+}
+.reconstitucion5{
+    color: black;
+    font-family: var(--Oswald);
+    background-color: var(--diureticos);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.estabilidad5{
+    margin: 10px 10px 0 10px;
+    font-size: 40px;
+    color: goldenrod;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 3px solid var(--diureticos);
+    text-align: center;
+}
+
+.administracion5{
+    color: goldenrod;
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--diureticos);
+    font-size: 40px;
+}
+
+.datos__Fotosensible{
+        text-align: center;
+        padding: 20px 5px;
+        background-color: var(--advertencia);
+        font-weight: bolder;
+        border-radius: 10px;
+        margin: 10px 0;
+        height: auto;
+}
+
+/*
 .infoContainer{
     padding: 10px 10px;
     font-family: var(--Oswald);
@@ -183,27 +593,138 @@ b.tituloReconstitucion{
     background-color: var(--advertencia);
     padding: 0 2px;
 }
+/*COLORES DE LOS INOTROPICOS
+.tituloInotropico{
+    text-align: center;
+    font-family: var(--Oswald);
+    color:var(--rojo-Inotropicos);
+    font-weight: bolder;
+}
+.tituloReconstitucionIno{
+    color: var(--rojo-Inotropicos);
+    font-weight: bold;
+    margin: 5px 0;
+}
+/*PANTALLAS DESDE 768PX
+*/
 
 
-/*PANTALLAS DESDE 768PX*/
-
-@media (min-width: 768px){
-    div.contenedor{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 10px;
+@media (max-width: 750px){
+    div.sm{
+        margin-top: 0;
+        width: 100%;
         background-color: var(--Fondo);
-        border-radius: .6em;
         font-family: var(--Oswald);
     }
-    .resultado{
-        border-radius: 0 0 .6em .6em;
+    h2.titulo{
+        font-size: 1.2em;
+    }
+    .contenedor__Presentacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .contenedor__Estabilidad{
+        grid-template-columns: 1fr 1fr;
+    }
+    .estabilidad,.estabilidad2,.estabilidad3,.estabilidad4,.estabilidad5{
+        font-size: 20px;
+    }
+    .texto1{
+        font-size: 20px;
+    }
+    .administracion,.administracion2,.administracion3,.administracion4,.administracion5{
+        font-size: 20px;
+    }
+    div.resultado{
+        border-radius:0%;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        background-color: var(--Fondo-Gris);
+        overflow: hidden;
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
     }
 }
 
+@media (max-width: 1020px){
+    .ml{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .titulo-m{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: var(--Oswald);
+        color: var(--titulo);
+        font-size: 1.3em;
+        padding: 5px 20px ;
+        font-weight: bolder;
+    }
+    .contenedor__Presentacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        text-align: center;
+        background-color: var(--Fondo-Gris);
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+    .borde__inferior{
+        border-radius: 0 0 .7em .6em;
+    }
+}
+
+
 /*PANTALLAS DESDE 1024PX*/
-@media (min-width: 1024px) {
-    div.contenedor{
+@media (max-width: 1400px) {
+    .l{
         width: 80%;
         margin: 0 auto;
         margin-top: 10px;
@@ -211,15 +732,82 @@ b.tituloReconstitucion{
         border-radius: .6em;
         font-family: var(--Oswald);
     }
+    .titulo-m{
+        font-size: 1.5em;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+    .encuesta{
+        text-align: center;
+        background-color: var(--Fondo-Gris);
+    }
+    .borde__inferior{
+        border-radius: 0 0 .6em .6em;
+    }
 }
 
 @media (min-width: 1440px){
-    div.contenedor{
-        width: 70%;
+    .contenedor{
+        width: 90%;
         margin: 0 auto;
         margin-top: 30px;
         background-color: var(--Fondo);
         border-radius: .6em;
         font-family: var(--Oswald);
     }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        text-align: center;
+        background-color: var(--Fondo-Gris);
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+    .borde__inferior{
+        border-radius: 0 0 .6em .6em;
+    }
 }
+   
+
+
+

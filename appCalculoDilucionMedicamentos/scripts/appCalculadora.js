@@ -11552,7 +11552,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>10ml de agua destilada, DX5% o SF. Concentración 1mg/ml.</p>\
+                                    <p>10ml de  DX5% (Tiene una estabilidad de 24hs). Concentración 1mg/ml.</p>\
                                 </div>\
                             </div>\
                         </div>\

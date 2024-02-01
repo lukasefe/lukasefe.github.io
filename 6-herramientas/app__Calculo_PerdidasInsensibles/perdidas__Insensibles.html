@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador Perdidas Insensibles</title>
+    <link rel="stylesheet" href="perdidas__Ins.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--NAVBAR MENU CON PORTADA-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <!--LOGOTIPO Y NOMBRE-->
+                <a class="navbar-brand mx-auto" href="#">
+                  <i class="bi"><img id="logo" src="/ASSETS/LOGO/logo_con_borde.png" alt="logo de enfermeria conectada"></i>
+                  <span id="enfconec">ENFERMERÍA CONECTADA</span>
+                </a>
+                  <!--BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+              <ul class="navbar-nav ms-auto p-auto">
+                <!--------------------------------BOTON POLITICAS DEL SERVICIO---------------------->
+                <li class="nav-item px-2">
+                  <a class="nav-link active" aria-current="page" href="/1-politicas_del_servicio/politicas_del_servicio.html">Politicas del Servicio UCIP</a>
+                </li>
+                <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown">Formularios</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownformularios">
+                 <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform">Ingreso de Pacientes</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLScFLSDXokPpyrHO0aidRXgmNXntYTfrnUQ15aNF_QeRgHEJbg/viewform">Higiene de Manos</a>
+                    </li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSftSggOansgGzZheReSLs-dk4WiP4Q-9PoNV2np4nVBNOsVyQ/viewform">Combo de Medidas</a>
+                    </li>
+                  </ul>
+                </li>
+                <!----------------------------BOTON DROPDOWN 3 PROTOCOLOS-------------------------->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown">Protocolos</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="/3-protocolos/1-guia-farmacos/guia-farmaco-terapeutica.html">Guia Farmaco Terapeutica y Adm. de Med.</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="/3-protocolos/2-manual-procedimientos/manual-procedimientos.html">Manual de Procedimientos y POE</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="/3-protocolos/3-mantenimiento_de_insumos/mantenimiento_de_insumos.html">Mantenimiento de Insumos</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="/3-protocolos/4-checklist_y_carteleria/Checklist_carteleria.html">Checklist y Carteleria</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="/3-protocolos/5-estadisticas/5_estadisticas.html">Estadisticas</a></li>
+                  </ul>
+                </li>
+                <!---------------------------BOTON DROPDOWN 4 CAPACITACIONES----------------------->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown">Capacitaciones</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="/4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html">Capacitaciones en el servicio</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="/4-capacitaciones/4-4-biblioteca/biblioteca_digital.html">Biblioteca Digital</a></li>
+                  </ul>
+                </li>
+                <!---------------------------BOTON DROPDOWN 5 COMUNICADOS-------------------------->
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown">Comunicados</a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
+                    <li>
+                      <a class="dropdown-item text-white" href="">Comunicados</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li>
+                      <a class="dropdown-item text-white" href="/5-comunicados/2-5_planilla_mensual/planilla_mensual.html">Planilla Mensual</a>
+                    </li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="/5-comunicados/3-5_planilla_rotacion/planilla_rotacion.html">Planila de rotación</a></li>
+                    <li><hr class="dropdown-divider-white text-white"></li>
+                    <li><a class="dropdown-item text-white" href="/5-comunicados/4-5_notas_personal/notas_Personal.html">Notas de Personal</a></li>
+                  </ul>
+                </li>
+                <!--LINK CONTACTO-->
+                <li class="nav-item px-2">
+                 <a class="nav-link text-white" href="/index.html">Inicio</a>
+                </li>
+              </ul>
+           </div>
+           </div>
+        </nav>
+    </header>
+    <div class="contenedor__todo">
+        <div class="contenedor__Titulo">
+            <h4 class="titulo">Calculadora de Perdidas Insensibles</h4>    
+        </div>
+        <form action="" class="formulario" id="perdidas">
+            <div class="input__peso">
+                <input id="peso" type="text" class="input__kg" placeholder=" " pattern="[0-9]+([\.,][0-9]+)?" required>
+                <label for="peso" class="label__peso">Peso (kg):</label><br>
+            </div>
+            <div class="botones">
+                <button type="submit" class="calculo">Calcular</button>
+                <button class="borrar">Borrar</button>
+            </div>
+            <p class="aclaracion">(*)ingresar el valor del peso separando decimales con '.' (punto) por ej: 1.300 kg.</p>
+        </form>
+        <div class="respuesta">
+            <p class="texto__respuesta">Resultado:</p>
+        </div>
+
+        
+
+    </div>
+    <script src="perdidas__Ins.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

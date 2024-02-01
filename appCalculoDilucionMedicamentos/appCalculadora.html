@@ -18,12 +18,33 @@
         <form id="medicamentos">
             <div class="input-1">
                 
-                <input id="seleccion" class="input__Medicamento" type="text" placeholder=" ">
+                <input id="seleccion" list="lista" class="input__Medicamento" type="text" placeholder=" ">
                 <label for="seleccion" class="label__Medicamento">Medicamento: </label>
                <!--<select name="seleccion" id="seleccion" title="seleccion">
                     <option value="">Seleccione un medicamento</option>
                     <option value="1">Ampicilina</option>
-                </select>--> 
+                </select>-->
+                <datalist id="lista">
+                    <option value="Aciclovir"></option>
+                    <option value="Adenosina"></option>
+                    <option value="Adrenalina"></option>
+                    <option value="Amikacina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminodarona"></option>
+                    <option value="Ampicilina"></option>
+                    <option value="Ampicilina Sulbactam"></option>
+                    <option value="Anfotericina B"></option>
+                    <option value="Amfotericina LiposomalS"></option>
+                    <option value="Cefalotina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                    <option value="Aminofilina"></option>
+                </datalist> 
             </div>
             <div class="input-2">
                 <input id="dosis" class="input__Miligramos" type="text" placeholder=" " pattern="[0-9]+([\.,][0-9]+)?" required>
@@ -40,8 +61,7 @@
             <p class="resp">Resultado:</p>
            
            
-           
-
+        
            <!--MEDICAMENTOS VARIOS
            <div class="contenedor__Grilla">
             <div class="contenedor__Titulo">

@@ -8517,6 +8517,8 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 frascoTotal = 100;
                 dilucion = dosis/5;
 
+                solucion_oral = ((dosis*100) / 2500).toFixed(2);
+
                 let fondo = document.querySelector('.contenedor');
                 console.log(fondo);
                 fondo.style.backgroundColor = '#1357a6';
@@ -8562,6 +8564,32 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                             </div>\
                         </div>\
                     </div>\
+                    <div class="contenedor__Info">\
+                <div class="contenedor__Presentacion">\
+                    <div class="titulo__Presentacion">\
+                        <h4 class="presentacion">Suspención Oral de 120ml(2,5G/100ml)</h4>\
+                    </div>\
+                    <div class="info__Presentacion">\
+                        <div class="info__Uno">\
+                            <div class="reconstitucion">\
+                                <h4>Reconstitución</h4>\
+                            </div>\
+                            <div class="datos">\
+                                <p>No requiere.</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="info__Presentacion">\
+                        <div class="info__Uno">\
+                            <div class="reconstitucion">\
+                                <h4>Según dosis indicada</h4>\
+                            </div>\
+                            <div class="datos">\
+                                <p>Retirar del frasco '+solucion_oral+' ml.</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
                     <h3 class="estabilidad">Estabilidad y observaciones</h3>\
                     <div class="contenedor__Estabilidad">\
                         <p class="texto__Estabilidad"><b class="texto__Blanco">si el sachet es FLEX 24hs refrigerado y si es rigido desechar luego de su uso.</b></p>\

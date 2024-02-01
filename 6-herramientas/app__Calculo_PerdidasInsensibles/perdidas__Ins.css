@@ -28,6 +28,7 @@
     .input__peso{
         margin: auto 0;
         position: relative;
+        
     }
     .input__kg{
         width: 350px;
@@ -42,6 +43,13 @@
         border: none;
         outline: none;
     }
+
+    .input__kg:not(:placeholder-shown) + .label__peso, .input__kg:focus + .label__peso{
+        transform: translateY(-2px) scale(.7);
+        transform-origin: top left;
+        color: var(--Fondo);
+    }
+
     .label__peso{
         font-size: 1.3em;
         color: var(--Fondo);
@@ -53,11 +61,7 @@
         transform: translateY(10px);
         transition: transform .5s, color .3s;
     }
-    .input__kg:not(:placeholder-shown) + .label__peso, .input__kg:focus + .label__peso{
-        transform: translateY(-2px) scale(.7);
-        transform-origin: top left;
-        color: var(--Fondo);
-    }
+    
 
     .calculo{
         display:initial;
@@ -140,17 +144,34 @@
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
     .label__peso{
-        left: 105px;
+        left: 130px;
+    }
+    .input__kg{
+        width: 60%;
     }
 }
 @media (min-width: 1024px){
     .label__peso{
-        left: 250px;
+        left: 200px;
+    }
+    .input__kg{
+        width: 60%;
     }
 }
 
 @media (min-width: 1440px){
     .label__peso{
+        left: 260px;
+    }
+    .input__kg{
+        width: 60%;
+    }
+}
+@media (min-width: 2560px){
+    .label__peso{
         left: 470px;
+    }
+    .input__kg{
+        width: 50%;
     }
 }

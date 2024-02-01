@@ -139,39 +139,42 @@
     .contenedor__todo{
         position: relative;
         margin: 50px auto;
-        width: 70%;
+        width: 80%;
         border-radius: 15px;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
     .label__peso{
-        left: 130px;
+        left: 50px;
     }
     .input__kg{
-        width: 60%;
+        width: 90%;
     }
 }
 @media (min-width: 1024px){
+    .contenedor__todo{
+        width: 60%;
+    }
     .label__peso{
-        left: 200px;
+        left: 50px;
     }
     .input__kg{
-        width: 60%;
+        width: 90%;
     }
 }
 
 @media (min-width: 1440px){
     .label__peso{
-        left: 260px;
+        left: 50px;
     }
     .input__kg{
-        width: 60%;
+        width: 90%;
     }
 }
 @media (min-width: 2560px){
     .label__peso{
-        left: 470px;
+        left: 320px;
     }
     .input__kg{
-        width: 50%;
+        width: 60%;
     }
 }

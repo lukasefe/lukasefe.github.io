@@ -24,14 +24,48 @@ perdidas.addEventListener("submit", function(e){
 
      let calculo_superficie_1= (peso__indicado*4) + 7;
      let  calculo_superficie_2= peso__indicado + 90;
-     let resultado__total = (calculo_superficie_1 / calculo_superficie_2).toFixed(2);
+     let resultado__total = calculo_superficie_1 / calculo_superficie_2
      console.log(resultado__total)
-     
-
+     let cal = (resultado__total).toFixed(2)
+     let total = resultado__total * 400
+     console.log(total)
+    
 
         difol.remove();
         calcular.style.display = "none";
         borrar.style.display = "initial";
+
+        function calculadora(){
+            let perdida = (total).toFixed(2);
+            let en12hs = (total / 2).toFixed(2);
+            let en8hs = (total / 3).toFixed(2);
+            let en4hs = (total / 6).toFixed(2);
+            let en2hs = (total / 12).toFixed(2);
+            let en1hs = (total / 24).toFixed(2);
+            let info = 
+            '<div class="operacion__contenedor">\
+                 <p class="valor">La Superficie Corporal cm2 es de: <b class="color">'+cal+'</b>.</p>\
+                 <p class="valor">Las perdidas insensibles de la paciente:</p>\
+                 <p class="valor">En 24hs es de: <b class="color">'+perdida+'</b>.</p>\
+                 <p class="valor">En 12hs es de: <b class="color">'+en12hs+'</b>.</p>\
+                 <p class="valor">En 08hs es de: <b class="color">'+en8hs+'</b>.</p>\
+                 <p class="valor">En 04hs es de: <b class="color">'+en4hs+'</b>.</p>\
+                 <p class="valor">En 02hs es de: <b class="color">'+en2hs+'</b>.</p>\
+                 <p class="valor">En 01hs es de: <b class="color">'+en1hs+'</b>.</p>\
+            </div>'
+            resultado.innerHTML += info;
+            //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+            //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+            borrar.addEventListener('click', function(e){
+                window.location.reload();
+            });
+
+        }
+
+        calculadora(resultado__total);
+
+
+/*
 
 if (resultado__total >= 0.10 && resultado__total <= 0.13){
          
@@ -164,12 +198,12 @@ if (resultado__total >= 0.10 && resultado__total <= 0.13){
                 window.location.reload();
             });
     } else if (resultado__total >= 0.34 && resultado__total <= 0.38){
-        let perdida = 140;
-        let en12hs = perdida / 2;
-        let en8hs = (perdida / 3).toFixed(2);
-        let en4hs = (perdida / 6).toFixed(2);
-        let en2hs = (perdida / 12).toFixed(2);
-        let en1hs = (perdida / 24).toFixed(2);
+        let perdida = (total).toFixed(2);
+        let en12hs = (total / 2).toFixed(2);
+        let en8hs = (total / 3).toFixed(2);
+        let en4hs = (total / 6).toFixed(2);
+        let en2hs = (total / 12).toFixed(2);
+        let en1hs = (total / 24).toFixed(2);
         
 
         let info = 
@@ -824,7 +858,7 @@ if (resultado__total >= 0.10 && resultado__total <= 0.13){
             borrar.addEventListener('click', function(e){
                 window.location.reload();
             });
-    }
+    }*/
 })
 
 

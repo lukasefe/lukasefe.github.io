@@ -170,6 +170,7 @@
         width: 90%;
     }
 }
+/*
 @media (min-width: 1840px){
     .label__peso{
         left: 320px;
@@ -177,7 +178,7 @@
     .input__kg{
         width: 60%;
     }
-}
+}*/
 @media (min-width: 1919px){
     .label__peso{
         left: 270px;
@@ -188,7 +189,7 @@
 }
 @media (min-width: 2560px){
     .label__peso{
-        left: 320px;
+        left: 350px;
     }
     .input__kg{
         width: 60%;

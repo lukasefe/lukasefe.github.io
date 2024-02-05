@@ -178,6 +178,14 @@
         width: 60%;
     }
 }
+@media (min-width: 1919px){
+    .label__peso{
+        left: 240px;
+    }
+    .input__kg{
+        width: 60%;
+    }
+}
 @media (min-width: 2560px){
     .label__peso{
         left: 320px;

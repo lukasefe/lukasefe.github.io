@@ -79,7 +79,7 @@ header{
 @media (min-width:1000px){
     .caja_banner{
         height: 300px;
-        background-image: url("http://drive.google.com/uc?export=view&id=18OANOajNQTyRNBEEz-vYKgvXYcRGevSr");
+        background-image: url("/ASSETS/IMAGENES/Estadisticas_en_UCIP_HIM_1.webp");
         background-size: cover;
     }
     .banner{

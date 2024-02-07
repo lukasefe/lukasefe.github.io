@@ -1,0 +1,23 @@
+
+
+.banner{
+    height: 250px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_protocolos_04-Carteleria_y_Checklist.webp");
+    background-size:100% 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:1000px){
+    .banner{
+        height: 200px;
+        background-size: 100% 200px;
+    }
+}
+
+@media (max-width:600px){
+    .banner{
+        height: 150px;
+        background-size: 100% 160px;
+    }
+}

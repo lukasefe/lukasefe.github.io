@@ -48,42 +48,11 @@ header{
 /***********************************************************************/
 
 /*************************IMAGEN DEL BANNER*********************/
-.caja_banner{
-    width: 100%;
-    margin: 0%;
-    padding: 0;
-    border-radius: 0 0 5px 5px;
-}
-
-.banner{
-    width: 100%;
-    height: 170px;
-    margin-top: 0%;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0%;
-}
 /*RESPONSIVO*/
 
-@media (min-width:540px){
- .banner{
-    height: 200px;
- }
-}
-
-@media (min-width:670px){
-   .banner{
-    height: 250px;
-   }
-}
 @media (min-width:1000px){
-    .caja_banner{
-        height: 300px;
-        background-image: url("http://drive.google.com/uc?export=view&id=1GcxmV2eZ-hhvYx2gTF4E9Y59IM1kI1Hz");
-        background-size: cover;
-    }
-    .banner{
-        display: none;
+    .resumen{
+        margin-bottom: 30px;
     }
 }
 
@@ -304,7 +273,7 @@ section{
         margin-top: 15px;
     }
     .resumen{
-        height: 120px;
+        height: 130px;
     }
     .boton{
         margin-top: 20px;

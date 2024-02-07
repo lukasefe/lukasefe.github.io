@@ -1,0 +1,23 @@
+
+
+.texto-portada{
+    height: 250px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_protocolos_02-Poes.webp");
+    background-size:100% 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:1000px){
+    .texto-portada{
+        height: 200px;
+        background-size: 100% 200px;
+    }
+}
+
+@media (max-width:600px){
+    .texto-portada{
+        height: 150px;
+        background-size: 100% 160px;
+    }
+}

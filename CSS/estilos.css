@@ -56,8 +56,9 @@ body{
 .texto-portada{
     margin-top: 0;
     height: 400px;
-    background-image: url("../ASSETS/IMAGENES/HIM-1_1_800x400.jpg");
-    background-size:cover;
+    background-image: url("../ASSETS/IMAGENES/BANNERS/Banner_Principal.webp");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
     background-position: center;
 }
 .portadita{
@@ -103,7 +104,8 @@ img.imagen-novedad{
 
 @media (max-width:1000px){
     .texto-portada{
-        height: 250px;
+        height: 300px;
+        background-size: 100% 350px;
     }
     .subtitulo{
         text-align: center;
@@ -126,6 +128,7 @@ img.imagen-novedad{
 @media (max-width:600px){
     .texto-portada{
         height: 150px;
+        background-size: 100% 160px;
     }
     .subtitulo{
         text-align: center;
@@ -162,9 +165,12 @@ li{
 
 #botonherramientas{
     position: fixed;
-    top: 100px;
-    right: 5px;
+    bottom: -10%;
+    right: 10%;
     z-index: 100000000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
 }
 
 @media (min-width:1200px){
@@ -181,37 +187,7 @@ li{
         display: none;
     }
  }
-/*********************************IMAGEN DE LA PROBLEMATICA***************************************************/
-@media (min-width:1200px){
-    .imagen-cambio{
-        height: 540px;
-    }
-}
-@media (min-width:1000px){
-    .imagen-cambio{
-        height: 500px;
-    }
-}
-@media (max-width:999px){
-    .imagen-cambio{
-        height: 470px;
-    }
-}
-@media (max-width:900px){
-    .imagen-cambio{
-        height: 410px;
-    }
-}
-@media (max-width:600px){
-    .imagen-cambio{
-        height: 300px;
-    }
-}
-@media (max-width:600px){
-    .imagen-cambio{
-        height: 200px;
-    }
-}
+
 
 /***********************LETRAS AVISO IMPORTANTE MOMENTANEO****************************************************/
 
@@ -232,7 +208,7 @@ p.letras_aviso{
     color: orangered;
     font-weight: bolder;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #fecha{

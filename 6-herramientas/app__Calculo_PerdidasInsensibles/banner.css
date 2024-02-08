@@ -1,0 +1,23 @@
+
+
+.banner{
+    height: 400px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_calculo_de_perdidas_insensibles.png");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:1000px){
+    .banner{
+        height: 200px;
+        background-size: 100% 200px;
+    }
+}
+
+@media (max-width:600px){
+    .banner{
+        height: 150px;
+        background-size: 100% 160px;
+    }
+}

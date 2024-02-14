@@ -4164,6 +4164,224 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //CLORURO DE POTASIO
+            else if(nombreMedicamento === "Cloruro de Potasio" || nombreMedicamento === "cloruro de potasio" || nombreMedicamento === "CLORURO DE POTASIO"){
+
+                miligramos = 15;
+                frascoTotal = 5;
+
+                
+
+                let dilucion = (dosis * 1000)/40;
+                console.log(dilucion);
+                let dilucion2 = (dosis * 1000)/60;
+                console.log(dilucion2);
+                let dilucion3 = (dosis * 1000)/80;
+                console.log(dilucion3);
+                let dilucion4 = (dosis * 1000)/200;
+                console.log(dilucion4);
+                
+                function potasio(){
+                    if (dosis === entero){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
+                                    let reconstitucion = (dosis*frascoTotal)/miligramos;
+                                    console.log(reconstitucion.toFixed(2));
+                                    return reconstitucion;//IMPRIME EL VALOR ENTERO
+                    } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                                    let reconstitucion = (dosis*frascoTotal)/miligramos;
+                                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                     console.log(redondeo1);
+                                     return redondeo1;//IMPRIME EL FLOTANTE
+                                }               
+                };
+
+                
+                //FUNCIONES PARA CALCULAR LAS DOSIS DE DILUCION Y VER SI SON NUMEROS ENTEROS O FLOTANTES Y DEJAR 2 DECIMALES
+                function dosis1(){
+                    if (Number.isInteger(dilucion)){
+                        console.log(dilucion)
+                        return dilucion
+                    } else{
+                        console.log(dilucion)
+                        return dilucion.toFixed(2)
+                    }
+                }
+                function dosis2(){
+                    if (Number.isInteger(dilucion2)){
+                        console.log(dilucion2)
+                        return dilucion2
+                    } else {
+                        console.log(dilucion2)
+                        return dilucion2.toFixed(2)
+                    }
+                }
+                function dosis3(){
+                    if (Number.isInteger(dilucion3)){
+                        console.log(dilucion3)
+                        return dilucion3
+                    } else{
+                        console.log(dilucion3)
+                        return dilucion3.toFixed(2)
+                    }
+                }
+                function dosis4(){
+                    if (Number.isInteger(dilucion4)){
+                        console.log(dilucion4)
+                        return dilucion4
+                    } else{
+                        console.log(dilucion4)
+                        return dilucion4.toFixed(2)
+                    }
+                }
+                
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#e47200';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco4">Cloruro de Potasio</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Ampolla 5ml (3mEq/ml=3mMol/ml).</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar de la ampolla '+potasio()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' ampollas/as</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad4">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Observaciones"><b class="texto__Blanco">Precaución en insuficiencia renal y suprarrenal.</p>\
+                        <p class="texto__Observaciones">Realizar monitoreo cardíaco durante la infusión.</p>\
+                        <p class="texto__Observaciones">No administrar directo en bolo.</p>\
+                    </div>\
+                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
+                    <h3 class="administracion4">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>No</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion4">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Dilución:</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>en S.F.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Recomendación por via périferica (40Meq/litro)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dosis1()+' ml de S.F.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Máxima por via périferica (60Meq/litro)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dosis2()+' ml de S.F.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Recomendación por via central (80Meq/litro)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dosis3()+' ml de S.F.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Máxima por via central (200Meq/litro)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dosis4()+' ml de S.F.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Infusión:</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 60 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion4">IntraVenosa (IVC)--[GOTEO]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>NO</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+               </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
             //COLISTINA
             else if(nombreMedicamento === "Colistina" || nombreMedicamento === "colistina" || nombreMedicamento === "COLISTINA"){
 
@@ -10097,8 +10315,8 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             //PIPERACILINA TAZOBACTAM
             else if(nombreMedicamento === "Piperacilina Tazobactam" || nombreMedicamento === "piperacilina tazobactam" || nombreMedicamento === "PIPERACILINA TAZOBACTAM"){
 
-                miligramos = 200;
-                frascoTotal = 1;
+                miligramos = 4500;
+                frascoTotal = 20;
                 dilucion = dosis/10;
                 dilucion2 = dosis/20;
 

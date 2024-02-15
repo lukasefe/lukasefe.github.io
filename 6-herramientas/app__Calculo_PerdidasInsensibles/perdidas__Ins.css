@@ -6,7 +6,136 @@
     margin: 0;
 
 }
+@media (max-width:405px){
 
+    .contenedor__todo{
+        background-color: var(--color-fondo);
+        width: 100%;
+    }
+    .contenedor__titulo{
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+    .titulo{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    .formulario{
+        text-align: center;
+    }
+    .input__peso{
+        margin: auto 0;
+        position: relative;
+        
+    }
+    .input__kg{
+        width: 300px;
+        height: 45px;
+        color: var(#000000);
+        font-size: .9em;
+        font-weight: 800;
+        padding-top: 1em;
+        padding-left: .5em;
+        margin-bottom: 10px;
+        border-radius: .3em;
+        border: none;
+        outline: none;
+    }
+
+    .input__kg:not(:placeholder-shown) + .label__peso, .input__kg:focus + .label__peso{
+        transform: translateY(-2px) scale(.7);
+        transform-origin: top left;
+        color: var(--Fondo);
+    }
+    .input__hs{
+        width: 300px;
+        height: 45px;
+        color: var(#000000);
+        font-size: .9em;
+        font-weight: 800;
+        padding-top: 1em;
+        padding-left: .5em;
+        margin-bottom: 10px;
+        border-radius: .3em;
+        border: none;
+        outline: none;
+    }
+
+    .input__hs:not(:placeholder-shown) + .label__peso, .input__hs:focus + .label__peso{
+        transform: translateY(-2px) scale(.7);
+        transform-origin: top left;
+        color: var(--Fondo);
+    }
+    .label__peso{
+        font-size: 1.3em;
+        color: var(--Fondo);
+        font-weight: bolder;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s;
+    }
+    
+
+    .calculo{
+        display:initial;
+        width: 300px;
+        height: 30px;
+        font-weight: 900;
+        font-size: 18px;
+        padding-bottom: 15px;
+        border-radius: 15px;
+        inline-size: none;
+        background-color: #FFFFFF;
+    }
+    .borrar{
+        display: none;
+        justify-self: center;
+        width: 300px;
+        height: 30px;
+        font-weight: 900;
+        font-size: 18px;
+        padding-bottom: 15px;
+        border-radius: 15px;
+        inline-size: none;
+        color: #FFFFFF;
+        background-color: red;
+    }
+
+    .aclaracion{
+        font-size: 13px;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .respuesta{
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 0;
+        padding-bottom: 10px;
+    }
+    .texto__respuesta{
+        font-weight: bold;
+        display: initial;
+    }
+
+    .operacion__contenedor{
+        font-weight: bold;
+    }
+
+    .color{
+        color: red;
+    }
+    .valor{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
 @media (min-width:410px){
 
     .contenedor__todo{
@@ -49,7 +178,25 @@
         transform-origin: top left;
         color: var(--Fondo);
     }
+    .input__hs{
+        width: 350px;
+        height: 45px;
+        color: var(#000000);
+        font-size: .9em;
+        font-weight: 800;
+        padding-top: 1em;
+        padding-left: .5em;
+        margin-bottom: 10px;
+        border-radius: .3em;
+        border: none;
+        outline: none;
+    }
 
+    .input__hs:not(:placeholder-shown) + .label__peso, .input__hs:focus + .label__peso{
+        transform: translateY(-2px) scale(.7);
+        transform-origin: top left;
+        color: var(--Fondo);
+    }
     .label__peso{
         font-size: 1.3em;
         color: var(--Fondo);
@@ -131,6 +278,9 @@
     .input__kg{
         width: 420px;
     }
+    .input__hs{
+        width: 420px;
+    }
     .label__peso{
         left: 170px;
     }
@@ -149,6 +299,9 @@
     .input__kg{
         width: 90%;
     }
+    .input__hs{
+        width: 90%;
+    }
 }
 @media (min-width: 1024px){
     .contenedor__todo{
@@ -160,6 +313,9 @@
     .input__kg{
         width: 90%;
     }
+    .input__hs{
+        width: 90%;
+    }
 }
 
 @media (min-width: 1440px){
@@ -167,6 +323,9 @@
         left: 50px;
     }
     .input__kg{
+        width: 90%;
+    }
+    .input__hs{
         width: 90%;
     }
 }
@@ -186,6 +345,9 @@
     .input__kg{
         width: 60%;
     }
+    .input__hs{
+        width: 60%;
+    }
 }
 @media (min-width: 2250px){
     .label__peso{
@@ -194,12 +356,18 @@
     .input__kg{
         width: 60%;
     }
+    .input__hs{
+        width: 60%;
+    }
 }
 @media (min-width: 2560px){
     .label__peso{
         left: 20%;
     }
     .input__kg{
+        width: 60%;
+    }
+    .input__hs{
         width: 60%;
     }
 }

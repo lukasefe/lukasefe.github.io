@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+.texto{
+    font-size: 30px;
+}
+.portadita{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    border-radius: 20px;
+}
+.borde{
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+   
+}
+
+.spa{
+    text-align: center;
+    text-decoration: none;
+}
+
+/***********/
+/*LOGO DE ENFERMERIA DEL NAV*/
+#enfconec{
+    padding-top: 10px;
+    font-size: 18px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+
+@media (max-width: 400px){
+    #enfconec{
+        font-size: 14px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 350px){
+    #enfconec{
+        font-size: 12px;
+    }
+
+    #logo{
+        width:80px;
+        height: 40px;
+    }
+
+}
+
+/******************/
+/*FOTO DEL MEDICACMENTO*/
+.foto{
+    width:300px;
+    height: 300px;
+}
+
+
+
+
+/**************/
+
+/*LETRA EN RESPONSIVE*/
+@media(max-width: 850px){
+    
+    .titulo-responsive{
+        font-size: 1,5rem;
+        text-align: center;
+    }
+    .listaftitulo{
+        text-align: center;
+    }
+    .letrares{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 428px){
+    .spa{
+        font-size: 10px;
+    }
+}

@@ -1,3 +1,8 @@
+:root{
+   --resaltados:  #2B0071;
+   --listas:#1E90FF;
+}
+
 .justificado{
    text-align: justify;
 }
@@ -51,14 +56,34 @@
 
 .caja-listas{
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    gap: 10px;
+}
+summary{
+   background-color: var(--listas);
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+summary:hover{
+   background-color: var(--resaltados);
+
 }
 
 .text-decoration-none{
    text-decoration: none !important;
 }
-
+@media (max-width: 1200px){
+   .caja-listas{
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+@media (max-width: 850px){
+   .caja-listas{
+      grid-template-columns: 1fr 1fr;
+   }
+}
 @media (max-width:600px){
    .caja-listas{
       grid-template-columns: 1fr;

@@ -1,9 +1,9 @@
 
 
 .imagen{
-    height: 2500px;
-    background-image: url("/ASSETS/IMAGENES/POES/POE\ Accesos\ Venosos.png");
-    background-size:1000px 2500px;
+    height: 1200px;
+    background-image: url("/ASSETS/IMAGENES/POES/POE_Accesos_Venosos.webp");
+    background-size:70% 100%;
     background-repeat: no-repeat;
     background-position: center;
  }

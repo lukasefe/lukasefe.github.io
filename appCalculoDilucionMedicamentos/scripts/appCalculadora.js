@@ -36,7 +36,7 @@ formulario.addEventListener("submit", function(e){
 
     //FUNCION DE COMPARACION DE LA DOSIS
     function calculo(){
-        if (dosis === entero){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
+        if (Number.isInteger(dosis)){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
                         let reconstitucion = (dosis*frascoTotal)/miligramos;
                         console.log(reconstitucion);
                         return reconstitucion;//IMPRIME EL VALOR ENTERO
@@ -2152,6 +2152,163 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                 </div>\
                                 <div class="datos__Fotosensible">\
                                     <p>Cinta amarilla el perfus y rotulo amarillo el sachet.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+               </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
+            //CARNITINA O L-CARNITINA
+            else if(nombreMedicamento === "Carnitina" || nombreMedicamento === "carnitina" || nombreMedicamento === "CARNITINA"|| nombreMedicamento === "L-carnitina" || nombreMedicamento === "l-carnitina" || nombreMedicamento === "L-CARNITINA"){
+
+                miligramos = 1000;
+                frascoTotal = 10;
+                let dilucion = dosis/0.5;
+                let dilucion2 = dosis/8;    
+
+                function redondeo(){
+                    if  (Number.isInteger(dilucion)){
+                        console.log(dilucion);
+                        return dilucion;
+                    } else{
+                        return dilucion.toFixed(2);
+                    }
+                }
+                function redondeo1(){
+                    if  (dilucion2 === Number.isInteger){
+                        console.log(dilucion2);
+                        return dilucion2;
+                    } else{
+                        return dilucion2.toFixed(2);
+                    }
+                }
+
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#e47200';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco4">Carnitina o L-Carnitina</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Frasco/Ampolla Bebible de 10ml (100mg/ml).</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad4">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad"><b class="texto__Blanco">Mantener refrigerada.</b></p>\
+                        <p class="texto__Observaciones">Vía oral: Diluir con bebidas o alimentos líquidos y beber lentamente para aumentar la tolerancia.</p>\
+                    </div>\
+                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
+                    <h3 class="administracion4">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Diluyente</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>SF o DX5%.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Recomendada por vía périferica o central (0,5mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+redondeo()+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Máxima por vía périferica o central (8mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+redondeo1()+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>De 2 a 3 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion4">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Dilución:</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>NO.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion4">IntraVenosa (IVC)--[GOTEO]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>NO</h4>\
                                 </div>\
                             </div>\
                         </div>\
@@ -7272,6 +7429,283 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //HIDROCORTISONA
+            else if(nombreMedicamento === "Hidrocortisona" || nombreMedicamento === "hidrocortisona" || nombreMedicamento === "HIDROCORTISONA"){
+
+                miligramos = 100;
+                frascoTotal = 5;
+                miligramos1 = 500;
+                frascoTotal1 = 10;
+                dilucion = dosis/50;
+                dilucion2 = dosis/1;
+                dilucion3 = dosis/5;
+                dilucion4 = dosis/60;      
+
+                function redondeo(){
+                    if  (dilucion4 === Number.isInteger){
+                        console.log(dilucion4);
+                        return dilucion4;
+                    } else{
+                        return dilucion4.toFixed(2);
+                    }
+                }
+
+                function calculo1(){
+                    if (dosis === entero){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
+                                    let reconstitucion = (dosis*frascoTotal1)/miligramos1;
+                                    console.log(reconstitucion);
+                                    return reconstitucion;//IMPRIME EL VALOR ENTERO
+                    } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                                    let reconstitucion = (dosis*frascoTotal1)/miligramos1;
+                                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                     console.log(redondeo1);
+                                     return redondeo1;//IMPRIME EL FLOTANTE
+                                }               
+                };
+            
+                function ampollas1(){
+                                if (dosis === entero){
+                                    let ampollas = dosis/miligramos1;
+                                    console.log(ampollas);
+                                    return ampollas;
+                            } else if(dosis !== entero){
+                                let ampollas = dosis/miligramos1;
+                                redondeo2 = (ampollas.toFixed(2));
+                                console.log(redondeo2);
+                                if (ampollas === 1.00){
+                                    redondeo2 = parseInt(ampollas);
+                                    return Math.ceil(redondeo2);
+                                }
+                                return Math.ceil(redondeo2);
+                            }
+                }
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#e47200';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco4">Hidrocortisona</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Frasco/Ampolla 100mg.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Reconstitución (20mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>5ml de agua destilada.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Frasco/Ampolla 500mg.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Reconstitución (50mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>10ml de agua destilada.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo1()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Suspención Oral 1mg/ml.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del frasco '+dosis+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Comprimidos de 10mg.</h4>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad4">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad"><b class="texto__Blanco">Una vez reconstituida tiene una durabilidad 72hs a T° ambiente y protegida de la luz.</b></p>\
+                        <p class="texto__Observaciones">Vía oral: Administrar con alimentos, disminuye la intolerancia gastrica, se puede triturar.</p>\
+                    </div>\
+                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
+                    <h3 class="administracion4">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Diluyente</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>SF o DX5%.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Recomendada por vía périferica o central (50mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dilucion+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>De 3 a 5 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion4">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Dilución:</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En SF o DX5%.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Recomendada por vía périferica (1mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dilucion2+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Máxima por vía central (5mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dilucion3+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Pacientes con Restricción Hidrica (60mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+redondeo()+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Infusión:</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 30-60 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Dosis mayores a 500mg</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Infundir por mas de 60 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion4">IntraVenosa (IVC)--[GOTEO]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>NO</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+               </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
             //IBUPROFENO
             else if(nombreMedicamento === "Ibuprofeno" || nombreMedicamento === "ibuprofeno" || nombreMedicamento === "IBUPROFENO"){
 
@@ -8539,8 +8973,8 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
-            //MEPREDNISOLONA
-            else if(nombreMedicamento === "Meprednisolona" || nombreMedicamento === "meprednisolona" || nombreMedicamento === "MEPREDNISOLONA"){
+            //METILPREDNISOLONA
+            else if(nombreMedicamento === "Metilprednisolona" || nombreMedicamento === "metilprednisolona" || nombreMedicamento === "METILPREDNISOLONA"){
 
                 miligramos = 500;
                 frascoTotal = 5;
@@ -8556,7 +8990,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 let info = 
                 '<div class="contenedor__Grilla">\
                 <div class="contenedor__Titulo">\
-                    <h3 class="nombre__Farmaco4">Meprednisolona</h3>\
+                    <h3 class="nombre__Farmaco4">Metilprednisolona</h3>\
                 </div>\
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\

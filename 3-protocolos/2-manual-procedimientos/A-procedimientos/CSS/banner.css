@@ -8,15 +8,23 @@
     background-position: center;
 }
 
+.banner_cvp{
+    height: 400px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_poe_CVP.webp");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (max-width:1000px){
-    .texto-portada{
+    .texto-portada, .banner_cvp{
         height: 200px;
         background-size: 100% 200px;
     }
 }
 
 @media (max-width:600px){
-    .texto-portada{
+    .texto-portada, .banner_cvp{
         height: 150px;
         background-size: 100% 160px;
     }

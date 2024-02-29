@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Todo: TITULO PAGINA-->
     <title>Catéter Venoso Periférico</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/estilo-manual-procedimientos.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/estilos-procedimientos.css" />
+    <link rel="stylesheet" href="CSS/banner.css">
+    <link rel="stylesheet" href="CSS/imagenprocedimiento.css">
     <link rel="Shortcut icon" href="/ASSETS/LOGO/logo_ec_48x48.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -24,7 +26,7 @@
 <body>
     <!--NAVBAR MENU CON PORTADA-->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-primary bg-primary my-1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
             <!--LOGOTIPO Y NOMBRE-->
             <a class="navbar-brand mx-auto" href="#">
@@ -44,7 +46,7 @@
             <!----------------------------BOTON DROPDOWN 2 FORMULARIOS------------------------->
             <li class="nav-item dropdown px-2">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownformularios" role="button" data-bs-toggle="dropdown"><b>Formularios</b></a>
-              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownformularios">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownformularios">
              <li>
                   <a class="dropdown-item text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSddz21uj1YxcLX4GDNgoOHUt2iv33x_EtaxerOFy7PZoJuU0g/viewform"><b>Ingreso de Pacientes</b></a>
                 </li>
@@ -61,7 +63,7 @@
             <!----------------------------BOTON DROPDOWN 3 PROTOCOLOS-------------------------->
             <li class="nav-item dropdown px-2">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownprotocologos" role="button" data-bs-toggle="dropdown"><b>Protocolos</b></a>
-              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
                 <li>
                   <a class="dropdown-item text-white" href="../../1-guia-farmacos/guia-farmaco-terapeutica.html"><b>Guia Farmaco Terapeutica y Adm. de Med.</b></a>
                 </li>
@@ -80,7 +82,7 @@
             <!---------------------------BOTON DROPDOWN 4 CAPACITACIONES----------------------->
             <li class="nav-item dropdown px-2">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncapacitaciones" role="button" data-bs-toggle="dropdown"><b>Capacitaciones</b></a>
-              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
                 <li>
                   <a class="dropdown-item text-white" href="../../../4-capacitaciones/1-4-capacitaciones_en_el_servicio/capacitaciones.html"><b>Capacitaciones en el servicio</b></a>
                 </li>
@@ -91,7 +93,7 @@
             <!---------------------------BOTON DROPDOWN 5 COMUNICADOS-------------------------->
             <li class="nav-item dropdown px-2">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdowncomunicados" role="button" data-bs-toggle="dropdown"><b>Comunicados</b></a>
-              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownprotocologos">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownprotocologos">
                 <li>
                   <a class="dropdown-item text-white" href="../../../5-comunicados/2-5_planilla_mensual/planilla_mensual.html"><b>Planilla Mensual</b></a>
                 </li>
@@ -109,20 +111,16 @@
        </div>
        </div>
       </nav>
-         <!--TEXTO DE PORTADA-->
-        <div class="container-fluid d-flex justify-content-center align-items-center flex-column bg-primary border-bottom border-top  border-dark">
-          <div class="d-flex align-items-center flex-column portadita "><h1 class="text-center text-white py-2">Proceso Operativo Estandarizado<br>UTIP/UCIM</h1>
-        </div>
-        </div>
+         <!--BANNER-->
+        <div class="container-fluid  banner_cvp"></div>
     </header>
     <main>
 
-      <!--TODO: CONTENEDOR SUBTITULO-->
-      <div class="conteiner-fluid d-flex justify-content-center py-3 mx-3">
-          <h2 class="text-primary text-decoration-underline">Catetér Venoso Periférico (CVP)</h2>
-      </div>
       <!--TODO CONTENEDOR INFORMACIÓN-->
-      <div class="container-fluid row mx-0 bg-light">
+      <div class="container-fluid row mx-xs-0 mx-0 mt-2 bg-light">
+        <!--IMAGEN DEL PROCEDIMIENTO-->
+        <div class="container-fluid cvp1 mb-2"></div>
+        <!----------------------------------------------->
         <h3 class="border border-primary text-primary mb-3">Definición</h3>
         <p class="texto-justificado mb-5">Estos catetéres se insertan en vasos periféricos generalmente en miembros superiores (brazo y antebrazo) y en algunas circunstacias en miembros inferiores, mayormente en pediatría.</p>
         <h3 class="border border-primary text-primary mb-3">Actualización</h3>

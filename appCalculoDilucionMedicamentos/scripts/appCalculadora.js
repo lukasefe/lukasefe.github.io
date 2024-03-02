@@ -10401,7 +10401,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Frasco/Ampolla 1.000.000.000UI.</h4>\
+                            <h4 class="presentacion">Frasco/Ampolla 1.000.000UI.</h4>\
                         </div>\
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
@@ -10436,7 +10436,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Frasco/Ampolla 3.000.000.000UI.</h4>\
+                            <h4 class="presentacion">Frasco/Ampolla 3.000.000UI.</h4>\
                         </div>\
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
@@ -10754,6 +10754,21 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 dilucion = dosis/10;
                 dilucion2 = dosis/20;
 
+                let reconstitucion = (dosis*frascoTotal)/miligramos;
+
+                //FUNCION DE COMPARACION DE LA DOSIS
+    function calculoentero(){
+        if (Number.isInteger(reconstitucion)){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
+                        console.log(reconstitucion);
+                        return reconstitucion;//IMPRIME EL VALOR ENTERO
+        } else{//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                        let reconstitucion = (dosis*frascoTotal)/miligramos;
+                         redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                         console.log(redondeo1);
+                         return redondeo1;//IMPRIME EL FLOTANTE
+                    }               
+    };
+
                 let fondo = document.querySelector('.contenedor');
                 console.log(fondo);
                 fondo.style.backgroundColor = '#1357a6';
@@ -10784,7 +10799,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Según dosis indicada</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                    <p>Retirar del FA '+calculoentero()+' ml.</p>\
                                 </div>\
                             </div>\
                         </div>\

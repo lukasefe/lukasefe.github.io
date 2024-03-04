@@ -1,1 +1,1 @@
-window.alert("Se agrego a la calculadora los siguiente medicamentos: Cloruro de potasio, metilprednisolona, hidrocortisona y carnitina.")
+window.alert("Se arreglo el problema la intentar acceder e imprimir las notas a personal como francos compensados entre otros.")

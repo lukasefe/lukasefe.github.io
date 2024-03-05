@@ -4137,6 +4137,158 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //CLONIDINA
+            else if(nombreMedicamento === "Clonidina" || nombreMedicamento === "clonidina" || nombreMedicamento === "CLONIDINA"){
+
+                miligramos = 150;
+                frascoTotal = 1;
+                
+                let calculo = (dosis*frascoTotal)/miligramos;
+                let usarampollas = dosis/miligramos;
+                let dilucion = calculo * 2;
+
+                function calculo1(){
+                    if (Number.isInteger(calculo)){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE             
+                                    console.log(calculo);
+                                    return calculo;//IMPRIME EL VALOR ENTERO
+                    } else{//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                                     redondeo1 = (calculo.toFixed(2));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                     console.log(redondeo1);
+                                     return redondeo1;//IMPRIME EL FLOTANTE
+                                }               
+                };
+                function ampollas(){
+                    if (Number.isInteger(usarampollas)){
+                        console.log(usarampollas);
+                        return usarampollas;
+                } else{
+                    let redondeo2 = (usarampollas.toFixed(2));
+                    console.log(redondeo2);
+                    if (usarampollas === 1.00){
+                        redondeo2 = parseInt(usarampollas);
+                        return Math.ceil(redondeo2);
+                    }
+                    return Math.ceil(redondeo2);
+                }
+    }
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#089c41';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco3">Clonidina</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion3">\
+                            <h4 class="presentacion">Ampolla de 1ml (150mcg/ml).</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar de la ampolla '+calculo1()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' ampolla/as</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad3">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad"><b class="texto__Blanco">Ampollas y viales: una vez abiertos, utilizar inmediatamente y desechar el contenido no usado</b></p>\
+                    </div>\
+                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
+                    <h3 class="administracion3">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>Dilución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Sol. Fisiologica o DX5%.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>Concentración en via periferica o central (igual a dosis indicada)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dilucion+'ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Entre 15 a 20 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion3">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>NO.</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion3">IntraVenosa Continua (IVC) --[GOTEO]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion3">\
+                                    <h4>NO</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+               </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
             //CLORPROMAZINA
             else if(nombreMedicamento === "Clorpromazina" || nombreMedicamento === "clorpromazina" || nombreMedicamento === "CLORPROMAZINA"){
 

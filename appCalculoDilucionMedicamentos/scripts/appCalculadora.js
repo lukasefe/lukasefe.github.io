@@ -8448,6 +8448,182 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //LINEZOLID 
+            else if(nombreMedicamento === "Linezolid" || nombreMedicamento === "linezolid" || nombreMedicamento === "LINEZOLID"){
+
+                miligramos = 600;
+                frascoTotal = 300;
+                suspencionmg = 100;
+                totalsuspencion = 5;
+                dilucion = dosis/2;
+                let reconstitucion = (dosis*totalsuspencion)/suspencionmg;
+
+                function suspencion(){
+                    if (Number.isInteger(reconstitucion)){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
+                                    console.log(reconstitucion);
+                                    return reconstitucion;//IMPRIME EL VALOR ENTERO
+                    } else{//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                     console.log(redondeo1);
+                                     return redondeo1;//IMPRIME EL FLOTANTE
+                                }               
+                };
+                
+                let frascos = dosis/miligramos;
+                function frascossuspencion(){
+                                if (Number.isInteger(frascos)){
+                                    console.log(ampollas);
+                                    return frascos;
+                            } else{
+                                let redondeo2 = (frascos.toFixed(2));
+                                console.log(redondeo2);
+                                if (frascos === 1.00){
+                                    redondeo2 = parseInt(frascos);
+                                    return Math.ceil(redondeo2);
+                                }
+                                return Math.ceil(redondeo2);
+                            }
+                }
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#1357a6';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                <h3 class="nombre__Farmaco">Linezolid</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Sachet 600mg/300ml (2mg/ml)</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' sachet/s</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Granulado Suspención Oral (100mg/5ml)</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>123ml de agua.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del frasco '+suspencion()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+frascossuspencion()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Comprimidos recubiertos: 600 mg</h4>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Info">\
+                    <h3 class="estabilidad">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad"><b class="texto__Blanco">La solución intravenosa debe conservarse a temperatura ambiente y protegerse de la luz. Mantener en envoltura de aluminio hasta su uso. La solución puede volverse de color amarillo, que se intensifica con el paso del tiempo sin afectar su efectividad.</b></p>\
+                        <p class="texto__Estabilidad">Granulado para suspensión oral: conservar a temperatura ambiente (la suspensión también puede conservarse en frigorífico). Una vez preparada, la suspensión debe utilizarse antes de transcurridos 21 días. Invertir varias veces antes de su uso. No agitar.</p>\
+                    </div>\
+                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
+                    <h3 class="administracion">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>NO</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Diluyente</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Entre 30 a 120 minutos.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+               </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
             //LEVETIRACETAM
             else if(nombreMedicamento === "Levetiracetam" || nombreMedicamento === "levetiracetam" || nombreMedicamento === "LEVETIRACETAM"){
 

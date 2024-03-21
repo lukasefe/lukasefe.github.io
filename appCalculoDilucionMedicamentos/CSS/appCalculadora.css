@@ -218,7 +218,7 @@ button{
     color: var(--titulo);
     font-family: var(--Oswald);
     background-color: var(--Azul-Antibioticos);
-    height: 60px;
+    height: 90px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -342,7 +342,7 @@ button{
     color: var(--titulo);
     font-family: var(--Oswald);
     background-color: var(--rojo-Inotropicos);
-    height: 60px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,7 +408,7 @@ button{
     color: var(--titulo);
     font-family: var(--Oswald);
     background-color: var(--Verde-Sedacion);
-    height: 60px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,7 +473,7 @@ button{
     color: var(--titulo);
     font-family: var(--Oswald);
     background-color: var(--medicamentos-varios);
-    height: 60px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -538,7 +538,7 @@ button{
     color: black;
     font-family: var(--Oswald);
     background-color: var(--diureticos);
-    height: 60px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -574,6 +574,9 @@ button{
         height: auto;
 }
 
+.reconstitucion, .reconstitucion2, .reconstitucion3, .reconstitucion4, .reconstitucion5{
+    height: 100px;
+}
 /*
 .infoContainer{
     padding: 10px 10px;

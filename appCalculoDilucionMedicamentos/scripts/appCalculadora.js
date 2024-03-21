@@ -1543,7 +1543,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             else if(nombreMedicamento === "Ampicilina Sulbactam" || nombreMedicamento === "ampicilina sulbactam" || nombreMedicamento === "AMPICILINA SULBACTAM"){
 
                 let miligramos1 = 750;
-                let miligramos2 = 1500;
+                let miligramos2 = 1000;
                 let frascoTotal1 = 1.6;
                 let frascoTotal2 = 3.2;
 

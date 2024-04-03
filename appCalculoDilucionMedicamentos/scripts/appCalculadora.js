@@ -39,8 +39,13 @@ formulario.addEventListener("submit", function(e){
         if (Number.isInteger(dosis)){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
                         let reconstitucion = (dosis*frascoTotal)/miligramos;
                         console.log(reconstitucion);
-                        return reconstitucion;//IMPRIME EL VALOR ENTERO
-        } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                        if (reconstitucion === Number.isInteger){
+                            return reconstitucion;//IMPRIME EL VALOR ENTERO
+                        } else {
+                            return reconstitucion.toFixed(1);
+                        }
+                        
+        } else {//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                         let reconstitucion = (dosis*frascoTotal)/miligramos;
                          redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
                          console.log(redondeo1);

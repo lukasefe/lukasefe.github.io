@@ -1,0 +1,48 @@
+
+
+.copyright{
+    height: 400px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_legales_copyright.webp");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.privacidad{
+    height: 400px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_legales_politicas_de_privacidad.webp");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.descargo{
+    height: 400px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_legales_descargo_de_responsabilidad.webp");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.terminos{
+    height: 400px;
+    background-image: url("/ASSETS/IMAGENES/BANNERS/Banner_legales_terminos_y_condiciones.webp");
+    background-size:100% 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:1000px){
+    .copyright, .privacidad, .descarg, .terminos{
+        height: 200px;
+        background-size: 100% 200px;
+    }
+}
+
+@media (max-width:600px){
+    .copyright, .privacidad, .descargo, .terminos{
+        height: 150px;
+        background-size: 100% 160px;
+    }
+}
+

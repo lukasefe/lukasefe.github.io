@@ -1,0 +1,39 @@
+.contenedor{
+    margin: 0 auto;
+    width: 70%;
+    background-color: beige;
+    color: #000;
+    padding: 50px;
+}
+
+.lista{
+    list-style-type: square;
+}
+
+.titulo{
+    color: blue;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+}
+
+.lista_2{
+    list-style-type: square;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+@media(max-width:768px){
+    .contenedor{
+        width: 95%;
+    }
+}
+
+@media(max-width:425px){
+    .contenedor{
+        width: 100%;
+    }
+}

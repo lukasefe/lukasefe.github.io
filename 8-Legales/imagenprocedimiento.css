@@ -1,0 +1,38 @@
+
+
+.imagen{
+    height: 1200px;
+    background-image: url("/ASSETS/IMAGENES/POES/POE_Accesos_Venosos.webp");
+    background-size:70% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .cvp1{
+    height: 1200px;
+    background-image: url("/ASSETS/IMAGENES/POES/POE_CATETER_VENOSO_PERIFERICO_1.webp");
+    background-size:70% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ @media(max-width:1030px){
+    .imagen, .cvp1{
+        width:98%;
+        height: 900px;
+        background-size: 98% 100%;
+    }
+ }
+
+ @media(max-width: 550px){
+    .imagen, .cvp1{
+        width: 100%;
+        height: 700px;
+    }
+ }
+
+ @media(max-width: 425px){
+    .imagen, .cvp1{
+        width: 100%;
+        height: 500px;
+    }
+ }

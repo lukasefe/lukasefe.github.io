@@ -1,0 +1,1 @@
+window.alert("Se arreglo el problema cargar dosis de furosemida y se corrigio el error de dosis inferior en SMX-TMP.")

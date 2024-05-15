@@ -7041,6 +7041,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 let dosisDoble = dosis * 2;
                 let mlDoble = calculo() * 2;
                 let dosismlDoble = dosisml * 2;
+                let plantotal = Number(calculo()) + Number(dosisml);
                 let plantotalDoble = plantotal * 2;
                 let ampollaDoble = ampollas() * 2;
                 dilucion = dosis/1;
@@ -11712,7 +11713,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Ampolla 40mg de TMP + 400mg de SMX.</h4>\
+                            <h4 class="presentacion">Ampolla 80mg de TMP + 400mg de SMX.</h4>\
                         </div>\
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\

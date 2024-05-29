@@ -1,1 +1,1 @@
-window.alert("Se arreglo el problema cargar dosis de furosemida y se corrigio el error de dosis inferior en SMX-TMP.")
+window.alert("Bug fixed del error de doble dosis en goteo continuo de vecuronio :) este mensaje se autodestruira en 7 días.")

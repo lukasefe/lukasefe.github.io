@@ -12533,7 +12533,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     if (dosis >= 24){
                         let planpuro ='Vecuronio '+dosis+'MG_____'+calculo()+'ml.<br>\
                         Dosis Pura.<br>\
-                        Total_________________________'+plantotal+'ml.';
+                        Total_________________________'+dosis+'ml.';
                         return plan.innerHTML=planpuro;
                     } else {
                         let planparcial =
@@ -12547,7 +12547,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     if (dosis >= 24){
                         let planpuro ='Vecuronio '+dosisDoble+'MG_____'+mlDoble+'ml.<br>\
                         Dosis Pura.<br>\
-                        Total_________________________'+plantotalDoble+'ml.<br>\
+                        Total_________________________'+dosisDoble+'ml.<br>\
                         Se debe utlizar '+ampollaDoble+' ampollas.';
                         return plan.innerHTML=planpuro;
                     } else {

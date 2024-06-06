@@ -8952,6 +8952,147 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //LEVOFLOXACINA
+            else if(nombreMedicamento === "Levofloxacina" || nombreMedicamento === "levofloxacina" || nombreMedicamento === "LEVOFLOXACINA"){
+
+                miligramos = 500;
+                frascoTotal = 20;
+                dilucion = dosis/5;
+
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#1357a6';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco">Levofloxacina</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 500mg/20ml</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad">Sin usar <b class="texto__Blanco">Proteger de la luz</b>. Una vez abierto refrigerado tiene una duración de 24hs.</p>\
+                        <p class="texto__Estabilidad"><b class="texto__Blanco">Durante la perfusión no requiere proteger de la luz</b>.</p>\
+                        <p class="texto__Observaciones">Utilizar en las 3hs siguientes a la rotura del tapon de goma.</p>\
+                        <p class="texto__Observaciones">Solución transparente de color amarillo-verdoso.</p>\
+\
+                    </div>\
+                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
+                    <h3 class="administracion">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>No.</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Diluyente</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>S.F. o DX5%.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Unica 5mg/ml(Vía central o periferica)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a <b>'+dilucion+'</b>ml de Solución</b>.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 30 minutos dosis hasta 250mg.</p>\
+                                    <p>En 60 minutos dosis hasta 500mg.</p>\
+                                    <p>En 90 minutos dosis hasta 750mg o superior.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion">IntraVenosa Continua (IVC) --[GOTEO]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>No.</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="administracion">IntraMuscular (IM)</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>No.</h4>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+               </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
             //LORAZEPAM
             else if(nombreMedicamento === "Lorazepam" || nombreMedicamento === "lorazepam" || nombreMedicamento === "LORAZEPAM"){
 

@@ -1,1 +1,1 @@
-window.alert("Bug fixed del error de doble dosis en goteo continuo de vecuronio :) este mensaje se autodestruira en 7 días.")
+window.alert("Se agrego levofloxacina 500mg/20ml para su calculo :) este mensaje se autodestruira en 7 días.")

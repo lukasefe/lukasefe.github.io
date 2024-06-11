@@ -114,17 +114,16 @@ perdidas.addEventListener("submit", function(e){
                 } else if (peso__indicado >= 29 && peso__indicado < 30){
                     let kg = 1680;
                     return kg;
-                } else if (peso__indicado = 30){
+                } else if (peso__indicado == 30){
                     let kg = 1700;
                     return kg;
-                } else {
+                } else if (peso__indicado > 30){
                     let calculo_superficie_1= (peso__indicado*4) + 7;// primer paso del calculo de las perdidas insensibles
                     let calculo_superficie_2= peso__indicado + 90;//segundo paso del calculo de las perdidas insensibles
                     let resultado__total = calculo_superficie_1 / calculo_superficie_2 // calculo final de las perdidas insensibles
                     console.log(resultado__total)//imprimir en consola el valor
-                    let total = resultado__total * 400 // multiplicamos el valor de las perdidas por 400 para llegar al resultado real
-                    console.log(total)// imprimimos en consola el valor del calculo real de las perdidas insensibles
-                    return total
+                    let total = 1500 * resultado__total
+                    return Math.round(total).toFixed(0)
                 }
             }
             let mililitros = pesos()

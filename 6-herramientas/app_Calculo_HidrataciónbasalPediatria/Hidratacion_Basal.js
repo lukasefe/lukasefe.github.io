@@ -44,7 +44,7 @@ perdidas.addEventListener("submit", function(e){
                 let info = //imprime en pantalla los resultados
             '<div class="operacion__contenedor">\
                  <p class="valor">El requerimiento Hidrico del paciente en 24hs es de: <b class="color">'+formula1+'</b>.</p>\
-                 <p class="valor">Con una perfusión de: '+perfusion+' ml/hs</p>\
+                 <p class="valor">Con una perfusión de: '+(perfusion).toFixed(2)+' ml/hs</p>\
             </div>'
             resultado.innerHTML += info;//sobreescribimos <p> con el valor anterior para visualizar los resultados
             //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA

@@ -1,5 +1,5 @@
 
-.aviso_manual{
+.aviso_manual, .aviso_descargo{
     margin: 0 15%;
     padding: 10px 10px;
     background-color: beige;
@@ -15,9 +15,14 @@
     color: deepskyblue;
 }
 
+.aviso_descargo{
+    background-color:ghostwhite;
+    color: black;
+}
+
 /*PANTALLAS HASTA 650PX*/
 @media (max-width: 650px){
-    .aviso_manual{
+    .aviso_manual, .aviso_descargo {
         margin: 0;
         width: 100%;
     }
@@ -33,7 +38,7 @@
 
 /*PANTALLAS HASTA 950PX*/
 @media (max-width: 990px){
-    .aviso_manual{
+    .aviso_manual, .aviso_descargo{
         margin: 0;
         width: 100%;
     }
@@ -48,7 +53,7 @@
 
 /*PANTALLAS HASTA 1439PX*/
 @media (min-width: 990px) and (max-width: 1439px){
-    .aviso_manual{
+    .aviso_manual, .aviso_descargo{
         margin: 10px auto;
         width: 90%;
         font-size: 15px;
@@ -64,7 +69,7 @@
 
 /*PANTALLAS DESDE 1440PX*/
 @media (min-width: 1440px){
-    .aviso_manual{
+    .aviso_manual, .aviso_descargo{
         margin: 10px auto;
         width: 90%;
         font-size: 15px;

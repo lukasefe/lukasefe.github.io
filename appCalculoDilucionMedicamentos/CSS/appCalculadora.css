@@ -764,7 +764,7 @@ b.tituloReconstitucion{
     }
 }
 
-@media (min-width: 1020px){
+@media (min-width: 990px) and (max-width:1439px){
     .ml{
         width: 90%;
         margin: 0 auto;
@@ -899,7 +899,6 @@ b.tituloReconstitucion{
     }
     .borde__inferior{
         border-radius: 0 0 .6em .6em;
-        margin-bottom: 200px;
     }
 }
    

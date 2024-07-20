@@ -1,0 +1,18 @@
+.pie{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.contenedor__pie{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.leyenda{
+    color: white;
+    font-weight: bold;
+}

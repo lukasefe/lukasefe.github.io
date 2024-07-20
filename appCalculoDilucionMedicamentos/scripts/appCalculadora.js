@@ -520,27 +520,17 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
                                 <div class="reconstitucion">\
-                                    <h4>Minima</h4>\
+                                    <h4>PH</h4>\
                                 </div>\
-                                <div class="datos">\
-                                    <p>Llevar a <b>'+dilucion+'ml</b> por via periferica.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Recomendada</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Llevar a <b>'+dilucion2+'ml</b> por via periferica.</p>\
+                                <div class="datos bg-danger text-white">\
+                                    <p><b>11 (irritante)</br>Adm. por vía central unicamente.</b></p>\
                                 </div>\
                             </div>\
                         </div>\
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
                                 <div class="reconstitucion">\
-                                    <h4>Máxima</h4>\
+                                    <h4>Máxima (5mg/ml)</h4>\
                                 </div>\
                                 <div class="datos">\
                                     <p>Llevar a <b>'+dilucion3+'ml por via central.</p>\
@@ -559,6 +549,9 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                         </div>\
                     </div>\
                 </div>\
+               </div>\
+               <div class="contenedor__ficha">\
+                <a href="ASSETS/FICHAS/ACICLOVIR.webp" target="_blank"><img src="ASSETS/FICHAS/ACICLOVIR.webp" alt="Fichas del aciclovir"></a>\
                </div>'
                 informacion.innerHTML += info;
                 //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA

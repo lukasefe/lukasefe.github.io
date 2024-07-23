@@ -1,0 +1,226 @@
+:root{
+    --Oswald:'Lato', sans-serif, 'League Spartan', sans-serif,'Oswald', sans-serif;
+    --Fondo: #318CE7;
+    --titulo: #FFFFFF;
+    --Fondo-Gris:#EEEEEE;
+    --Azul-Antibioticos: #1357a6;
+    --advertencia: #FFFF3D;
+    --insulina: #dfef00;
+    --verde-Calcular: #39e75f;
+    --sedacion:#03F934;
+    --Verde-Sedacion: #089c41;
+    --rojo-Inotropicos: #B71C1C;
+    --gris-Tarjeta: #b5b5b5;
+    --medicamentos-varios: #e47200;
+}
+
+/*MODAL PLAN HIDRATACION*/
+.cartel_planh{
+    display: none;
+    color: var(--Azul-Antibioticos);
+    margin: 0 auto;
+    padding: 50px 100px;
+    text-align: center;
+    background-color: ghostwhite;
+    font-weight: bold;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    left: 5%;
+    z-index: 40;
+    pointer-events: none;
+}
+.cerrar1{
+    position: absolute;
+    top: 0;
+    left: 96%;
+    width: 50px;
+    background-color: #B71C1C;
+    border: 3px solid var(--rojo-Inotropicos);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.cerrar1:hover{
+    background-color: white;
+    color:#B71C1C;
+    border: 3px solid var(--rojo-Inotropicos);
+}
+.sub-contenedor_ph{
+    text-align: start;
+    margin-top: 15px;
+}
+
+.sodio{
+    border-bottom: solid 2px var(--Azul-Antibioticos);
+}
+.cuadricula{
+    margin: 0 auto;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.casilla{
+    color: black;
+    border-bottom: solid 3px var(--Azul-Antibioticos);
+    margin-top: 0;
+}
+
+.intermedio{
+    text-align: end;
+}
+
+.subtitulo{
+    text-align: start;
+}
+
+.subtitulo-p{
+    text-align: start;
+    color: black;
+}
+
+
+/*MODAL INSULINA*/
+.cartel_insulina{
+    display: none;
+    margin: 0 auto;
+    padding: 50px 100px;
+    text-align: center;
+    background-color: ghostwhite;
+    font-weight: bold;
+    position: absolute;
+    top: 120%;
+    right: 20%;
+    left: 20%;
+    z-index: 40;
+    pointer-events: none;
+}
+
+.mostrar{
+    pointer-events: auto;
+    display: block;
+}
+
+.cerrar{
+    position: absolute;
+    top: -5%;
+    left: 95%;
+    width: 50px;
+    background-color: #B71C1C;
+    border: 3px solid var(--rojo-Inotropicos);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.cerrar:hover{
+    background-color: white;
+    color:#B71C1C;
+    border: 3px solid var(--rojo-Inotropicos);
+}
+
+.ordenada__insulina{
+    text-align: start;
+}
+
+
+/*PANTALLAS HASTA 650PX*/
+@media (max-width: 650px){
+    /*MODAL PLAN DE HIDRATACION*/
+    .cartel_planh{
+        margin: 0;
+        width: 100%;
+        top: 80%;
+        left: 0px;
+        padding: 50px 20px;
+    }
+    .cerrar1{
+        top: 0px;
+        left: 90%;
+    }
+    .cuadricula{
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    /*MODAL INSULINA*/
+    .cartel_insulina{
+        margin: 0;
+        width: 100%;
+        top: 80%;
+        left: 0px;
+    }
+    .cerrar{
+        top: 0px;
+        left: 90%;
+    }
+}
+
+/*PANTALLAS HASTA 950PX*/
+@media (min-width:651px) and (max-width: 990px){
+    /*MODAL PLAN HIDRATACION*/
+    .cartel_planh{
+        margin: 0;
+        width: 100%;
+        left: 0px;
+    }
+    .cerrar1{
+        top: 0px;
+        left: 90%;
+    }
+    /*MODAL INSULINA*/
+    .cartel_insulina{
+        margin: 0;
+        width: 100%;
+        left: 0px;
+    }
+    .cerrar{
+        top: 0px;
+        left: 90%;
+    }
+}
+
+/*PANTALLAS HASTA 1439PX*/
+@media (min-width: 990px) and (max-width: 1439px){
+    /*PLAN HIDRATACION*/
+    .cartel_planh{
+        margin: 10px auto;
+        width: 80%;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: .3em;
+        color: #1357a6;
+        font-weight: bold;
+    }
+
+
+    .cartel_insulina{
+        margin: 10px auto;
+        width: 60%;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: .3em;
+    }
+}
+
+/*PANTALLAS DESDE 1440PX*/
+@media (min-width: 1440px){
+    .cartel_insulina{
+        margin: 10px auto;
+        width: 60%;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: .3em;
+        top: 120%;
+        z-index: 40;
+    }
+
+}

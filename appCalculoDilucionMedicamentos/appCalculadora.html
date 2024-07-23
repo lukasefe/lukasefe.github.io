@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/cartel_aviso.css">
     <link rel="stylesheet" href="CSS/fichas.css">
+    <link rel="stylesheet" href="CSS/botones_opciones_y_modal.css">
+    <link rel="stylesheet" href="CSS/carteles_de_botones.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -2116,6 +2118,102 @@
         </div>
     </div>
 
+    <!--BOTONERA DE OPCIONES DE VENTANAS MODAL-->
+    <div id="botones_op" class="contenedor_botones_opciones"><!--CONTENEDOR DE LA BOTONERA-->
+        <button id="boton1" class="botones__opciones planes">Plan de Hidratación Basal</button><!--BOTON DE PLAN DE HIDRATACION-->
+        <button id="boton_2" class="botones__opciones insulina" >Preparación goteo de Insulina</button><!--BOTON DE INSULINA-->
+      <!-- <button class="botones__opciones ph">PH de los Fármacos</button>-->   <!--BOTON DE PH-->
+    </div>
+
+    <!--MODAL DE LOS PLANES DE HIDRATACIÓN-->
+    <div id="modal_planh" class="cartel_planh"><!--CONTENDOR-->
+        <button id="cerrar1" class="cerrar1">x</button>
+        <h4 class="titulo_planh">Planes de Hidratación y Mantenimiento del Acceso Venoso</h4>
+        <div class="sub-contenedor_ph"><!--CONTENEDOR DE MANTENIMIENTO DE ACCESO VENOSO-->
+            <h5>Para mantener el acceso venoso periférico o central:</h5>
+            <p class="text-dark">Sol. fisiológica o Dextrosa al 5% 48ml en 24hs(2ml/h), dependiendo el caso.</p><br>
+            <h5>Para mantener el acceso venoso PICC (Catetér Central de Inserción Periférica):</h5>
+            <p class="text-dark">Sol. fisiológica o Dextrosa al 5% 120ml en 24hs(5ml/h), permite la permeabilidad de los lumenes.</p>
+        </div><br>
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 35%-->
+            <h5 class="sodio">NA 35%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">5 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">508.5 ml</p>
+            </div><br>
+            
+        </div>
+
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 50%-->
+            <h5 class="sodio">NA 50%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">7,5 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">511 ml</p>
+            </div><br>
+        </div>
+
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 70%-->
+            <h5 class="sodio">NA 70%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">10 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">513.5 ml</p>
+            </div><br>
+        </div>
+
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 140%-->
+            <h5 class="sodio">NA 140%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">20 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">523.5 ml</p>
+            </div><br>
+        </div>
+
+        <h4 class="subtitulo">Preparación de la solución</h4>
+        <p class="subtitulo-p">Preparar la solución indicada.</p>
+        <p class="subtitulo-p">Conectar un perfus común XL PLUM A.</p>
+        <p class="subtitulo-p">Rotular perfus con cinta blanca indicando PB con fecha.</p>
+        <p class="subtitulo-p">El perfus se cambia cada 7 días o que se encuentre visiblemente sucio.</p>
+    </div>
+
+    <!--MODAL DEL GOTEO DE INSULINA-->
+    <div id="carteles" class="cartel_insulina"> <!--CONTENDOR DEL MODAL DE INSULINA-->
+        <button id="boton_c2" class="cerrar">x</button><!--BOTON DE CERRAR-->
+        <h4>Preparación goteo de Insulina</h4>
+        <p><ol class="ordenada__insulina">
+            <li><b>Preparar la dilución antes dicha, agitandola para asegurar una mezcla homogénea.</b></li>
+            <li><b>Purgar el set de bomba XL Plum A.</b></li>
+            <li><b>Dejar reposar 30 minutos.</b></li>
+            <li><b>Descartar el contenido del sachet.</b></li>
+            <li><b>Volver a prerarar la dilución.</b></li>
+            <li><b>Purgar el set nuevamente.</b></li>
+            <li><b>La solucion esta lista para su administración.</b></li>
+        </ol></p>
+    </div>
+
     <div class="aviso_descargo">
         <p class="textito">La funcionalidad presentada en esta aplicación web, no pretende sustituir y/o suplantar los conocimientos y/o actividades del profesional de enfermería.</p>
         <p class="textito">Esta aplicación web se a desarrollado como <b>complemento</b> a los conocimientos del personal de enfermería en la tarea del calculo de dosis de farmacos, dilución y administración de los mismos, facilita el proceso y disminuye el tiempo de preparacion siguiendo un estandar de calidad homogeneo.</p>
@@ -2144,6 +2242,7 @@
 </body>
 <script src="scripts/appCalculadora.js"></script>
 <script src="scripts/alerta.js"></script>
+<script src="scripts/carteles_botoneras.js"></script>
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

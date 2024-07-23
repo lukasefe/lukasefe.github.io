@@ -101,8 +101,15 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                     let reconstitucion = (dosis*5)/500;
                      redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                     if(reconstitucion < 1){
+                        redondeo = (reconstitucion.toFixed(2));
+                        console.log(redondeo);
+                        return redondeo
+                    } else{
+                        redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
                      console.log(redondeo1);
                      return redondeo1;//IMPRIME EL FLOTANTE
+                    }
                 }               
             };
 
@@ -114,9 +121,15 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     return reconstitucion;//IMPRIME EL VALOR ENTERO
                 } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                     let reconstitucion = (dosis*10)/1000;
-                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                    if(reconstitucion < 1){
+                        redondeo = (reconstitucion.toFixed(2));
+                        console.log(redondeo);
+                        return redondeo
+                    } else{
+                        redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
                      console.log(redondeo1);
                      return redondeo1;//IMPRIME EL FLOTANTE
+                    }
                 }               
             };
 
@@ -1552,9 +1565,15 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     return reconstitucion;//IMPRIME EL VALOR ENTERO
                     } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                                     let reconstitucion = (dosis*frascoTotal1)/miligramos1;
-                                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                    if(reconstitucion < 1){
+                                        redondeo = (reconstitucion.toFixed(3));
+                                        console.log(redondeo);
+                                        return redondeo
+                                    } else{
+                                        redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
                                      console.log(redondeo1);
                                      return redondeo1;//IMPRIME EL FLOTANTE
+                                    }
                                 }               
                 };
             
@@ -1586,9 +1605,15 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     return reconstitucion;//IMPRIME EL VALOR ENTERO
                     } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                                     let reconstitucion = (dosis*frascoTotal2)/miligramos2;
-                                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                    if(reconstitucion < 1){
+                                        redondeo = (reconstitucion.toFixed(3));
+                                        console.log(redondeo);
+                                        return redondeo
+                                    } else{
+                                        redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
                                      console.log(redondeo1);
                                      return redondeo1;//IMPRIME EL FLOTANTE
+                                    }
                                 }               
                 };
             

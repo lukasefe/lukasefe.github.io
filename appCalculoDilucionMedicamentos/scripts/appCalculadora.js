@@ -11,7 +11,7 @@ formulario.addEventListener("submit", function(e){
     e.preventDefault();//esta funcion previene que se borren los datos al enviarlos a las funciones
 
     //OBTENEMOS TODOS LOS DATOS DE LOS ELEMENTOS EN VARIABLES
-    let nombreMedicamento = document.getElementById("seleccion").value;
+    let nombreMedicamento = document.getElementById("seleccion").value.trim();
     let dosiscadena = document.getElementById("dosis").value;//AQUI CAMBIE YA QUE EL TYPE NUMBER NO ACEPTABA VALORES DECIMALES CON .
     let informacion = document.querySelector(".resultado");
     let borrarP = document.querySelector(".resp");
@@ -30,7 +30,8 @@ formulario.addEventListener("submit", function(e){
     let miligramos 
     let frascoTotal
                 
-                
+
+
     let entero = Number.isInteger(dosis);// VARIABLE PARA COMPARACION
 
 

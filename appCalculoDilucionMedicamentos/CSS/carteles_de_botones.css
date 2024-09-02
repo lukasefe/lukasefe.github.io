@@ -197,7 +197,6 @@
         border-radius: .3em;
         color: #1357a6;
         font-weight: bold;
-        top: 80%;
     }
 
 
@@ -208,7 +207,6 @@
         text-align: center;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: .3em;
-        top: 80%;
     }
 }
 
@@ -221,12 +219,8 @@
         text-align: center;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: .3em;
-        top: 50%;
+        top: 120%;
         z-index: 40;
-    }
-    .cartel_planh{
-        top: 50%;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
 
 }

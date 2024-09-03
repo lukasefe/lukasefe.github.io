@@ -1568,7 +1568,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 let miligramos1 = 750;
                 let miligramos2 = 1000;
                 let frascoTotal1 = 1.6;
-                let frascoTotal2 = 3.2;
+                let frascoTotal2 = 4;
 
                 function calculo1(){
                     if (dosis === entero){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE

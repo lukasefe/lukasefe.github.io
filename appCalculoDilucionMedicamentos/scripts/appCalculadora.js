@@ -1,19 +1,10 @@
-//Lucas Eduardo Fernandez
-//Cordoba - Argentina
-//2022 - 2024
-//Proyector  calculadora de la disolucion de medicamentos para la UCIP del Hospital Infantil Municipal
-//Proyecto y codigo propio
-//Version 1.0
-//Fecha de creacion: 2022-04-01
-//Fecha de ultima modificacion: 2024-31-08
-//modificacion: Correcion de errores en el nombre de medicamentos, y en soluciones de dilucion.
+
 
 
 
 //con esta variable seleccionamos los elementos del formulario
 const formulario = document.getElementById("medicamentos");
 
-   
 //agregamos un eventos que se activa al enviar los datos con el boton calcular
 formulario.addEventListener("submit", function(e){
 
@@ -25,7 +16,6 @@ formulario.addEventListener("submit", function(e){
     let informacion = document.querySelector(".resultado");
     let borrarP = document.querySelector(".resp");
     let btn1 = document.querySelector(".boton1");
-    let btnfalse = document.querySelector(".boton1");
     let btn = document.querySelector(".boton");
     let informaacionOriginal = informacion.innerHTML;//ESTA VARIABLE ALMACENA EL VALOR ORIGINAL DEL DIV INFORMACION PARA QUE AL SE ESTABLESCA LA FUNCION DE BORRAR.    
    
@@ -40,7 +30,8 @@ formulario.addEventListener("submit", function(e){
     let miligramos 
     let frascoTotal
                 
-                
+
+
     let entero = Number.isInteger(dosis);// VARIABLE PARA COMPARACION
 
 
@@ -80,13 +71,11 @@ formulario.addEventListener("submit", function(e){
                 }
     }
 
-    
     //BORRA EL ELEMENTO P PARA IMPRMIR ARRIBA LA FUNCION DEL CALCULO
     borrarP.remove();
     btn1.style.display = 'none';
     btn.style.display = 'block';
 
-    
 if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || nombreMedicamento === "AMPICILINA" ){//AMPICILINA
             
             dilucion1 = parseInt(dosis/50);
@@ -198,7 +187,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                 <h4>Reconstitución</h4>\
                             </div>\
                             <div class="datos">\
-                                <p>En 5ml de agua destilada, obteniendo 100mg/ml.</p>\
+                                <p>En 4,5ml de agua destilada, obteniendo 100mg/ml, concentración total 500mg/5ml.</p>\
                             </div>\
                         </div>\
                     </div>\
@@ -233,7 +222,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                 <h4>Reconstitución</h4>\
                             </div>\
                             <div class="datos">\
-                                <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>\
+                                <p>En 9,5ml de agua destilada, obteniendo 100mg/ml, concentración total 1000mg/10ml.</p>\
                             </div>\
                         </div>\
                     </div>\
@@ -1578,11 +1567,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                                     let reconstitucion = (dosis*frascoTotal1)/miligramos1;
                                     if(reconstitucion < 1){
-                                        redondeo = (reconstitucion.toFixed(2));
-                                        console.log(redondeo);
-                                        return redondeo
-                                    } else if(reconstitucion < 0.1){
-                                        redondeo = (reconstitucion.toFixed(3));
+                                        redondeo = (reconstitucion.toFixed(1));
                                         console.log(redondeo);
                                         return redondeo
                                     } else{
@@ -1622,7 +1607,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
                                     let reconstitucion = (dosis*frascoTotal2)/miligramos2;
                                     if(reconstitucion < 1){
-                                        redondeo = (reconstitucion.toFixed(3));
+                                        redondeo = (reconstitucion.toFixed(1));
                                         console.log(redondeo);
                                         return redondeo
                                     } else{
@@ -1688,7 +1673,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 1,6ml de agua destilada, obteniendo 250mg/ml.</p>\
+                                    <p>En 1,6ml de agua destilada, obteniendo 250mg/ml. concentración total 750mg/3ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -1723,7 +1708,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 3,2ml de agua destilada, obteniendo 250mg/ml.</p>\
+                                    <p>En 3ml de agua destilada, obteniendo 250mg/ml, concentracion total 1000mg/4ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -1983,7 +1968,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Recomendada</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Llevar a <b>'+dilucion1+'ml de DX 5%</b> por via periferica.</p>\
+                                    <p>Llevar a <b>'+dilucion1+'ml de S.F.</b> por via periferica.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -1993,7 +1978,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Máxima</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Llevar a '+dilucion2+'ml de DX 5% por via central.</p>\
+                                    <p>Llevar a '+dilucion2+'ml de S.F. por via central.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -2140,7 +2125,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Minima</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Llevar a <b>'+dilucion1+'ml de DX 5%</b> por via periferica.</p>\
+                                    <p>Llevar a <b>'+dilucion1+'ml de S.F.</b> por via periferica.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -2150,7 +2135,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Recomendada</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Llevar a <b>'+dilucion2+'ml de DX 5%</b> por via periferica.</p>\
+                                    <p>Llevar a <b>'+dilucion2+'ml de S.F.</b> por via periferica.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -2160,7 +2145,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Máxima</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Llevar a '+dilucion3+'ml de DX 5% por via central.</p>\
+                                    <p>Llevar a '+dilucion3+'ml de S.F. por via central.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -2416,7 +2401,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>\
+                                    <p>En 9,5ml de agua destilada, obteniendo 100mg/ml, concentración total 1000mg/ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -2641,7 +2626,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>\
+                                    <p>En 9,5ml de agua destilada, obteniendo 100mg/ml, concentración total 1000mg/10ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -2866,7 +2851,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>\
+                                    <p>En 9ml de agua destilada, obteniendo 100mg/ml, concentración total 1000mg/10ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -3084,7 +3069,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>\
+                                    <p>En 9,5ml de agua destilada, obteniendo 100mg/ml, concentración total 1000mg/10ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -3257,7 +3242,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             else if(nombreMedicamento === "Cefuroxima" || nombreMedicamento === "cefuroxima" || nombreMedicamento === "CEFUROXIMA"){
 
                 miligramos = 750;
-                frascoTotal = 6;
+                frascoTotal = 7.5;
                 
                 dilucion1 = parseInt(dosis/30);
                 console.log(dilucion1);
@@ -3306,7 +3291,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 10ml de agua destilada, obteniendo 116mg/ml. El resultado de la reconstitución se incrementa por el valor del desplazamiento del fármaco.</p>\
+                                    <p>En 7ml de agua destilada, obteniendo 100mg/ml. concentración total 750mg/7,5ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -11258,7 +11243,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             //PIPERACILINA TAZOBACTAM
             else if(nombreMedicamento === "Piperacilina Tazobactam" || nombreMedicamento === "piperacilina tazobactam" || nombreMedicamento === "PIPERACILINA TAZOBACTAM"){
 
-                miligramos = 4500;
+                miligramos = 4000;
                 frascoTotal = 20;
                 dilucion = dosis/10;
                 dilucion2 = dosis/20;
@@ -11298,7 +11283,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Reconstitución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>En 20ml de agua destilada, obteniendo 200mg/ml.</p>\
+                                    <p>En 16ml de agua destilada, obteniendo 200mg/ml. concentración total 4000mg/20ml</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -12918,9 +12903,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     btn.style.display = 'none';
                 });
             };
-        })
 
-
-
+})
 
 

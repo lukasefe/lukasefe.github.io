@@ -9998,7 +9998,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Perfus</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Utilizar perfus común y cambiar el mismo cada 48hs.</p>\
+                                    <p>Utilizar perfus común y cambiar el mismo cada 7 días.</p>\
                                 </div>\
                             </div>\
                         </div>\

@@ -10039,7 +10039,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             let mlDoble = calculo() * 2;
             let dosismlDoble = dosisml * 2;
             let plantotalDoble = plantotal * 2;
-            let ampollaDoble = ampollas() * 2;
+            let ampollaDoble = dosisDoble / 10;
                 
                 
             function plan(){

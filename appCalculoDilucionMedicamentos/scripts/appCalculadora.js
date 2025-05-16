@@ -9026,7 +9026,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <h3 class="estabilidad">Estabilidad y observaciones</h3>\
                     <div class="contenedor__Estabilidad">\
-                        <p class="texto__Estabilidad">Sin usar <b class="texto__Blanco">Proteger de la luz</b>. Una vez abierto refrigerado tiene una duración de 72hs.</p>\
+                        <p class="texto__Estabilidad">Una vez abierto refrigerado tiene una duración de 72hs.</p>\
                         <p class="texto__Estabilidad"><b class="texto__Blanco">Durante la perfusión no requiere proteger de la luz</b>.</p>\
                         <p class="texto__Observaciones">Utilizar en las 3hs siguientes a la rotura del tapon de goma.</p>\
                         <p class="texto__Observaciones">Solución transparente de color amarillo-verdoso.</p>\

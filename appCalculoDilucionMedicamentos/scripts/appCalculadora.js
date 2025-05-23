@@ -8284,7 +8284,9 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <h3 class="estabilidad5">Estabilidad y observaciones</h3>\
                     <div class="contenedor__Estabilidad">\
-                        <p class="texto__Estabilidad">Los viales, las plumas y cartuchos deben conservarse refrigerada. Una vez abiertos tienen una duración de 28 días.</p>\
+                        <p class="texto__Estabilidad">Los viales, las plumas y cartuchos deben conservarse refrigerada.</p>\
+                        <p class="texto__Estabilidad">La pluma una vez abierta tiene una duración de 28 días.</p>\
+                        <p class="texto__Estabilidad">Los frascos ampollas tiene una duración hasta fecha de caducidad o terminar el contenido.</p>\
                         <p class="texto__Observaciones">Puede desarrollarse hipoglucemia cuando la dosis de insulina excede la necesidad del paciente.</p>\
                         <p class="texto__Observaciones">En pacientes con retinopatía proliferativa, puede causar ceguera.</p>\
                         <p class="texto__Observaciones">Puede haber reacciones de hipersensibilidad locales en el lugar de aplicación.</p>\

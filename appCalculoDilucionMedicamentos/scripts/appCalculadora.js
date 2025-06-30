@@ -179,41 +179,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             <div class="contenedor__Info">\
                 <div class="contenedor__Presentacion">\
                     <div class="titulo__Presentacion">\
-                        <h4 class="presentacion">Frasco/Ampolla 500mg</h4>\
-                    </div>\
-                    <div class="info__Presentacion">\
-                        <div class="info__Uno">\
-                            <div class="reconstitucion">\
-                                <h4>Reconstitución</h4>\
-                            </div>\
-                            <div class="datos">\
-                                <p>En 4,5ml de agua destilada, obteniendo 100mg/ml, concentración total 500mg/5ml.</p>\
-                            </div>\
-                        </div>\
-                    </div>\
-                    <div class="info__Presentacion">\
-                        <div class="info__Uno">\
-                            <div class="reconstitucion">\
-                                <h4>Según dosis indicada</h4>\
-                            </div>\
-                            <div class="datos">\
-                                <p>Retirar del FA '+reconstitucion500()+' ml.</p>\
-                            </div>\
-                        </div>\
-                    </div>\
-                    <div class="info__Presentacion">\
-                        <div class="info__Uno">\
-                            <div class="reconstitucion">\
-                                <h4>Cantidad a utilizar</h4>\
-                            </div>\
-                            <div class="datos">\
-                                <p>para la dosis indicada se debe utlizar '+frasco500()+' frasco/os</p>\
-                            </div>\
-                        </div>\
-                    </div>\
-                </div>\
-                <div class="contenedor__Presentacion">\
-                    <div class="titulo__Presentacion">\
                         <h4 class="presentacion">Frasco/Ampolla 1000mg</h4>\
                     </div>\
                     <div class="info__Presentacion">\
@@ -387,6 +352,45 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 btn1.style.display = 'block';
                 btn.style.display = 'none';
             });
+
+            // AMPOLLA DE 500 MG
+            /* <div class="contenedor__Presentacion">\
+                    <div class="titulo__Presentacion">\
+                        <h4 class="presentacion">Frasco/Ampolla 500mg</h4>\
+                    </div>\
+            <div class="info__Presentacion">\
+                        <div class="info__Uno">\
+                            <div class="reconstitucion">\
+                                <h4>Reconstitución</h4>\
+                            </div>\
+                            <div class="datos">\
+                                <p>En 4,5ml de agua destilada, obteniendo 100mg/ml, concentración total 500mg/5ml.</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="info__Presentacion">\
+                        <div class="info__Uno">\
+                            <div class="reconstitucion">\
+                                <h4>Según dosis indicada</h4>\
+                            </div>\
+                            <div class="datos">\
+                                <p>Retirar del FA '+reconstitucion500()+' ml.</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="info__Presentacion">\
+                        <div class="info__Uno">\
+                            <div class="reconstitucion">\
+                                <h4>Cantidad a utilizar</h4>\
+                            </div>\
+                            <div class="datos">\
+                                <p>para la dosis indicada se debe utlizar '+frasco500()+' frasco/os</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\*/ 
+
+
 
             } 
             //ACICLOVIR
@@ -1665,41 +1669,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Frasco/Ampolla 750mg</h4>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Reconstitución</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>En 1,6ml de agua destilada, obteniendo 250mg/ml. concentración total 750mg/3ml.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Según dosis indicada</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Retirar del FA '+calculo1()+' ml.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Cantidad a utilizar</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
-                    <div class="contenedor__Presentacion">\
-                        <div class="titulo__Presentacion">\
                             <h4 class="presentacion">Frasco/Ampolla 1500mg</h4>\
                         </div>\
                         <div class="info__Presentacion">\
@@ -1873,6 +1842,44 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     btn1.style.display = 'block';
                     btn.style.display = 'none';
                 });
+
+                //AMPICILINA SULBACTAM DE 750 MG
+                /*<div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 750mg</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 1,6ml de agua destilada, obteniendo 250mg/ml. concentración total 750mg/3ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo1()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\ */
+
 
             }
             //ANFOTERICINA B
@@ -7051,6 +7058,134 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //FOSCARNET
+            else if(nombreMedicamento === "Foscarnet" || nombreMedicamento === "foscarnet" || nombreMedicamento === "FOSCARNET"){
+
+                miligramos = 24;
+                frascoTotal = 1;
+                foscarnet = (dosis*1)/24;
+                dilucion = dosis/12;
+                dilucion2 = Math.round(dosis/7);
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#1357a6';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco">Foscarnet</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco 500ml (24mg/ml).</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>no requiere</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+foscarnet+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad">Una vez abierto el frasco<b class="texto__Blanco"> se puede usar 24hs a temperatura ambiente</b>, luego de este tiempo desechar.</p>\
+                        <p class="texto__Observaciones">El cambio de color no indica inactividad.</p>\
+                    </div>\
+                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Por via central</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No se diluye</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 1 a 2 horas.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Por via periferica</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>S.F.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Concentración</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>12mg/ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Resultado</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Llevar a '+dilucion+'ml de S.F. por via central.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 2 horas.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
             //FUROSEMIDA
             else if(nombreMedicamento === "Furosemida" || nombreMedicamento === "furosemida" || nombreMedicamento === "FUROSEMIDA"){
 
@@ -7669,41 +7804,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion4">\
-                            <h4 class="presentacion">Frasco/Ampolla 100mg.</h4>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion4">\
-                                    <h4>Reconstitución (20mg/ml)</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>5ml de agua destilada.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion4">\
-                                    <h4>Según dosis indicada</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Retirar del FA '+calculo()+' ml.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion4">\
-                                    <h4>Cantidad a utilizar</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
-                    <div class="contenedor__Presentacion">\
-                        <div class="titulo__Presentacion4">\
                             <h4 class="presentacion">Frasco/Ampolla 500mg.</h4>\
                         </div>\
                         <div class="info__Presentacion">\
@@ -7733,21 +7833,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                 </div>\
                                 <div class="datos">\
                                     <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
-                    <div class="contenedor__Presentacion">\
-                        <div class="titulo__Presentacion4">\
-                            <h4 class="presentacion">Suspención Oral 1mg/ml.</h4>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion4">\
-                                    <h4>Según dosis indicada</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Retirar del frasco '+dosis+' ml.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -7881,6 +7966,61 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     btn1.style.display = 'block';
                     btn.style.display = 'none';
                 });
+
+                //HIDROCORTISONA 100MG
+                /*<div class="contenedor__Presentacion">\ 
+                <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Frasco/Ampolla 100mg.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Reconstitución (20mg/ml)</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>5ml de agua destilada.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\*/
+
+                //SUSPENSION ORAL   
+                /* <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion4">\
+                            <h4 class="presentacion">Suspención Oral 1mg/ml.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion4">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del frasco '+dosis+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\ */
+
 
             }
             //IBUPROFENO
@@ -8084,8 +8224,8 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
-            //IMIPENEM
-            else if(nombreMedicamento === "Imipenem" || nombreMedicamento === "imipenem" || nombreMedicamento === "IMIPENEM"){
+            //IMIPENEM/CILASTATINA
+            else if(nombreMedicamento === "Imipenem/Cilastatina" || nombreMedicamento === "imipenem/cilastatina" || nombreMedicamento === "IMIPENEM/CILASTATINA"){
 
                 miligramos = 500;
                 frascoTotal = 10;
@@ -8099,7 +8239,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 let info = 
                 '<div class="contenedor__Grilla">\
                 <div class="contenedor__Titulo">\
-                    <h3 class="nombre__Farmaco">Imipenem</h3>\
+                    <h3 class="nombre__Farmaco">Imipenem/Cilastatina</h3>\
                 </div>\
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\
@@ -8711,41 +8851,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Granulado Suspención Oral (100mg/5ml)</h4>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Reconstitución</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>123ml de agua.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Según dosis indicada</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Retirar del frasco '+suspencion()+' ml.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Cantidad a utilizar</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Para la dosis indicada se debe utlizar '+frascossuspencion()+' frasco/os</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
-                    <div class="contenedor__Presentacion">\
-                        <div class="titulo__Presentacion">\
                             <h4 class="presentacion">Comprimidos recubiertos: 600 mg</h4>\
                         </div>\
                     </div>\
@@ -8753,7 +8858,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     <h3 class="estabilidad">Estabilidad y observaciones</h3>\
                     <div class="contenedor__Estabilidad">\
                         <p class="texto__Estabilidad"><b class="texto__Blanco">La solución intravenosa debe conservarse a temperatura ambiente y protegerse de la luz. Mantener en envoltura de aluminio hasta su uso. La solución puede volverse de color amarillo, que se intensifica con el paso del tiempo sin afectar su efectividad.</b></p>\
-                        <p class="texto__Estabilidad">Granulado para suspensión oral: conservar a temperatura ambiente (la suspensión también puede conservarse en frigorífico). Una vez preparada, la suspensión debe utilizarse antes de transcurridos 21 días. Invertir varias veces antes de su uso. No agitar.</p>\
                     </div>\
                     <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>\
                     <h3 class="administracion">IntraVenosa Directa (IVD) --[PUSH]--</h3>\
@@ -8801,6 +8905,45 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     btn1.style.display = 'block';
                     btn.style.display = 'none';
                 });
+
+                /*<div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Granulado Suspención Oral (100mg/5ml)</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>123ml de agua.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del frasco '+suspencion()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+frascossuspencion()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    */
+
+                /*<p class="texto__Estabilidad">Granulado para suspensión oral: conservar a temperatura ambiente (la suspensión también puede conservarse en frigorífico). Una vez preparada, la suspensión debe utilizarse antes de transcurridos 21 días. Invertir varias veces antes de su uso. No agitar.</p>\ */
 
             }
             //LEVETIRACETAM
@@ -10689,7 +10832,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
                                 <div class="reconstitucion4">\
-                                    <h4>Concentracion por vía périferica o central (0,4mg/ml)</h4>\
+                                    <h4>Concentracion por vía périferica y central (0,4mg/ml)</h4>\
                                 </div>\
                                 <div class="datos">\
                                     <p>Llevar a '+dilucion+'ml.</p>\
@@ -10844,6 +10987,212 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 });
 
             }
+            //PENICILINA BENZATIDICA
+            else if(nombreMedicamento === "Penicilina Benzatidica" || nombreMedicamento === "penicilina benzatidica" || nombreMedicamento === "PENICILINA BENZATIDICA"){
+
+                miligramos = 1200000;
+                frascoTotal = 5;
+                miligramos2 = 2400000;
+                frascoTotal2 = 10;
+                dilucion = dosis/1200000;
+                dilucion2 = dosis/2400000;
+                dilucion3 = dosis/50000;
+
+                function calculo1(){
+                    if (dosis === entero){//COMPARA QUE LA DOSIS SEA UN ENTERO Y LO MANTIENE
+                                    let reconstitucion = (dosis*frascoTotal2)/miligramos2;
+                                    console.log(reconstitucion);
+                                    return reconstitucion;//IMPRIME EL VALOR ENTERO
+                    } else if(dosis !== entero){//COMPARA QUE LA DOSIS NO SEA UN VALOR ENTERO Y LO CONVIERTE A FLOTANTE
+                                    let reconstitucion = (dosis*frascoTotal2)/miligramos2;
+                                     redondeo1 = (reconstitucion.toFixed(1));//MUESTRA SOLAMENTE LOS 2 DECIMALES DESPUES DE LA COMA DEL FLOTANTE
+                                     console.log(redondeo1);
+                                     return redondeo1;//IMPRIME EL FLOTANTE
+                                }               
+                };
+            
+                function ampollas1(){
+                                if (dosis === entero){
+                                    let ampollas = dosis/miligramos;
+                                    console.log(ampollas);
+                                    return ampollas;
+                            } else if(dosis !== entero){
+                                let ampollas = dosis/miligramos;
+                                redondeo2 = (ampollas.toFixed(2));
+                                console.log(redondeo2);
+                                if (ampollas === 1.00){
+                                    redondeo2 = parseInt(ampollas);
+                                    return Math.ceil(redondeo2);
+                                }
+                                return Math.ceil(redondeo2);
+                            }
+                }
+                function ampollas2(){
+                    if (dosis === entero){
+                        let ampollas = dosis/miligramos2;
+                        console.log(ampollas);
+                        return ampollas;
+                } else if(dosis !== entero){
+                    let ampollas = dosis/miligramos2;
+                    redondeo2 = (ampollas.toFixed(2));
+                    console.log(redondeo2);
+                    if (ampollas === 1.00){
+                        redondeo2 = parseInt(ampollas);
+                        return Math.ceil(redondeo2);
+                    }
+                    return Math.ceil(redondeo2);
+                }
+    }
+                
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#1357a6';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco">Penicilina benzatidica</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 1.200.000 U.I.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 3ml de Lidocaína al 1% + 2ml de agua destilada.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo1()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 2.400.000 U.I.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 3ml de Lidocaína al 1% + 7ml de agua destilada.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo1()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas2()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad bg-danger"><b class="texto__Blanco text-white">Administrar unicamente INTRA MUSCULAR</b>.</p>\
+                        <p class="texto__Estabilidad">Una vez reconstituida desechar luego de su uso.</p>\
+                        <p class="texto__Observaciones">Su admnistración debe ser profunda y lenta.</p>\
+                        <p class="texto__Observaciones">Variar sitio de inyección.</p>\
+                    </div>\
+                    <h3 class="administracion">IntraMuscular (IM)</h3>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Dosis Indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Debe retirar '+calculo1()+'ml del Frasco/Ampolla.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+                //FRASCO DE PENICILINA DE 1000000
+                /* <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 1.000.000UI.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 4,5ml de agua destilada, obteniendo 200.000UI/ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\ */
+
+            }
             //PENICILINA G
             else if(nombreMedicamento === "Penicilina G" || nombreMedicamento === "penicilina g" || nombreMedicamento === "PENICILINA G"){
 
@@ -10895,41 +11244,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     <h3 class="nombre__Farmaco">Penicilina G</h3>\
                 </div>\
                 <div class="contenedor__Info">\
-                    <div class="contenedor__Presentacion">\
-                        <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Frasco/Ampolla 1.000.000UI.</h4>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Reconstitución</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>En 4,5ml de agua destilada, obteniendo 200.000UI/ml.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Según dosis indicada</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Retirar del FA '+calculo()+' ml.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Cantidad a utilizar</h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
                             <h4 class="presentacion">Frasco/Ampolla 3.000.000UI.</h4>\
@@ -11047,8 +11361,44 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     btn1.style.display = 'block';
                     btn.style.display = 'none';
                 });
+                //FRASCO DE PENICILINA DE 1000000
+                /* <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 1.000.000UI.</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 4,5ml de agua destilada, obteniendo 200.000UI/ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+calculo()+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\ */
 
-            }
+            } /*
             //PIPERACILINA
             else if(nombreMedicamento === "Piperacilina" || nombreMedicamento === "piperacilina" || nombreMedicamento === "PIPERACILINA"){
 
@@ -11241,7 +11591,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     btn.style.display = 'none';
                 });
 
-            }
+            } */
             //PIPERACILINA TAZOBACTAM
             else if(nombreMedicamento === "Piperacilina Tazobactam" || nombreMedicamento === "piperacilina tazobactam" || nombreMedicamento === "PIPERACILINA TAZOBACTAM"){
 
@@ -12874,6 +13224,123 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                 </div>\
                </div>'
+                informacion.innerHTML += info;
+                //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
+                console.log(btn);
+                //EVENTO AL HACER CLICK EN EL BOTON BORRAR RESTABLECE EL ELEMENTO <P> ORGINAL.
+                btn.addEventListener('click', function(e){
+                    informacion.innerHTML = informaacionOriginal;
+                    fondo.style.backgroundColor = '#318CE7';
+                    btn1.style.display = 'block';
+                    btn.style.display = 'none';
+                });
+
+            }
+            //VORICONAZOL
+            else if(nombreMedicamento === "Voriconazol" || nombreMedicamento === "voriconazol" || nombreMedicamento === "VORICONAZOL"){
+
+                miligramos = 200;
+                frascoTotal = 20;
+
+                let voriconazol = (dosis*frascoTotal)/miligramos;
+
+                function ampollas1(){
+                                if (dosis === entero){
+                                    let ampollas = dosis/miligramos;
+                                    console.log(ampollas);
+                                    return ampollas;
+                            } else if(dosis !== entero){
+                                let ampollas = dosis/miligramos;
+                                redondeo2 = (ampollas.toFixed(2));
+                                console.log(redondeo2);
+                                if (ampollas === 1.00){
+                                    redondeo2 = parseInt(ampollas);
+                                    return Math.ceil(redondeo2);
+                                }
+                                return Math.ceil(redondeo2);
+                            }
+                }
+
+                let fondo = document.querySelector('.contenedor');
+                console.log(fondo);
+                fondo.style.backgroundColor = '#1357a6';
+    
+                let info = 
+                '<div class="contenedor__Grilla">\
+                <div class="contenedor__Titulo">\
+                    <h3 class="nombre__Farmaco">Voriconazol</h3>\
+                </div>\
+                <div class="contenedor__Info">\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Frasco/Ampolla 200mg</h4>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Reconstitución</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 19ml de agua destilada, volumen total 20ml (obteniendo 10mg/ml).</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Según dosis indicada</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Retirar del FA '+voriconazol+' ml.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Cantidad a utilizar</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="titulo__Presentacion">\
+                            <h4 class="presentacion">Comprimidos Recubiertos 50-200mg</h4>\
+                        </div>\
+                    </div>\
+                    <h3 class="estabilidad">Estabilidad y observaciones</h3>\
+                    <div class="contenedor__Estabilidad">\
+                        <p class="texto__Estabilidad">Una vez reconstituida  puede guardarse <b class="texto__Blanco">12hs refrigerada usando 2 dosis.</b>, Si no se requieren 2 dosis en 12hs usar y desechar.</p>\
+                        <p class="texto__Estabilidad">VO administrar 1 hs antes o 1 hs despues de las comidas.</p>\
+                    </div>\
+                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\
+                    <div class="contenedor__Presentacion">\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Diluyente</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>No requiere</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="info__Presentacion">\
+                            <div class="info__Uno">\
+                                <div class="reconstitucion">\
+                                    <h4>Infusión</h4>\
+                                </div>\
+                                <div class="datos">\
+                                    <p>En 1 a 2 horas.</p>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>'
                 informacion.innerHTML += info;
                 //OBTENEMOS EL ELEMENTO DEL BOTON BORRAR Y LO VISUALIZAMOS EN CONSOLA
                 console.log(btn);

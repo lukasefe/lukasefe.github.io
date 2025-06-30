@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="CSS/fichas.css">
     <link rel="stylesheet" href="CSS/botones_opciones_y_modal.css">
     <link rel="stylesheet" href="CSS/carteles_de_botones.css">
-    <link rel="stylesheet" href="CSS/version.css">
+    <link rel="stylesheet" href="CSS/interacciones.css">
+    <link rel="stylesheet" href="CSS/contenedorinteracciones.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -142,7 +143,7 @@
                     <option value="Adrenalina"></option>
                     <option value="Amikacina"></option>
                     <option value="Aminofilina"></option>
-                    <option value="Amiodarona"></option>
+                    <option value="Aminodarona"></option>
                     <option value="Ampicilina"></option>
                     <option value="Ampicilina Sulbactam"></option>
                     <option value="Anfotericina B"></option>
@@ -174,12 +175,13 @@
                     <option value="Fentanilo"></option>
                     <option value="Fluconazol"></option>
                     <option value="Flumazenil"></option>
+                    <option value="Foscarnet"></option>
                     <option value="Furosemida"></option>
                     <option value="Ganciclovir"></option>
                     <option value="Gentamicina"></option>
                     <option value="Ibuprofeno"></option>
                     <option value="Hidrocortisona"></option>
-                    <option value="Imipenem"></option>
+                    <option value="Imipenem/Cilastatina"></option>
                     <option value="Insulina"></option>
                     <option value="Ketamina"></option>
                     <option value="L-cartinia"></option>
@@ -196,8 +198,8 @@
                     <option value="Noradrenalina - Norepinefrina"></option>
                     <option value="Omeprazol"></option>
                     <option value="Paracetamol"></option>
+                    <option value="Penicilina Benzatidica"></option>
                     <option value="Penicilina G"></option>
-                    <option value="Piperacilina"></option>
                     <option value="Piperacilina Tazobactam"></option>
                     <option value="Propofol"></option>
                     <option value="Potasio"></option>
@@ -210,6 +212,7 @@
                     <option value="Tiopental"></option>
                     <option value="Vancomicina"></option>
                     <option value="Vecuronio"></option>
+                    <option value="Voriconazol"></option>
                 </datalist> 
             </div>
             <div class="input-2">
@@ -217,7 +220,7 @@
                 <label for="dosis" class="label__Miligramos">Miligramos Indicados:</label>
             </div>
             <div class="botonera">
-                <button type="submit" class="boton1" > Calcular </button>
+                <button type="submit" class="boton1"> Calcular </button>
                 <button class="boton" type="button">Borrar</button>
             </div>
             <p class="aviso">Para evitar errores en las dosis de medicación con decenas, separa con " . " y no con " , " Por Ej:15.4mg</p>
@@ -226,1630 +229,993 @@
         <div class="resultado">
             <p class="resp">Resultado:</p>
            
+              
             
+        </div>
             
+        <div>
 
+            <!--FICHAS EDITABLES PARA LOS FARMACOS-->
             <div>
-           <!--MEDICAMENTOS VARIOS
-           <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco4">Desmopresina</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Ampolla 4µg/ml.</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Reconstitución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No requiere.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar del FA '+calculo1()+' ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Comprimidos 0,2mg</h4>
-                    </div>
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Sol. Nasal 0,1mg/ml (con una canula calibrada de 0,2ml).</h4>
-                    </div>
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Spray Nasal 0,1mg/ml.</h4>
-                    </div>
-                </div>
-                <h3 class="estabilidad4">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad"><b class="texto__Blanco">Las ampollas y solución nasal se conservan en la heladera entre 2-6°C.</b></p>
-                    <p class="texto__Observaciones">Se administra con canula nasal calibrada de 0,2ml, se absorbe en la región nasal anterior.</p>
-                    <p class="texto__Observaciones">La dosis se adecua a la respuesta clínica individual.</p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion4">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>No</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion4">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Dilución:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>en S.F.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Recomendación:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>En niños menores de 10kg; diluir en 10ml de S.F.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Máxima:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>0,5 µg/ml</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Infusión:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>En 15-30 minutos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion4">IntraVenosa (IVC)--[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>NO</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Concentración</h4>
-                            </div>
-                            <div class="datos">
-                                <p>225mg/ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Dosis Indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Debe retirar '+dilucion5+'ml del Frasco/Ampolla.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>No reconstituir con S.F.</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Porque su administración IM es muy dolorosa.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion4">Intra Nasal (IN)</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Recomendada 0,05ml/dosis</h4>
-                            </div>
-                            <div class="datos">
-                                <p>administrar '+dilucion1+'ml .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Máxima 0,1ml/dosis</h4>
-                            </div>
-                            <div class="datos">
-                                <p>administrar '+dilucion1+'ml .</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           </div>
-           
 
-
-
-
-           <!--INSULINA-->
-           <!--
-           <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco5">Insulina Humana Corriente/Regular</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion5">
-                        <h4 class="presentacion">Frasco/Ampolla 10ml (100UI/ml).</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Reconstitución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No requiere.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar del FA '+calculo()+'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '+ampollas()+' ampolla/as</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion5">
-                        <h4 class="presentacion">Lapiceras y Cartuchos 10ml (100UI/ml).</h4>
-                    </div>
-                </div>
-                <h3 class="estabilidad5">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad">Los viales, las plumas y cartuchos deben conservarse refrigerada. Una vez abiertos tienen una duración de 28 días.</p>
-                    <p class="texto__Observaciones">Puede desarrollarse hipoglucemia cuando la dosis de insulina excede la necesidad del paciente.</p>
-                    <p class="texto__Observaciones">En pacientes con retinopatía proliferativa, puede causar ceguera.</p>
-                    <p class="texto__Observaciones">Puede haber reacciones de hipersensibilidad locales en el lugar de aplicación.</p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion5">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Administrar de forma rápida y lavar con SF</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>A dosis bajas se puede diluir a una concentración de 0,2UI/ml.</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Llevar a '+dilucion+'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion5">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>NO</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion5">IntraVenosa (IVC)--[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Preparar en</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Perfus común, cambiar cada 24hs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Sachet</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No requiere protección a la luz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Identificar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>perfus: con cinta color amarilla con fecha y medicamento.<br>Sachet: rotulo color amarillo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Administrar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>En solitario, Acceso venoso o lumen unicamente destinado a esta infusión. No administrar con otros mediacmentos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion5">Purgado del set para saturar la adsorción de insulina y asegurar un aporte adecuado</h3>
-                <div class="info__Presentacion">
-                    <div class="info__Uno">
-                        <div class="reconstitucion5">
-                            <h4>Deben seguirse los siguientes pasos:</h4>
-                        </div>
-                        <div class="datos__Insulina">
-                            <p><ol class="lista__Insulina">
-                                <li><b>Preparar la dilución antes dicha, agitandola para asegurar una mezcla homogénea.</b></li>
-                                <li><b>Purgar el set de bomba XL Plum A.</b></li>
-                                <li><b>Dejar reposar 30 minutos.</b></li>
-                                <li><b>Descartar el contenido del sachet.</b></li>
-                                <li><b>Volver a prerarar la dilución.</b></li>
-                                <li><b>Purgar el set nuevamente.</b></li>
-                                <li><b>La solucion esta lista para su administración.</b></li>
-                            </ol></p>
-                        </div>
-                    </div>
-                </div>
-           </div>
-           </div> 
-           -->
-           
-           <!--DIURETICOS E INSULINA-->
-           <!--
-           <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco5">Furosemida</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion5">
-                        <h4 class="presentacion">Ampolla 2ml (1mg/0,1ml).</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Reconstitución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No requiere.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar del FA '+calculo()+'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '+ampollas()+' ampolla/as</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="estabilidad5">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad"><b class="texto__Blanco">La dilucion IVC se debe Proteger de la luz y tiene una estabilidad de 24hs a temperatura ambiente.</b></p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion5">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>diluyente</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Sin diluir a una velocidad lenta.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Infusión</h4>
-                            </div>
-                            <div class="datos">
-                                <p>4mg/minuto.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion5">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Diluyente</h4>
-                            </div>
-                            <div class="datos">
-                                <p>En SF.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Minima por périferica 1mg/ml.</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Llevar a '++'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Recomendada por périferica 2mg/ml.</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Llevar a '++'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Máxima por Central 10mg/ml.</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Llevar a '++'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Infusión</h4>
-                            </div>
-                            <div class="datos">
-                                <p>10-15 minutos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion5">IntraVenosa (IVC)--[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Dilución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>llevar la dosis indicada a 24 ml de SF.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Preparación</h4>
-                            </div>
-                            <div class="datos">
-                                <p>'+plan1+'</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Si se prepara por primera vez o se debe cambiar el perfus PREPARAR DOBLE DOSIS</h4>
-                            </div>
-                            <div class="datos">
-                                <p>'+plan2+'</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Preparar en Perfus Fotosensible</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Cambiar cada 24hs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Sachet</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Cubrir para proteger de la luz, cambiar cada 24hs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Identificar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Perfus con cinta amarilla con fecha y medicamento.<br>Sachet con rotulo amarillo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion5">
-                                <h4>Infusión:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Velocidad Máxima 4ml/minuto.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           </div> 
-           -->
-           
-           
-           <!--
-          <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco2">Milrinona</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion2">
-                        <h4 class="presentacion">Frasco/Ampolla de 10mg/10ml (1mg/ml).</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar de la ampolla '+calculo()+'ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="estabilidad2">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad">Frasco/ampolla se conserva a T° ambiente, no congelar. Una vez diluido se conserva 24hs a temperatura ambiente.</p>
-                    <p class="texto__Estabilidad">Si su preparación se a realizado de forma aseptica, puede durar hasta 72hs.</p>
-                    <p class="texto__Observaciones">Evitar Exposición al calor.</p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion2">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>NO</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion2">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>NO</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion2">IntraVenosa Continua (IVC) --[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Dilución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>agregar la dosis indicada a 25ml de DX5%.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Preparación</h4>
-                            </div>
-                            <div class="datos">
-                                <p>'+plan()+'</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Perfus</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Utilizar perfus fotosensible, para aumentar la duración del mismo. Cambiar cada 7 días.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Sachet</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No se necesita cubrir, cambiar cada 24hs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Identificar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Perfus: rotular con cinta roja.<br>Sachet: utilizar rotulo color rojo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            -->
-
-
-
-           <!--SEDOANALGESIA-->
-           <!--
-           <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco3">Dexmedetomidina (PRECEDEX)</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion3">
-                        <h4 class="presentacion">Frasco/Ampolla de 1ml (100mcg/ml).<br>Frasco/Ampolla de 2ml (200mcg/2ml).<br>Frasco/Ampolla de 2ml (400mcg/2ml).</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Reconstitución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No requiere.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar de la ampolla '+calculo1()+' ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '+ampollas1()+' ampolla/as</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="estabilidad3">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad"><b class="texto__Blanco">Una vez diluido 24 a 48hs a T° ambiente.</b></p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion3">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>NO.</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion3">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>NO</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion3">IntraVenosa Continua (IVC) --[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Dilución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>200mcg/2ml en 48 ml de S.F.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Preparación</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Dexmedetomidina +'dosis'MCG_____+'mldosis'+ml.<br>
-                                    Sol. Fisiologica_________________48ml.<br>
-                                    Total_________________________+'plantotal'+ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Identificación</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Perfus cinta color verde.<br>
-                                Rotulo color verde.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Perfus</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Utilizar perfus común y cambiar el mismo cada 48hs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Sachet</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Cambiar el mismo cada 48hs, no necesita proteger de la luz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion3">
-                                <h4>Sobredosis</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Detener la perfusión completamente.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           </div>
-           -->
-
-           <!--MEDICAMENTOS VARIOS
-           <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco4">Desmopresina</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Ampolla 4µg/ml.</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Reconstitución</h4>
-                            </div>
-                            <div class="datos">
-                                <p>No requiere.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar del FA '+calculo1()+' ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Comprimidos 0,2mg</h4>
-                    </div>
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Sol. Nasal 0,1mg/ml (con una canula calibrada de 0,2ml).</h4>
-                    </div>
-                    <div class="titulo__Presentacion4">
-                        <h4 class="presentacion">Spray Nasal 0,1mg/ml.</h4>
-                    </div>
-                </div>
-                <h3 class="estabilidad4">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad"><b class="texto__Blanco">Las ampollas y solución nasal se conservan en la heladera entre 2-6°C.</b></p>
-                    <p class="texto__Observaciones">Se administra con canula nasal calibrada de 0,2ml, se absorbe en la región nasal anterior.</p>
-                    <p class="texto__Observaciones">La dosis se adecua a la respuesta clínica individual.</p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion4">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>No</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion4">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Dilución:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>en S.F.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Recomendación:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>En niños menores de 10kg; diluir en 10ml de S.F.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Máxima:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>0,5 µg/ml</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Infusión:</h4>
-                            </div>
-                            <div class="datos">
-                                <p>En 15-30 minutos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion4">IntraVenosa (IVC)--[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>NO</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Concentración</h4>
-                            </div>
-                            <div class="datos">
-                                <p>225mg/ml.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Dosis Indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Debe retirar '+dilucion5+'ml del Frasco/Ampolla.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>No reconstituir con S.F.</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Porque su administración IM es muy dolorosa.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion4">Intra Nasal (IN)</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Recomendada 0,05ml/dosis</h4>
-                            </div>
-                            <div class="datos">
-                                <p>administrar '+dilucion1+'ml .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion4">
-                                <h4>Máxima 0,1ml/dosis</h4>
-                            </div>
-                            <div class="datos">
-                                <p>administrar '+dilucion1+'ml .</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           </div> 
-           -->
-
-            <!--
-
-            <div class="contenedor__Grilla">
-                <div class="contenedor__Titulo">
-                    <h3 class="nombre__Farmaco">Cefalotina</h3>
-                </div>
-                <div class="contenedor__Info">
-                    <div class="contenedor__Presentacion">
-                        <div class="titulo__Presentacion">
-                            <h4 class="presentacion">Frasco/Ampolla 50mg</h4>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Reconstitución</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Según dosis indicada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Retirar del FA '+calculo1()+' ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Cantidad a utilizar</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="estabilidad">Estabilidad y observaciones</h3>
-                    <div class="contenedor__Estabilidad">
-                        <p class="texto__Estabilidad">Una vez reconstituida dura <b class="texto__Blanco">12 hs a temperatura ambiente y 24 hs refrigerada</b>, luego de este tiempo desechar.</p>
-                        <p class="texto__Observaciones">El cambio de color no indica inactividad.</p>
-                    </div>
-                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                    <h3 class="administracion">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Diluyente</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>S.F. o DX5%.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Recomendada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a <b>'+dilucion1+'ml de S.F.</b> por via periferica.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Máxima</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a '+dilucion2+'ml de S.F. por via central.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Infusión</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>De 3 a 5 minutos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Diluyente</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>S.F. o DX5%.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Recomendada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a <b>'+dilucion3+'ml de S.F.</b> por via periferica.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Máxima</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a '+dilucion4+'ml de S.F. por via central.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Infusión</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>En 30 minutos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="administracion">IntraMuscular (IM)</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Reconstitución</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>En 4ml de lidocaina al 1%</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Concentración</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>225mg/ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Dosis Indicada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Debe retirar '+dilucion5+'ml del Frasco/Ampolla.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>No reconstituir con S.F.</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Porque su administración IM es muy dolorosa.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               </div>
-            -->
-            
-               <!--SEDOANALGESIA
-               <div class="contenedor__Grilla">
-                <div class="contenedor__Titulo">
-                    <h3 class="nombre__Farmaco3">Clorpromazina</h3>
-                </div>
-                <div class="contenedor__Info">
-                    <div class="contenedor__Presentacion">
-                        <div class="titulo__Presentacion3">
-                            <h4 class="presentacion">Ampolla de 3ml (25mg/ml)</h4>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Reconstitución</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>No requiere.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Según dosis indicada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Retirar de la ampolla '+calculo1()+' ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Cantidad a utilizar</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' ampolla/as</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="estabilidad3">Estabilidad y observaciones</h3>
-                    <div class="contenedor__Estabilidad">
-                        <p class="texto__Estabilidad"><b class="texto__Blanco">Ampollas de un solo uso, desechar. No es necesario proteger de la luz durante su administración.</b></p>
-                        <p class="texto__Observaciones">Hipersensibilidad a la droga.</p>
-                        <p class="texto__Observaciones">Pacientes con glaucoma de ángulo agudo, supresión de medula ósea, ni enfermedades graves de hígado o corazón.</p>
-                    </div>
-                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                    <h3 class="administracion3">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Poco Recomendado en Pediatría (PRP)</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="administracion3">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Diluyente</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>SF para mayor estabilidad.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Concentración</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>1mg/ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Dilución</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a <b>'+dilucion1+'ml de S.F.</b> por via periferica.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Infusión</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>En 30 minutos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="administracion3">IntraVenosa Continua (IVC) --[GOTEO]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion2">
-                                    <h4>NO</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="administracion3">IntraMuscular (IM)</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Dosis</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>5mg/ml</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion3">
-                                    <h4>Según indicación medica</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a'+IM()+' ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               </div>-->
-            
-            <!--ANTIBIOTICOS
-            <div class="contenedor__Grilla">
-                <div class="contenedor__Titulo">
-                    <h3 class="nombre__Farmaco">Anfotericina B</h3>
-                </div>
-                <div class="contenedor__Info">
-                    <div class="contenedor__Presentacion">
-                        <div class="titulo__Presentacion">
-                            <h4 class="presentacion">Frasco/Ampolla 50mg</h4>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Reconstitución</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>En 10ml de agua destilada, obteniendo 5mg/ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Según dosis indicada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Retirar del FA '+calculo1()+' ml.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Cantidad a utilizar</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="estabilidad">Estabilidad y observaciones</h3>
-                    <div class="contenedor__Estabilidad">
-                        <p class="texto__Estabilidad">Una vez reconstituida dura <b class="texto__Blanco">24 hs a temperatura ambiente y 48 hs refrigerada</b>, luego de este tiempo desechar.</p>
-                        <p class="texto__Estabilidad">Proteger de la luz durante su conservación y administración.</p>
-                    </div>
-                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                    <h3 class="administracion">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>NO</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                    <div class="contenedor__Presentacion">
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Diluyente</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>DX5%.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Recomendada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a <b>'+dilucion3+'ml de S.F.</b> por via periferica.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Máxima</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a'+dilucion5+'ml de S.F. por via central.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Infusión</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Entre 4 a 6 horas, usar acceso venoso exclusivo, no utilizar con otras soluciones.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Purgar en</h4>
-                                </div>
-                                <div class="datos__Fotosensible">
-                                    <p>Perfus fotosensible</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion">
-                                    <h4>Identificar con</h4>
-                                </div>
-                                <div class="datos__Fotosensible">
-                                    <p>Cinta amarilla el perfus y rotulo amarillo el sachet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               </div>
-            -->
-
-            <!-- inotropicos
-            <div class="contenedor__Grilla">
-            <div class="contenedor__Titulo">
-                <h3 class="nombre__Farmaco2">Amiodarona</h3>
-            </div>
-            <div class="contenedor__Info">
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion2">
-                        <h4 class="presentacion">Frasco/Ampolla de 3ml (50mg/ml).</h4>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Según dosis indicada</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Retirar de la ampolla '' .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Cantidad a utilizar</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Para la dosis indicada se debe utlizar '' ampolla/as.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor__Presentacion">
-                    <div class="titulo__Presentacion2">
-                        <h4 class="presentacion">Comprimidos 200mg.</h4>
-                    </div>
-                </div>
-                
-                <h3 class="estabilidad2">Estabilidad y observaciones</h3>
-                <div class="contenedor__Estabilidad">
-                    <p class="texto__Estabilidad"><b class="texto__Blanco">Proteger de la luz durante su admnisitración.</b></p>
-                    <p class="texto__Estabilidad"><b class="texto__Blanco">Duración 24hs a T° ambiente.</b></p>
-                </div>
-                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
-                <h3 class="administracion2">IntraVenosa Directa (IVD) --[PUSH]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Poco recomendado en pediatría (PRD).</h4>
-                            </div>
-                        </div>
-                    </div>
+                <!--MEDICAMENTOS VARIOS-->
+                    <div>
+                    <!--MEDICAMENTOS VARIOS-->
+                        <!--MEDICAMENTOS VARIOS
+                        <div class="contenedor__Grilla">
+                            <div class="contenedor__Titulo">
+                                <h3 class="nombre__Farmaco4">Desmopresina</h3>
+                            </div>
+                            <div class="contenedor__Info">
+                        <div class="contenedor__Presentacion">
+                            <div class="titulo__Presentacion4">
+                                <h4 class="presentacion">Ampolla 4µg/ml.</h4>
+                            </div>
+                            <div class="info__Presentacion">
+                                <div class="info__Uno">
+                                    <div class="reconstitucion4">
+                                        <h4>Reconstitución</h4>
+                                                </div>
+                                                <div class="datos">
+                                            <p>No requiere.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Según dosis indicada</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>Retirar del FA '+calculo1()+' ml.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Cantidad a utilizar</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contenedor__Presentacion">
+                                <div class="titulo__Presentacion4">
+                                    <h4 class="presentacion">Comprimidos 0,2mg</h4>
+                                </div>
+                                <div class="titulo__Presentacion4">
+                                    <h4 class="presentacion">Sol. Nasal 0,1mg/ml (con una canula calibrada de 0,2ml).</h4>
+                                </div>
+                                <div class="titulo__Presentacion4">
+                                    <h4 class="presentacion">Spray Nasal 0,1mg/ml.</h4>
+                                </div>
+                            </div>
+                            <h3 class="estabilidad4">Estabilidad y observaciones</h3>
+                            <div class="contenedor__Estabilidad">
+                                <p class="texto__Estabilidad"><b class="texto__Blanco">Las ampollas y solución nasal se conservan en la heladera entre 2-6°C.</b></p>
+                                <p class="texto__Observaciones">Se administra con canula nasal calibrada de 0,2ml, se absorbe en la región nasal anterior.</p>
+                                <p class="texto__Observaciones">La dosis se adecua a la respuesta clínica individual.</p>
+                            </div>
+                            <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
+                            <h3 class="administracion4">IntraVenosa Directa (IVD) --[PUSH]--</h3>
+                            <div class="contenedor__Presentacion">
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>No</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="administracion4">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
+                            <div class="contenedor__Presentacion">
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Dilución:</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>en S.F.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Recomendación:</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>En niños menores de 10kg; diluir en 10ml de S.F.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Máxima:</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>0,5 µg/ml</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Infusión:</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>En 15-30 minutos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="administracion4">IntraVenosa (IVC)--[GOTEO]--</h3>
+                            <div class="contenedor__Presentacion">
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>NO</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Concentración</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>225mg/ml.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Dosis Indicada</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>Debe retirar '+dilucion5+'ml del Frasco/Ampolla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>No reconstituir con S.F.</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>Porque su administración IM es muy dolorosa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="administracion4">Intra Nasal (IN)</h3>
+                            <div class="contenedor__Presentacion">
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Recomendada 0,05ml/dosis</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>administrar '+dilucion1+'ml .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion4">
+                                            <h4>Máxima 0,1ml/dosis</h4>
+                                        </div>
+                                        <div class="datos">
+                                            <p>administrar '+dilucion1+'ml .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
                     
-                </div>
-                <h3 class="administracion2">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Diluyente</h4>
-                            </div>
-                            <div class="datos">
-                                <p>DX5%.</p>
-                            </div>
-                        </div>
                     </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Dilución Minima</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Llevar a'+' de solucion.</p>
-                            </div>
-                        </div>
-                </div>
-                    <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion2">
-                                    <h4>Dilución Recomendada</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a'+' de solucion.</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="info__Presentacion">
-                            <div class="info__Uno">
-                                <div class="reconstitucion2">
-                                    <h4>Dilución Máxima</h4>
-                                </div>
-                                <div class="datos">
-                                    <p>Llevar a'+' de solucion.</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Infusión</h4>
-                            </div>
-                            <div class="datos">
-                                <p>en 60 minutos.</p>
-                            </div>
-                            <div class="datos">
-                                <p>Concentraciones mayores a 2mg/ml infundir por mas de 1hs por via central.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Dosis de carga</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Infundir en 30 minutos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion2">IntraVenosa Continua (IVC) --[GOTEO]--</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Diluir en</h4>
-                            </div>
-                            <div class="datos">
-                                <p>DX 5%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Purgar en</h4>
-                            </div>
-                            <div class="datos__Fotosensible">
-                                <p>Perfus fotosensible.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Sachet</h4>
-                            </div>
-                            <div class="datos__Fotosensible">
-                                <p>Cambiar cada 24hs, cubrir para proteger de la luz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Identificar con</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Cinta de color rojo el perfus y rotulo de color rojo en la solución.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Infusión</h4>
-                            </div>
-                            <div class="datos">
-                                <p>5mg/kg/h (según edad).</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="administracion2">En emergencia</h3>
-                <div class="contenedor__Presentacion">
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Diluir en</h4>
-                            </div>
-                            <div class="datos">
-                                <p>DX 5%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Dilucion</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Llevar a '+'.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__Presentacion">
-                        <div class="info__Uno">
-                            <div class="reconstitucion2">
-                                <h4>Infusión</h4>
-                            </div>
-                            <div class="datos">
-                                <p>Entre 30 minutos a 2hs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            -->
 
+                <!--INSULINA-->
+                    <div>
+                        <!--
+                            <div class="contenedor__Grilla">
+                            <div class="contenedor__Titulo">
+                                <h3 class="nombre__Farmaco5">Insulina Humana Corriente/Regular</h3>
+                            </div>
+                            <div class="contenedor__Info">
+                                <div class="contenedor__Presentacion">
+                                    <div class="titulo__Presentacion5">
+                                        <h4 class="presentacion">Frasco/Ampolla 10ml (100UI/ml).</h4>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Reconstitución</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>No requiere.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Según dosis indicada</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Retirar del FA '+calculo()+'ml.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Cantidad a utilizar</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Para la dosis indicada se debe utlizar '+ampollas()+' ampolla/as</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contenedor__Presentacion">
+                                    <div class="titulo__Presentacion5">
+                                        <h4 class="presentacion">Lapiceras y Cartuchos 10ml (100UI/ml).</h4>
+                                    </div>
+                                </div>
+                                <h3 class="estabilidad5">Estabilidad y observaciones</h3>
+                                <div class="contenedor__Estabilidad">
+                                    <p class="texto__Estabilidad">Los viales, las plumas y cartuchos deben conservarse refrigerada. Una vez abiertos tienen una duración de 28 días.</p>
+                                    <p class="texto__Observaciones">Puede desarrollarse hipoglucemia cuando la dosis de insulina excede la necesidad del paciente.</p>
+                                    <p class="texto__Observaciones">En pacientes con retinopatía proliferativa, puede causar ceguera.</p>
+                                    <p class="texto__Observaciones">Puede haber reacciones de hipersensibilidad locales en el lugar de aplicación.</p>
+                                </div>
+                                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
+                                <h3 class="administracion5">IntraVenosa Directa (IVD) --[PUSH]--</h3>
+                                <div class="contenedor__Presentacion">
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Administrar de forma rápida y lavar con SF</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>A dosis bajas se puede diluir a una concentración de 0,2UI/ml.</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Llevar a '+dilucion+'ml.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="administracion5">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
+                                <div class="contenedor__Presentacion">
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>NO</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="administracion5">IntraVenosa (IVC)--[GOTEO]--</h3>
+                                <div class="contenedor__Presentacion">
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Preparar en</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Perfus común, cambiar cada 24hs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Sachet</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>No requiere protección a la luz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Identificar</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>perfus: con cinta color amarilla con fecha y medicamento.<br>Sachet: rotulo color amarillo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion5">
+                                                <h4>Administrar</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>En solitario, Acceso venoso o lumen unicamente destinado a esta infusión. No administrar con otros mediacmentos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="administracion5">Purgado del set para saturar la adsorción de insulina y asegurar un aporte adecuado</h3>
+                                <div class="info__Presentacion">
+                                    <div class="info__Uno">
+                                        <div class="reconstitucion5">
+                                            <h4>Deben seguirse los siguientes pasos:</h4>
+                                        </div>
+                                        <div class="datos__Insulina">
+                                            <p><ol class="lista__Insulina">
+                                                <li><b>Preparar la dilución antes dicha, agitandola para asegurar una mezcla homogénea.</b></li>
+                                                <li><b>Purgar el set de bomba XL Plum A.</b></li>
+                                                <li><b>Dejar reposar 30 minutos.</b></li>
+                                                <li><b>Descartar el contenido del sachet.</b></li>
+                                                <li><b>Volver a prerarar la dilución.</b></li>
+                                                <li><b>Purgar el set nuevamente.</b></li>
+                                                <li><b>La solucion esta lista para su administración.</b></li>
+                                            </ol></p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div> 
+                        -->
+
+                    </div>
+           
+                <!--DIURETICOS E INSULINA-->
+                    <div>
+                                         <!--
+                            <div class="contenedor__Grilla">
+                                <div class="contenedor__Titulo">
+                                    <h3 class="nombre__Farmaco5">Furosemida</h3>
+                                </div>
+                                <div class="contenedor__Info">
+                                    <div class="contenedor__Presentacion">
+                                        <div class="titulo__Presentacion5">
+                                            <h4 class="presentacion">Ampolla 2ml (1mg/0,1ml).</h4>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Reconstitución</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>No requiere.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Según dosis indicada</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Retirar del FA '+calculo()+'ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Cantidad a utilizar</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Para la dosis indicada se debe utlizar '+ampollas()+' ampolla/as</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="estabilidad5">Estabilidad y observaciones</h3>
+                                    <div class="contenedor__Estabilidad">
+                                        <p class="texto__Estabilidad"><b class="texto__Blanco">La dilucion IVC se debe Proteger de la luz y tiene una estabilidad de 24hs a temperatura ambiente.</b></p>
+                                    </div>
+                                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
+                                    <h3 class="administracion5">IntraVenosa Directa (IVD) --[PUSH]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>diluyente</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Sin diluir a una velocidad lenta.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Infusión</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>4mg/minuto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="administracion5">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Diluyente</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>En SF.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Minima por périferica 1mg/ml.</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a '++'ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Recomendada por périferica 2mg/ml.</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a '++'ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Máxima por Central 10mg/ml.</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a '++'ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Infusión</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>10-15 minutos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="administracion5">IntraVenosa (IVC)--[GOTEO]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Dilución</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>llevar la dosis indicada a 24 ml de SF.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Preparación</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>'+plan1+'</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Si se prepara por primera vez o se debe cambiar el perfus PREPARAR DOBLE DOSIS</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>'+plan2+'</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Preparar en Perfus Fotosensible</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Cambiar cada 24hs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Sachet</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Cubrir para proteger de la luz, cambiar cada 24hs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Identificar</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Perfus con cinta amarilla con fecha y medicamento.<br>Sachet con rotulo amarillo</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion5">
+                                                    <h4>Infusión:</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Velocidad Máxima 4ml/minuto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            -->
+                    </div>
+           
+                <!--INOTROPICOS-->
+                    <div>
+                                       <!--
+                        <div class="contenedor__Grilla">
+                            <div class="contenedor__Titulo">
+                                <h3 class="nombre__Farmaco2">Milrinona</h3>
+                            </div>
+                            <div class="contenedor__Info">
+                                <div class="contenedor__Presentacion">
+                                    <div class="titulo__Presentacion2">
+                                        <h4 class="presentacion">Frasco/Ampolla de 10mg/10ml (1mg/ml).</h4>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Según dosis indicada</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Retirar de la ampolla '+calculo()+'ml.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Cantidad a utilizar</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Para la dosis indicada se debe utlizar '+ampollas()+' frasco/os.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="estabilidad2">Estabilidad y observaciones</h3>
+                                <div class="contenedor__Estabilidad">
+                                    <p class="texto__Estabilidad">Frasco/ampolla se conserva a T° ambiente, no congelar. Una vez diluido se conserva 24hs a temperatura ambiente.</p>
+                                    <p class="texto__Estabilidad">Si su preparación se a realizado de forma aseptica, puede durar hasta 72hs.</p>
+                                    <p class="texto__Observaciones">Evitar Exposición al calor.</p>
+                                </div>
+                                <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
+                                <h3 class="administracion2">IntraVenosa Directa (IVD) --[PUSH]--</h3>
+                                <div class="contenedor__Presentacion">
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>NO</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="administracion2">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
+                                <div class="contenedor__Presentacion">
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>NO</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="administracion2">IntraVenosa Continua (IVC) --[GOTEO]--</h3>
+                                <div class="contenedor__Presentacion">
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Dilución</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>agregar la dosis indicada a 25ml de DX5%.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Preparación</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>'+plan()+'</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Perfus</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Utilizar perfus fotosensible, para aumentar la duración del mismo. Cambiar cada 7 días.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Sachet</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>No se necesita cubrir, cambiar cada 24hs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info__Presentacion">
+                                        <div class="info__Uno">
+                                            <div class="reconstitucion2">
+                                                <h4>Identificar</h4>
+                                            </div>
+                                            <div class="datos">
+                                                <p>Perfus: rotular con cinta roja.<br>Sachet: utilizar rotulo color rojo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            -->
+                    </div>
+           
+                <!--SEDOANALGESIA-->
+                    <div>
+                        <!--
+                            <div class="contenedor__Grilla">
+                                <div class="contenedor__Titulo">
+                                    <h3 class="nombre__Farmaco3">Dexmedetomidina (PRECEDEX)</h3>
+                                </div>
+                                <div class="contenedor__Info">
+                                    <div class="contenedor__Presentacion">
+                                        <div class="titulo__Presentacion3">
+                                            <h4 class="presentacion">Frasco/Ampolla de 1ml (100mcg/ml).<br>Frasco/Ampolla de 2ml (200mcg/2ml).<br>Frasco/Ampolla de 2ml (400mcg/2ml).</h4>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Reconstitución</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>No requiere.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Según dosis indicada</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Retirar de la ampolla '+calculo1()+' ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Cantidad a utilizar</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' ampolla/as</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="estabilidad3">Estabilidad y observaciones</h3>
+                                    <div class="contenedor__Estabilidad">
+                                        <p class="texto__Estabilidad"><b class="texto__Blanco">Una vez diluido 24 a 48hs a T° ambiente.</b></p>
+                                    </div>
+                                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
+                                    <h3 class="administracion3">IntraVenosa Directa (IVD) --[PUSH]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>NO.</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="administracion3">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>NO</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="administracion3">IntraVenosa Continua (IVC) --[GOTEO]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Dilución</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>200mcg/2ml en 48 ml de S.F.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Preparación</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Dexmedetomidina +'dosis'MCG_____+'mldosis'+ml.<br>
+                                                        Sol. Fisiologica_________________48ml.<br>
+                                                        Total_________________________+'plantotal'+ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Identificación</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Perfus cinta color verde.<br>
+                                                    Rotulo color verde.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Perfus</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Utilizar perfus común y cambiar el mismo cada 48hs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Sachet</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Cambiar el mismo cada 48hs, no necesita proteger de la luz.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion3">
+                                                    <h4>Sobredosis</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Detener la perfusión completamente.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->             
+                    </div>
+           
+                <!--ANTIBIOTICOS-->
+                    <div>
+                        <!--
+                            <div class="contenedor__Grilla">
+                                <div class="contenedor__Titulo">
+                                    <h3 class="nombre__Farmaco">Cefalotina</h3>
+                                </div>
+                                <div class="contenedor__Info">
+                                    <div class="contenedor__Presentacion">
+                                        <div class="titulo__Presentacion">
+                                            <h4 class="presentacion">Frasco/Ampolla 50mg</h4>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Reconstitución</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>En 10ml de agua destilada, obteniendo 100mg/ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Según dosis indicada</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Retirar del FA '+calculo1()+' ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Cantidad a utilizar</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Para la dosis indicada se debe utlizar '+ampollas1()+' frasco/os</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="estabilidad">Estabilidad y observaciones</h3>
+                                    <div class="contenedor__Estabilidad">
+                                        <p class="texto__Estabilidad">Una vez reconstituida dura <b class="texto__Blanco">12 hs a temperatura ambiente y 24 hs refrigerada</b>, luego de este tiempo desechar.</p>
+                                        <p class="texto__Observaciones">El cambio de color no indica inactividad.</p>
+                                    </div>
+                                    <h4 class="texto1">En base a la dosis indicada y la forma de administración elegida:</h4>
+                                    <h3 class="administracion">IntraVenosa Directa (IVD) --[PUSH]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Diluyente</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>S.F. o DX5%.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Recomendada</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a <b>'+dilucion1+'ml de S.F.</b> por via periferica.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Máxima</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a '+dilucion2+'ml de S.F. por via central.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Infusión</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>De 3 a 5 minutos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Diluyente</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>S.F. o DX5%.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Recomendada</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a <b>'+dilucion3+'ml de S.F.</b> por via periferica.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Máxima</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Llevar a '+dilucion4+'ml de S.F. por via central.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Infusión</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>En 30 minutos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="administracion">IntraMuscular (IM)</h3>
+                                    <div class="contenedor__Presentacion">
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Reconstitución</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>En 4ml de lidocaina al 1%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Concentración</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>225mg/ml.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>Dosis Indicada</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Debe retirar '+dilucion5+'ml del Frasco/Ampolla.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info__Presentacion">
+                                            <div class="info__Uno">
+                                                <div class="reconstitucion">
+                                                    <h4>No reconstituir con S.F.</h4>
+                                                </div>
+                                                <div class="datos">
+                                                    <p>Porque su administración IM es muy dolorosa.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                    </div>
 
           <!--
            <div class="contenedor__Grilla">
@@ -2123,6 +1489,7 @@
     <div id="botones_op" class="contenedor_botones_opciones"><!--CONTENEDOR DE LA BOTONERA-->
         <button id="boton1" class="botones__opciones planes">Plan de Hidratación Basal</button><!--BOTON DE PLAN DE HIDRATACION-->
         <button id="boton_2" class="botones__opciones insulina" >Preparación goteo de Insulina</button><!--BOTON DE INSULINA-->
+        <button id="botoni" class="botones__opciones interacciones" >Interacciones</button><!--BOTON DE INSULINA-->
       <!-- <button class="botones__opciones ph">PH de los Fármacos</button>-->   <!--BOTON DE PH-->
     </div>
 
@@ -2215,6 +1582,118 @@
         </ol></p>
     </div>
 
+    <!--MODAL INTERACCIONES-->
+    <div id="cartel_i"  class="cartel_interacciones">
+        <button id="boton_c3" class="cerrar">x</button>
+        <h4>Interacciones</h4>
+        <form id="forminteraccion">
+            <div class="input-1">
+                <input id="interaccion" class="input__Interaccion" type="text" list="lista_2" placerholder="">
+                <label for="interaccion" class="label__Interaccion">Medicamento: </label>
+                <datalist id="lista_2">
+                    <option value="Aciclovir"></option>
+                </datalist>
+            </div>
+            <button id="bo">Buscar</button>
+        </form>
+        <div id="lista_interacciones" class="resultadobusqueda">
+            <div class="contenedorinteraccion">
+                <h3 class="teta">Aciclovir</h3>
+                <!--COLUMNA 1:INCOMPATIBILIDAD-->
+                <div class="cajageneral">
+                <div class="cajaincompatibilidad">
+                    <h4 class="tit_incompatibilidad">Incompatibilidad</h4>
+                    <ul>
+                        <li>Adrenalina</li>
+                        <li>Ampicilina Sulbactam</li>
+                        <li>Ciprofloxacina</li>
+                        <li>Diazepan</li>
+                        <li>Difenhilhidantoina</li>
+                        <li>Dobutamina</li>
+                        <li>Dopamina</li>
+                        <li>Esmolol</li>
+                        <li>Foscanet</li>
+                        <li>Fosfatos</li>
+                        <li>Lidocaina</li>
+                        <li>Midazolam</li>
+                        <li>Nitroprusiato de Sodio</li>
+                        <li>Piperacilina Tazobactam</li>
+                        <li>Vecuronio</li>
+                    </ul>
+                </div>
+                <!--COLUMNA 2:COMPATIBILIDAD-->
+                <div class="cajacompatibilidad">
+                    <h4 class="tit_compatibilidad">Compatibilidad</h4>
+                    <ul>
+                        <li>Amikacina</li>
+                        <li>Aminofilina</li>
+                        <li>Ampicilina</li>
+                        <li>Bicarbonato de Sodio</li>
+                        <li>Cloruro de Calcio</li>
+                        <li>Cefotaxima</li>
+                        <li>Ceftazidima</li>
+                        <li>Clindamicina</li>
+                        <li>Cloruro de Potasio</li>
+                        <li>Dexametasona</li>
+                        <li>Dexmedetomidina (Precedex)</li>
+                        <li>Fenobarbital</li>
+                        <li>Fentanilo</li>
+                        <li>Fluconazol</li>
+                        <li>Furosemida</li>
+                        <li>Gentamicina</li>
+                        <li>Heparina</li>
+                        <li>Hidrocortisona</li>
+                        <li>Heparina</li>
+                        <li>Imipenem</li>
+                        <li>Insulina Regular</li>
+                        <li>Linezolid</li>
+                        <li>Lorazepam</li>
+                        <li>Metilprednisolona</li>
+                        <li>Metoclopramida</li>
+                        <li>Metronidazol</li>
+                        <li>Milrinona</li>
+                        <li>Octreotide</li>
+                        <li>Ranitidina</li>
+                        <li>Sulfato de Magnesio</li>
+                        <li>Sulfametoxazol-Trimetropina (smx-tmp)</li>
+                        <li>Tiopental</li>
+                        <li>Vancomicina</li>
+                        <li>Vasopresina</li>
+                        <li>Voriconazol</li>
+                    </ul>
+                </div>
+                <!--COLUMNA 3:VARIABLE-->
+                <div class="cajavariable">
+                    <h4 class="tit_variable">Variable</h4>
+                    <ul>
+                        <li>Caspofungin</li>
+                        <li>Meropenem</li>
+                        <li>Morfina</li>
+                    </ul>
+                </div>
+                <!--COLUMNA 4:SIN DATOS-->
+                <div class="cajasin">
+                    <h4 class="tit_sin">Sin Datos Disponibles</h4>
+                    <ul>
+                        <li>Alprostadil</li>
+                        <li>Amiodarona</li>
+                        <li>Anfotericina</li>
+                        <li>Anfotericina B</li>
+                        <li>Cefalotina</li>
+                        <li>Claritromicina</li>
+                        <li>Clonidina</li>
+                        <li>Ganciclovir</li>
+                        <li>Noradrenalina</li>
+                        <li>Pancuronio</li>
+                    </ul>
+                </div>
+                <div></div>
+                <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="aviso_descargo">
         <p class="textito">La funcionalidad presentada en esta aplicación web, no pretende sustituir y/o suplantar los conocimientos y/o actividades del profesional de enfermería.</p>
         <p class="textito">Esta aplicación web se a desarrollado como <b>complemento</b> a los conocimientos del personal de enfermería en la tarea del calculo de dosis de farmacos, dilución y administración de los mismos, facilita el proceso y disminuye el tiempo de preparacion siguiendo un estandar de calidad homogeneo.</p>
@@ -2226,7 +1705,6 @@
         <p><a class="link__manual" href="ASSETS/GUIA FARMACO TERAPEUTICA Y ADMINISTRACION DE MEDICAMENTOS-UTIPUCIM-FARMACIA-HIM-2019.pdf" target="_blank">Click aqui para ver el manual de farmacología y administración de medicamentos.</a></p>
     </div>
     
-    <span class="version">Versión:1.0</span>
 
     <!--PIE DE PÁGINA-->
     <footer class="pie">
@@ -2237,14 +1715,16 @@
                 <span id="enfconec" class="text-white">ENFERMERÍA CONECTADA</span>
             </a>
             <p class="leyenda">Fernandez Lucas Lic. en enfermería/Desar. Web</p>
-            <p class="leyenda">© 2022 - 2024 Todos los derechos reservados</p>
+            <p class="leyenda">© 2022 - 2025 Todos los derechos reservados</p>
             <p class="leyenda">Córdoba - Argentina</p>
+            <p class="leyenda">Actualizacion Reciente: 30/06/2025</p>
         </div>
     </footer>
 </body>
 <script src="scripts/appCalculadora.js"></script>
 <script src="scripts/alerta.js"></script>
 <script src="scripts/carteles_botoneras.js"></script>
+<script src="scripts/interacciones.js"></script>
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

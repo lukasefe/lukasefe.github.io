@@ -1,1 +1,1 @@
-window.alert("30/06/2025\nCambios de datos de los siguientes farmacos: \nAMPICILINA 500MG. \nAMPICILINA SULBACTAM 750 MG.\nSe agrego FOSCARNET\nHIDROCORTISONA 100MG\nHIDROCORTISONA SUSPENSION ORAL\nSe cambio el nombre de IMIPENEM a IMIPENEM/CILASTATINA.\nLINEZOLID se retiro calculo del granulado\nse agrego PENICILINA BENZATIDICA.\nPENICILINA G se retiro presentacion de 1.000.000\nSe agrego VORICONAZOL.")
+window.alert("17/07/2025\nCorrección nombre de Amiodarona en el datalist de busqueda.")

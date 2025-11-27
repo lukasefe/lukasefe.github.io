@@ -541,7 +541,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion">\
-                            <h4 class="presentacion">Frasco/Ampolla 500mg/20ml. <br>Laboratorio Gamepe.</br></h4>\
+                            <h4 class="presentacion">Frasco/Ampolla 500mg/20ml. <br>Laboratorio Gemepe.</br></h4>\
                         </div>\
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
@@ -13470,6 +13470,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             };
 
 })
+
 
 
 

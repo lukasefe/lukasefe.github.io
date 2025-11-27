@@ -215,64 +215,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                         </div>\
                     </div>\
                 </div>\
-                <h3 class="administracion">Posología</h3>\
-                    <div class="contenedor__Presentacion">\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Neumonia Aguda de la Comunidad (NAC)<br>(200mg/kg/dia c/6hs)</br></h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Dosis máxima en 24hs según el peso: '+(200*kg).toFixed(0)+'mg de ampicilina </p>\
-                                    <p>Dosis cada 6hs: <b>'+((200*kg)/4).toFixed(0)+'</b>mg de ampicilina.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Neumonia con derrame <br>(300mg/kg/dia c/6hs)</br></h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Dosis máxima en 24hs según el peso: '+(300*kg).toFixed(0)+'mg de ampicilina </p>\
-                                    <p>Dosis cada 6hs: <b>'+((300*kg)/4).toFixed(0)+'</b>mg de ampicilina.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Otitis y sinusitis <br>(100mg/kg/dia c/6hs)</br></h4>\
-                                </div>\
-                                <div class="datos">\
-                                    <p>Dosis máxima en 24hs según el peso: '+(100*kg).toFixed(0)+'mg de ampicilina </p>\
-                                    <p>Dosis cada 6hs: <b>'+((100*kg)/4).toFixed(0)+'</b>mg de ampicilina.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>Meningitis y endocarditis <br>(300 - 400 mg/kg/dia c/6hs)</br></h4>\
-                                </div>\
-                                <div class="datos">\
-                                     <p>con 300mg</p>\
-                                     <p>Dosis máxima en 24hs según el peso: '+(300*kg).toFixed(0)+'mg de ampicilina </p>\
-                                     <p>Dosis cada 6hs: <b>'+((300*kg)/4).toFixed(0)+'</b>mg de ampicilina.</p>\
-                                       <p>con 400mg</p>\
-                                     <p>Dosis máxima en 24hs según el peso: '+(400*kg).toFixed(0)+'mg de ampicilina </p>\
-                                     <p>Dosis cada 6hs: <b>'+((400*kg)/4).toFixed(0)+'</b>mg de ampicilina.</p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        <div class="info__Presentacion">\
-                            <div class="info__Uno">\
-                                <div class="reconstitucion">\
-                                    <h4>DOSIS MÁXIMA 12GR/DIA</br></h4>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
                 <h3 class="estabilidad">Estabilidad y observaciones</h3>\
                 <div class="contenedor__Estabilidad">\
                     <p class="texto__Estabilidad">Una vez reconstituida dura <b class="texto__Blanco">1 hs a temperatura ambiente y 2 hs refrigerada</b>, luego de este tiempo desechar.</p>\
@@ -13470,6 +13412,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             };
 
 })
+
 
 
 

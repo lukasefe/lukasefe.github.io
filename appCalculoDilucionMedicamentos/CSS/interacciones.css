@@ -1,0 +1,112 @@
+:root{
+    --Oswald:'Lato', sans-serif, 'League Spartan', sans-serif,'Oswald', sans-serif;
+    --Compatible: #0b8726;
+    --incompatible: #9f1212;
+    --variable: #e47200;
+    --no-probada:#0eb0be;
+    --desconocida:#63465A ; 
+}
+/*COMPATIBLE Y SU PARTES*/
+.compatible{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    padding: 10px;
+    background-color: var(--Compatible);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.compatible h4{
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.compatible p{
+        margin-bottom: 0;
+        text-transform:capitalize;
+}
+
+/*INCOMPATIBLE Y SUS PARTES*/
+.incompatible{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    padding: 10px;
+    background-color: var(--incompatible);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.incompatible h4{
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.incompatible p{
+        margin-bottom: 0;
+        text-transform:capitalize;
+}
+
+/*NO PROBADA Y SUS PARTES*/
+.no-probada{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    padding: 10px;
+    background-color: var(--no-probada);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.no-probada h4{
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.no-probada p{
+        margin-bottom: 0;
+        text-transform:capitalize;
+}
+
+/*VARIABLE Y SUS PARTES*/
+.variable{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    padding: 10px;
+    background-color: var(--variable);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.variable h4{
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.variable p{
+        margin-bottom: 0;
+        text-transform:capitalize;
+}
+
+/*DESCONOCIDO   Y SUS PARTES*/
+.desconocido{
+    color: var(--titulo);
+    font-family: var(--Oswald);
+    padding: 10px;
+    background-color: var(--desconocida);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.desconocido h4{
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.desconocido p{
+        margin-bottom: 0;
+        text-transform:capitalize;
+}

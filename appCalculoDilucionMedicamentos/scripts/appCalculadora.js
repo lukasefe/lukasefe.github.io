@@ -13,7 +13,7 @@ formulario.addEventListener("submit", function(e){
     //OBTENEMOS TODOS LOS DATOS DE LOS ELEMENTOS EN VARIABLES
     let nombreMedicamento = document.getElementById("seleccion").value.trim();
     let dosiscadena = document.getElementById("dosis").value;//AQUI CAMBIE YA QUE EL TYPE NUMBER NO ACEPTABA VALORES DECIMALES CON .
-    let kgcadena = document.getElementById("kg").value;
+   // let kgcadena = document.getElementById("kg").value;
     let informacion = document.querySelector(".resultado");
     let borrarP = document.querySelector(".resp");
     let btn1 = document.querySelector(".boton1");
@@ -13470,5 +13470,6 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             };
 
 })
+
 
 

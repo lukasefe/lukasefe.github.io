@@ -1,1 +1,1 @@
-window.alert("17/07/2025\nCorrección nombre de Amiodarona en el datalist de busqueda.")
+window.alert("27/11/2025\nSe agrego presentacion de aciclovir Gamepe 500mg/20ml.")

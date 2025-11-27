@@ -21,7 +21,7 @@ formulario.addEventListener("submit", function(e){
     let informaacionOriginal = informacion.innerHTML;//ESTA VARIABLE ALMACENA EL VALOR ORIGINAL DEL DIV INFORMACION PARA QUE AL SE ESTABLESCA LA FUNCION DE BORRAR.    
    
     let dosis = Number(dosiscadena);//AQUI CONVIERTO EL STRING DEL VALOR DEL INPUT TEXT PARA LAS OPERACIONES
-    let kg = Number(kgcadena);
+    //let kg = Number(kgcadena);
 
     //IMPRMIMOS LOS DATOS DE LAS VARIABLES EN CONSOLA PARA ESTAR SEGUROS DE QUE SON LOS DATOS CORRECTOS
     console.log(nombreMedicamento);
@@ -13470,6 +13470,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             };
 
 })
+
 
 
 

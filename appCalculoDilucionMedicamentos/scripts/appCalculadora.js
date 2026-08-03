@@ -29,8 +29,8 @@ formulario.addEventListener("submit", function(e){
     console.log(informacion);
     console.log(borrarP);
 
-    let miligramos 
-    let frascoTotal
+    let miligramos;
+    let frascoTotal;
                 
 
 
@@ -11774,8 +11774,8 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
             //PROPOFOL
             else if(nombreMedicamento === "Propofol" || nombreMedicamento === "propofol" || nombreMedicamento === "PROPOFOL"){
 
-                miligramos = 200;
-                frascoTotal = 20;
+                miligramos = 1000;
+                frascoTotal = 50;
                 dilucion = Number(calculo()) + Number(calculo());
                 let dosisml = 24 - calculo();
                 let plantotal = Number(calculo()) + Number(dosisml);
@@ -11830,7 +11830,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                 <div class="contenedor__Info">\
                     <div class="contenedor__Presentacion">\
                         <div class="titulo__Presentacion3">\
-                            <h4 class="presentacion">Ampolla de 200mg/20ml.</h4>\
+                            <h4 class="presentacion">Frasco/Ampolla al 2% de 1000mg/50ml (20mg/1ml).</h4>\
                         </div>\
                         <div class="info__Presentacion">\
                             <div class="info__Uno">\
@@ -11865,7 +11865,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <h3 class="estabilidad3">Estabilidad y observaciones</h3>\
                     <div class="contenedor__Estabilidad">\
-                        <p class="texto__Estabilidad"><b class="texto__Blanco">Una vez preparada 6hs de estabilidad a temperatura ambiente.</b></p>\
+                        <p class="texto__Estabilidad"><b class="texto__Blanco">Una vez preparada 24hs de estabilidad a temperatura ambiente, no retirar dosis usar el contenido completo del frasco solo programando la dosis indicada.</b></p>\
                         <p class="texto__Estabilidad"><b class="texto__Blanco">Las ampollas se conservan a T° ambiente.</b></p>\
                         <p class="texto__Observaciones"><b class="texto__Blanco">Deben considerarse los beneficios y los riesgos antes de proceder con el uso repetido o prolongado (>3 horas) de propofol en niños pequeños (menores de 3 años) ya que ha habido informes de neurotoxicidad en estudios preclínicos.</b></p>\
                         <p class="texto__Observaciones"><b class="texto__Blanco">Bradicardia severa, Asistolia, despresión respiratoria, paro cardiorespiratorio, dolor en zona de punzión.</b></p>\
@@ -11899,7 +11899,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Dilución</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Dosis indicada y cantidad por indicación medica en DX5% (si hay que purgar el perfus preparar doble dosis).</p>\
+                                <p>No retirar dosis, usar el contenido completo del frasco solo programando en bomba la dosis indicada.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -11920,7 +11920,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Perfus</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Utilizar perfus común y cambiar el mismo cada 12hs.</p>\
+                                    <p>Utilizar perfus fotosensible y cambiar el mismo cada 24hs junto con el frasco/ampolla.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -11930,7 +11930,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                                     <h4>Sachet</h4>\
                                 </div>\
                                 <div class="datos">\
-                                    <p>Cambiar solución cada 6hs.</p>\
+                                    <p>Cambiar frasco/ampolla cada 24hs. el frasco no es fotosensible, al retirar el frasco marcar con una linea el restante, desinfectar y guardar para entregar a farmacia.</p>\
                                 </div>\
                             </div>\
                         </div>\
@@ -13351,7 +13351,7 @@ if(nombreMedicamento === "ampicilina" || nombreMedicamento === "Ampicilina" || n
                     </div>\
                     <h3 class="estabilidad">Estabilidad y observaciones</h3>\
                     <div class="contenedor__Estabilidad">\
-                        <p class="texto__Estabilidad">Una vez reconstituida  puede guardarse <b class="texto__Blanco">12hs refrigerada usando 2 dosis.</b>, Si no se requieren 2 dosis en 12hs usar y desechar.</p>\
+                        <p class="texto__Estabilidad">Una vez reconstituida  puede guardarse <b class="texto__Blanco">24hs refrigerada.</p>\
                         <p class="texto__Estabilidad">VO administrar 1 hs antes o 1 hs despues de las comidas.</p>\
                     </div>\
                     <h3 class="administracion">IntraVenosa Intermitente (IVI) --[2° CANAL]--</h3>\

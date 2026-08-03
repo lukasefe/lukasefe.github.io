@@ -1,1 +1,1 @@
-window.alert("27/11/2025\nSe agrego presentacion de aciclovir Gamepe 500mg/20ml.")
+window.alert("03/08/2026\nSe modifico presentacion y preparacion del propofol, se modifico estabilidad del voriconazol.")

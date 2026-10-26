@@ -1,0 +1,109 @@
+:root{
+    --Oswald:'Lato', sans-serif, 'League Spartan', sans-serif,'Oswald', sans-serif;
+    --Fondo: #318CE7;
+    --titulo: #FFFFFF;
+    --Fondo-Gris:#EEEEEE;
+    --Azul-Antibioticos: #1357a6;
+    --advertencia: #FFFF3D;
+    --insulina: #dfef00f3;
+    --verde-Calcular: #39e75f;
+    --sedacion:#03F934;
+    --Verde-Sedacion: #089c41;
+    --rojo-Inotropicos: #B71C1C;
+    --gris-Tarjeta: #b5b5b5b5;
+    --medicamentos-varios: #e47200;
+}
+
+.contenedor_botones_opciones{
+    margin: 0 15%;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: ghostwhite;
+    color: crimson;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.botones__opciones{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: solid 2px black;
+    color: black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.insulina{
+    background-color: var(--insulina);
+}
+
+.planes{
+    background-color: var(--Fondo);
+    color: white;
+}
+
+.ph{
+    background-color: #39e75f;
+}
+
+.insulina:hover, .planes:hover, .ph:hover{
+    border: solid 3px black;
+    background-color: red;
+    color: white;
+}
+
+/*PANTALLAS HASTA 650PX*/
+@media (max-width: 650px){
+    .contenedor_botones_opciones{
+        margin: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+        border-bottom: solid 2px var(--Azul-Antibioticos);
+    }
+    .botones__opciones{
+        margin-bottom: 10px;
+    }
+}
+
+/*PANTALLAS HASTA 950PX*/
+@media (min-width:651px) and (max-width: 990px){
+    .contenedor_botones_opciones{
+        margin: 0;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: solid 2px var(--Azul-Antibioticos);
+    }
+    .botones__opciones{
+        margin: 10px auto;
+        width: 90%;
+    }
+
+}
+
+/*PANTALLAS HASTA 1439PX*/
+@media (min-width: 990px) and (max-width: 1439px){
+    .contenedor_botones_opciones{
+        margin: 10px auto;
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: .3em;
+    }
+
+}
+
+/*PANTALLAS DESDE 1440PX*/
+@media (min-width: 1440px){
+    .contenedor_botones_opciones{
+        margin: 10px auto;
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: .3em;
+    }
+
+}

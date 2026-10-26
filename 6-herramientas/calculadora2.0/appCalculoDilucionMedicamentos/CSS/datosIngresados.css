@@ -1,0 +1,152 @@
+
+
+
+
+/* MOBILE FIRST 390-844PX*/
+
+/* TARJETA DATOS INGRESADOS */
+
+.tarjeta-datos-ingresados {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    background-color: rgba(255, 255, 255, 0.637);
+    border: 1px solid rgba(0, 95, 160, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-datos-ingresados {
+    margin: 0 0 14px 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #1769aa;
+}
+
+.contenedor-datos-ingresados {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.dato-ingresado {
+    min-width: 0;
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.806);
+    border: 1px solid rgba(0, 95, 160, 0.15);
+    border-radius: 14px;
+}
+
+.icono-dato {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.etiqueta-dato {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5d6872;
+    margin-bottom: 5px;
+}
+
+.valor-dato {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2933;
+    overflow-wrap: anywhere;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 480px) {
+    .tarjeta-datos-ingresados {
+        padding: 12px;
+    }
+
+    .contenedor-datos-ingresados {
+        gap: 8px;
+    }
+
+    .dato-ingresado {
+        padding: 10px;
+    }
+
+    .etiqueta-dato {
+        font-size: 12px;
+    }
+
+    .valor-dato {
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* =========================================
+   DATOS INGRESADOS: BARRA FIJA AL DESPLAZAR
+   ========================================= */
+
+#datosIngresados {
+    width: 100%;
+    min-width: 0;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    margin: 0 0 20px;
+}
+
+/* Tarjeta generada dinámicamente por JavaScript */
+#datosIngresados .tarjeta-datos-ingresados {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* =========================================
+   DATOS INGRESADOS: BARRA COMPACTA
+   ========================================= */
+
+#datosIngresados {
+    width: 100%;
+    min-width: 0;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    margin: 0 0 20px;
+}
+
+#datosIngresados .tarjeta-datos-ingresados {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Siete datos distribuidos en una sola fila */
+#datosIngresados .tarjeta-datos-ingresados > div {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 8px;
+    align-items: stretch;
+}
+
+/* Cada dato ocupa solo su columna */
+#datosIngresados .tarjeta-datos-ingresados > div > div {
+    min-width: 0;
+    padding: 10px;
+    overflow-wrap: anywhere;
+}
+
+/* Pantallas pequeñas: permitir varias filas */
+@media screen and (max-width: 900px) {
+    #datosIngresados .tarjeta-datos-ingresados > div {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Calculo de la Dilución de los Medicamentos</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="ASSETS/ICONOS/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ASSETS/ICONOS/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="ASSETS/ICONOS/icon-192.png">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/banner.css">
+    <link rel="stylesheet" href="CSS/appCalculadora.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/cartel_aviso.css">
+    <link rel="stylesheet" href="CSS/fichas.css">
+    <link rel="stylesheet" href="CSS/botones_opciones_y_modal.css">
+    <link rel="stylesheet" href="CSS/carteles_de_botones.css">
+    <link rel="stylesheet" href="CSS/categorias.css">
+    <link rel="stylesheet" href="CSS/interacciones.css">
+    <link rel="stylesheet" href="CSS/datosIngresados.css">
+    <link rel="stylesheet" href="CSS/fichasFarmacosResultado.css">
+    <link rel="stylesheet" href="CSS/inputs-calculadora.css">
+    <link rel="stylesheet" href="CSS/responsive-desktop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=League+Spartan:wght@500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!--LOGOTIPO Y NOMBRE-->
+                <a class="navbar-brand " href="#">
+                  <i class="bi"><img id="logo" src="ASSETS/ICONOS/logo_con_borde.png" alt="logo de enfermeria conectada"></i>
+                  <span id="enfconec">ENFERMERÍA CONECTADA</span>
+                </a>
+                <!--
+                  BOTON DEL MENU-->
+          <button class="navbar-toggler mt-1 " type="button" data-bs-toggle="collapse" data-bs-target="#elementosmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+            <div class="collapse navbar-collapse mt-3" id="elementosmenu">
+              <ul class="navbar-nav ms-auto p-auto">
+               
+               
+                <li class="nav-item px-2">
+                 <a class="nav-link text-white" href="/6-herramientas/app__Calculo_PerdidasInsensibles/perdidas__Insensibles.html">Perdidas Insensibles</a>
+                </li>
+              </ul>
+           </div>
+           </div>
+        </nav>
+         <!--TEXTO DE PORTADA-->
+        <div class="container-fluid banner">
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <h2 class="titulo titulo-m">Calculadora para la dilución de los medicamentos</h2>
+        <div class="calculadora-layout">
+            <!--SECCION 1-->
+            <section class="panel-calculadora">
+                <form id="medicamentos">
+                
+                <!--SELECCIÓN DEL MEDICAMENTO-->
+                    <div class="input-1">
+                        
+                        <input  id="seleccion" 
+                                list="lista" 
+                                class="input__Medicamento" 
+                                type="text" 
+                                placeholder=" "
+                                autocomplete="off"
+                                required>
+
+                        <label for="seleccion" class="label__Medicamento">Medicamento: </label>
+
+                        <!--SERA GENERADA POR JS-->
+                        <datalist id="lista"></datalist> 
+                    </div>
+
+                    <!--DOSIS INDICADA-->
+                    <div class="input-2">
+
+                        <input id="dosis" 
+                            class="input__Miligramos" 
+                            type="text" 
+                            placeholder=" " 
+                            pattern="[0-9]+([\.,][0-9]+)?" 
+                            required>
+
+                        <label for="dosis" class="label__Miligramos">Miligramos Indicados:</label>
+                    
+                    </div>
+
+                    <!--PESO DEL PACIENTE-->
+                    <div class="input-3">
+
+                            <input
+                                id="peso"
+                                class="input_Peso"
+                                type="text"
+                                inputmode="decimal"
+                                placeholder=""
+                                pattern="[0-9]+([\.,][0-9]+)?"
+                                required
+                            >
+
+                            <label
+                                for="peso"
+                                class="label_Peso"
+                            >
+                                Peso del paciente (kg)
+                            </label>
+                    </div>
+
+                    <!--BOTONES-->
+                    <div class="botonera">
+
+                        <!--CALCULAR-->
+                        <button type="submit" class="boton1"> Calcular </button>
+                        
+                        <!--BORRAR-->
+                        <button class="boton" type="button">Borrar</button>
+
+                    </div>
+
+                    <!--AVISO-->
+                    <p class="aviso">Para evitar errores en las dosis de medicación con decenas, separa con " . " y no con " , " Por Ej:15.4mg</p>
+
+                </form>
+            </section>
+
+            <!-- PASO 2: ADMINISTRACION Y ACCESO -->  
+            <section class="panel-opciones">
+                
+                <div id="pasoAdministracion" style="display: none;">
+                    <h3 class="titu_paso2">Selección el método de administración del medicamento</h3>
+
+                    <div class="input-1 select-flotante">
+                        <label for="viaAdministracion" class="label_via">Vía de administración:</label>
+                        <select id="viaAdministracion" class="input_via" required>
+                            <option value="">Seleccionar vía</option>
+                        </select>
+                    </div>
+
+                    <div class="input-2 select-flotante">
+                        <label for="modalidad" class="label_modalidad">Modalidad:</label>
+                        <select id="modalidad" class="input_modalidad" required>
+                            <option value="">Seleccionar modalidad</option>
+                        </select>
+                    </div>
+
+                    <div class="input-3 select-flotante">
+                        <label for="accesoAdministracion" class="label_acceso">Tipo de acceso:</label>
+                        <select id="accesoAdministracion" class="input_acceso" required>
+                            <option value="">Seleccionar acceso</option>
+                        </select>
+                    </div>
+                    <div class="input-4 select-flotante">
+                        <label for="presentacionMedicamento" class="label_presentacion">Presentación:</label>
+                        <select id="presentacionMedicamento" class="input_presentacion">
+                            <option value="">Seleccionar presentación</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+        <div class="resultado">
+            <p class="resp">Resultado:</p>
+            <div id="datosIngresados"></div>
+            <div id="fichaFarmacos">
+                
+
+            </div>
+           
+              
+            
+        </div>
+            
+    </div>
+        <div class="encuesta">
+            <details class="detalle">
+                <summary>Reportar Errores de la calculadora</summary>
+            <iframe class="encuesta" src="https://docs.google.com/forms/d/e/1FAIpQLSdyDw1KywFNu15OrgWh6DfwjZsoUT6ozbEMQs3uO7E9qRPVxw/viewform?embedded=true" width="420" height="699" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </details>
+        </div>
+        <div class="encuesta borde__inferior">
+            <details class="detalle">
+                <summary>Agregar Medicamento</summary>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXjTfyODrWJ-X9vlKLZBZoD5OAU4lFKs2sQC8PDpNhoJ4IKg/viewform?embedded=true" width="420" height="491" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </details>
+        </div>
+    </div>
+
+    <!--BOTONERA DE OPCIONES DE VENTANAS MODAL-->
+    <div id="botones_op" class="contenedor_botones_opciones"><!--CONTENEDOR DE LA BOTONERA-->
+        <button id="boton1" class="botones__opciones planes">Plan de Hidratación Basal</button><!--BOTON DE PLAN DE HIDRATACION-->
+        <button id="boton_2" class="botones__opciones insulina" >Preparación goteo de Insulina</button><!--BOTON DE INSULINA-->
+        <button id="botoni" class="botones__opciones interacciones" >Interacciones</button><!--BOTON DE INSULINA-->
+      <!-- <button class="botones__opciones ph">PH de los Fármacos</button>-->   <!--BOTON DE PH-->
+    </div>
+
+    <!--MODAL DE LOS PLANES DE HIDRATACIÓN-->
+    <div id="modal_planh" class="cartel_planh"><!--CONTENDOR-->
+        <button id="cerrar1" class="cerrar1">x</button>
+        <h4 class="titulo_planh">Planes de Hidratación y Mantenimiento del Acceso Venoso</h4>
+        <div class="sub-contenedor_ph"><!--CONTENEDOR DE MANTENIMIENTO DE ACCESO VENOSO-->
+            <h5>Para mantener el acceso venoso periférico o central:</h5>
+            <p class="text-dark">Sol. fisiológica o Dextrosa al 5% 48ml en 24hs(2ml/h), dependiendo el caso.</p><br>
+            <h5>Para mantener el acceso venoso PICC (Catetér Central de Inserción Periférica):</h5>
+            <p class="text-dark">Sol. fisiológica o Dextrosa al 5% 120ml en 24hs(5ml/h), permite la permeabilidad de los lumenes.</p>
+        </div><br>
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 35%-->
+            <h5 class="sodio">NA 35%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">5 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">508.5 ml</p>
+            </div><br>
+            
+        </div>
+
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 50%-->
+            <h5 class="sodio">NA 50%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">7,5 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">511 ml</p>
+            </div><br>
+        </div>
+
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 70%-->
+            <h5 class="sodio">NA 70%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">10 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">513.5 ml</p>
+            </div><br>
+        </div>
+
+        <div class="sub-contenedor_ph"><!--CONTENEDOR PH Na 140%-->
+            <h5 class="sodio">NA 140%</h5><br>
+            <div class="cuadricula"><!--contenedor para cuadricula-->
+                <p class="casilla">DX5%</p>
+                <p class="casilla intermedio">500 ml</p>
+                <p class="casilla">CL K+ 3M</p>
+                <p class="casilla intermedio">3,5 ml</p>
+                <p class="casilla">CL NA+ 20%</p>
+                <p class="casilla intermedio">20 ml</p>
+                <p class="casilla">total</p>
+                <p class="casilla intermedio">523.5 ml</p>
+            </div><br>
+        </div>
+
+        <h4 class="subtitulo">Preparación de la solución</h4>
+        <p class="subtitulo-p">Preparar la solución indicada.</p>
+        <p class="subtitulo-p">Conectar un perfus común XL PLUM A.</p>
+        <p class="subtitulo-p">Rotular perfus con cinta blanca indicando PB con fecha.</p>
+        <p class="subtitulo-p">El perfus se cambia cada 7 días o que se encuentre visiblemente sucio.</p>
+    </div>
+
+    <!--MODAL DEL GOTEO DE INSULINA-->
+    <div id="carteles" class="cartel_insulina"> <!--CONTENDOR DEL MODAL DE INSULINA-->
+        <button id="boton_c2" class="cerrar">x</button><!--BOTON DE CERRAR-->
+        <h4>Preparación goteo de Insulina</h4>
+        <p><ol class="ordenada__insulina">
+            <li><b>Preparar la dilución antes dicha, agitandola para asegurar una mezcla homogénea.</b></li>
+            <li><b>Purgar el set de bomba XL Plum A.</b></li>
+            <li><b>Dejar reposar 30 minutos.</b></li>
+            <li><b>Descartar el contenido del sachet.</b></li>
+            <li><b>Volver a prerarar la dilución.</b></li>
+            <li><b>Purgar el set nuevamente.</b></li>
+            <li><b>La solucion esta lista para su administración.</b></li>
+        </ol></p>
+    </div>
+
+
+    <div class="aviso_descargo">
+        <p class="textito">La funcionalidad presentada en esta aplicación web, no pretende sustituir y/o suplantar los conocimientos y/o actividades del profesional de enfermería.</p>
+        <p class="textito">Esta aplicación web se a desarrollado como <b>complemento</b> a los conocimientos del personal de enfermería en la tarea del calculo de dosis de farmacos, dilución y administración de los mismos, facilita el proceso y disminuye el tiempo de preparacion siguiendo un estandar de calidad homogeneo.</p>
+    </div>
+
+    <div class="aviso_manual">
+        <p class="textito">La información presentada en esta aplicación web, se encuentra disponible en el manual farmacológico y vademecum hospitalario del Hospital Infantil Municipal de la ciudad de Córdoba - Argentina.</p>
+        <p class="textito">Servicio que autorizo la adaptación de la información dentro de la aplicación web "Calculadora para la dilución de médicamentos"</p>
+        <p><a class="link__manual" href="ASSETS/GUIA FARMACO TERAPEUTICA Y ADMINISTRACION DE MEDICAMENTOS-UTIPUCIM-FARMACIA-HIM-2019.pdf" target="_blank">Click aqui para ver el manual de farmacología y administración de medicamentos.</a></p>
+    </div>
+    
+
+    <!--PIE DE PÁGINA-->
+    <footer class="pie">
+        <div class="contenedor__pie">
+            <!--LOGOTIPO Y NOMBRE-->
+            <a class="navbar-brand " href="#">
+                <i class="bi"><img id="logo" src="ASSETS/ICONOS/logo_con_borde.png" alt="logo de enfermeria conectada"></i>
+                <span id="enfconec" class="text-white">ENFERMERÍA CONECTADA</span>
+            </a>
+            <p class="leyenda">Fernandez Lucas Lic. en enfermería/Desar. Web</p>
+            <p class="leyenda">© 2022 - 2025 Todos los derechos reservados</p>
+            <p class="leyenda">Córdoba - Argentina</p>
+            <p class="leyenda">Actualizacion Reciente: 30/06/2025</p>
+        </div>
+    </footer>
+</body>
+<script type="module" src="scripts/appCalculadora.js"></script>
+<script src="scripts/alerta.js"></script>
+<script src="scripts/carteles_botoneras.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</html>
+
+

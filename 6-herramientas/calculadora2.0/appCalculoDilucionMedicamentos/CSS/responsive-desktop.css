@@ -1,0 +1,207 @@
+:root{
+    --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    --titulowhite:rgba(255, 255, 255, 0.964);
+    --antibioticos:#1357a6;
+    --antivirales:#1357a6;
+    --sedoanalgesia:#026802;
+    --inotropicos:#7f052a;
+    --diureticos:#f8e005f3;
+    --varios: #FFAB00;
+    --neutro:#757575;
+    --borde-antibiotico:1px solid rgba(0, 95, 160, 0.25);
+    --borde-antiviral:1px solid rgba(0, 95, 160, 0.25);
+    --borde-sedoanalgesia:2px solid rgba(13, 160, 0, 0.475);
+    --borde-antibiotico2:3px solid rgba(0, 96, 160, 0.551);
+    --borde-antiviral2:3px solid rgba(0, 96, 160, 0.551);
+    --borde-sedoanalgesia2:2px solid rgba(13, 160, 0, 0.475);
+    --borde-neutro:2px solid rgba(115, 115, 115, 0.339);
+    --borde-inotropicos: 1px solid rgba(125, 2, 39, 0.734);
+    --borde-inotropicos2: 2px solid rgba(125, 2, 39, 0.734);
+}
+
+
+/* =========================================
+   1. DISTRIBUCIÓN PRINCIPAL DE ESCRITORIO
+   Calculadora a la izquierda
+   Opciones dinámicas a la derecha
+========================================= */
+
+@media screen and (min-width: 1024px) {
+    .contenedor {
+        width: min(96%, 1800px);
+        margin: 24px auto;
+        border-radius: 12px;
+        overflow: visible;
+    }
+
+    .contenedor > .titulo {
+        width: 100%;
+        padding: 18px 24px;
+    }
+
+    #medicamentos {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        align-items: start;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Opciones de administración:
+       se ubican en la columna derecha */
+    #pasoAdministracion {
+        box-sizing: border-box;
+        min-width: 0;
+        margin: 0 20px 20px;
+        padding: 20px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.14);
+    }
+
+    #pasoAdministracion select {
+        max-width: 100%;
+    }
+
+    /* Resultado y fichas a todo el ancho */
+    .resultado {
+        width: 100%;
+        min-width: 0;
+        border-radius: 0 0 12px 12px;
+    }
+
+    /*============================================
+    AJUSTAMOS EL MARGEN TOP PARA EL MISMO NIVEL
+    ============================================*/
+    .compatibilidad-contenedor{
+        margin-top: 0;
+    }
+    /*=======================================
+    REDONDEAMOS EL BORDE DE LAS TARJETAS
+    ========================================*/
+    .fila-presentacion-administracion {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+    .presentaciones-contenedor, .posologia-contenedor {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    border-radius: 0.5rem;
+    }
+
+    .administracion-contenedor, .compatibilidad-contenedor {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    border-radius: 0.5rem;
+    }
+
+    .titulo-presentaciones {
+    border-radius: 0.5rem 0.5rem 0 0;
+    }
+   
+}
+
+/* =========================================
+   2. NOTEBOOK ESTÁNDAR
+========================================= */
+
+@media screen and (min-width: 1280px) {
+    .contenedor {
+        width: 94%;
+    }
+}
+
+/* =========================================
+   3. MONITORES GRANDES
+========================================= */
+
+@media screen and (min-width: 1600px) {
+    .contenedor {
+        width: min(92%, 1800px);
+    }
+}
+
+
+
+
+
+
+
+/* Presentaciones a la izquierda y administración a la derecha */
+.fila-presentacion-administracion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+}
+
+/* Posología a la izquierda y compatibilidad a la derecha */
+.fila-posologia-compatibilidad {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+}
+
+/* Evitar desbordamientos */
+.fila-presentacion-administracion > *,
+.fila-posologia-compatibilidad > * {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .fila-presentacion-administracion,
+    .fila-posologia-compatibilidad {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* PRUEBA: mantener Presentaciones y Administración
+   en dos columnas en pantallas de escritorio */
+
+@media screen and (min-width: 769px) {
+    #fichaFarmacos .fila-presentacion-administracion {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        gap: 16px;
+        width: 100%;
+        align-items: start;
+        box-sizing: border-box;
+    }
+
+    #fichaFarmacos .fila-presentacion-administracion > .presentaciones-contenedor,
+    #fichaFarmacos .fila-presentacion-administracion > .administracion-contenedor {
+        display: block;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #fichaFarmacos .administracion-contenedor .control-concentracion {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #fichaFarmacos .administracion-contenedor .control-concentracion input[type="range"] {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}

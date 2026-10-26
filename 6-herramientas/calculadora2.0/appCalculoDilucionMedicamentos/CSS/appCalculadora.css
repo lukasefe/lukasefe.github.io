@@ -1,0 +1,701 @@
+
+/* =========================================
+   1. VARIABLES GLOBALES
+========================================= */
+:root {
+    /* Tipografía */
+    --Oswald: 'Oswald', 'Lato', sans-serif;
+
+    /* Colores generales */
+    --Fondo: #318CE7;
+    --titulo: #FFFFFF;
+    --Fondo-Gris: #EEEEEE;
+    --gris-Tarjeta: #b5b5b5b5;
+
+    /* Categorías de medicamentos */
+    --Azul-Antibioticos: #1357a6;
+    --diureticos: #effe1ee7;
+    --sedacion: #03F934;
+    --Verde-Sedacion: #089c41;
+    --rojo-Inotropicos: #B71C1C;
+    --medicamentos-varios: #e47200;
+
+    /* Estados y acciones */
+    --advertencia: #FFFF3D;
+    --verde-Calcular: #39e75f;
+}
+
+/* =========================================
+   MODELO DE CAJA DEL BODY
+========================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f6fa;
+    color: #263445;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+
+
+/* =========================================
+   3. CONTENEDOR PRINCIPAL
+========================================= */
+
+
+.contenedor {
+    width: 96%;
+    max-width: 1600px;
+    margin: 16px auto;
+    background-color: var(--Fondo);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(38, 52, 69, 0.05);
+    overflow: hidden;
+}
+
+
+
+/* =========================================
+   4. TÍTULOS
+========================================= */
+.titulo {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+    font-family: var(--Oswald);
+    color: var(--titulo);
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* =========================================
+   5. ESTRUCTURA DE MEDICAMENTOS
+========================================= */
+#medicamentos {
+    display: grid;
+    margin-top: 1em;
+    align-items: center;
+}
+
+
+
+/* =========================================
+   7. AVISOS Y RESULTADOS
+========================================= */
+
+
+.resultado {
+    padding: 10px 0;
+    background-color: #D6E9FC;
+    color: #183A5B;
+    border-top: 2px solid #318CE7;
+}
+
+
+.resp {
+    font-family: var(--Oswald);
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* =========================================
+   8. FICHAS DE MEDICAMENTOS
+========================================= */
+.contenedor__Grilla {
+    text-align: center;
+}
+
+.nombre__Farmaco {
+    margin: 0 10px;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: var(--Azul-Antibioticos);
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    font-size: 35px;
+}
+
+.contenedor__Info {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: start;
+}
+
+.contenedor__Presentacion {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 20px 10px 30px;
+}
+
+.titulo__Presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--Azul-Antibioticos);
+    font-family: var(--Oswald);
+    color: var(--titulo);
+}
+
+.presentacion {
+    padding: 10px;
+}
+
+.reconstitucion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-radius: 10px;
+    background-color: var(--Azul-Antibioticos);
+    font-family: var(--Oswald);
+    color: var(--titulo);
+    text-align: center;
+}
+
+.reconstitucion__NO {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--rojo-Inotropicos);
+    color: var(--titulo);
+    text-align: center;
+    font-weight: bold;
+}
+
+.datos,
+.datos__Insulina {
+    height: auto;
+    margin: 10px 0;
+    padding: 20px 5px;
+    border-radius: 10px;
+    background-color: var(--gris-Tarjeta);
+    font-weight: bolder;
+}
+
+.datos {
+    text-align: center;
+}
+
+.lista__Insulina {
+    list-style: none;
+    text-align: center;
+}
+
+/* =========================================
+   9. ESTABILIDAD Y ADMINISTRACIÓN
+========================================= */
+.estabilidad {
+    margin: 10px 10px 0;
+    padding: 10px;
+    border-bottom: 3px solid var(--Azul-Antibioticos);
+    color: var(--Azul-Antibioticos);
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contenedor__Estabilidad {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin: 10px;
+}
+
+.texto__Estabilidad {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--advertencia);
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto__Blanco {
+    font-weight: bold;
+}
+
+.texto__Observaciones {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--gris-Tarjeta);
+    text-align: center;
+}
+
+.texto1 {
+    height: 50px;
+    margin: 10px 10px 0;
+    padding: 10px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.administracion {
+    margin: 10px 10px 0;
+    padding: 10px 0;
+    border-bottom: 3px solid var(--Azul-Antibioticos);
+    font-family: var(--Oswald);
+    font-size: 30px;
+    color: var(--Azul-Antibioticos);
+    text-align: center;
+}
+
+
+/*PANTALLAS DESDE 768PX
+*/
+@media screen and (max-width: 425px){
+    div.contenedor.xs{
+        margin-top: 0;
+        width: 100%;
+        font-family: var(--Oswald);
+    }
+    
+
+}
+
+@media (max-width: 650px) {
+    .contenedor {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+
+@media screen and (max-width: 990px){
+    div.contenedor.sm{
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    div.resultado{
+        border-radius:0%;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        background-color: var(--Fondo-Gris);
+        overflow: hidden;
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 990px) and (max-width:1439px){
+    .ml{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+    .titulo-m{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: var(--Oswald);
+        color: var(--titulo);
+        font-size: 1.3em;
+        padding: 5px 20px ;
+        font-weight: bolder;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        text-align: center;
+        background-color: var(--Fondo-Gris);
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+    .borde__inferior{
+        border-radius: 0 0 .7em .6em;
+    }
+}
+
+
+/*PANTALLAS DESDE 1024PX*/
+@media (min-width: 1400px) {
+    .l{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+    .titulo-m{
+        font-size: 1.5em;
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+    .encuesta{
+        text-align: center;
+        background-color: var(--Fondo-Gris);
+    }
+    .borde__inferior{
+        border-radius: 0 0 .6em .6em;
+    }
+}
+
+@media (min-width: 1440px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: var(--Fondo);
+        border-radius: .6em;
+        font-family: var(--Oswald);
+    }
+    .error{
+        margin: 10px 20px;
+        text-align: center;
+        border: 2px dashed red;
+    }
+    .texto-error{
+        font-size: 20px;
+        color: red;
+        font-weight: bolder;
+    }
+    .alerta{
+        width: 100px;
+    }
+    .encuesta{
+        text-align: center;
+        background-color: var(--Fondo-Gris);
+    }
+    .detalle{
+        padding: 10px;
+        font-family: var(--Oswald);
+        color: #e47200;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    summary{
+    margin-bottom: 10px;
+    }
+    .borde__inferior{
+        border-radius: 0 0 .6em .6em;
+    }
+}
+   
+
+
+
+
+/* =========================================
+   REDISEÑO VISUAL DE LA FICHA FARMACOLÓGICA
+   Etapa 1: estructura general
+   ========================================= */
+
+#fichaFarmacos {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    color: #263445;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+#fichaFarmacos *,
+#fichaFarmacos *::before,
+#fichaFarmacos *::after {
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+#fichaFarmacos .ficha-completa {
+    background: #f4f6f9;
+    border: 1px solid #dfe5ec;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(30, 45, 65, 0.06);
+}
+
+/* Superficie de la ficha */
+#fichaFarmacos .ficha-individual {
+    background: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 0;
+}
+
+/* Nombre del medicamento */
+#fichaFarmacos .contenedor-titulo {
+    margin-bottom: 16px;
+}
+
+#fichaFarmacos .titulo-farmaco {
+    margin: 0;
+    padding: 12px 16px;
+    background: #f7f9fc;
+    border-left: 5px solid currentColor;
+    border-radius: 7px;
+    font-size: clamp(1.25rem, 2vw, 1.7rem);
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+}
+
+/* Tipo y acción */
+#fichaFarmacos .contenedor-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+#fichaFarmacos .espacio {
+    min-width: 0;
+    padding: 12px 14px;
+    background: #f8fafc;
+    border: 1px solid #e5eaf0;
+    border-radius: 9px;
+}
+
+#fichaFarmacos .info-categoria {
+    margin: 0 0 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+#fichaFarmacos .info {
+    display: block;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* Presentaciones y administración */
+#fichaFarmacos .fila-presentacion-administracion {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.5fr);
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 18px;
+}
+
+#fichaFarmacos .presentaciones-contenedor,
+#fichaFarmacos .administracion-contenedor,
+#fichaFarmacos .posologias-contenedor {
+    min-width: 0;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e1e7ee;
+    border-radius: 11px;
+    box-shadow: 0 2px 7px rgba(30, 45, 65, 0.035);
+}
+
+/* Encabezados de sección: conservan el color de categoría */
+#fichaFarmacos .titulo-presentaciones {
+    margin: -2px 0 14px;
+    padding: 9px 12px;
+    background: #f5f7fa;
+    border-left: 4px solid currentColor;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* Posología y compatibilidad */
+#fichaFarmacos .fila-posologia-compatibilidad {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+    margin-top: 18px;
+}
+
+#fichaFarmacos .observaciones-contenedor,
+#fichaFarmacos .efectos-adversos-contenedor {
+    margin: 18px 0;
+}
+
+/* Evitar desbordes de contenido dinámico */
+#fichaFarmacos .presentaciones-contenedor,
+#fichaFarmacos .administracion-contenedor,
+#fichaFarmacos .posologias-contenedor,
+#fichaFarmacos .contenedor-observaciones {
+    overflow-wrap: anywhere;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 760px) {
+    #fichaFarmacos {
+        margin: 10px auto;
+    }
+
+    #fichaFarmacos .ficha-completa {
+        padding: 8px;
+        border-radius: 11px;
+    }
+
+    #fichaFarmacos .ficha-individual {
+        padding: 12px;
+    }
+
+    #fichaFarmacos .contenedor-info,
+    #fichaFarmacos .fila-presentacion-administracion,
+    #fichaFarmacos .fila-posologia-compatibilidad {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #fichaFarmacos .presentaciones-contenedor,
+    #fichaFarmacos .administracion-contenedor,
+    #fichaFarmacos .posologias-contenedor {
+        padding: 12px;
+    }
+}
+
+
+
+/* Recuperar los colores por categoría como acentos */
+
+/* Título del medicamento: fondo suave y texto de categoría */
+#fichaFarmacos .categoria-sedoanalgesia .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-sedoanalgesia {
+    background-color: #e8f4e8;
+    color: #026802;
+    border-left-color: #026802;
+}
+
+#fichaFarmacos .categoria-antibiotico .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-antibiotico {
+    background-color: #eaf2fc;
+    color: #1357a6;
+    border-left-color: #1357a6;
+}
+
+#fichaFarmacos .categoria-antiviral .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-antiviral {
+    background-color: #eaf2fc;
+    color: #1357a6;
+    border-left-color: #1357a6;
+}
+
+#fichaFarmacos .categoria-inotropicos .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-inotropicos {
+    background-color: #f8e9ee;
+    color: #7f052a;
+    border-left-color: #7f052a;
+}
+
+/* Encabezados de las secciones */
+#fichaFarmacos .titulo-presentaciones.categoria-sedoanalgesia {
+    background-color: #e8f4e8;
+    color: #026802;
+}
+
+#fichaFarmacos .titulo-presentaciones.categoria-antibiotico,
+#fichaFarmacos .titulo-presentaciones.categoria-antiviral {
+    background-color: #eaf2fc;
+    color: #1357a6;
+}
+
+#fichaFarmacos .titulo-presentaciones.categoria-inotropicos {
+    background-color: #f8e9ee;
+    color: #7f052a;
+}
+
+/* Bordes exteriores según categoría */
+#fichaFarmacos .ficha-completa.categoria-sedoanalgesia {
+    border-color: rgba(13, 160, 0, 0.45);
+}
+
+#fichaFarmacos .ficha-completa.categoria-antibiotico,
+#fichaFarmacos .ficha-completa.categoria-antiviral {
+    border-color: rgba(0, 95, 160, 0.35);
+}
+
+#fichaFarmacos .ficha-completa.categoria-inotropicos {
+    border-color: rgba(125, 2, 39, 0.45);
+}
+
+/* Las etiquetas Tipo y Acción conservan su color */
+#fichaFarmacos .info-categoria.categoria-sedoanalgesia {
+    color: #026802;
+}
+
+#fichaFarmacos .info-categoria.categoria-antibiotico,
+#fichaFarmacos .info-categoria.categoria-antiviral {
+    color: #1357a6;
+}
+
+#fichaFarmacos .info-categoria.categoria-inotropicos {
+    color: #7f052a;
+}

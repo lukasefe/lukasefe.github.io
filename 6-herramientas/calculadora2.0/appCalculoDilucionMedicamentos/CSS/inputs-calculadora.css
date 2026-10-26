@@ -1,0 +1,490 @@
+:root{
+    --titulo: black;
+    --blanco:#EEEEEE;
+    --Fondo: #B8D9FA;
+    --fondo-tenue: #8ABFF3;
+    --letras:#318CE7;
+}
+
+/**------------------------------**/
+/*|--VISUAL DE LOS INPUTS PASO 1-|*/
+/*------------------------------**/
+.input-1, .input-2, .input-3, .input-4{
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+.input__Medicamento,
+.input__Miligramos,
+.input_Peso {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: 52px;
+    padding: 20px 12px 6px;
+    margin-bottom: 14px;
+
+    color: #263445;
+    background-color: #ffffff;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    border: 1px solid #d8e0e9;
+    border-radius: 8px;
+    outline: none;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input__Medicamento:focus,
+.input__Miligramos:focus,
+.input_Peso:focus {
+    border-color: #7ba6cf;
+    box-shadow: 0 0 0 3px rgba(123, 166, 207, 0.18);
+}
+
+.label__Medicamento, .label__Miligramos, .label_Peso{
+    font-size: 1.3em;
+    color: var(--letras);
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+/*TRANSICION DE LOS LABELS*/
+.input__Medicamento:not(:placeholder-shown) + .label__Medicamento, .input__Medicamento:focus + .label__Medicamento{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--letras);
+}
+
+.input__Miligramos:not(:placeholder-shown) + .label__Miligramos, .input__Miligramos:focus + .label__Miligramos{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--letras);
+}
+.input_Peso:not(:placeholder-shown) + .label_Peso, .input_Peso:focus + .label_Peso{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--letras);
+}
+.input_via:not(:placeholder-shown) + .label_via, .input_via:focus + .label_via{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: var(--letras);
+}
+
+/**------------------------------**/
+/*|--VISUAL DE LOS SELECTS PASO 2|*/
+/*------------------------------**/
+/*TITULO DEL PASO 2*/
+.titu_paso2{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--titulo);
+    margin-bottom: 10px;
+}
+/* CONTENEDOR DEL SELECT */
+.select-flotante {
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* SELECT */
+.select-flotante .input_via,.select-flotante .input_modalidad,.select-flotante .input_acceso,.select-flotante .input_presentacion {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 100%;
+    height: 50px;
+
+    padding: 20px 38px 6px 10px;
+
+    color: #000;
+    background-color: #fff;
+
+    font-size: .9em;
+    font-weight: 700;
+
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .4em;
+    outline: none;
+
+    cursor: pointer;
+
+    transition: border-color .25s, box-shadow .25s;
+}
+
+/* ETIQUETA FLOTANTE */
+.select-flotante .label_via,.select-flotante .label_modalidad,.select-flotante .label_acceso,.select-flotante .label_presentacion{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+
+    font-size: .7em;
+    font-weight: 800;
+    color: var(--Fondo);
+
+    pointer-events: none;
+    transition: color .25s;
+}
+
+/* FLECHA PERSONALIZADA */
+.select-flotante::after {
+    content: "";
+    position: absolute;
+
+    right: 14px;
+    top: 20px;
+
+    width: 8px;
+    height: 8px;
+
+    border-right: 2px solid var(--Fondo);
+    border-bottom: 2px solid var(--Fondo);
+
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+/* ENFOQUE */
+.select-flotante .input_via:focus,.select-flotante .input_modalidad:focus,.select-flotante .input_acceso:focus,.select-flotante .input_presentacion:focus {
+    border-color: var(--Fondo);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .08);
+}
+
+/* OPCIÓN SIN SELECCIONAR */
+.select-flotante .input_via:invalid,.select-flotante .input_modalidad:invalid,.select-flotante .input_acceso:invalid,.select-flotante .input_presentacion:invalid {
+    color: #666;
+}
+
+.select-flotante .input_via option, .select-flotante .input_modalidad option, .select-flotante .input_acceso option, .select-flotante .input_presentacion option {
+    color: #000;
+}
+
+
+
+
+/*SELECTS DE POSOLOGIA*/
+
+/* CONTENEDOR DE POSOLOGÍA */
+.selector-posologia {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto;
+}
+
+/* CADA CAMPO */
+.campo-posologia {
+    position: relative;
+    width: 100%;
+}
+
+/* SELECT */
+.campo-posologia select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 100%;
+    min-height: 54px;
+    padding: 22px 42px 7px 12px;
+
+    color: #000;
+    background-color: #fff;
+
+    font-size: .9em;
+    font-weight: 700;
+
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .4em;
+    outline: none;
+
+    cursor: pointer;
+    transition: border-color .25s, box-shadow .25s,
+                background-color .25s;
+}
+
+/* ETIQUETA FLOTANTE */
+.campo-posologia label {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    right: 42px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    color: var(--Fondo);
+    font-size: .7em;
+    font-weight: 800;
+    line-height: 1.2;
+
+    text-align: left;
+    pointer-events: none;
+    transition: color .25s;
+}
+
+/* FLECHA */
+.flecha-posologia {
+    position: absolute;
+    top: 21px;
+    right: 16px;
+
+    width: 8px;
+    height: 8px;
+
+    border-right: 2px solid var(--Fondo);
+    border-bottom: 2px solid var(--Fondo);
+
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+/* ENFOQUE */
+.campo-posologia select:focus {
+    border-color: var(--Fondo);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .08);
+}
+
+/* SELECT DESHABILITADO */
+.campo-posologia select:disabled {
+    color: #888;
+    background-color: #f0f0f0;
+    border-color: #ddd;
+    cursor: not-allowed;
+    opacity: .8;
+}
+
+.campo-posologia select:disabled + label {
+    color: #999;
+}
+
+.campo-posologia select:disabled ~ .flecha-posologia {
+    border-color: #aaa;
+}
+
+/* OPCIONES */
+.campo-posologia select option {
+    color: #000;
+    background-color: #fff;
+}
+
+/* AJUSTE DEL SELECTOR DE INTERVALO */
+.campo-intervalo {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.campo-intervalo label {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    right: 42px;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    transform: none;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow: visible;
+}
+
+.campo-intervalo select {
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Escritorio */
+
+@media (min-width: 768px) {
+    .panel-calculadora .input-1,
+    .panel-calculadora .input-2,
+    .panel-calculadora .input-3 {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .panel-calculadora .input__Medicamento,
+    .panel-calculadora .input__Miligramos,
+    .panel-calculadora .input_Peso {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+/* Ajuste de campos en móviles */
+@media (max-width: 600px) {
+    .panel-calculadora .input-1,
+    .panel-calculadora .input-2,
+    .panel-calculadora .input-3 {
+        width: 100%;
+        max-width: none;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .panel-calculadora .input__Medicamento,
+    .panel-calculadora .input__Miligramos,
+    .panel-calculadora .input_Peso {
+        width: 100%;
+        max-width: none;
+    }
+    .label__Medicamento,
+    .label__Miligramos,
+    .label_Peso {
+        left: 16px;
+    }
+}
+
+/* =========================================
+   CALCULADORA: DISTRIBUCIÓN SUPERIOR PANEL DE INPUTS
+   ========================================= */
+
+.calculadora-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+}
+
+.panel-calculadora,
+.panel-opciones {
+    min-width: 0;
+    width: 100%;
+}
+
+/* El formulario ocupa todo el ancho de su panel */
+.panel-calculadora #medicamentos {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Los selectores se adaptan al panel derecho */
+.panel-opciones #pasoAdministracion {
+    width: 100%;
+    min-width: 0;
+    background-color: var(--fondo-tenue);
+}
+
+/* Evita que los campos desborden las columnas */
+.calculadora-layout input,
+.calculadora-layout select,
+.calculadora-layout button {
+    max-width: 100%;
+}
+
+.calculadora-layout {
+    align-items: stretch;
+}
+
+.panel-calculadora,
+.panel-opciones {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Pantallas pequeñas: una columna */
+@media screen and (max-width: 767px) {
+    .calculadora-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+}
+
+/* =========================================
+   ESTILO VISUAL DE LOS PANELES
+========================================= */
+
+.panel-calculadora,
+.panel-opciones {
+    min-width: 0;
+    width: 100%;
+    padding: 22px;
+    background-color: var(--fondo-tenue);
+  
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(38, 52, 69, 0.04);
+}
+
+/* Distribución superior */
+.calculadora-layout {
+    gap: 20px;
+    padding: 0 18px 22px;
+    box-sizing: border-box;
+}
+
+/* Móviles */
+@media screen and (max-width: 767px) {
+    .calculadora-layout {
+        gap: 14px;
+        padding: 0 12px 18px;
+    }
+
+    .panel-calculadora,
+    .panel-opciones {
+        padding: 16px 12px;
+        border-radius: 10px;
+    }
+}
+
+
+/* =========================================
+   6. BOTONES DE LA CALCULADORA
+========================================= */
+.botonera {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    margin: auto 0;
+    padding: 10px 20px;
+    border: 1px solid #D6E9FC;
+    
+    background-color: var(--letras);
+    font-family: var(--Oswald);
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.boton1 {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.boton {
+    display: none;
+    width: 300px;
+    align-items: center;
+    background-color: plum;
+}
+.aviso {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

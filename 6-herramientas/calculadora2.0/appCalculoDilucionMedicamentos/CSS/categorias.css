@@ -1,0 +1,1136 @@
+:root{
+    --titulowhite:rgba(255, 255, 255, 0.964);
+    --antibioticos:#1357a6;
+    --antivirales:#1357a6;
+    --sedoanalgesia:#026802;
+    --inotropicos:#7f052a;
+    --diureticos:#f8e005f3;
+    --varios: #FFAB00;
+    --neutro:#757575;
+    --borde-antibiotico:1px solid rgba(0, 95, 160, 0.25);
+    --borde-antiviral:1px solid rgba(0, 95, 160, 0.25);
+    --borde-sedoanalgesia:2px solid rgba(13, 160, 0, 0.475);
+    --borde-antibiotico2:3px solid rgba(0, 96, 160, 0.551);
+    --borde-antiviral2:3px solid rgba(0, 96, 160, 0.551);
+    --borde-sedoanalgesia2:2px solid rgba(13, 160, 0, 0.475);
+    --borde-neutro:2px solid rgba(115, 115, 115, 0.339);
+    --borde-inotropicos: 1px solid rgba(125, 2, 39, 0.734);
+    --borde-inotropicos2: 2px solid rgba(125, 2, 39, 0.734);
+}
+
+/*--------------------
+CATEGORIA SEDOANALGESIA
+---------------------*/
+/*ficha principal*/
+.ficha-completa.categoria-sedoanalgesia{
+    border:var(--borde-sedoanalgesia);
+}
+
+.categoria-sedoanalgesia .titulo-farmaco{
+    background-color: var(--sedoanalgesia);
+}
+
+.categoria-sedoanalgesia .info-categoria{
+    color:var(--sedoanalgesia);
+}
+/*presentaciones*/
+.contenedor-presentaciones.categoria-sedoanalgesia{
+    border-bottom: var(--borde-sedoanalgesia);
+}
+.titulo-presentaciones.categoria-sedoanalgesia{
+    background-color: var(--sedoanalgesia);
+}
+
+.categoria-sedoanalgesia .presentacion{
+    color: var(--sedoanalgesia);
+}
+.categoria-sedoanalgesia .concentracion{
+    color: var(--sedoanalgesia);
+}
+/*resultado*/
+.contenedor-calculo.categoria-sedoanalgesia{
+    border: var(--borde-sedoanalgesia);
+}
+.h5-t.categoria-sedoanalgesia{
+    border-bottom: var(--borde-sedoanalgesia);
+}
+.categoria-sedoanalgesia .resultado-reconstitucion{
+    color: var(--sedoanalgesia);
+}
+/*rotulo*/
+.rotulo-preparacion.categoria-sedoanalgesia {
+    border: var(--borde-sedoanalgesia2);
+}
+
+.categoria-sedoanalgesia .p-rotulo{
+    color: var(--sedoanalgesia);
+}
+.p-resultado.categoria-sedoanalgesia{
+    border-bottom: var(--borde-sedoanalgesia);
+}
+/*administracion*/
+.tarjeta-administracion.categoria-sedoanalgesia{
+    border: var(--borde-sedoanalgesia);
+}
+.titulo-administracion.categoria-sedoanalgesia{
+    color:var(--sedoanalgesia);
+}
+
+.subtitulo-administracion.categoria-sedoanalgesia{
+    color: var(--sedoanalgesia);
+    border-bottom: var(--borde-sedoanalgesia);
+}
+.llevar.categoria-sedoanalgesia{
+    border: var(--borde-sedoanalgesia2);
+}
+.llevar-subtitulo.categoria-sedoanalgesia{
+    color:var(--sedoanalgesia);
+}
+.subtitulo-concentracion.categoria-sedoanalgesia{
+    color: var(--sedoanalgesia);
+}
+.llevar-resultado.categoria-sedoanalgesia{
+    color: var(--sedoanalgesia);
+}
+/*POSOLOGIA*/
+.posologia.categoria-sedoanalgesia{
+    border: var(--borde-sedoanalgesia2);
+}
+
+
+
+
+
+
+/*--------------------
+CATEGORIA ANTIBIOTICOS
+---------------------*/
+/*ficha principal*/
+.ficha-completa.categoria-antibiotico{
+    border:var(--borde-antibiotico);
+}
+
+.categoria-antibiotico .titulo-farmaco{
+    background-color: var(--antibioticos);
+}
+
+.categoria-antibiotico .info-categoria{
+    color:var(--antibioticos);
+}
+/*presentaciones*/
+.contenedor-presentacion.categoria-antibiotico{
+    border-bottom: var(--borde-antibiotico2);
+}
+.titulo-presentaciones.categoria-antibiotico{
+    background-color: var(--antibioticos);
+}
+
+.categoria-antibiotico .presentacion{
+    color: var(--antibioticos);
+}
+.categoria-antibiotico .concentracion{
+    color: var(--antibioticos);
+}
+/*resultado*/
+.contenedor-calculo.categoria-antibiotico{
+    border: var(--borde-antibiotico2);
+}
+.h5-t.categoria-antibiotico{
+    border-bottom: var(--borde-antibiotico2);
+}
+.categoria-antibiotico .resultado-reconstitucion{
+    color: var(--antibioticos);
+}
+/*rotulo*/
+.rotulo-preparacion.categoria-antibiotico {
+    border: var(--borde-antibiotico2);
+}
+
+.categoria-antibiotico .p-rotulo{
+    color: var(--antibioticos);
+}
+.p-resultado.categoria-antibiotico{
+    border-bottom: var(--borde-antibiotico2);
+}
+/*administracion*/
+.tarjeta-administracion.categoria-antibiotico{
+    border: var(--borde-antibiotico2);
+}
+.titulo-administracion.categoria-antibiotico{
+    color:var(--antibioticos);
+}
+
+.subtitulo-administracion.categoria-antibiotico{
+    color: var(--antibioticos);
+    border-bottom: var(--borde-antibiotico2);
+}
+.llevar.categoria-antibiotico{
+    border: var(--borde-antibiotico2);
+}
+.llevar-subtitulo.categoria-antibiotico{
+    color:var(--antibioticos);
+}
+.subtitulo-concentracion.categoria-antibiotico{
+    color: var(--antibioticos);
+}
+.llevar-resultado.categoria-antibiotico{
+    color: var(--antibioticos);
+}
+/*POSOLOGIA*/
+.posologia.categoria-antibiotico{
+    border: var(--borde-antibiotico2);
+}
+
+/*--------------------
+CATEGORIA ANTIVIRALES   
+---------------------*/
+/*ficha principal*/
+.ficha-completa.categoria-antiviral{
+    border:var(--borde-antiviral);
+}
+
+.categoria-antiviral .titulo-farmaco{
+    background-color: var(--antivirales);
+}
+
+.categoria-antiviral .info-categoria{
+    color:var(--antivirales);
+}
+/*presentaciones*/
+.contenedor-presentacion.categoria-antiviral{
+    border-bottom: var(--borde-antiviral2);
+}
+.titulo-presentaciones.categoria-antiviral{
+    background-color: var(--antivirales);
+}
+
+.categoria-antiviral .presentacion{
+    color: var(--antivirales);
+}
+.categoria-antiviral .concentracion{
+    color: var(--antivirales);
+}
+/*resultado*/
+.contenedor-calculo.categoria-antiviral{
+    border: var(--borde-antiviral2);
+}
+.h5-t.categoria-antiviral{
+    border-bottom: var(--borde-antiviral2);
+}
+.categoria-antiviral .resultado-reconstitucion{
+    color: var(--antivirales);
+}
+/*rotulo*/
+.rotulo-preparacion.categoria-antiviral {
+    border: var(--borde-antiviral2);
+}
+
+.categoria-antiviral .p-rotulo{
+    color: var(--antivirales);
+}
+.p-resultado.categoria-antiviral{
+    border-bottom: var(--borde-antiviral2);
+}
+/*administracion*/
+.tarjeta-administracion.categoria-antiviral{
+    border: var(--borde-antiviral2);
+}
+.titulo-administracion.categoria-antiviral{
+    color:var(--antivirales);
+}
+
+.subtitulo-administracion.categoria-antiviral{
+    color: var(--antivirales);
+    border-bottom: var(--borde-antiviral2);
+}
+.llevar.categoria-antiviral{
+    border: var(--borde-antiviral2);
+}
+.llevar-subtitulo.categoria-antiviral{
+    color:var(--antivirales);
+}
+.subtitulo-concentracion.categoria-antiviral{
+    color: var(--antivirales);
+}
+.llevar-resultado.categoria-antiviral{
+    color: var(--antivirales);
+}
+/*POSOLOGIA*/
+.posologia.categoria-antiviral{
+    border: var(--borde-antiviral2);
+}
+/*--------------------
+CATEGORIA INOTROPICOS
+---------------------*/
+/*ficha principal*/
+.ficha-completa.categoria-inotropicos{
+    border:var(--borde-inotropicos);
+}
+
+.categoria-inotropicos .titulo-farmaco{
+    background-color: var(--inotropicos);
+}
+
+.categoria-inotropicos .info-categoria{
+    color:var(--inotropicos);
+}
+/*presentaciones*/
+.contenedor-presentacion.categoria-inotropicos{
+    border-bottom: var(--borde-inotropicos2);
+}
+.titulo-presentaciones.categoria-inotropicos{
+    background-color: var(--inotropicos);
+}
+
+.categoria-inotropicos .presentacion{
+    color: var(--inotropicos);
+}
+.categoria-inotropicos .concentracion{
+    color: var(--inotropicos);
+}
+/*resultado*/
+.contenedor-calculo.categoria-inotropicos{
+    border: var(--borde-inotropicos2);
+}
+.h5-t.categoria-inotropicos{
+    border-bottom: var(--borde-inotropicos2);
+}
+.categoria-inotropicos .resultado-reconstitucion{
+    color: var(--inotropicos);
+}
+/*rotulo*/
+.rotulo-preparacion.categoria-inotropicos {
+    border: var(--borde-inotropicos2);
+}
+
+.categoria-inotropicos .p-rotulo{
+    color: var(--inotropicos);
+}
+.p-resultado.categoria-inotropicos{
+    border-bottom: var(--borde-inotropicos2);
+}
+/*administracion*/
+.tarjeta-administracion.categoria-inotropicos{
+    border: var(--borde-inotropicos2);
+}
+.titulo-administracion.categoria-inotropicos{
+    color:var(--inotropicos);
+}
+
+.subtitulo-administracion.categoria-inotropicos{
+    color: var(--inotropicos);
+    border-bottom: var(--borde-inotropicos2);
+}
+.llevar.categoria-inotropicos{
+    border: var(--borde-inotropicos2);
+}
+.llevar-subtitulo.categoria-inotropicos{
+    color:var(--inotropicos);
+}
+.subtitulo-concentracion.categoria-inotropicos{
+    color: var(--inotropicos);
+}
+.llevar-resultado.categoria-inotropicos{
+    color: var(--inotropicos);
+}
+/*POSOLOGIA*/
+.posologia.categoria-inotropicos{
+    border: var(--borde-inotropicos2);
+}
+
+
+/*--------------------
+RÓTULO IVC - COLORES POR CATEGORÍA
+---------------------*/
+
+.ivc-rotulo.categoria-sedoanalgesia {
+    background-color: var(--sedoanalgesia);
+    border: var(--borde-sedoanalgesia2);
+}
+
+.ivc-rotulo.categoria-antibiotico {
+    background-color: var(--antibioticos);
+    border: var(--borde-antibiotico2);
+}
+
+.ivc-rotulo.categoria-inotropicos {
+    background-color: var(--inotropicos);
+    border: var(--borde-inotropicos2);
+}
+
+.ivc-rotulo.categoria-diureticos {
+    background-color: var(--diureticos);
+}
+
+.ivc-rotulo.categoria-varios {
+    background-color: var(--varios);
+}
+
+.ivc-rotulo.categoria-neutro {
+    background-color: var(--neutro);
+}
+
+
+/* --------------------
+   TARJETA DE PREPARACIÓN DEL PERFUS IVC
+--------------------- */
+
+.ivc-detalles {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.ivc-detalles-titulo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 16px;
+    font-size: 1.1rem;
+}
+
+.ivc-detalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.ivc-detalle:last-child {
+    margin-bottom: 0;
+}
+
+.ivc-detalle-icono {
+    flex: 0 0 28px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.ivc-detalle-contenido {
+    flex: 1;
+    min-width: 0;
+}
+
+.ivc-detalle-contenido strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.ivc-detalle-contenido p {
+    margin: 0;
+    line-height: 1.45;
+}
+
+.ivc-fecha {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.ivc-consideraciones {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.ivc-consideraciones ul {
+    padding-left: 22px;
+    margin: 8px 0 0;
+}
+
+.ivc-consideraciones li {
+    margin-bottom: 7px;
+    line-height: 1.45;
+}
+
+
+/* --------------------
+   DURACIÓN DEL PERFUS IVC
+--------------------- */
+
+.ivc-duracion-perfus {
+    margin-top: 18px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    background: #fff;
+    color: #333;
+}
+
+.ivc-duracion-perfus .ivc-detalles-titulo {
+    margin-bottom: 16px;
+}
+
+.ivc-duracion-campo {
+    margin-bottom: 16px;
+}
+
+.ivc-duracion-campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.ivc-duracion-campo input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.ivc-fecha-recambo {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.ivc-fecha-recambo strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.contenedor-observaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    padding: 12px;
+}
+
+.tarjeta-observacion {
+    padding: 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.tarjeta-observacion h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tarjeta-observacion ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.tarjeta-observacion li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+
+/* TARJETAS DE OBSERVACIONES */
+
+/* Generales: verde */
+.tarjeta-observacion.observacion-generales {
+    background-color: #e8f5e9;
+    border: 1px solid #43a047;
+    border-left: 5px solid #2e7d32;
+    color: #1b5e20;
+}
+
+/* Precauciones: azul */
+.tarjeta-observacion.observacion-precauciones {
+    background-color: #e3f2fd;
+    border: 1px solid #42a5f5;
+    border-left: 5px solid #1565c0;
+    color: #0d47a1;
+}
+
+/* Alertas: amarillo */
+.tarjeta-observacion.observacion-alertas {
+    background-color: #fff8e1;
+    border: 1px solid #ffca28;
+    border-left: 5px solid #f9a825;
+    color: #795548;
+}
+
+/* Contraindicaciones: naranja */
+.tarjeta-observacion.observacion-contraindicaciones {
+    background-color: #fff3e0;
+    border: 1px solid #ff9800;
+    border-left: 5px solid #e65100;
+    color: #8a2c00;
+}
+
+/* Críticas: rojo de inotrópicos */
+.tarjeta-observacion.observacion-criticas {
+    background-color: #ffebee;
+    border: 1px solid #ef5350;
+    border-left: 5px solid #c62828;
+    color: #b71c1c;
+}
+
+/* Mantener los títulos con el color de su categoría */
+.tarjeta-observacion h4 {
+    color: inherit;
+}
+
+/* Legibilidad del contenido */
+.tarjeta-observacion li {
+    color: inherit;
+}
+
+/* Títulos blancos en las tarjetas de observaciones */
+.tarjeta-observacion h4 {
+    color: #ffffff;
+}
+
+.ivc-rotulo {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 16px;
+    border-radius: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* TÍTULOS DE OBSERVACIONES: FRANJA DE COLOR */
+.tarjeta-observacion h4 {
+    margin: -12px -12px 10px;
+    padding: 10px 12px;
+    color: #ffffff !important;
+    font-weight: 900;
+    border-radius: 7px 7px 0 0;
+}
+
+/* GENERALES: VERDE */
+.tarjeta-observacion.observacion-generales h4 {
+    background-color: #2e7d32;
+}
+
+/* PRECAUCIONES: AZUL */
+.tarjeta-observacion.observacion-precauciones h4 {
+    background-color: #1565c0;
+}
+
+/* ALERTAS: NARANJA */
+.tarjeta-observacion.observacion-alertas {
+    background-color: #fff3e0;
+    border: 1px solid #ff9800;
+    border-left: 5px solid #e65100;
+    color: #8a2c00;
+}
+
+.tarjeta-observacion.observacion-alertas h4 {
+    background-color: #e65100;
+}
+
+/* CONTRAINDICACIONES: NEGRO Y GRIS */
+.tarjeta-observacion.observacion-contraindicaciones {
+    background-color: #eeeeee;
+    border: 1px solid #757575;
+    border-left: 5px solid #424242;
+    color: #212121;
+}
+
+.tarjeta-observacion.observacion-contraindicaciones h4 {
+    background-color: #424242;
+}
+
+/* CRÍTICAS: ROJO */
+.tarjeta-observacion.observacion-criticas h4 {
+    background-color: #c62828;
+}
+
+
+.ivc-rotulo p,
+.ivc-rotulo span {
+    color: #fff !important;
+}
+
+
+.ivc-linea-rotulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ivc-linea-rotulo span:last-child {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.ivc-total-rotulo {
+    border-top: 1px solid rgba(255, 255, 255, 0.85);
+    padding-top: 7px;
+    margin-top: 3px;
+    font-weight: 700;
+}
+
+
+
+/* =====================================
+   COMPATIBILIDAD DE MEDICAMENTOS
+===================================== */
+
+.compatibilidad-contenedor {
+    margin-top: 20px;
+}
+
+.compatibilidad-descripcion {
+    margin: 8px 0 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.compatibilidad-modalidades {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.compatibilidad-boton {
+    padding: 12px 8px;
+    border: 1px solid #b8c5bd;
+    border-radius: 8px;
+    background: #f5f7f5;
+    color: #26352b;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.compatibilidad-boton:hover {
+    background: #e5eee7;
+}
+
+.compatibilidad-boton.activo {
+    background: #dcece0;
+    border: 2px solid #39764b;
+    color: #215a32;
+}
+
+.compatibilidad-boton:focus-visible,
+.compatibilidad-buscador:focus-visible {
+    outline: 3px solid #5489c7;
+    outline-offset: 2px;
+}
+
+.compatibilidad-contenido {
+    margin-bottom: 20px;
+}
+
+.compatibilidad-etiqueta {
+    display: block;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+
+.compatibilidad-buscador {
+    display: block;
+    width: 95%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0 auto 12px;
+    border: 1px solid #aab5ae;
+    border-radius: 8px;
+    background: #fff;
+    color: #222;
+    font: inherit;
+}
+
+
+.compatibilidad-resultado {
+    margin: 12px 12px 0 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.compatibilidad-resultado p, .compatibilidad-resultado small, .compatibilidad-resultado strong{
+    text-align: center;
+    font-weight: bold;
+    margin: 12px;
+    display: block;
+}
+
+.compatibilidad-resultado p{
+    font-size: 1.1rem;
+}
+
+.compatibilidad-sin-datos {
+    padding: 12px;
+    border: 1px solid #d4d9d5;
+    border-radius: 8px;
+    background: #f5f6f5;
+    color: #454b47;
+    line-height: 1.5;
+}
+
+.compatibilidad-leyenda {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 22px 10px;
+}
+
+.compatibilidad-leyenda h4 {
+    grid-column: 1 / -1;
+    margin: 0 0 4px;
+}
+
+.titu_referencias{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--fondo);
+    margin-bottom: 10px;
+}
+
+.compatibilidad-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+
+.compatibilidad-indicador {
+    display: inline-block;
+    flex: 0 0 12px;
+    width: 12px;
+    align-self: center;
+    min-width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: currentColor;
+    box-sizing: border-box;
+    position: static;
+    transform: none;
+    opacity: 0;
+}
+
+.compatibilidad-opciones{
+    font-weight: bold;
+   text-align: center;
+}
+
+/* Categorías */
+.compatibilidad-categoria.compatible {
+    background: #d9eedc;
+    color: #216b36;
+}
+
+.compatibilidad-categoria.incompatible {
+    background: #f5dada;
+    color: #a12828;
+}
+
+.compatibilidad-categoria.no-probada {
+    background: #f8e9b8;
+    color: #795b00;
+}
+
+.compatibilidad-categoria.variable {
+    background: #dce8f8;
+    color: #244f8a;
+}
+
+.compatibilidad-categoria.incierta {
+    background: #e9ddf5;
+    color: #67418b;
+}
+
+
+
+/* CORREGIR INDICADORES DE COMPATIBILIDAD */
+.compatibilidad-categoria {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.compatibilidad-categoria::marker {
+    content: "";
+}
+
+.compatibilidad-categoria .compatibilidad-indicador {
+    display: block;
+    position: static;
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    transform: none;
+}
+
+
+@media (max-width: 600px) {
+    .compatibilidad-modalidades {
+        grid-template-columns: 1fr;
+    }
+
+    .compatibilidad-leyenda {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* MÓDULO DE EFECTOS ADVERSOS */
+
+.efectos-adversos-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.icono-efectos-adversos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    color: #397fc4;
+}
+
+.boton-efectos-adversos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    align-self: center;
+    padding: 10px 16px;
+    border: 1px solid #cfe2f8;
+    border-radius: 10px;
+    background: #edf5ff;
+    color: #2869a8;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.boton-efectos-adversos:hover {
+    background: #dcecff;
+}
+
+.boton-efectos-adversos:focus-visible {
+    outline: 2px solid #397fc4;
+    outline-offset: 3px;
+}
+
+.contenido-efectos-adversos {
+    padding: 14px 18px;
+    border: 1px solid #e1eaf5;
+    border-radius: 12px;
+    background: #f7faff;
+}
+
+.contenido-efectos-adversos[hidden] {
+    display: none;
+}
+
+.lista-efectos-adversos {
+    margin: 0;
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+.lista-efectos-adversos li {
+    padding-left: 4px;
+    margin-bottom: 3px;
+}
+
+.efectos-adversos-sin-datos {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+
+/* === AJUSTE FINAL: COLORES DE CATEGORÍA VISIBLES === */
+
+/* Antibióticos */
+#fichaFarmacos .ficha-completa.categoria-antibiotico .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-antibiotico {
+    background: #eaf2fc !important;
+    color: #1357a6 !important;
+    border-left: 5px solid #1357a6 !important;
+}
+
+/* Antivirales */
+#fichaFarmacos .ficha-completa.categoria-antiviral .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-antiviral {
+    background: #eaf2fc !important;
+    color: #1357a6 !important;
+    border-left: 5px solid #1357a6 !important;
+}
+
+/* Sedoanalgesia */
+#fichaFarmacos .ficha-completa.categoria-sedoanalgesia .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-sedoanalgesia {
+    background: #e8f4e8 !important;
+    color: #026802 !important;
+    border-left: 5px solid #026802 !important;
+}
+
+/* Inotrópicos */
+#fichaFarmacos .ficha-completa.categoria-inotropicos .titulo-farmaco,
+#fichaFarmacos .titulo-farmaco.categoria-inotropicos {
+    background: #f8e9ee !important;
+    color: #7f052a !important;
+    border-left: 5px solid #7f052a !important;
+}
+
+
+/* =====================================
+   DISEÑO RESPONSIVE PARA MÓVILES
+   ===================================== */
+
+@media (max-width: 768px) {
+
+  #fichaFarmacos,
+  #fichaFarmacos .ficha-completa,
+  #fichaFarmacos .ficha-individual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  #fichaFarmacos .ficha-completa {
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 10px;
+  }
+
+  #fichaFarmacos .ficha-individual {
+    padding: 10px;
+  }
+
+  /* Título del medicamento: conserva su color */
+  #fichaFarmacos .titulo-farmaco {
+    font-size: 1.15rem;
+    line-height: 1.35;
+    padding: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  /* Tipo y acción */
+  #fichaFarmacos .contenedor-info {
+    gap: 10px;
+  }
+
+  #fichaFarmacos .espacio {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* Presentaciones y administración, una debajo de otra */
+  #fichaFarmacos .fila-presentacion-administracion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    width: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+  }
+
+  #fichaFarmacos .presentaciones-contenedor,
+  #fichaFarmacos .administracion-contenedor {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* Encabezados de sección */
+  #fichaFarmacos .titulo-presentaciones {
+    font-size: 1rem;
+    line-height: 1.35;
+    padding: 10px;
+    overflow-wrap: anywhere;
+  }
+
+  /* Posología y compatibilidad */
+  #fichaFarmacos .fila-posologia-compatibilidad {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #fichaFarmacos .posologias-contenedor {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  /* Evitar que tablas o textos largos rompan la pantalla */
+  #fichaFarmacos table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #fichaFarmacos input,
+  #fichaFarmacos select,
+  #fichaFarmacos textarea,
+  #fichaFarmacos button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #fichaFarmacos input,
+  #fichaFarmacos select,
+  #fichaFarmacos button {
+    min-height: 40px;
+  }
+}
+
+/* Teléfonos estrechos */
+@media (max-width: 380px) {
+  #fichaFarmacos .ficha-individual {
+    padding: 7px;
+  }
+
+  #fichaFarmacos .titulo-farmaco {
+    font-size: 1.05rem;
+  }
+
+  #fichaFarmacos .titulo-presentaciones {
+    font-size: 0.95rem;
+  }
+}

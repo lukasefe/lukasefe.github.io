@@ -1,0 +1,651 @@
+let farmacos = {
+    //PRUEBA
+    Prueba:{
+            nombre: "PRUEBA",
+
+            tipo:"TIPO DE FARMACO",
+
+            accion:"LO QUE EL FARMACO HACE",
+
+            unidadFarmacologica:"mg",
+
+            categoria:"antibiotico",
+
+            presentaciones: {
+                    presentacion1:{
+                    nombre: "FA 1000mg",
+                    viasPermitidas:["EV","IM"],
+                    tipo: "Frasco/Ampolla",
+                    cantidad: 1000,
+                    unidadCantidad:"mg",
+
+                    reconstituyente: "Agua Destilada",
+
+                    volumen:10,
+                    unidadVolumen:"ml",
+                    
+                    descripcion:"En 9,5 ml de agua destilada, obteniendo 100mg/ml, concentracion total 1000mg/10ml reconstituido.",
+
+                    estabilidad: "frascoReconstituido"
+                    },
+
+                    presentacion2:{
+                    nombre: "FA 500mg",
+                    viasPermitidas:["EV","IM"],
+                    tipo: "Frasco/Ampolla",
+                    cantidad:500,
+                    unidadCantidad:"mg",
+
+                    reconstituyente: "Agua Destilada",
+
+                    volumen:5,
+                    unidadVolumen:"ml",                    
+                    
+                    descripcion:"En 4,5 ml de agua destilada, obteniendo 100mg/ml, concentracion total 500mg/5ml reconstituido.",
+
+                    estabilidad: "frascoReconstituido"
+                    },
+                    presentacion3:{
+                    nombre: "Suspención 250mg/5ml",
+                    viasPermitidas:["VO"],
+                    tipo: "Suspención",
+                    cantidad:250,
+                    unidadCantidad:"mg",
+
+                    reconstituyente: "Agua Destilada",
+
+                    volumen:5,
+                    unidadVolumen:"ml",                    
+                    
+                    descripcion:"Llenar con agua destilada hasta la marca indicada enel frasco.",
+
+                    estabilidad: "suspencionReconstituida"
+                    }
+            },
+
+            estabilidad:{
+
+                frascoReconstituido:{
+
+                    identificador:"Frasco/Ampolla Reconstituido",
+
+                    duracion:{
+                        temperaturaAmbiente:1,
+                        temperaturaRefrigerada:2,
+                        unidad:"hs",
+                    },
+
+                    cuidado:"luego desechar",
+                    
+                    texto1:"Una vez reconstituida dura 1hs a temperatura ambiente y 2hs refrigerada, luego de este tiempo desechar."
+                    },
+                suspencionReconstituida:{
+                        identificador:"Suspención Reconstituida",
+
+                        duracion:{
+                            temperaturaAmbiente:14,
+                            unidad:"días",
+                        },
+                        cuidado:"Proteger de la luz",
+                        texto1:"Una vez reconstituida dura 14 diasa temperatura ambiente, luego de este tiempo desechar."
+                },
+                    },
+
+                
+
+            posologia:{
+                patologia1:{
+                        diagnostico:"Neumonía Aguda de la Comunidad (NAC)",
+                        indicaciones:{
+                            indicacion1:{
+                            descripcion:"200mg/kg/día cada 6hs",
+                            dosis:{
+                                tipo:"Fija",
+                                valor:200,
+                                unidad:"mg/kg/día"
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }
+                },
+                patologia2:{
+                        diagnostico:"Neumonia con derrame",
+                        indicaciones:{
+                            indicacion1:{
+                            descripcion:"300mg/kg/día cada 6hs",
+                            dosis:{
+                                tipo:"Fija",
+                                valor:300,
+                                unidad:"mg/kg/día"
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }
+                },
+                patologia3:{
+                        diagnostico:"Otitis y Sinusitis",
+                        indicaciones:{
+                            indicacion1:{
+                            descripcion:"100mg/kg/día cada 6hs",
+                            dosis:{
+                                tipo:"Fija",
+                                valor:100,
+                                unidad:"mg/kg/día"
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion2:{
+                            descripcion:"PRUEBA 100mg/kg/dosis cada 6hs",
+                            dosis:{
+                                tipo:"Fija",
+                                valor:100,
+                                unidad:"mg/kg/dosis"
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion3:{
+                            descripcion:"PRUEBA 100mg/dia",
+                            dosis:{
+                                tipo:"Fija",
+                                valor:100,
+                                unidad:"mg/día"
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion4:{
+                            descripcion:"PRUEBA 400mg",
+                            dosis:{
+                                tipo:"Fija",
+                                valor:400,
+                                unidad:"mg"
+                            },
+                            
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }
+                },
+                patologia4:{
+                        diagnostico:"Meningitis y Endocarditis",
+                        indicaciones:{
+                            indicacion1:{
+                            descripcion:"300 a 400mg/kg/día",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg/kg/día"
+                            
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion2:{
+                            descripcion:"PRUEBA 300 a 400mg/kg/dosis",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg/kg/dosis"
+                            
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion3:{
+                            descripcion:"PRUEBA 300 a 400mg/día",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg/día"
+                            
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion3A:{
+                            descripcion:"PRUEBA 300 a 400mg/día",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg/día"
+                            
+                            },
+                            intervalo:{
+                                valor:8,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion3B:{
+                            descripcion:"PRUEBA 300 a 400mg/día",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg/día"
+                            
+                            },
+                            intervalo:{
+                                valor:12,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion3C:{
+                            descripcion:"PRUEBA 300 a 400mg/día",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg/día"
+                            
+                            },
+                            intervalo:{
+                                valor:24,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                            indicacion4:{
+                            descripcion:"PRUEBA 300 a 400mg",
+                            dosis:{
+                                tipo:"Rango",
+                                valorMin:300,
+                                valorMax:400,
+                                unidad:"mg"
+                            
+                            },
+                            intervalo:{
+                                valor:6,
+                                unidad:"hs",
+                            },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }
+                },
+                patologia5:{
+                        diagnostico:"Dosis Máxima MG/KG/DÍA",
+                        indicaciones:{
+                            indicacion2:{
+                                dosis:{
+                                    tipo:"Maxima",
+                                    valor:100,
+                                    unidad:"mg/kg/día"
+                                },
+                                intervalo:{
+                                    valor:24,
+                                    unidad:"hs"
+                                },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }      
+                },
+                patologia6:{
+                        diagnostico:"Dosis Máxima MG/KG/DOSIS",
+                        indicaciones:{
+                            indicacion3:{
+                                dosis:{
+                                    tipo:"Maxima",
+                                    valor:100,
+                                    unidad:"mg/kg/dosis"
+                                },
+                                intervalo:{
+                                    valor:24,
+                                    unidad:"hs"
+                                },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }      
+                },
+                patologia7:{
+                        diagnostico:"Dosis Máxima MG/día",
+                        indicaciones:{
+                            indicacion1:{
+                                dosis:{
+                                    tipo:"Maxima",
+                                    valor:12000,
+                                    unidad:"mg/día"
+                                },
+                                intervalo:{
+                                    valor:24,
+                                    unidad:"hs"
+                                },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }      
+                },
+                 patologia8:{
+                        diagnostico:"Dosis Máxima MG",
+                        indicaciones:{
+  
+                            indicacion3:{
+                                dosis:{
+                                    tipo:"Maxima",
+                                    valor:12000,
+                                    unidad:"mg"
+                                },
+                                intervalo:{
+                                    valor:24,
+                                    unidad:"hs"
+                                },
+                            via: "EV",
+                            acceso: "periférico o central"  
+                            },
+                        }      
+                }
+                    },
+
+            administracion:{
+                EV:{
+                    formas:{
+                        IVD:{
+                            // Concentraciones expresadas en mg/ml.
+                            // Se utilizan para calcular el volumen final de dilución.
+                            titulo:"IVD: INTRAVENEOSA DIRECTA O PUSH",
+
+                            diluyente:{
+                                nombre:"Solución Fisiológica",
+                                abreviatura:"S.F 0,9%",
+                            },
+
+                            dosis:{
+                                recomendada:{
+                                    concentracion:10,
+                                    unidad:"mg/ml",
+                                    acceso:"Perferico",
+                                    descripcion: "10mg/ml",
+                                    tipoDilucion: "llevarA"
+                                },
+                                maxima:{
+                                    concentracion:50,
+                                    unidad:"mg/ml",
+                                    acceso:"Central",
+                                    descripcion:"50mg/ml",
+                                    tipoDilucion:"diluirEn"
+                                },
+                            },
+                        
+                            
+                            tiempoInfusion:{
+                                descripcion:"Entre 5 a 10 minutos"
+                            },
+
+                            restriccionHidrica:{
+                                estado: "SinDatos",
+                                descripcion: ""
+                            }
+                                },
+                        IVI:{
+                            // Concentraciones expresadas en mg/ml.
+                            // Se utilizan para calcular el volumen final de dilución.
+                            titulo:"IVI: INTRAVENEOSA INTERMITENTE O 2DO CANAL",
+
+                            diluyente:{
+                                nombre:"Solución Fisiológica",
+                                abreviatura:"S.F 0,9%",
+                            },
+
+                            dosis:{
+                                recomendada:{
+                                    concentracionMin:10,
+                                    concentracionMax:20,
+                                    unidad:"mg/ml",
+                                    acceso:"Perferico",
+                                    descripcion: "10-20mg/ml",
+                                    tipoDilucion: "llevarA"
+                                },
+                                maxima:{
+                                    concentracion:30,
+                                    unidad:"mg/ml",
+                                    acceso:"Central",
+                                    descripcion:"30mg/ml",
+                                    tipoDilucion:"diluirEn"
+                                },
+                            },
+                        
+                            
+                            tiempoInfusion:{
+                                descripcion:"En 30 minutos, preparar y administrar inmediatamente"
+                            },
+
+                        },
+                        infusionContinua:{
+                            titulo:"IVC: INFUSIÓN CONTINUA",
+                            descripcion:"Llevar dosis indicada  a 24ml con DX 5%",
+                            acceso:{permitidos:["Periferico o Central"]},
+                        
+                            preparacion:{
+                                tipo:"llevarDosisAVolumenFinal",
+
+                                volumenFinal:{
+                                    volumen: 24,
+                                    unidad:"ml",
+                                },
+                                
+                            },
+                                
+                                diluyente:"DX 5%",
+                                
+                                preparacionInicial:{
+                                    requerida:true,
+                                    multiplicadorDosis:2,
+                                    volumenFinalMultiplicador:2,
+                                    motivo:"Preparacion inicial para purgado del perfus"
+                                },
+
+                                recambio:{
+                                    duracion:24,
+                                    unidad:"horas"
+                                
+                            },
+
+                            proteccion:{
+                                luz:true,
+                                descripcion:"Proteger de la luz"
+                            },
+                            
+                            perfus:{
+                                fotosensible:true,
+
+                                recambio:{
+                                    duracion:7,
+                                    unidad:"días"
+                                }
+                            },
+
+                            identificacion:{
+                                rotulo:"verde",
+                                descripcion:"Rotulo de color verde"
+                            },
+                            seguridad:["La sedoanalgesia se deben administrar por un lumen o acceso unicamente destinado a sedoanalgesia",
+                            ]
+                        },
+                    }
+                },
+                
+                IM: {
+                    formas: {
+                        IM: {
+                            // Datos de reconstitución y concentración
+                            diluyente: "3,5 ml de agua destilada o lidocaína al 2%",
+                            concentracion: "250 mg/ml",
+                            miligramos: 250,
+                            volumen: 1,
+
+                            // Consideraciones para la administración
+                            textos: [
+                                {
+                                    titulo: "Sitios recomendados:",
+                                    texto: ""
+                                },
+                                {
+                                    titulo: "Calibre y longitud de aguja:",
+                                    texto: ""
+                                }
+                            ]
+                        }
+                    }
+                },   
+                
+                VO: {
+                    formas: {
+                        VO: {
+                            textos: [
+                                {
+                                    titulo: "Preparación:",
+                                    texto: ""
+                                },
+                                {
+                                    titulo: "Administración:",
+                                    texto: ""
+                                },
+                                {
+                                    titulo: "Consideraciones:",
+                                    texto: ""
+                                }
+                            ]
+                        }
+                    }
+                },
+
+                SC: {
+                    formas: {
+                        SC: {
+                            textos: [
+                                { titulo: "Sitios recomendados:", texto: "" },
+                                { titulo: "Calibre y longitud de aguja:", texto: "" },
+                                { titulo: "Técnica de administración:", texto: "" },
+                                { titulo: "Consideraciones:", texto: "" }
+                            ]
+                        }
+                    }
+                },
+            },
+
+            observaciones:{
+
+                generales:["Proteger de la luz.",],
+                
+                precauciones:["Debe evitarse el uso simultáneo de derivados del ácido barbitúrico, ya que el efecto depresor respiratorio del fentanilo podría aumentar",
+                    "No se recomienda el uso simultáneo con nalbufina podrían inducir síntomas de abstinencia en pacientes dependientes de los opiáceos.",
+                ],
+                
+                alertas:[],
+                
+                contraindicaciones:[
+                ],
+                
+                criticas:["La sobredosis puede ser tratada con naloxona.",
+                    "El uso simultáneo de otros depresores del SNC podría producir efectos depresores aditivos y podrían darse casos de hipoventilación, hipotensión y también sedación profunda o coma."
+                ],
+            
+            },
+
+            compatibilidad: {
+                conexionY: {
+                    
+                    compatible: ["Aciclovir","Alprostadil", "Anidulofungina","Claritromicina","Daptomizina","Dexmedetomidina","Foscarnet","Linezolid","Metronidazol","Milrinona",
+                            "Octreotida", "Pancuronio","Remifentanilo","Rocuronio","Tigeciclina","Vecuronio","Voriconazol"],
+
+                    combinacionVariable: ["Adrenalina", "Amikacina", "Bicarbonato de Sodio", "Cefalotina","Cefotaxima","Ceftazidima","Ceftriaxona","Cefuroxima","Ciclosporina",
+                                    "Clindamicina","Cloruro de Calcio","Cloruro de Potasio","Colistin","Dexametasona","Enalaprilato","Esmolol","Estreptomicina","Fentanilo",
+                                    "Furosemida","Gentamicina","Gluconato de Calcio","Heparina Sódica","Hidrocortisona","Imipenem","Insulina Regular","Labetalol",
+                                    "Lidocaina","Metroclopramida","Morfina","Sulfato de Magnesio","Noradrenalina","Penicilina G. Sódica","Vancomicina","Vasoprecina"],
+                                    
+                    noProbada: ["Ampicilina Sulbactam","Ciprofloxacina","Clonidina","Fenobarbital","Fosfato de Potasio","Fosfato de Sodio","Hidroxocobalamina","Indometacina Sódica",
+                        "Levetiracetam","Meropenem","Metilprednisolona","Omeprazol", "Paracetamol","Piperacilina Tazobactam","Propanolol","Ranitidina","Rifampicina","Sildenafil",
+                        "Tiopental","Zidovudina"],
+
+                    noCompatible: ["Acido Tranexámico", "aminofilina","Amiodarona","Anfotericina (ABELCET)", "Anfotericina B", "Anfotericina Liposomal", "Caspofungina","Clorpromazina",
+                            "Diazepan","difenhidramina","Dobutamina","Fenitoina","Fluconazol","Ganciclovir","Lorazepam","Midazolam","Pentamidina","Sulfametoxazol Trimetropina"],
+
+                    combinacionIncierta: ["Dopamina","Nitroprusiato de Sodio","Tacrolimus"]
+                },
+
+                mismaJeringa: {
+                    compatible: [],
+                    combinacionVariable: [],
+                    noProbada: [],
+                    noCompatible: [],
+                    combinacionIncierta: []
+                },
+
+                mismaBolsa: {
+                    compatible: [],
+                    combinacionVariable: [],
+                    noProbada: [],
+                    noCompatible: [],
+                    combinacionIncierta: []
+                }
+            },
+
+            efectosAdversos:[
+                "Náuseas","Vomitos","Diarrea","Glositis","Anemia","Trombocitopenia","Eosinofilia","Eritema","Rash","Urticaria"
+            ],
+            bibliografia: [
+                {
+                    titulo: "Ficha técnica oficial",
+                    tipo: "Ficha técnica",
+                    url: "https://sitio-oficial.org/ficha",
+                    edicion: "",
+                    fechaConsulta: ""
+                },
+                {
+                    titulo: "Manual de administración de medicamentos",
+                    autor: "Institución responsable",
+                    tipo: "Manual",
+                    url: "https://sitio-oficial.org/manual",
+                    edicion: "2.ª edición",
+                    fechaConsulta: ""
+                }
+            ],   autor: "Laboratorio o institución responsable",
+    
+    }
+}

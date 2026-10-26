@@ -1,0 +1,333 @@
+:root{
+    --titulowhite:rgba(255, 255, 255, 0.964);
+    --antibioticos:#1357a6;
+    --sedoanalgesia:#026802;
+    --inotropicos:#7f052a;
+    --diureticos:#f8e005f3;
+    --varios: #FFAB00;
+    --neutro:#757575;
+    --borde-neutro:2px solid rgba(115, 115, 115, 0.339);
+    --borde-neutro2:2px solid rgba(115, 115, 115, 0.339);
+    --borde-antibiotico:1px solid rgba(0, 95, 160, 0.25);
+    --borde-antibiotico2:2px solid rgba(0, 95, 160, 0.25);
+    --sombra:0 6px 18px rgba(0,0,0,0.08);
+    --coincide:rgba(52, 199, 89, 1);
+    --inferior: rgba(255, 193, 7, 1);
+    --supera:rgba(204, 0, 0, 1);
+    --SIN-ANALISIS:rgb(2, 32, 53);
+}
+
+/* MOBILE FIRST 390-844PX*/
+/*TARJETA FICHAS MEDICAMENTOS*/
+
+.ficha-completa{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    margin-bottom:16px;
+
+    background-color: rgba(255, 255, 255, 0.75) ;
+
+    border: 1px solid var(--borde-neutro);
+    border-radius: 18px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.ficha-individual{
+    width: 100%;
+    
+}
+
+.contendor-titulo{
+    width: 100%;
+    box-sizing: border-box;
+
+    border:1px solid var(--borde-neutro);
+    border-radius: 18px 0;
+}
+
+.titulo-farmaco{
+    margin: 0 0 16px 0;
+    font-size: 32px;
+    font-weight: 900;
+    background-color: var(--neutro);
+    color: var(--titulowhite) ;
+    padding: 16px 0 16px 16px;
+    border-radius: 18px 18px 0 0;
+}
+
+/*INFORMACION DEL FARMACO*/
+.contenedor-info{
+    padding-left: 16px;
+}
+.info-categoria{
+    color: var(--neutro);
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.info{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.espacio{
+    margin-bottom: 20px;
+}
+
+/*PRESENTACIONES*/
+.titulo-presentaciones{
+    width: 100%;
+    background-color: var(--neutro);
+    color:var(--titulowhite);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px 0 16px 16px;
+}
+
+.contenedor-presentacion{
+    padding: 16px  16px 0 16px;
+    border-bottom: var(--borde-neutro);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.presentacion{
+    color:var(--neutro);
+    margin: 0;
+   
+}
+
+.iconoFarmaco{
+    width: 120px;
+    margin: 0;
+}
+
+.presentacion-info{
+    width:100%;
+    padding:16px 16px 0 16px;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.concentracion{
+    color:var(--neutro);
+    font-weight: 600;
+}
+
+.descripcion-info{
+    padding:16px 16px 0 16px;
+    display: block;
+}
+.descripcion-info, p{
+    font-weight: 600;
+    text-align: justify;
+}
+
+
+/*RECONSTITUYENTE*/
+.contenedor-calculo{
+    width:90%;
+    margin: 16px;
+    padding: 18px;
+    border: var(--borde-neutro);
+    border-radius: 18px;
+    box-shadow: var(--sombra) ;
+}
+.h5-t{
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: var(--borde-neutro);
+
+}
+.resultado-reconstitucion{
+    font-weight: 800;
+    color: var(--neutro);
+}
+/*ROTULO DE RECONSTITUCION*/
+.rotulo-preparacion{
+    background-color: var(--titulowhite);
+    border: var(--borde-neutro2);
+    border-radius: 18px;
+    box-shadow: var(--sombra);
+
+}
+.rotulo-organizacion{
+    display: flex;
+    flex-direction: row;
+}
+.p-rotulo{
+    margin: 10px;
+    color: var(--borde-neutro);
+}
+.p-resultado{
+    font-weight: 800;
+    border-bottom: var(--borde-neutro);
+}
+
+/*ADMINISTRACION*/
+.tarjeta-administracion{
+    margin:0 5% 10px 5%;
+    width: 90%;
+    border: var(--borde-neutro);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: var(--sombra);
+}
+.titulo-administracion{
+    color: var(--neutro);
+    text-align: center;
+    font-weight: 700;
+}
+.subtitulo-administracion{
+    color: var(--neutro);
+    text-align: center;
+    font-weight: 700;
+    border-bottom: var(--borde-neutro);
+}
+.llevar{
+    margin:0 5% 20px 5%;
+    width: 90%;
+    border: var(--borde-neutro2);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: var(--sombra);
+    
+}
+.llevar-subtitulo{
+    color: var(--neutro);
+    text-align: center;
+    font-weight: 700;
+}
+.llevar-grid{
+display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.llevar-resultado{
+    color:var(--neutro);
+    font-size: 15px;
+    font-weight: bolder;
+}
+.subtitulo-concentracion{
+    color:var(--neutro);
+    font-weight: 900;
+}
+
+/*POSOLOGÍA*/
+.posologia{
+    margin:0 5% 10px 5%;
+    width: 90%;
+    border: var(--borde-neutro2);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: var(--sombra);
+}
+.titulo-posologia{
+    color: var(--antibioticos);
+    text-align: center;
+    font-weight: 700;
+}
+.items-posologia{
+    font-weight: 600;
+}
+/*ADVERTENCIA*/
+.contenedor
+.contenedor-advertencia{
+    padding: 5px;
+    border-radius: 18px;
+    box-shadow: var(--sombra);
+}
+.advertencia-inferior{
+    border: 2px solid var(--inferior);
+}
+.advertencia-superior{
+    border: 2px solid var(--supera);
+}
+.advertencia-coincide{
+    border: 2px solid var(--coincide);
+}
+.advertencia-sin-analisis{
+    border: 2px solid var(--SIN-ANALISIS);
+}
+.contenedor-icono{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.filas1{
+    width:30%;
+    
+}
+.filas2{
+    width:70%;
+    
+}
+.icono-advertencia{
+    width: 40px;
+}
+.titulo-advertencia{
+    color: var(--antibioticos);
+    font-weight: 700;
+}
+.texto-advertencia{
+    text-align: justify;
+}
+.icono-revisar{
+    width: 30px;
+}
+
+
+
+
+
+
+
+.ivc-preparacion {
+    margin: 16px 0;
+}
+
+.ivc-preparacion-titulo {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.ivc-rotulo {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 16px;
+    border-radius: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ivc-linea-rotulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ivc-linea-rotulo span:last-child {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.ivc-total-rotulo {
+    border-top: 1px solid rgba(255, 255, 255, 0.85);
+    padding-top: 7px;
+    margin-top: 3px;
+    font-weight: 700;
+}
